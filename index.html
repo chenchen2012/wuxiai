@@ -1,206 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="无锡人工智能">
-    <title>无锡人工智能</title>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMIZ5FT9ulNfM/9mkKHiw6MzmV9ErTQsJyz/BP" crossorigin="anonymous">
-    <!-- External font for modern look -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            color: #e0e0e0;
-            background-color: #0d0d0d; /* Dark background by default */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            transition: background-image 1s ease-in-out; /* Smooth transition for background image */
-        }
-
-        .container {
-            width: 90%;
-            max-width: 700px;
-            text-align: center;
-            padding: 40px;
-            border-radius: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 30px rgba(255, 0, 255, 0.3);
-            transition: transform 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            min-height: 80vh;
-        }
-
-        .container:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 255, 255, 0.8), 0 0 40px rgba(255, 0, 255, 0.6);
-        }
-
-        h1 {
-            font-family: 'Arial', sans-serif;
-            font-size: 36px;
-            color: #00e5ff;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
-        }
-
-        p {
-            font-size: 18px;
-            color: #e0e0e0;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .highlight {
-            color: #ff00ff;
-            font-weight: bold;
-            text-shadow: 0 0 5px rgba(255, 0, 255, 0.6);
-        }
-
-        .cta-button {
-            background: linear-gradient(135deg, #00e5ff, #ff00ff);
-            color: white;
-            padding: 15px 40px;
-            border: none;
-            border-radius: 50px;
-            font-size: 20px;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 0 15px rgba(0, 229, 255, 0.6), 0 0 15px rgba(255, 0, 255, 0.6);
-        }
-
-        .cta-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 25px rgba(0, 229, 255, 0.8), 0 0 25px rgba(255, 0, 255, 0.8);
-        }
-
-        .icon {
-            font-size: 60px;
-            color: #00e5ff;
-            margin-bottom: 30px;
-            animation: pulse 1.5s infinite;
-            text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
-        }
-
-        .contact {
-            font-size: 16px;
-            color: #a0a0a0;
-            margin-top: 50px;
-            padding-top: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .contact a {
-            color: #00e5ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-
-        /* Add media queries for mobile responsiveness */
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            p {
-                font-size: 16px;
-            }
-
-            .cta-button {
-                font-size: 18px;
-                padding: 12px 30px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 22px;
-            }
-
-            p {
-                font-size: 14px;
-            }
-
-            .cta-button {
-                font-size: 16px;
-                padding: 10px 25px;
-            }
-        }
-    </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WC8XB1DN1E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WC8XB1DN1E');
-</script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>无锡人工智能新闻聚合</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; max-width: 900px; margin: 24px auto; padding: 0 16px; line-height: 1.7; color: #111; }
+    h1 { margin: 0 0 8px; font-size: 28px; }
+    .meta { color: #666; margin: 0 0 20px; font-size: 14px; }
+    ul { padding-left: 18px; }
+    li { margin: 10px 0; }
+    a { color: #0b57d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .src { color: #666; font-size: 14px; }
+  </style>
 </head>
-
 <body>
-
-    <div class="container">
-        <div class="icon">
-            <i class="fas fa-robot"></i>
-        </div>
-        <h1>无锡人工智能</h1>
-        <b>
-        <p>Whatever you're building, <br/>Wuxi AI offers <br/>Exceptional brand value  <br/>& limitless potential.</p></b>
-        <h1>Claim it now before it's gone!</h1>
-        <div>
-            <a href="mailto:chenchen2012&#64;hotmail&#46;com"><button class="cta-button">Get It Now!</button></a>
-        </div>
-        <!-- Contact Section at the Bottom -->
-        <div class="contact">
-            <i class="fas fa-envelope"></i> Contact us: 
-            <a href="mailto:chenchen2012&#64;hotmail&#46;com">Reach out to us</a>
-        </div>
-    </div>
-
-    <script>
-        // JavaScript to preload the background image and apply it when loaded
-        const img = new Image();
-        img.src = 'your-background-image.jpg'; // Replace with the actual image URL
-
-        img.onload = () => {
-            document.body.style.backgroundImage = `url('${img.src}')`;
-            document.body.style.backgroundRepeat = "no-repeat";
-            document.body.style.backgroundPosition = "center center";
-            document.body.style.backgroundAttachment = "fixed";
-            document.body.style.backgroundSize = "cover";
-        };
-    </script>
-
+  <h1>无锡人工智能新闻聚合</h1>
+  <p class="meta">自动更新（每2小时），仅提供标题与原文链接。最后更新：2026-02-24 21:58（北京时间）</p>
+  <ul>
+    <li><a href="https://finance.sina.cn/stock/jdts/2026-02-22/detail-inhnrnnx8527255.d.html?vt=4&amp;cid=76993&amp;node_id=76993" target="_blank" rel="noopener noreferrer">无锡2025：智改数转网联提速，建“人工智能+”标杆城市 - 新浪财经</a><br><span class="src">新浪财经 | 2026-02-22 04:37</span></li>
+    <li><a href="https://www.xhby.net/content/s697c9114e4b037c73eea960a.html" target="_blank" rel="noopener noreferrer">无锡市人工智能行业协会揭牌成立，“平台+生态”双轮驱动产业创新发展 - 新华报业网</a><br><span class="src">新华报业网 | 2026-01-30 16:00</span></li>
+    <li><a href="https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml" target="_blank" rel="noopener noreferrer">江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn</a><br><span class="src">chinanews.com.cn | 2026-01-05 16:00</span></li>
+    <li><a href="https://www.nju.edu.cn/info/1056/433071.htm" target="_blank" rel="noopener noreferrer">江苏无锡：全域协同推进人工智能+教育 - nju.edu.cn</a><br><span class="src">nju.edu.cn | 2025-07-21 15:00</span></li>
+    <li><a href="https://www.yzwb.net/news/jiangsu/wuxi/202602/t20260208_320234.html" target="_blank" rel="noopener noreferrer">从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 紫牛新闻</a><br><span class="src">紫牛新闻 | 2026-02-08 22:07</span></li>
+    <li><a href="http://js.news.cn/20250430/6045ec5d437043b2b3cb853cb1ff59ca/c.html" target="_blank" rel="noopener noreferrer">洞察无锡“AI+”|无锡与人工智能对话：一场会的三重含义 - 新华网江苏频道</a><br><span class="src">新华网江苏频道 | 2025-04-30 15:00</span></li>
+    <li><a href="https://news.jiangnan.edu.cn/info/1065/106501.htm" target="_blank" rel="noopener noreferrer">江南大学与无锡市市政和园林局共推智慧园林建设合作 - 江南大学新闻网</a><br><span class="src">江南大学新闻网 | 2026-02-04 16:00</span></li>
+    <li><a href="https://www.cls.cn/detail/2193002" target="_blank" rel="noopener noreferrer">无锡高新区：人工智能产业发展的“新样本” - 财联社</a><br><span class="src">财联社 | 2025-11-06 16:00</span></li>
+  </ul>
 </body>
-
 </html>
-
