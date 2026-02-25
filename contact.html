@@ -16,27 +16,30 @@
   <title>联系方式</title>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"ContactPage","name":"联系方式","url":"https://wuxiai.com/contact.html","inLanguage":"zh-CN","isPartOf":{"@type":"WebSite","name":"无锡AI","url":"https://wuxiai.com/"}}</script>
   <style>
+    :root { --bg: #f5f7fb; --paper: #ffffff; --text: #1f2937; --muted: #6b7280; --line: #e5e7eb; --brand: #1d4ed8; }
     body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      max-width: 760px;
-      margin: 36px auto;
-      padding: 0 16px;
       line-height: 1.7;
-      color: #111;
     }
+    main { max-width: 760px; margin: 32px auto; padding: 0 16px; }
     h1 { margin: 0 0 14px; font-size: 30px; }
     .card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
       padding: 18px;
-      background: #fafafa;
+      background: var(--paper);
+      box-shadow: 0 8px 24px rgba(16, 24, 40, 0.04);
     }
-    a { color: #0b57d0; text-decoration: none; }
+    a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .home { margin-top: 20px; font-size: 14px; }
+    .home { margin-top: 16px; font-size: 14px; color: var(--muted); }
   </style>
 </head>
 <body>
+  <main>
   <h1>联系方式</h1>
   <div class="card">
     <p>如需联系，请发送邮件到：</p>
@@ -44,5 +47,6 @@
     <p>微信：359959667（请注明来源）</p>
   </div>
   <p class="home"><a href="/">返回首页</a></p>
+  </main>
 </body>
 </html>

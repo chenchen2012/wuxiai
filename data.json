@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-25T19:08:46.450645+08:00",
-  "item_count": 29,
+  "updated_at": "2026-02-25T19:58:52.578166+08:00",
+  "item_count": 22,
   "items": [
     {
       "title": "风口已至！“AI+”赛道，宜兴加速跑！",
@@ -67,7 +67,7 @@
       "url": "http://www.js.xinhuanet.com/20250728/26d705f2e7584efe8cfc979e377e3dd4/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-07-28T01:00:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
+      "feed": "bing:无锡AI:xinhuanet.com",
       "fingerprint": "c0d8fbb5730ba6221cdb290ebc98902f81c9e0b7",
       "domain": "js.xinhuanet.com",
       "trusted": true
@@ -77,7 +77,7 @@
       "url": "http://www.js.xinhuanet.com/20250717/88e8491648c54e81ba2fd568ff560fe2/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-07-17T08:30:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
+      "feed": "bing:无锡AI:xinhuanet.com",
       "fingerprint": "0c96865495f1f9dde86b091254e7a856fad426e7",
       "domain": "js.xinhuanet.com",
       "trusted": true
@@ -137,7 +137,7 @@
       "url": "http://www.js.xinhuanet.com/20250217/c3941fc8a1874ef69327138cf6568d8f/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-02-17T00:00:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
+      "feed": "bing:无锡AI:xinhuanet.com",
       "fingerprint": "4f9382e2087d68377bfaca1b9fd7a431b095036b",
       "domain": "js.xinhuanet.com",
       "trusted": true
@@ -220,76 +220,6 @@
       "feed": "bing:无锡 AI",
       "fingerprint": "eb6dfce0eee25fd9219c51fd9e8af159806c4de0",
       "domain": "finance.sina.com.cn",
-      "trusted": false
-    },
-    {
-      "title": "AI×IoT下一站在哪里？院士专家齐聚无锡，共话智联未来！",
-      "url": "https://www.pconline.com.cn/ai/article/1359898.html",
-      "source": "pconline.com.cn",
-      "published_at": "2025-08-08T11:58:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "3014ea96d84b3f47ade8ad7525e79668f43ba9cb",
-      "domain": "pconline.com.cn",
-      "trusted": false
-    },
-    {
-      "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
-      "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
-      "source": "wxrb.com",
-      "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "bba37ba6a4fa3370e6df719e498454261a6f052a",
-      "domain": "wxrb.com",
-      "trusted": false
-    },
-    {
-      "title": "长三角人工智能暗战：无锡正在打造“应用第一城”",
-      "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
-      "source": "view.inews.qq.com",
-      "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "a8bf154d76402f8fa8b00234d30c8b141d00bd34",
-      "domain": "view.inews.qq.com",
-      "trusted": false
-    },
-    {
-      "title": "无锡滨湖区：以AI“智”创未来",
-      "url": "https://news.qq.com/rain/a/20250614A034CM00",
-      "source": "news.qq.com",
-      "published_at": "2025-06-14T11:41:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "817043078fa84ce6556379b4aa80f023253615dc",
-      "domain": "news.qq.com",
-      "trusted": false
-    },
-    {
-      "title": "江苏无锡：AI赋能 人工智能产业逐浪前行",
-      "url": "https://finance.sina.com.cn/roll/2025-04-18/doc-inetqeau4914927.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2025-04-18T10:26:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "6af08bbe58f6bce1b9e2b7b319db859df8ce3b73",
-      "domain": "finance.sina.com.cn",
-      "trusted": false
-    },
-    {
-      "title": "太湖亿芯智算中心部署DeepSeek，助力无锡高新区加快AI产业布局",
-      "url": "https://js.ifeng.com/c/8gpddHldBNF",
-      "source": "js.ifeng.com",
-      "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "3509f7033b9dd601eb4151fbac716cb543384803",
-      "domain": "js.ifeng.com",
-      "trusted": false
-    },
-    {
-      "title": "无锡：“圈数字化、圈AI”，又一次擦亮产业链",
-      "url": "https://news.sina.com.cn/sx/2023-10-30/detail-imzswvsh3709074.shtml",
-      "source": "news.sina.com.cn",
-      "published_at": "2023-10-30T19:04:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "54eaa7ceb09241329d8b287e3acc80d97cc2fa89",
-      "domain": "news.sina.com.cn",
       "trusted": false
     }
   ]
