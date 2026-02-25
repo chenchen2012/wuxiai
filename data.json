@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26T03:19:55.715505+08:00",
+  "updated_at": "2026-02-26T04:54:41.988466+08:00",
   "item_count": 30,
   "items": [
     {
@@ -27,7 +27,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡AI:chinanews.com.cn",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
       "fingerprint": "30f7b5f32efa6dd8059102cfa3ba2a3002f606e2",
       "domain": "chinanews.com.cn",
       "trusted": true
@@ -97,7 +97,7 @@
       "url": "https://www.chinanews.com.cn/jk/2025/05-16/10416689.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2025-05-16T11:22:00+08:00",
-      "feed": "bing:无锡AI:chinanews.com.cn",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
       "fingerprint": "a8a185ed48c7f9c541abcd9490743f05ee816fe8",
       "domain": "chinanews.com.cn",
       "trusted": true
