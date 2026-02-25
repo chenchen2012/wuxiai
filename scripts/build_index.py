@@ -54,6 +54,8 @@ PRIORITY_SITE_FILTERS = [
 ]
 
 BLOCKED_DOMAINS = [
+    "news.google.com",
+    "bing.com",
     "toutiao.com",
     "sohu.com",
     "163.com",
@@ -124,14 +126,6 @@ AI_TOPIC_KEYWORDS = [
 ]
 
 
-def build_google_rss_url(keyword: str) -> str:
-    encoded = urllib.parse.quote(keyword)
-    return (
-        "https://news.google.com/rss/search"
-        f"?q={encoded}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
-    )
-
-
 def build_bing_rss_url(keyword: str) -> str:
     encoded = urllib.parse.quote(keyword)
     return f"https://www.bing.com/news/search?q={encoded}&format=RSS&setlang=zh-hans"
@@ -139,11 +133,10 @@ def build_bing_rss_url(keyword: str) -> str:
 
 FEED_SOURCES = []
 for kw in KEYWORDS:
-    FEED_SOURCES.append((f"google:{kw}", build_google_rss_url(kw)))
     FEED_SOURCES.append((f"bing:{kw}", build_bing_rss_url(kw)))
     for site in PRIORITY_SITE_FILTERS:
         scoped_kw = f"{kw} site:{site}"
-        FEED_SOURCES.append((f"google:{kw}:{site}", build_google_rss_url(scoped_kw)))
+        FEED_SOURCES.append((f"bing:{kw}:{site}", build_bing_rss_url(scoped_kw)))
 
 
 def fetch_url(url: str) -> bytes:
@@ -278,6 +271,17 @@ def item_fingerprint(title: str, url: str) -> str:
     return hashlib.sha1(f"{t}|{domain}".encode("utf-8")).hexdigest()
 
 
+def extract_direct_url(link: str) -> str:
+    parsed = urllib.parse.urlparse(link)
+    domain = normalize_domain(link)
+    if domain == "bing.com" and parsed.path.endswith("/news/apiclick.aspx"):
+        qs = urllib.parse.parse_qs(parsed.query)
+        direct = (qs.get("url") or [""])[0].strip()
+        if direct.startswith("http://") or direct.startswith("https://"):
+            return clean_url(direct)
+    return clean_url(link)
+
+
 def parse_feed(feed_name: str, xml_bytes: bytes) -> list[dict]:
     items = []
     try:
@@ -292,6 +296,7 @@ def parse_feed(feed_name: str, xml_bytes: bytes) -> list[dict]:
     for item in channel.findall("item"):
         title = (item.findtext("title") or "").strip()
         link = (item.findtext("link") or "").strip()
+        direct_url = extract_direct_url(link)
         source = ""
 
         source_el = item.find("source")
@@ -299,7 +304,7 @@ def parse_feed(feed_name: str, xml_bytes: bytes) -> list[dict]:
             source = source_el.text.strip()
 
         if not source:
-            source = normalize_domain(link) or feed_name
+            source = normalize_domain(direct_url) or feed_name
 
         pub_date = (item.findtext("pubDate") or "").strip()
         published_at = parse_time_to_iso(pub_date)
@@ -310,7 +315,7 @@ def parse_feed(feed_name: str, xml_bytes: bytes) -> list[dict]:
         items.append(
             {
                 "title": title,
-                "url": clean_url(link),
+                "url": direct_url,
                 "source": source,
                 "published_at": published_at,
                 "feed": feed_name,
