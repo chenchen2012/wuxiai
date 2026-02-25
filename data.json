@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-25T19:02:52.845160+08:00",
+  "updated_at": "2026-02-25T19:03:34.998583+08:00",
   "item_count": 28,
   "items": [
     {
@@ -67,7 +67,7 @@
       "url": "http://www.js.xinhuanet.com/20250728/26d705f2e7584efe8cfc979e377e3dd4/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-07-28T01:00:00+08:00",
-      "feed": "bing:无锡AI:xinhuanet.com",
+      "feed": "bing:无锡 AI:xinhuanet.com",
       "fingerprint": "c0d8fbb5730ba6221cdb290ebc98902f81c9e0b7",
       "domain": "js.xinhuanet.com",
       "trusted": true
@@ -77,7 +77,7 @@
       "url": "http://www.js.xinhuanet.com/20250717/88e8491648c54e81ba2fd568ff560fe2/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-07-17T08:30:00+08:00",
-      "feed": "bing:无锡AI:xinhuanet.com",
+      "feed": "bing:无锡 AI:xinhuanet.com",
       "fingerprint": "0c96865495f1f9dde86b091254e7a856fad426e7",
       "domain": "js.xinhuanet.com",
       "trusted": true
@@ -137,7 +137,7 @@
       "url": "http://www.js.xinhuanet.com/20250217/c3941fc8a1874ef69327138cf6568d8f/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-02-17T00:00:00+08:00",
-      "feed": "bing:无锡AI:xinhuanet.com",
+      "feed": "bing:无锡 AI:xinhuanet.com",
       "fingerprint": "4f9382e2087d68377bfaca1b9fd7a431b095036b",
       "domain": "js.xinhuanet.com",
       "trusted": true
