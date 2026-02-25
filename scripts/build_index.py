@@ -163,11 +163,12 @@ def build_html(items):
         "    a { color: #0b57d0; text-decoration: none; }",
         "    a:hover { text-decoration: underline; }",
         "    .src { color: #666; font-size: 14px; }",
+        "    .contact { margin-top: 24px; padding-top: 12px; border-top: 1px solid #ddd; color: #444; font-size: 14px; }",
         "  </style>",
         "</head>",
         "<body>",
         "  <h1>无锡人工智能新闻</h1>",
-        f"  <p class=\"meta\">自动更新（每2小时），仅提供标题与原文链接。最后更新：{html.escape(now_text)}（北京时间）</p>",
+        f"  <p class=\"meta\">定时更新，仅提供标题与原文链接。最后更新：{html.escape(now_text)}（北京时间）</p>",
     ]
 
     if not items:
@@ -183,6 +184,14 @@ def build_html(items):
                 f'    <li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a><br><span class="src">{source} | {pub_date}</span></li>'
             )
         lines.append("  </ul>")
+
+    lines.extend(
+        [
+            '  <div class="contact">',
+            '    联系方式：chenchen2012 [at] hotmail.com | 微信：359959667（请注明来源） | <a href="/contact.html">联系页面</a> | 友情链接：<a href="https://robot.tv" target="_blank" rel="noopener noreferrer">robot.tv</a>、<a href="https://aild.org" target="_blank" rel="noopener noreferrer">aild.org</a>',
+            "  </div>",
+        ]
+    )
 
     lines.extend(
         [
