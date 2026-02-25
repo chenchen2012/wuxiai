@@ -27,6 +27,7 @@ CACHE_LIMIT = 120
 KEYWORDS = [
     "无锡 人工智能",
     "无锡 AI",
+    "无锡AI",
     "Wuxi AI",
     "无锡 大模型",
 ]
