@@ -2,9 +2,10 @@
 
 这是一个纯静态、纯文字、中文的单页新闻聚合站。
 
-- 数据来源：Google News RSS 关键词 `无锡 人工智能`
+- 数据来源：多源 RSS（Google News + Bing News，多关键词并行抓取）
+- 质量控制：按标题指纹去重、广告关键词过滤、可信媒体优先
 - 展示内容：标题 + 来源 + 时间 + 原文链接
-- 更新方式：GitHub Actions 每 2 小时自动更新 `index.html`
+- 更新方式：GitHub Actions 每 2 小时自动更新 `index.html` 与 `data.json`
 
 ## 本地运行
 
@@ -13,7 +14,7 @@ python3 -m pip install -r requirements.txt
 python3 scripts/build_index.py
 ```
 
-生成文件：`index.html`
+生成文件：`index.html`、`data.json`
 
 ## GitHub Pages 发布
 
@@ -36,4 +37,4 @@ python3 scripts/build_index.py
 ## 说明
 
 - 项目不会转载正文，只做聚合导航。
-- 脚本会尽量解析 Google News 中转链接为原文直链。
+- 脚本会做去重与来源过滤，尽量减少重复和广告内容。
