@@ -14,6 +14,8 @@ from email.utils import parsedate_to_datetime
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT_PATH = os.path.join(ROOT_DIR, "index.html")
 DATA_PATH = os.path.join(ROOT_DIR, "data.json")
+ROBOTS_PATH = os.path.join(ROOT_DIR, "robots.txt")
+SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
 
 CST = timezone(timedelta(hours=8))
 USER_AGENT = "Mozilla/5.0 (compatible; WuxiAINewsBot/2.0; +https://wuxiai.com/)"
@@ -398,7 +400,61 @@ def write_data_json(items: list[dict]) -> None:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
+def write_seo_files(updated_iso: str) -> None:
+    updated_date = updated_iso[:10] if updated_iso else datetime.now(CST).strftime("%Y-%m-%d")
+    robots = "\n".join(
+        [
+            "User-agent: *",
+            "Allow: /",
+            "",
+            "Sitemap: https://wuxiai.com/sitemap.xml",
+            "",
+        ]
+    )
+    sitemap = "\n".join(
+        [
+            '<?xml version="1.0" encoding="UTF-8"?>',
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+            "  <url>",
+            "    <loc>https://wuxiai.com/</loc>",
+            f"    <lastmod>{updated_date}</lastmod>",
+            "    <changefreq>hourly</changefreq>",
+            "    <priority>1.0</priority>",
+            "  </url>",
+            "  <url>",
+            "    <loc>https://wuxiai.com/contact.html</loc>",
+            f"    <lastmod>{updated_date}</lastmod>",
+            "    <changefreq>monthly</changefreq>",
+            "    <priority>0.6</priority>",
+            "  </url>",
+            "</urlset>",
+            "",
+        ]
+    )
+    with open(ROBOTS_PATH, "w", encoding="utf-8") as f:
+        f.write(robots)
+    with open(SITEMAP_PATH, "w", encoding="utf-8") as f:
+        f.write(sitemap)
+
+
 def build_html(items: list[dict]) -> str:
+    now_iso = datetime.now(CST).isoformat()
+    seo_json_ld = json.dumps(
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "无锡AI",
+            "url": "https://wuxiai.com/",
+            "inLanguage": "zh-CN",
+            "description": "无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "无锡AI",
+                "url": "https://wuxiai.com/",
+            },
+        },
+        ensure_ascii=False,
+    )
     display_items = []
     source_counts = {}
     for item in items:
@@ -418,7 +474,22 @@ def build_html(items: list[dict]) -> str:
         '  <meta name="viewport" content="width=device-width, initial-scale=1">',
         '  <meta name="description" content="无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。">',
         '  <meta name="keywords" content="无锡AI新闻, 无锡人工智能新闻, 无锡AI, 无锡人工智能">',
+        '  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
+        '  <meta name="applicable-device" content="pc,mobile">',
+        '  <meta name="renderer" content="webkit">',
+        '  <link rel="canonical" href="https://wuxiai.com/">',
+        '  <meta property="og:type" content="website">',
+        '  <meta property="og:locale" content="zh_CN">',
+        '  <meta property="og:site_name" content="无锡AI">',
+        '  <meta property="og:title" content="无锡AI">',
+        '  <meta property="og:description" content="无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。">',
+        '  <meta property="og:url" content="https://wuxiai.com/">',
+        '  <meta name="twitter:card" content="summary">',
+        '  <meta name="twitter:title" content="无锡AI">',
+        '  <meta name="twitter:description" content="无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。">',
+        f'  <meta property="article:modified_time" content="{html.escape(now_iso)}">',
         "  <title>无锡AI</title>",
+        f'  <script type="application/ld+json">{seo_json_ld}</script>',
         "  <style>",
         "    body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; max-width: 900px; margin: 24px auto; padding: 0 16px; line-height: 1.7; color: #111; }",
         "    h1 { margin: 0 0 8px; font-size: 28px; }",
@@ -432,8 +503,10 @@ def build_html(items: list[dict]) -> str:
         "  </style>",
         "</head>",
         "<body>",
+        "  <main>",
         "  <h1>无锡AI</h1>",
         '  <p class="meta">自动更新，仅提供标题与原文链接。</p>',
+        "  <p>聚合无锡AI新闻、无锡人工智能新闻，重点关注无锡本地人工智能产业、技术与应用动态。</p>",
     ]
 
     if not items:
@@ -455,6 +528,7 @@ def build_html(items: list[dict]) -> str:
             '  <div class="contact">',
             '    <a href="/contact.html">联系方式</a> | 友情链接：<a href="https://robot.tv" target="_blank" rel="noopener noreferrer">robot.tv</a>、<a href="https://aild.org" target="_blank" rel="noopener noreferrer">aild.org</a>',
             "  </div>",
+            "  </main>",
             "</body>",
             "</html>",
             "",
@@ -485,7 +559,9 @@ def collect_items() -> list[dict]:
 
 def main():
     items = collect_items()
+    updated_iso = datetime.now(CST).isoformat()
     write_data_json(items)
+    write_seo_files(updated_iso)
     html_content = build_html(items)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(html_content)
