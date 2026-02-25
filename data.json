@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-26T06:56:10.781022+08:00",
-  "item_count": 20,
+  "updated_at": "2026-02-26T07:06:34.492658+08:00",
+  "item_count": 26,
   "items": [
     {
       "title": "风口已至！“AI+”赛道，宜兴加速跑！",
@@ -10,7 +10,8 @@
       "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "d521bd46b89c12ac08538b16677aec2e33d56812",
       "domain": "thepaper.cn",
-      "trusted": true
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "清华+无锡！AI制药突破登上全球科研顶刊",
@@ -20,147 +21,8 @@
       "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "29723047b9d4b014796889fef39b865cf9a25bb7",
       "domain": "thepaper.cn",
-      "trusted": true
-    },
-    {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
-      "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "30f7b5f32efa6dd8059102cfa3ba2a3002f606e2",
-      "domain": "chinanews.com.cn",
-      "trusted": true
-    },
-    {
-      "title": "市级机关“无锡景•家国情 AI‘尚’无锡”智享汇活动综述",
-      "url": "https://www.thepaper.cn/newsDetail_forward_31745237",
-      "source": "thepaper.cn",
-      "published_at": "2025-10-09T15:49:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "055fd15af7fe0b2c2d743aacf45ea47589a51b4f",
-      "domain": "thepaper.cn",
-      "trusted": true
-    },
-    {
-      "title": "智绘无锡新图景 情融家国大文章——市级机关“无锡景·家国情 AI ...",
-      "url": "http://www.js.xinhuanet.com/20251009/2558a36778944653861b9b3277b64281/c.html",
-      "source": "js.xinhuanet.com",
-      "published_at": "2025-10-09T08:35:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "53ff2be074c828414f2cb7a0f1ed092715df21dc",
-      "domain": "js.xinhuanet.com",
-      "trusted": true
-    },
-    {
-      "title": "首发首秀，无锡有个关于“世界级AI”的梦想～",
-      "url": "https://www.thepaper.cn/newsDetail_forward_31249842",
-      "source": "thepaper.cn",
-      "published_at": "2025-07-28T18:05:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "5be13cc0edca944c82f9c48db254bb78653d97d9",
-      "domain": "thepaper.cn",
-      "trusted": true
-    },
-    {
-      "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
-      "url": "http://www.js.xinhuanet.com/20250717/88e8491648c54e81ba2fd568ff560fe2/c.html",
-      "source": "js.xinhuanet.com",
-      "published_at": "2025-07-17T08:30:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
-      "fingerprint": "0c96865495f1f9dde86b091254e7a856fad426e7",
-      "domain": "js.xinhuanet.com",
-      "trusted": true
-    },
-    {
-      "title": "江苏无锡：干部学AI争做弄潮儿",
-      "url": "http://renshi.people.com.cn/n1/2025/0716/c139617-40522667.html",
-      "source": "renshi.people.com.cn",
-      "published_at": "2025-07-16T09:51:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
-      "fingerprint": "466d86e3b0d583f21a7bfe2f2194201df8551046",
-      "domain": "renshi.people.com.cn",
-      "trusted": true
-    },
-    {
-      "title": "长三角AI生物医药产业联盟在江苏无锡成立",
-      "url": "https://www.chinanews.com.cn/jk/2025/05-16/10416689.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2025-05-16T11:22:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "a8a185ed48c7f9c541abcd9490743f05ee816fe8",
-      "domain": "chinanews.com.cn",
-      "trusted": true
-    },
-    {
-      "title": "中国电信无锡分公司AI加持：天翼云“成就”樱花云",
-      "url": "https://www.thepaper.cn/newsDetail_forward_30473014",
-      "source": "thepaper.cn",
-      "published_at": "2025-03-24T15:07:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "d6da8221087734ff18de74a14a5177ac51cf21a1",
-      "domain": "thepaper.cn",
-      "trusted": true
-    },
-    {
-      "title": "更懂无锡人！“AI政务服务助手”再升级",
-      "url": "https://www.thepaper.cn/newsDetail_forward_30396165",
-      "source": "thepaper.cn",
-      "published_at": "2025-03-14T19:33:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "5e926e28646ae5cc8ececa166c1c3355cae8e325",
-      "domain": "thepaper.cn",
-      "trusted": true
-    },
-    {
-      "title": "AI赋能，无锡突破这项技术瓶颈！",
-      "url": "https://www.thepaper.cn/newsDetail_forward_30362774",
-      "source": "thepaper.cn",
-      "published_at": "2025-03-11T14:48:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "08b878c8389fa9452b4e77d4f4df637681f3d2ae",
-      "domain": "thepaper.cn",
-      "trusted": true
-    },
-    {
-      "title": "无锡打响AI深度赋能工业“发令枪”",
-      "url": "http://www.js.xinhuanet.com/20250217/c3941fc8a1874ef69327138cf6568d8f/c.html",
-      "source": "js.xinhuanet.com",
-      "published_at": "2025-02-17T00:00:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
-      "fingerprint": "4f9382e2087d68377bfaca1b9fd7a431b095036b",
-      "domain": "js.xinhuanet.com",
-      "trusted": true
-    },
-    {
-      "title": "“数字引领·智启新程”首届AI数字人论坛在无锡举办",
-      "url": "https://finance.people.com.cn/n1/2024/1003/c1004-40332781.html",
-      "source": "finance.people.com.cn",
-      "published_at": "2024-10-03T14:28:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
-      "fingerprint": "b0de6eac137e68ba65bbe50c2ce6716ed5812284",
-      "domain": "finance.people.com.cn",
-      "trusted": true
-    },
-    {
-      "title": "生物医药产业规模超两千亿，“物联网之都”无锡欲借AI超车",
-      "url": "https://www.thepaper.cn/newsDetail_forward_27356502",
-      "source": "thepaper.cn",
-      "published_at": "2024-05-13T15:57:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "540a90ce25d5eed77b46cc5fbbe5795b330df95c",
-      "domain": "thepaper.cn",
-      "trusted": true
-    },
-    {
-      "title": "无锡“智变”：从“制造之城”到“AI之城”",
-      "url": "https://news.qq.com/rain/a/20260126A07D3800",
-      "source": "news.qq.com",
-      "published_at": "2026-01-26T22:58:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "1a311ef02d26ac35cf97997ac37567dd2d803458",
-      "domain": "news.qq.com",
-      "trusted": false
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "一人一AI开局创业！无锡首届“创响无锡”全国大学生OPC菁英赛启动",
@@ -170,7 +32,19 @@
       "feed": "bing:无锡 AI",
       "fingerprint": "e10d9cf83b90f71af2c5b860ea6a231baae82520",
       "domain": "yangtse.com",
-      "trusted": false
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "30f7b5f32efa6dd8059102cfa3ba2a3002f606e2",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "江苏无锡：AI赋能人才服务，用工场景迎来“智变”",
@@ -180,7 +54,173 @@
       "feed": "bing:无锡 AI",
       "fingerprint": "518de5e8203651accd2aad157807fc76fe806fc1",
       "domain": "wxrb.com",
-      "trusted": false
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "市级机关“无锡景•家国情 AI‘尚’无锡”智享汇活动综述",
+      "url": "https://www.thepaper.cn/newsDetail_forward_31745237",
+      "source": "thepaper.cn",
+      "published_at": "2025-10-09T15:49:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "055fd15af7fe0b2c2d743aacf45ea47589a51b4f",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "智绘无锡新图景 情融家国大文章——市级机关“无锡景·家国情 AI ...",
+      "url": "http://www.js.xinhuanet.com/20251009/2558a36778944653861b9b3277b64281/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2025-10-09T08:35:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "53ff2be074c828414f2cb7a0f1ed092715df21dc",
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "首发首秀，无锡有个关于“世界级AI”的梦想～",
+      "url": "https://www.thepaper.cn/newsDetail_forward_31249842",
+      "source": "thepaper.cn",
+      "published_at": "2025-07-28T18:05:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "5be13cc0edca944c82f9c48db254bb78653d97d9",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
+      "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
+      "source": "wxrb.com",
+      "published_at": "2025-07-17T14:35:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "bba37ba6a4fa3370e6df719e498454261a6f052a",
+      "domain": "wxrb.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
+      "url": "http://www.js.xinhuanet.com/20250717/88e8491648c54e81ba2fd568ff560fe2/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2025-07-17T08:30:00+08:00",
+      "feed": "bing:无锡 AI:xinhuanet.com",
+      "fingerprint": "0c96865495f1f9dde86b091254e7a856fad426e7",
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "江苏无锡：干部学AI争做弄潮儿",
+      "url": "http://renshi.people.com.cn/n1/2025/0716/c139617-40522667.html",
+      "source": "renshi.people.com.cn",
+      "published_at": "2025-07-16T09:51:00+08:00",
+      "feed": "bing:无锡 AI:people.com.cn",
+      "fingerprint": "466d86e3b0d583f21a7bfe2f2194201df8551046",
+      "domain": "renshi.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "长三角AI生物医药产业联盟在江苏无锡成立",
+      "url": "https://www.chinanews.com.cn/jk/2025/05-16/10416689.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2025-05-16T11:22:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "a8a185ed48c7f9c541abcd9490743f05ee816fe8",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "中国电信无锡分公司AI加持：天翼云“成就”樱花云",
+      "url": "https://www.thepaper.cn/newsDetail_forward_30473014",
+      "source": "thepaper.cn",
+      "published_at": "2025-03-24T15:07:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "d6da8221087734ff18de74a14a5177ac51cf21a1",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "更懂无锡人！“AI政务服务助手”再升级",
+      "url": "https://www.thepaper.cn/newsDetail_forward_30396165",
+      "source": "thepaper.cn",
+      "published_at": "2025-03-14T19:33:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "5e926e28646ae5cc8ececa166c1c3355cae8e325",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "AI赋能，无锡突破这项技术瓶颈！",
+      "url": "https://www.thepaper.cn/newsDetail_forward_30362774",
+      "source": "thepaper.cn",
+      "published_at": "2025-03-11T14:48:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "08b878c8389fa9452b4e77d4f4df637681f3d2ae",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡打响AI深度赋能工业“发令枪”",
+      "url": "http://www.js.xinhuanet.com/20250217/c3941fc8a1874ef69327138cf6568d8f/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2025-02-17T00:00:00+08:00",
+      "feed": "bing:无锡 AI:xinhuanet.com",
+      "fingerprint": "4f9382e2087d68377bfaca1b9fd7a431b095036b",
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "“数字引领·智启新程”首届AI数字人论坛在无锡举办",
+      "url": "https://finance.people.com.cn/n1/2024/1003/c1004-40332781.html",
+      "source": "finance.people.com.cn",
+      "published_at": "2024-10-03T14:28:00+08:00",
+      "feed": "bing:无锡 AI:people.com.cn",
+      "fingerprint": "b0de6eac137e68ba65bbe50c2ce6716ed5812284",
+      "domain": "finance.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "生物医药产业规模超两千亿，“物联网之都”无锡欲借AI超车",
+      "url": "https://www.thepaper.cn/newsDetail_forward_27356502",
+      "source": "thepaper.cn",
+      "published_at": "2024-05-13T15:57:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "540a90ce25d5eed77b46cc5fbbe5795b330df95c",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡：加快推动算力发展 铸强数字经济“新引擎”",
+      "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2024-01-19T00:00:00+08:00",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "fingerprint": "8a3655f7c33fca89cbf75bb5be0e93a2c56dba60",
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡“智变”：从“制造之城”到“AI之城”",
+      "url": "https://news.qq.com/rain/a/20260126A07D3800",
+      "source": "news.qq.com",
+      "published_at": "2026-01-26T22:58:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "1a311ef02d26ac35cf97997ac37567dd2d803458",
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "“AI赋能·智联世界”城市形象国际传播（无锡）论坛成功举办",
@@ -190,7 +230,8 @@
       "feed": "bing:无锡 AI",
       "fingerprint": "4f9ee71efb7ba20326c70289efcf097264e6c3b7",
       "domain": "news.qq.com",
-      "trusted": false
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "智绘无锡新图景 情融家国大文章——市级机关“无锡景•家国情 AI ...",
@@ -200,7 +241,52 @@
       "feed": "bing:无锡 AI",
       "fingerprint": "eb6dfce0eee25fd9219c51fd9e8af159806c4de0",
       "domain": "finance.sina.com.cn",
-      "trusted": false
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "长三角人工智能暗战：无锡正在打造“应用第一城”",
+      "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
+      "source": "view.inews.qq.com",
+      "published_at": "2025-06-24T08:10:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "a8bf154d76402f8fa8b00234d30c8b141d00bd34",
+      "domain": "view.inews.qq.com",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "江苏无锡：AI赋能 人工智能产业逐浪前行",
+      "url": "https://finance.sina.com.cn/roll/2025-04-18/doc-inetqeau4914927.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2025-04-18T10:26:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "6af08bbe58f6bce1b9e2b7b319db859df8ce3b73",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "太湖亿芯智算中心部署DeepSeek，助力无锡高新区加快AI产业布局",
+      "url": "https://js.ifeng.com/c/8gpddHldBNF",
+      "source": "js.ifeng.com",
+      "published_at": "2025-02-09T16:29:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "3509f7033b9dd601eb4151fbac716cb543384803",
+      "domain": "js.ifeng.com",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "无锡：“圈数字化、圈AI”，又一次擦亮产业链",
+      "url": "https://news.sina.com.cn/sx/2023-10-30/detail-imzswvsh3709074.shtml",
+      "source": "news.sina.com.cn",
+      "published_at": "2023-10-30T19:04:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "54eaa7ceb09241329d8b287e3acc80d97cc2fa89",
+      "domain": "news.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
     }
   ]
 }

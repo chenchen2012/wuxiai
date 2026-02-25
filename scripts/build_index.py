@@ -40,15 +40,27 @@ KEYWORDS = [
 
 TRUSTED_DOMAINS = [
     "xinhuanet.com",
+    "news.cn",
     "chinanews.com.cn",
     "thepaper.cn",
     "people.com.cn",
-    "xhby.net",
     "cctv.com",
+    "cnr.cn",
+    "china.com.cn",
+    "gmw.cn",
+    "ce.cn",
+    "cyol.com",
+    "paper.people.com.cn",
+    "xhby.net",
     "yzwb.net",
     "wuxi.gov.cn",
     "jiangsu.gov.cn",
     "news.jiangnan.edu.cn",
+    "jschina.com.cn",
+    "wxrb.com",
+    "yangtse.com",
+    "jstv.com",
+    "china.org.cn",
 ]
 
 PRIORITY_SITE_FILTERS = [
@@ -67,20 +79,37 @@ GOOGLE_SITE_FILTERS = PRIORITY_SITE_FILTERS + [
 BLOCKED_DOMAINS = [
     "news.google.com",
     "bing.com",
-    "toutiao.com",
     "sohu.com",
     "163.com",
+    "toutiao.com",
+]
+
+QUALIFIED_NEWS_DOMAINS = [
+    "news.qq.com",
+    "view.inews.qq.com",
+    "finance.sina.com.cn",
+    "news.sina.com.cn",
+    "ifeng.com",
+    "caixin.com",
+    "stcn.com",
 ]
 
 TRUSTED_SOURCE_KEYWORDS = [
     "新华网",
-    "人民网",
     "中国新闻网",
+    "央视网",
+    "央广网",
+    "光明网",
+    "中国网",
+    "经济日报",
+    "中国青年报",
+    "人民网",
     "澎湃",
     "新华报业网",
     "紫牛新闻",
     "江南大学新闻网",
-    "央视网",
+    "无锡日报",
+    "无锡观察",
 ]
 
 BLOCKED_SOURCE_KEYWORDS = [
@@ -136,6 +165,11 @@ AI_TOPIC_KEYWORDS = [
     "算法",
 ]
 
+AUTHORITATIVE_DOMAIN_SUFFIXES = (
+    ".gov.cn",
+    ".edu.cn",
+)
+
 
 def build_bing_rss_url(keyword: str) -> str:
     encoded = urllib.parse.quote(keyword)
@@ -186,6 +220,10 @@ def is_trusted_domain(domain: str) -> bool:
     return any(domain_matches(domain, pattern) for pattern in TRUSTED_DOMAINS)
 
 
+def is_qualified_news_domain(domain: str) -> bool:
+    return any(domain_matches(domain, pattern) for pattern in QUALIFIED_NEWS_DOMAINS)
+
+
 def is_blocked_domain(domain: str) -> bool:
     return any(domain_matches(domain, pattern) for pattern in BLOCKED_DOMAINS)
 
@@ -198,6 +236,28 @@ def is_ad_title(title: str) -> bool:
 def is_trusted_source(source: str) -> bool:
     s = (source or "").strip()
     return any(k in s for k in TRUSTED_SOURCE_KEYWORDS)
+
+
+def is_authoritative_channel(domain: str, source: str) -> bool:
+    if not domain:
+        return False
+    if domain.endswith(AUTHORITATIVE_DOMAIN_SUFFIXES):
+        return True
+    return (
+        is_trusted_domain(domain)
+        or is_trusted_source(source)
+        or is_qualified_news_domain(domain)
+    )
+
+
+def source_tier(domain: str, source: str) -> int:
+    if domain.endswith(AUTHORITATIVE_DOMAIN_SUFFIXES):
+        return 3
+    if is_trusted_domain(domain) or is_trusted_source(source):
+        return 2
+    if is_qualified_news_domain(domain):
+        return 1
+    return 0
 
 
 def is_blocked_source(source: str) -> bool:
@@ -453,6 +513,8 @@ def dedupe_items(items: list[dict]) -> list[dict]:
             continue
         if not domain or is_blocked_domain(domain) or is_blocked_source(source):
             continue
+        if not is_authoritative_channel(domain, source):
+            continue
         if is_ad_title(title):
             continue
         if not is_relevant(item):
@@ -465,6 +527,7 @@ def dedupe_items(items: list[dict]) -> list[dict]:
         item["url"] = url
         item["domain"] = domain
         item["trusted"] = is_trusted_domain(domain) or is_trusted_source(source)
+        item["source_tier"] = source_tier(domain, source)
 
         if url in seen_urls:
             continue
@@ -482,7 +545,11 @@ def dedupe_items(items: list[dict]) -> list[dict]:
 
     deduped = list(by_fp.values())
     deduped.sort(
-        key=lambda x: (1 if x.get("trusted") else 0, x.get("published_at", "")),
+        key=lambda x: (
+            int(x.get("source_tier", 0)),
+            1 if x.get("trusted") else 0,
+            x.get("published_at", ""),
+        ),
         reverse=True,
     )
     return deduped
