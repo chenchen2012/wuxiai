@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-25T23:09:59.483554+08:00",
-  "item_count": 29,
+  "updated_at": "2026-02-26T01:18:35.010355+08:00",
+  "item_count": 30,
   "items": [
     {
       "title": "风口已至！“AI+”赛道，宜兴加速跑！",
@@ -47,7 +47,7 @@
       "url": "http://www.js.xinhuanet.com/20251009/2558a36778944653861b9b3277b64281/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-10-09T08:35:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
+      "feed": "bing:无锡 AI",
       "fingerprint": "53ff2be074c828414f2cb7a0f1ed092715df21dc",
       "domain": "js.xinhuanet.com",
       "trusted": true
@@ -279,6 +279,16 @@
       "published_at": "2025-02-09T16:29:00+08:00",
       "feed": "bing:无锡AI",
       "fingerprint": "3509f7033b9dd601eb4151fbac716cb543384803",
+      "domain": "js.ifeng.com",
+      "trusted": false
+    },
+    {
+      "title": "无锡滨湖区：携手清华创新之力 共启AI发展新篇",
+      "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
+      "source": "js.ifeng.com",
+      "published_at": "2024-06-06T14:12:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "0102ef9f02b6713a6367da3043834e5435370973",
       "domain": "js.ifeng.com",
       "trusted": false
     },
