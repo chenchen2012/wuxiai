@@ -4,6 +4,8 @@ import html
 import json
 import os
 import re
+import subprocess
+import sys
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -20,11 +22,13 @@ SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
 CST = timezone(timedelta(hours=8))
 USER_AGENT = "Mozilla/5.0 (compatible; WuxiAINewsBot/2.0; +https://wuxiai.com/)"
 FETCH_TIMEOUT_SECONDS = 10
+DECODE_TIMEOUT_SECONDS = 2.2
 MAX_WORKERS = 8
 MAX_ITEMS = 12
 MAX_PER_SOURCE_ON_PAGE = 3
 MAX_PER_FEED = 20
 CACHE_LIMIT = 120
+MAX_GOOGLE_DECODE_ITEMS = 120
 
 KEYWORDS = [
     "无锡 人工智能",
@@ -54,6 +58,10 @@ PRIORITY_SITE_FILTERS = [
     "people.com.cn",
     "xhby.net",
     "yzwb.net",
+]
+
+GOOGLE_SITE_FILTERS = PRIORITY_SITE_FILTERS + [
+    "sina.cn",
 ]
 
 BLOCKED_DOMAINS = [
@@ -134,12 +142,24 @@ def build_bing_rss_url(keyword: str) -> str:
     return f"https://www.bing.com/news/search?q={encoded}&format=RSS&setlang=zh-hans"
 
 
+def build_google_rss_url(keyword: str) -> str:
+    encoded = urllib.parse.quote(keyword)
+    return (
+        "https://news.google.com/rss/search"
+        f"?q={encoded}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    )
+
+
 FEED_SOURCES = []
 for kw in KEYWORDS:
     FEED_SOURCES.append((f"bing:{kw}", build_bing_rss_url(kw)))
+    FEED_SOURCES.append((f"google:{kw}", build_google_rss_url(kw)))
     for site in PRIORITY_SITE_FILTERS:
         scoped_kw = f"{kw} site:{site}"
         FEED_SOURCES.append((f"bing:{kw}:{site}", build_bing_rss_url(scoped_kw)))
+    for site in GOOGLE_SITE_FILTERS:
+        scoped_kw = f"{kw} site:{site}"
+        FEED_SOURCES.append((f"google:{kw}:{site}", build_google_rss_url(scoped_kw)))
 
 
 def fetch_url(url: str) -> bytes:
@@ -283,6 +303,84 @@ def extract_direct_url(link: str) -> str:
         if direct.startswith("http://") or direct.startswith("https://"):
             return clean_url(direct)
     return clean_url(link)
+
+
+def is_google_news_domain(domain: str) -> bool:
+    return domain == "news.google.com" or domain.endswith(".news.google.com")
+
+
+def decode_google_news_url(url: str) -> str:
+    code = (
+        "from googlenewsdecoder import new_decoderv1; import json,sys; "
+        "u=sys.argv[1]; "
+        "r=new_decoderv1(u, interval=0); "
+        "print(json.dumps(r, ensure_ascii=False))"
+    )
+    try:
+        proc = subprocess.run(
+            [sys.executable, "-c", code, url],
+            capture_output=True,
+            text=True,
+            timeout=DECODE_TIMEOUT_SECONDS,
+            check=False,
+        )
+    except Exception:
+        return ""
+    if proc.returncode != 0 or not proc.stdout.strip():
+        return ""
+    try:
+        payload = json.loads(proc.stdout.strip())
+    except json.JSONDecodeError:
+        return ""
+    decoded = clean_url(str((payload or {}).get("decoded_url", "")).strip())
+    if decoded.startswith("http://") or decoded.startswith("https://"):
+        return decoded
+    return ""
+
+
+def resolve_google_links(items: list[dict]) -> list[dict]:
+    candidate_indexes = []
+    for idx, item in enumerate(items):
+        domain = normalize_domain(str(item.get("url", "")))
+        if is_google_news_domain(domain):
+            candidate_indexes.append(idx)
+            if len(candidate_indexes) >= MAX_GOOGLE_DECODE_ITEMS:
+                break
+
+    if not candidate_indexes:
+        return items
+
+    updates = {}
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_map = {
+            executor.submit(decode_google_news_url, str(items[idx].get("url", ""))): idx
+            for idx in candidate_indexes
+        }
+        for future in as_completed(future_map):
+            idx = future_map[future]
+            try:
+                decoded = future.result()
+            except Exception:
+                continue
+            if not decoded:
+                continue
+            updates[idx] = decoded
+
+    if not updates:
+        return items
+
+    resolved = []
+    for idx, item in enumerate(items):
+        if idx not in updates:
+            resolved.append(item)
+            continue
+        cloned = dict(item)
+        decoded_url = updates[idx]
+        cloned["url"] = decoded_url
+        if normalize_domain(str(cloned.get("source", ""))) in {"", "news.google.com"}:
+            cloned["source"] = normalize_domain(decoded_url) or cloned.get("source", "")
+        resolved.append(cloned)
+    return resolved
 
 
 def parse_feed(feed_name: str, xml_bytes: bytes) -> list[dict]:
@@ -563,7 +661,8 @@ def collect_items() -> list[dict]:
             raw_items.extend(parse_feed(name, xml_bytes))
 
     existing = load_existing_items()
-    merged = dedupe_items(raw_items + existing)
+    merged = resolve_google_links(raw_items + existing)
+    merged = dedupe_items(merged)
     return merged[:CACHE_LIMIT]
 
 
