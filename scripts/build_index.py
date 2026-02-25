@@ -416,7 +416,7 @@ def build_html(items: list[dict]) -> str:
         "<head>",
         '  <meta charset="utf-8">',
         '  <meta name="viewport" content="width=device-width, initial-scale=1">',
-        "  <title>无锡AI新闻</title>",
+        "  <title>无锡AI</title>",
         "  <style>",
         "    body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; max-width: 900px; margin: 24px auto; padding: 0 16px; line-height: 1.7; color: #111; }",
         "    h1 { margin: 0 0 8px; font-size: 28px; }",
@@ -430,7 +430,7 @@ def build_html(items: list[dict]) -> str:
         "  </style>",
         "</head>",
         "<body>",
-        "  <h1>无锡AI新闻</h1>",
+        "  <h1>无锡AI</h1>",
         '  <p class="meta">自动更新，仅提供标题与原文链接。</p>',
     ]
 
