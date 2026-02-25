@@ -445,7 +445,7 @@ def build_html(items: list[dict]) -> str:
     lines.extend(
         [
             '  <div class="contact">',
-            '    联系方式：chenchen2012 [at] hotmail.com | 微信：359959667（请注明来源） | <a href="/contact.html">联系页面</a> | 友情链接：<a href="https://robot.tv" target="_blank" rel="noopener noreferrer">robot.tv</a>、<a href="https://aild.org" target="_blank" rel="noopener noreferrer">aild.org</a>',
+            '    <a href="/contact.html">联系方式</a> | 友情链接：<a href="https://robot.tv" target="_blank" rel="noopener noreferrer">robot.tv</a>、<a href="https://aild.org" target="_blank" rel="noopener noreferrer">aild.org</a>',
             "  </div>",
             "</body>",
             "</html>",
