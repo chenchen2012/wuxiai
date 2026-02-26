@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T01:17:46.177095+08:00",
+  "updated_at": "2026-02-27T03:10:15.349521+08:00",
   "item_count": 75,
   "items": [
     {
@@ -91,17 +91,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
-      "source": "xhby.net",
-      "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "b438b960222d5869cd4ead1f0e5f2ca17da7e1f6",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
       "source": "yzwb.net",
@@ -109,6 +98,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "4d3886fb971e63acc0de0d8619a7f774d8e8eda5",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
+      "source": "xhby.net",
+      "published_at": "2026-01-26T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "b438b960222d5869cd4ead1f0e5f2ca17da7e1f6",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -150,7 +150,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "2905b7e59cdfe5d598308a531c2d913abc950056",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -172,7 +172,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
       "published_at": "2026-01-04T14:27:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "de3f7417ed8fcd73714faad866c7131528afc9ea",
       "domain": "yangtse.com",
       "trusted": true,
@@ -216,7 +216,7 @@
       "url": "http://www.js.xinhuanet.com/20251112/d79589992e0f40429c9db59a2089312b/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-11-11T23:59:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
+      "feed": "bing:无锡AI:xinhuanet.com",
       "fingerprint": "67d9fbc1be9459841a2666e5efe1e750268ab413",
       "domain": "js.xinhuanet.com",
       "trusted": true,
@@ -260,7 +260,7 @@
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202510/t20251027_282237.html",
       "source": "yzwb.net",
       "published_at": "2025-10-27T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "a17e0e4a6549983a930d6de65f74e25d8b8b3ecd",
       "domain": "yzwb.net",
       "trusted": true,
@@ -711,7 +711,7 @@
       "url": "https://finance.sina.com.cn/roll/2026-01-14/doc-inhhfmkx5300068.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-01-14T06:14:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "b9ace163c508476f2d0288bed071daa20dc3e429",
       "domain": "finance.sina.com.cn",
       "trusted": false,
