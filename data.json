@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-26T23:06:21.236259+08:00",
+  "updated_at": "2026-02-27T01:17:46.177095+08:00",
   "item_count": 75,
   "items": [
     {
@@ -91,17 +91,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
-      "source": "yzwb.net",
-      "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "4d3886fb971e63acc0de0d8619a7f774d8e8eda5",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
       "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
       "source": "xhby.net",
@@ -109,6 +98,17 @@
       "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "b438b960222d5869cd4ead1f0e5f2ca17da7e1f6",
       "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
+      "source": "yzwb.net",
+      "published_at": "2026-01-26T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "4d3886fb971e63acc0de0d8619a7f774d8e8eda5",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -656,7 +656,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "8a3655f7c33fca89cbf75bb5be0e93a2c56dba60",
       "domain": "js.xinhuanet.com",
       "trusted": true,
