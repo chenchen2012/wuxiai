@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T03:10:15.349521+08:00",
+  "updated_at": "2026-02-27T04:56:01.496020+08:00",
   "item_count": 75,
   "items": [
     {
@@ -128,7 +128,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "e10d9cf83b90f71af2c5b860ea6a231baae82520",
       "domain": "yangtse.com",
       "trusted": true,
@@ -238,7 +238,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "518de5e8203651accd2aad157807fc76fe806fc1",
       "domain": "wxrb.com",
       "trusted": true,
@@ -656,7 +656,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "8a3655f7c33fca89cbf75bb5be0e93a2c56dba60",
       "domain": "js.xinhuanet.com",
       "trusted": true,
@@ -711,7 +711,7 @@
       "url": "https://finance.sina.com.cn/roll/2026-01-14/doc-inhhfmkx5300068.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-01-14T06:14:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "b9ace163c508476f2d0288bed071daa20dc3e429",
       "domain": "finance.sina.com.cn",
       "trusted": false,
