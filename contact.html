@@ -35,6 +35,30 @@
     }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .contact-form { display: grid; gap: 12px; margin-top: 12px; }
+    .contact-form label { display: grid; gap: 6px; font-size: 14px; color: #374151; }
+    .contact-form input, .contact-form textarea {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font: inherit;
+      color: var(--text);
+      background: #fff;
+    }
+    .contact-form textarea { min-height: 130px; resize: vertical; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+    .btn {
+      display: inline-block;
+      border-radius: 10px;
+      border: 1px solid var(--brand);
+      padding: 9px 14px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn-primary { background: var(--brand); color: #fff; }
+    .btn-ghost { background: #fff; color: var(--brand); }
+    .hidden-field { position: absolute; left: -5000px; }
     .home { margin-top: 16px; font-size: 14px; color: var(--muted); }
   </style>
 </head>
@@ -42,8 +66,31 @@
   <main>
   <h1>联系方式</h1>
   <div class="card">
-    <p>如需联系，请发送邮件到：</p>
-    <p>chenchen2012 [at] hotmail.com</p>
+    <p>请填写下面表单，消息会直接发送到我们的邮箱。</p>
+    <form name="wuxiai-contact" method="POST" action="https://formsubmit.co/chenchen2012@hotmail.com" class="contact-form">
+      <input type="hidden" name="_next" value="https://wuxiai.com/contact.html">
+      <input type="hidden" name="_subject" value="wuxiai.com 联系表单提交">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+
+      <label>
+        姓名
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        邮箱
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        留言内容
+        <textarea name="message" placeholder="请填写你的问题或合作需求..." required></textarea>
+      </label>
+
+      <div class="actions">
+        <button type="submit" class="btn btn-primary">提交信息</button>
+        <a class="btn btn-ghost" href="mailto:chenchen2012@hotmail.com?subject=wuxiai%20contact">直接发邮件</a>
+      </div>
+    </form>
   </div>
   <p class="home"><a href="/">返回首页</a></p>
   </main>
