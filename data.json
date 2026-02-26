@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-26T13:35:16.018408+08:00",
-  "item_count": 68,
+  "updated_at": "2026-02-26T15:15:48.586222+08:00",
+  "item_count": 70,
   "items": [
     {
       "title": "江苏无锡：全域协同推进人工智能+教育 - nju.edu.cn",
@@ -80,17 +80,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
-      "source": "xhby.net",
-      "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "b438b960222d5869cd4ead1f0e5f2ca17da7e1f6",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
       "source": "yzwb.net",
@@ -98,6 +87,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "4d3886fb971e63acc0de0d8619a7f774d8e8eda5",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
+      "source": "xhby.net",
+      "published_at": "2026-01-26T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "b438b960222d5869cd4ead1f0e5f2ca17da7e1f6",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -623,7 +623,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "8a3655f7c33fca89cbf75bb5be0e93a2c56dba60",
       "domain": "js.xinhuanet.com",
       "trusted": true,
@@ -639,6 +639,17 @@
       "domain": "js.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
+    },
+    {
+      "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市 - 新浪财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-02-22/doc-inhnrnnx8526849.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-02-22T04:16:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "d168d7c70cf2ef472be5845e3e117fa075895e2b",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "无锡“智变”：从“制造之城”到“AI之城”",
@@ -669,6 +680,17 @@
       "published_at": "2025-10-09T16:21:00+08:00",
       "feed": "bing:无锡 AI",
       "fingerprint": "eb6dfce0eee25fd9219c51fd9e8af159806c4de0",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
+      "url": "https://finance.sina.com.cn/roll/2025-07-17/doc-inffukxq0166551.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2025-07-17T17:49:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "db2c91c0c1d2c5d7ccf3400ec11a489400b52151",
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
