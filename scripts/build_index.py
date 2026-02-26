@@ -699,7 +699,7 @@ def build_html(items: list[dict]) -> str:
     lines.extend(
         [
             '  <div class="contact">',
-            '    <div class="footer-nav"><span><span class="footer-label">联系</span><a href="/contact.html">联系方式</a></span><span><a href="https://aild.org/zh/" target="_blank" rel="noopener noreferrer">版权所有：人工智能领导力与发展研究院（AILD）</a></span></div>',
+            '    <div class="footer-nav"><span><a href="/contact.html">联系方式</a></span><span><a href="https://aild.org/zh/" target="_blank" rel="noopener noreferrer">版权所有：人工智能领导力与发展研究院（AILD）</a></span></div>',
             "  </div>",
             "  </section>",
             "  </main>",
