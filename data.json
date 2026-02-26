@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-26T21:43:44.047311+08:00",
-  "item_count": 74,
+  "updated_at": "2026-02-26T23:06:21.236259+08:00",
+  "item_count": 75,
   "items": [
     {
       "title": "江苏无锡：全域协同推进人工智能+教育 - nju.edu.cn",
@@ -128,7 +128,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "e10d9cf83b90f71af2c5b860ea6a231baae82520",
       "domain": "yangtse.com",
       "trusted": true,
@@ -172,7 +172,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
       "published_at": "2026-01-04T14:27:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "de3f7417ed8fcd73714faad866c7131528afc9ea",
       "domain": "yangtse.com",
       "trusted": true,
@@ -238,7 +238,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "518de5e8203651accd2aad157807fc76fe806fc1",
       "domain": "wxrb.com",
       "trusted": true,
@@ -692,6 +692,17 @@
       "feed": "bing:无锡 AI",
       "fingerprint": "1a311ef02d26ac35cf97997ac37567dd2d803458",
       "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "全省第二！无锡3款AI医疗产品入选",
+      "url": "https://finance.sina.com.cn/roll/2026-01-18/doc-inhhsmvf9126581.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-01-18T05:50:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "184b4817814460137ee5b1ab56092e359453b5c9",
+      "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
     },
