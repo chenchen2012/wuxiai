@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-26T19:06:44.425305+08:00",
-  "item_count": 73,
+  "updated_at": "2026-02-26T21:43:44.047311+08:00",
+  "item_count": 74,
   "items": [
     {
       "title": "江苏无锡：全域协同推进人工智能+教育 - nju.edu.cn",
@@ -32,6 +32,17 @@
       "feed": "google:无锡 人工智能:thepaper.cn",
       "fingerprint": "e60154b5378614b72c56d115953dba99e0748c10",
       "domain": "m.thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市",
+      "url": "https://www.thepaper.cn/detail/32616268",
+      "source": "thepaper.cn",
+      "published_at": "2026-02-22T04:14:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "a6420f07e10f15be08041b5003f63d3226a4b4cc",
+      "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
