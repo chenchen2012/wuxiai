@@ -672,7 +672,6 @@ def build_html(items: list[dict]) -> str:
         "    .contact { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); color: #4b5563; font-size: 14px; }",
         "    .footer-nav { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }",
         "    .footer-label { color: #6b7280; margin-right: 6px; }",
-        "    .friend-links { display: inline-flex; gap: 10px; }",
         "  </style>",
         "</head>",
         "<body>",
@@ -700,7 +699,7 @@ def build_html(items: list[dict]) -> str:
     lines.extend(
         [
             '  <div class="contact">',
-            '    <div class="footer-nav"><span><span class="footer-label">联系</span><a href="/contact.html">联系方式</a></span><span><span class="footer-label">友情链接</span><span class="friend-links"><a href="https://robot.tv" target="_blank" rel="noopener noreferrer">robot.tv</a><a href="https://aild.org" target="_blank" rel="noopener noreferrer">aild.org</a></span></span></div>',
+            '    <div class="footer-nav"><span><span class="footer-label">联系</span><a href="/contact.html">联系方式</a></span><span><a href="https://aild.org/zh/" target="_blank" rel="noopener noreferrer">版权所有：人工智能领导力与发展研究院（AILD）</a></span></div>',
             "  </div>",
             "  </section>",
             "  </main>",

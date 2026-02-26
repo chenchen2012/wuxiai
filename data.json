@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-26T07:06:34.492658+08:00",
-  "item_count": 26,
+  "updated_at": "2026-02-26T09:14:05.515793+08:00",
+  "item_count": 27,
   "items": [
     {
       "title": "风口已至！“AI+”赛道，宜兴加速跑！",
@@ -191,7 +191,7 @@
     },
     {
       "title": "生物医药产业规模超两千亿，“物联网之都”无锡欲借AI超车",
-      "url": "https://www.thepaper.cn/newsDetail_forward_27356502",
+      "url": "https://www.thepaper.cn/newsDetail_forward_27356502?commTag=true",
       "source": "thepaper.cn",
       "published_at": "2024-05-13T15:57:00+08:00",
       "feed": "bing:无锡 AI:thepaper.cn",
@@ -205,7 +205,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "8a3655f7c33fca89cbf75bb5be0e93a2c56dba60",
       "domain": "js.xinhuanet.com",
       "trusted": true,
@@ -252,6 +252,17 @@
       "feed": "bing:无锡AI",
       "fingerprint": "a8bf154d76402f8fa8b00234d30c8b141d00bd34",
       "domain": "view.inews.qq.com",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "无锡滨湖区：以AI“智”创未来",
+      "url": "https://news.qq.com/rain/a/20250614A034CM00",
+      "source": "news.qq.com",
+      "published_at": "2025-06-14T11:41:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "817043078fa84ce6556379b4aa80f023253615dc",
+      "domain": "news.qq.com",
       "trusted": false,
       "source_tier": 1
     },
