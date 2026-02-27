@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T13:20:19.646914+08:00",
+  "updated_at": "2026-02-27T15:13:10.445214+08:00",
   "item_count": 65,
   "items": [
     {
@@ -128,7 +128,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
       "published_at": "2026-01-04T14:27:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yangtse.com",
       "trusted": true,
@@ -216,7 +216,7 @@
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202510/t20251027_282237.html",
       "source": "yzwb.net",
       "published_at": "2025-10-27T15:00:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "e92e9335d3650b4c2a79b77de42547ede9c6653a",
       "domain": "yzwb.net",
       "trusted": true,
