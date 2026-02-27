@@ -11,6 +11,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
+from difflib import SequenceMatcher
 from email.utils import parsedate_to_datetime
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -355,6 +356,22 @@ def item_fingerprint(title: str, url: str) -> str:
     return hashlib.sha1(t.encode("utf-8")).hexdigest()
 
 
+def titles_are_near_duplicate(a: str, b: str) -> bool:
+    ta = normalize_title(a)
+    tb = normalize_title(b)
+    if not ta or not tb:
+        return False
+    if ta == tb:
+        return True
+    if ta in tb or tb in ta:
+        shorter = min(len(ta), len(tb))
+        longer = max(len(ta), len(tb))
+        if shorter >= 10 and shorter / max(longer, 1) >= 0.72:
+            return True
+    ratio = SequenceMatcher(None, ta, tb).ratio()
+    return ratio >= 0.84
+
+
 def extract_direct_url(link: str) -> str:
     parsed = urllib.parse.urlparse(link)
     domain = normalize_domain(link)
@@ -551,6 +568,34 @@ def dedupe_items(items: list[dict]) -> list[dict]:
             by_fp[fp] = item
 
     deduped = list(by_fp.values())
+
+    # Fuzzy pass: merge near-duplicate rewrites of the same story title.
+    merged = []
+    for item in deduped:
+        found_idx = None
+        for i, existing in enumerate(merged):
+            if titles_are_near_duplicate(
+                str(item.get("title", "")), str(existing.get("title", ""))
+            ):
+                found_idx = i
+                break
+        if found_idx is None:
+            merged.append(item)
+            continue
+
+        prev = merged[found_idx]
+        prev_time = str(prev.get("published_at", ""))
+        cur_time = str(item.get("published_at", ""))
+        prev_tier = int(prev.get("source_tier", 0))
+        cur_tier = int(item.get("source_tier", 0))
+        prev_trusted = 1 if prev.get("trusted") else 0
+        cur_trusted = 1 if item.get("trusted") else 0
+        prev_score = (prev_tier, prev_trusted, prev_time)
+        cur_score = (cur_tier, cur_trusted, cur_time)
+        if cur_score > prev_score:
+            merged[found_idx] = item
+
+    deduped = merged
     # Homepage should be strictly freshness-first: newest items at the top.
     deduped.sort(
         key=lambda x: (

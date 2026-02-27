@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-27T10:08:37.780039+08:00",
-  "item_count": 65,
+  "updated_at": "2026-02-27T10:11:14.158238+08:00",
+  "item_count": 64,
   "items": [
     {
       "title": "组队上岗！春晚同款机器人空降无锡！? - thepaper.cn",
@@ -80,17 +80,6 @@
       "source_tier": 1
     },
     {
-      "title": "清华+无锡，AI制药突破登上全球顶刊",
-      "url": "https://finance.sina.com.cn/roll/2026-01-14/doc-inhhfmkx5300068.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-01-14T06:14:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "7c90fa9dbca70bcc7cbc43eafd098087bbf88c64",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
       "title": "清华+无锡！AI制药突破登上全球科研顶刊",
       "url": "https://www.thepaper.cn/newsDetail_forward_32374723",
       "source": "thepaper.cn",
@@ -106,7 +95,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
@@ -139,7 +128,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
       "published_at": "2026-01-04T14:27:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yangtse.com",
       "trusted": true,
@@ -183,7 +172,7 @@
       "url": "http://www.js.xinhuanet.com/20251112/d79589992e0f40429c9db59a2089312b/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-11-11T23:59:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
+      "feed": "bing:无锡AI:xinhuanet.com",
       "fingerprint": "b6312c109cce6f2e36de5758a2155cb69d7f036c",
       "domain": "js.xinhuanet.com",
       "trusted": true,
@@ -205,7 +194,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
       "domain": "wxrb.com",
       "trusted": true,
