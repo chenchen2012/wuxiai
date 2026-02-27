@@ -350,8 +350,9 @@ def normalize_title(title: str) -> str:
 
 def item_fingerprint(title: str, url: str) -> str:
     t = normalize_title(title)
-    domain = normalize_domain(url)
-    return hashlib.sha1(f"{t}|{domain}".encode("utf-8")).hexdigest()
+    # Cross-source dedupe by normalized topic title (not by domain),
+    # so the homepage doesn't show the same story repeated from multiple sites.
+    return hashlib.sha1(t.encode("utf-8")).hexdigest()
 
 
 def extract_direct_url(link: str) -> str:
@@ -538,9 +539,15 @@ def dedupe_items(items: list[dict]) -> list[dict]:
             by_fp[fp] = item
             continue
 
-        prev_time = prev.get("published_at", "")
-        cur_time = item.get("published_at", "")
-        if cur_time and (not prev_time or cur_time > prev_time):
+        prev_time = str(prev.get("published_at", ""))
+        cur_time = str(item.get("published_at", ""))
+        prev_tier = int(prev.get("source_tier", 0))
+        cur_tier = int(item.get("source_tier", 0))
+        prev_trusted = 1 if prev.get("trusted") else 0
+        cur_trusted = 1 if item.get("trusted") else 0
+        prev_score = (prev_tier, prev_trusted, prev_time)
+        cur_score = (cur_tier, cur_trusted, cur_time)
+        if cur_score > prev_score:
             by_fp[fp] = item
 
     deduped = list(by_fp.values())

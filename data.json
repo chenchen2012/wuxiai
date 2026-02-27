@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-27T10:05:45.601002+08:00",
-  "item_count": 75,
+  "updated_at": "2026-02-27T10:08:37.780039+08:00",
+  "item_count": 65,
   "items": [
     {
       "title": "组队上岗！春晚同款机器人空降无锡！? - thepaper.cn",
@@ -8,21 +8,10 @@
       "source": "m.thepaper.cn",
       "published_at": "2026-02-23T11:55:00+08:00",
       "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "8890204b448adab414b09d77dba3ae6165f3a5c5",
+      "fingerprint": "a7e6f769e551dd0966df7257da89303db6e19947",
       "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
-    },
-    {
-      "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市 - 新浪财经",
-      "url": "https://finance.sina.com.cn/jjxw/2026-02-22/doc-inhnrnnx8526849.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-02-22T04:16:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "d168d7c70cf2ef472be5845e3e117fa075895e2b",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
     },
     {
       "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市 - thepaper.cn",
@@ -30,19 +19,8 @@
       "source": "m.thepaper.cn",
       "published_at": "2026-02-22T04:15:00+08:00",
       "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "e60154b5378614b72c56d115953dba99e0748c10",
+      "fingerprint": "6b6cb0315c9933de3eaace4e5d0d53ed223406b1",
       "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市",
-      "url": "https://www.thepaper.cn/detail/32616268",
-      "source": "thepaper.cn",
-      "published_at": "2026-02-22T04:14:00+08:00",
-      "feed": "bing:无锡AI:thepaper.cn",
-      "fingerprint": "a6420f07e10f15be08041b5003f63d3226a4b4cc",
-      "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -52,19 +30,8 @@
       "source": "m.thepaper.cn",
       "published_at": "2026-02-12T16:00:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "4fe9b3a4f85bfeb27d1eb17de19b13877350ada3",
+      "fingerprint": "07653342df3677452d778b2b683d80a0f06541fb",
       "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "风口已至！“AI+”赛道，宜兴加速跑！",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32590820",
-      "source": "thepaper.cn",
-      "published_at": "2026-02-12T15:36:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "d521bd46b89c12ac08538b16677aec2e33d56812",
-      "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -74,7 +41,7 @@
       "source": "wap.yzwb.net",
       "published_at": "2026-02-08T06:07:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "35ba11a6819b274945808b0197e42df7dbbd0400",
+      "fingerprint": "cde10eb12eb01f70b5926ab2b2112992fc4aaccd",
       "domain": "wap.yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -85,21 +52,10 @@
       "source": "xhby.net",
       "published_at": "2026-01-30T16:00:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "b981c80dd86cacbe070b64d928f141ea329411f9",
+      "fingerprint": "918705a2d1f2e1ba5cfb9b081c8c78fdfd7d1c5f",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
-    },
-    {
-      "title": "无锡“智变”：从“制造之城”到“AI之城”",
-      "url": "https://news.qq.com/rain/a/20260126A07D3800",
-      "source": "news.qq.com",
-      "published_at": "2026-01-26T22:58:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "1a311ef02d26ac35cf97997ac37567dd2d803458",
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1
     },
     {
       "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
@@ -107,19 +63,8 @@
       "source": "yzwb.net",
       "published_at": "2026-01-26T16:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "4d3886fb971e63acc0de0d8619a7f774d8e8eda5",
+      "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
       "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
-      "source": "xhby.net",
-      "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "b438b960222d5869cd4ead1f0e5f2ca17da7e1f6",
-      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -129,7 +74,7 @@
       "source": "finance.sina.com.cn",
       "published_at": "2026-01-18T05:50:00+08:00",
       "feed": "bing:无锡 AI",
-      "fingerprint": "184b4817814460137ee5b1ab56092e359453b5c9",
+      "fingerprint": "46b958b3bfd20ce4a8cd35161442d105ad2c1cf8",
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
@@ -139,8 +84,8 @@
       "url": "https://finance.sina.com.cn/roll/2026-01-14/doc-inhhfmkx5300068.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-01-14T06:14:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "b9ace163c508476f2d0288bed071daa20dc3e429",
+      "feed": "bing:无锡AI",
+      "fingerprint": "7c90fa9dbca70bcc7cbc43eafd098087bbf88c64",
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
@@ -151,7 +96,7 @@
       "source": "thepaper.cn",
       "published_at": "2026-01-13T15:20:00+08:00",
       "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "29723047b9d4b014796889fef39b865cf9a25bb7",
+      "fingerprint": "854f394138b64045b39109fd580dab452407bc30",
       "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
@@ -161,20 +106,9 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "e10d9cf83b90f71af2c5b860ea6a231baae82520",
+      "feed": "bing:无锡AI",
+      "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "一人一AI开局创业！无锡首届“创响无锡”全国大学生OPC菁英赛启动 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260106_308342.html",
-      "source": "yzwb.net",
-      "published_at": "2026-01-06T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "56bebdf4d4c8bddc88162bd103b3d4c61d74820c",
-      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -184,7 +118,7 @@
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
       "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "30f7b5f32efa6dd8059102cfa3ba2a3002f606e2",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -195,7 +129,7 @@
       "source": "m.thepaper.cn",
       "published_at": "2026-01-04T16:00:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "029999da1bed43a689258ea7e642007c82e496f5",
+      "fingerprint": "f26b8de698bc56a518ea67cfe72925d15b43840b",
       "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
@@ -205,8 +139,8 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
       "published_at": "2026-01-04T14:27:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "de3f7417ed8fcd73714faad866c7131528afc9ea",
+      "feed": "bing:无锡AI",
+      "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2
@@ -217,7 +151,7 @@
       "source": "yzwb.net",
       "published_at": "2025-12-12T16:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "01b5397104c6495c2398346d5afd1971dd865d73",
+      "fingerprint": "2c38ec04491eb832fb6393f73349a6cf6b1de749",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -228,7 +162,7 @@
       "source": "yzwb.net",
       "published_at": "2025-12-03T16:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "d99e086375b927a8bc3d6008414bd821e7524557",
+      "fingerprint": "4183b307090f7196a0551c0900925f631ba47b77",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -239,7 +173,7 @@
       "source": "ah.chinanews.com.cn",
       "published_at": "2025-11-13T16:00:00+08:00",
       "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "5bf1a07d2afe01ea2e05a6754c37954e12dd302e",
+      "fingerprint": "fb4a7e2faf8417052fcb64051ce9772f09e6439b",
       "domain": "ah.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -250,7 +184,7 @@
       "source": "js.xinhuanet.com",
       "published_at": "2025-11-11T23:59:00+08:00",
       "feed": "bing:无锡 AI:xinhuanet.com",
-      "fingerprint": "67d9fbc1be9459841a2666e5efe1e750268ab413",
+      "fingerprint": "b6312c109cce6f2e36de5758a2155cb69d7f036c",
       "domain": "js.xinhuanet.com",
       "trusted": true,
       "source_tier": 2
@@ -261,7 +195,7 @@
       "source": "yzwb.net",
       "published_at": "2025-11-09T16:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "a0e377d210aa09fc8f8c910e45ba89aa2a709a0c",
+      "fingerprint": "f5dc5493d9677d4dc3e9e1329af9a75c6e332f59",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -271,22 +205,11 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "518de5e8203651accd2aad157807fc76fe806fc1",
+      "feed": "bing:无锡AI",
+      "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
       "domain": "wxrb.com",
       "trusted": true,
       "source_tier": 2
-    },
-    {
-      "title": "“AI赋能·智联世界”城市形象国际传播（无锡）论坛成功举办",
-      "url": "https://news.qq.com/rain/a/20251108A05M7D00",
-      "source": "news.qq.com",
-      "published_at": "2025-11-08T21:19:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "4f9ee71efb7ba20326c70289efcf097264e6c3b7",
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1
     },
     {
       "title": "惠企红利不容错过 预申报2026年度无锡市人工智能产业发展资金项目启动 - 紫牛新闻",
@@ -294,7 +217,7 @@
       "source": "yzwb.net",
       "published_at": "2025-10-30T15:00:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "043411ecbf85e62fdc7411558ebc86b28a291e44",
+      "fingerprint": "d5f3f709d02484e22d55d7529dc0939f408c1a03",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -305,7 +228,7 @@
       "source": "yzwb.net",
       "published_at": "2025-10-27T15:00:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "a17e0e4a6549983a930d6de65f74e25d8b8b3ecd",
+      "fingerprint": "e92e9335d3650b4c2a79b77de42547ede9c6653a",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -316,21 +239,10 @@
       "source": "yzwb.net",
       "published_at": "2025-10-21T15:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "c3a10e8eb475324bc4e241bc0dc3d577fb09dc66",
+      "fingerprint": "555c8c39dc45b2975bbb497af54778ffd8caeb24",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
-    },
-    {
-      "title": "智绘无锡新图景 情融家国大文章——市级机关“无锡景•家国情 AI ...",
-      "url": "https://finance.sina.com.cn/roll/2025-10-09/doc-infthsqh9631524.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2025-10-09T16:21:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "eb6dfce0eee25fd9219c51fd9e8af159806c4de0",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
     },
     {
       "title": "市级机关“无锡景•家国情 AI‘尚’无锡”智享汇活动综述",
@@ -338,7 +250,7 @@
       "source": "thepaper.cn",
       "published_at": "2025-10-09T15:49:00+08:00",
       "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "055fd15af7fe0b2c2d743aacf45ea47589a51b4f",
+      "fingerprint": "6d2b54f590acbeb9a9328338110be21c544bb8cd",
       "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
@@ -349,7 +261,7 @@
       "source": "js.xinhuanet.com",
       "published_at": "2025-10-09T08:35:00+08:00",
       "feed": "bing:无锡 AI:xinhuanet.com",
-      "fingerprint": "53ff2be074c828414f2cb7a0f1ed092715df21dc",
+      "fingerprint": "8a956c2be7c418b709821d069ef8a1929c3f4a0e",
       "domain": "js.xinhuanet.com",
       "trusted": true,
       "source_tier": 2
@@ -360,7 +272,7 @@
       "source": "xhby.net",
       "published_at": "2025-08-27T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "11527c9a370c6d569c4d9fcc4ab22e149dc348cd",
+      "fingerprint": "051863c9f5f1335b4ac71daca8650e23e5845e83",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -371,7 +283,7 @@
       "source": "yzwb.net",
       "published_at": "2025-08-12T15:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "49bbfe56f892390dfbf8c228a27c0eeaf6d746aa",
+      "fingerprint": "50df74c92db05ec66e66706ce9c7be443ed52982",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -382,7 +294,7 @@
       "source": "yzwb.net",
       "published_at": "2025-08-12T15:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "efd804c32d19ae3ef7115e156f8236e26116ee28",
+      "fingerprint": "a4867c0104071c80cfbfafd1dbfc3f4254bf641e",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -393,7 +305,7 @@
       "source": "js.chinanews.com.cn",
       "published_at": "2025-07-31T15:00:00+08:00",
       "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "6b519c09faa9e7d988075ce48431de47b4a728e7",
+      "fingerprint": "570e73384d4b5ca846b7cec52cc1f6aaa67bfe31",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -404,7 +316,7 @@
       "source": "thepaper.cn",
       "published_at": "2025-07-28T18:05:00+08:00",
       "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "5be13cc0edca944c82f9c48db254bb78653d97d9",
+      "fingerprint": "87fd1218532a57c5b932af894baafa26f12fa207",
       "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
@@ -415,7 +327,7 @@
       "source": "js.xinhuanet.com",
       "published_at": "2025-07-28T01:00:00+08:00",
       "feed": "bing:无锡 AI:xinhuanet.com",
-      "fingerprint": "c0d8fbb5730ba6221cdb290ebc98902f81c9e0b7",
+      "fingerprint": "c8046d5f0a80db874a88c60e4d56fefda9880636",
       "domain": "js.xinhuanet.com",
       "trusted": true,
       "source_tier": 2
@@ -426,41 +338,19 @@
       "source": "nju.edu.cn",
       "published_at": "2025-07-21T15:00:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "bf7c8cd5b4d3de51e2f417dc0efe77858b98e1ab",
+      "fingerprint": "05407836870876edbdc56f5c396dad8d5dd8af9a",
       "domain": "nju.edu.cn",
       "trusted": false,
       "source_tier": 3
     },
     {
       "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
-      "url": "https://finance.sina.com.cn/roll/2025-07-17/doc-inffukxq0166551.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2025-07-17T17:49:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "db2c91c0c1d2c5d7ccf3400ec11a489400b52151",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
-      "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "bba37ba6a4fa3370e6df719e498454261a6f052a",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
-      "url": "http://www.js.xinhuanet.com/20250717/88e8491648c54e81ba2fd568ff560fe2/c.html",
-      "source": "js.xinhuanet.com",
-      "published_at": "2025-07-17T08:30:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
-      "fingerprint": "0c96865495f1f9dde86b091254e7a856fad426e7",
-      "domain": "js.xinhuanet.com",
       "trusted": true,
       "source_tier": 2
     },
@@ -470,7 +360,7 @@
       "source": "renshi.people.com.cn",
       "published_at": "2025-07-16T09:51:00+08:00",
       "feed": "bing:无锡 AI:people.com.cn",
-      "fingerprint": "466d86e3b0d583f21a7bfe2f2194201df8551046",
+      "fingerprint": "f681db30a53aee08d577c4d0e6cd517b8b241109",
       "domain": "renshi.people.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -480,8 +370,8 @@
       "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
       "source": "view.inews.qq.com",
       "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "a8bf154d76402f8fa8b00234d30c8b141d00bd34",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
       "domain": "view.inews.qq.com",
       "trusted": false,
       "source_tier": 1
@@ -492,7 +382,7 @@
       "source": "yzwb.net",
       "published_at": "2025-06-18T15:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "c40f55bf3bb16e8799d6acdc4c0589dd1205246b",
+      "fingerprint": "3c4c58e09076fb39dff01eee71409d61b7714aec",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -503,7 +393,7 @@
       "source": "news.qq.com",
       "published_at": "2025-06-14T11:41:00+08:00",
       "feed": "bing:无锡AI",
-      "fingerprint": "817043078fa84ce6556379b4aa80f023253615dc",
+      "fingerprint": "efb063a88b736b469105290029c4cc539852c43c",
       "domain": "news.qq.com",
       "trusted": false,
       "source_tier": 1
@@ -514,7 +404,7 @@
       "source": "yzwb.net",
       "published_at": "2025-06-13T15:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "580e2695b82105c9fd29e12dbaea98fef3def996",
+      "fingerprint": "a3057d9cea87600d5fc10b6faeb0e6c5d6fc3bcd",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -525,7 +415,7 @@
       "source": "xhby.net",
       "published_at": "2025-06-09T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "cd35a5c4da26483d9782645bdb4c20a29f94db42",
+      "fingerprint": "03c1c0e8be60b89c008cdc50b8886dc6aae677cf",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -536,7 +426,7 @@
       "source": "xhby.net",
       "published_at": "2025-05-30T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "5e15469a9c3d536433b16123089508d39a5b7115",
+      "fingerprint": "172cdc2d1e75434a18f090606932f0fb292a6c79",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -547,7 +437,7 @@
       "source": "xhby.net",
       "published_at": "2025-05-20T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "9eb0711f32931db0dbad472cfc53a74cee6efed8",
+      "fingerprint": "89ef730067722b94847e001a3b495d3178a91b7e",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -558,7 +448,7 @@
       "source": "chinanews.com.cn",
       "published_at": "2025-05-16T11:22:00+08:00",
       "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "a8a185ed48c7f9c541abcd9490743f05ee816fe8",
+      "fingerprint": "346a0116d9fd35a2e5c5825ab94cc8a4df814bdf",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -569,7 +459,7 @@
       "source": "js.news.cn",
       "published_at": "2025-04-30T15:00:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "396fb307c3fb7f1b89ff74ddbe5d3fc1795cd8a6",
+      "fingerprint": "76bce1585e6fac897c06d806e1013852d0bda211",
       "domain": "js.news.cn",
       "trusted": true,
       "source_tier": 2
@@ -580,7 +470,7 @@
       "source": "yzwb.net",
       "published_at": "2025-04-28T15:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "a4560245b4d28886924f58c4e6e5a6c7760b25be",
+      "fingerprint": "97c55eed3e11cde4a79e29decbf8e731b8688828",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -590,8 +480,8 @@
       "url": "https://finance.sina.com.cn/roll/2025-04-18/doc-inetqeau4914927.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2025-04-18T10:26:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "6af08bbe58f6bce1b9e2b7b319db859df8ce3b73",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "a19af7e8c0df40faa697b5cf53dce6bcebc96884",
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
@@ -602,7 +492,7 @@
       "source": "yzwb.net",
       "published_at": "2025-04-15T15:00:00+08:00",
       "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "481bc5bdfb7c4731ed83d0d6694a7d3da2dfe396",
+      "fingerprint": "98666edb87c4220d960b2388d26cb3b47cc1c679",
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
@@ -613,7 +503,7 @@
       "source": "wxrb.com",
       "published_at": "2025-04-15T11:53:00+08:00",
       "feed": "bing:无锡 AI",
-      "fingerprint": "c21c235040615f4107f102188fb1cfafb2ada75b",
+      "fingerprint": "f229c51ad5e2633e27b27f7bca1dc6892fa4df1f",
       "domain": "wxrb.com",
       "trusted": true,
       "source_tier": 2
@@ -624,7 +514,7 @@
       "source": "js.chinanews.com.cn",
       "published_at": "2025-03-27T15:00:00+08:00",
       "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "58e1a2ec7dd60ee0d0db70cd579eda3170a9a7c0",
+      "fingerprint": "6e0b8ce35087fc617f333a530faab9f2932a9118",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -634,8 +524,8 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_30473014",
       "source": "thepaper.cn",
       "published_at": "2025-03-24T15:07:00+08:00",
-      "feed": "bing:无锡AI:thepaper.cn",
-      "fingerprint": "d6da8221087734ff18de74a14a5177ac51cf21a1",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "6b672ff71ad47735e8715c65055e48ecebf63a90",
       "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
@@ -646,7 +536,7 @@
       "source": "xhby.net",
       "published_at": "2025-03-23T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "4b53a043593e4319f20370b5a9dce932d6d11f41",
+      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -657,7 +547,7 @@
       "source": "xhby.net",
       "published_at": "2025-03-21T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "f3720ff1a758f26f197385ceb4f41e6a4c6584a4",
+      "fingerprint": "4d8175a74132efdc2b8a8accb5c058119ff31f31",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -668,7 +558,7 @@
       "source": "xhby.net",
       "published_at": "2025-03-18T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "c2a871161ed8a841dc4b9553ce32d91e5d54a3df",
+      "fingerprint": "ee51be4e42168dd34827dc2dcc45b3612aa798c9",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -679,7 +569,7 @@
       "source": "thepaper.cn",
       "published_at": "2025-03-14T19:33:00+08:00",
       "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "5e926e28646ae5cc8ececa166c1c3355cae8e325",
+      "fingerprint": "8da79bac4c8061774f21ab450904c2ddf260709d",
       "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
@@ -690,7 +580,7 @@
       "source": "thepaper.cn",
       "published_at": "2025-03-11T14:48:00+08:00",
       "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "08b878c8389fa9452b4e77d4f4df637681f3d2ae",
+      "fingerprint": "52ffb7d90f90c1376eb72fd711fff4eb17ae12cf",
       "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
@@ -701,7 +591,7 @@
       "source": "js.xinhuanet.com",
       "published_at": "2025-02-17T00:00:00+08:00",
       "feed": "bing:无锡 AI:xinhuanet.com",
-      "fingerprint": "4f9382e2087d68377bfaca1b9fd7a431b095036b",
+      "fingerprint": "d4635b01a0e7a5e0fe5ada8384bb348029c601bd",
       "domain": "js.xinhuanet.com",
       "trusted": true,
       "source_tier": 2
@@ -711,8 +601,8 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "3509f7033b9dd601eb4151fbac716cb543384803",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
       "source_tier": 1
@@ -723,7 +613,7 @@
       "source": "xhby.net",
       "published_at": "2024-12-07T16:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "6bc591d4063532176d870956e3ddadc936ee806c",
+      "fingerprint": "ba0aa304ca9e3c5cb22974133d4f01267789cc11",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -734,7 +624,7 @@
       "source": "finance.people.com.cn",
       "published_at": "2024-10-03T14:28:00+08:00",
       "feed": "bing:无锡 AI:people.com.cn",
-      "fingerprint": "b0de6eac137e68ba65bbe50c2ce6716ed5812284",
+      "fingerprint": "dfdbe6e1544ea1a63910dae1c2ff5706ce024b2d",
       "domain": "finance.people.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -744,8 +634,8 @@
       "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
       "source": "js.ifeng.com",
       "published_at": "2024-06-06T14:12:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "0102ef9f02b6713a6367da3043834e5435370973",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "b3d8ac74b4be24c151812b9fb23d5e40d0df3425",
       "domain": "js.ifeng.com",
       "trusted": false,
       "source_tier": 1
@@ -756,7 +646,7 @@
       "source": "thepaper.cn",
       "published_at": "2024-05-13T15:57:00+08:00",
       "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "540a90ce25d5eed77b46cc5fbbe5795b330df95c",
+      "fingerprint": "48360428fd5f85ef6cb445e841f800d663212622",
       "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
@@ -767,7 +657,7 @@
       "source": "xhby.net",
       "published_at": "2024-04-05T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "601d34805f2b5538fcd5c4daf27ce5adc4e67713",
+      "fingerprint": "bac8498c1a254e03e370e389a1a263098b7f6473",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -778,7 +668,7 @@
       "source": "xhby.net",
       "published_at": "2024-03-25T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "f7310f189ec12ea86ec7848492d7b358ae4c19d9",
+      "fingerprint": "00612c4da4e5a46fb68a6c45a26f9effaa167650",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
@@ -789,7 +679,7 @@
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
       "feed": "bing:无锡 人工智能:xinhuanet.com",
-      "fingerprint": "8a3655f7c33fca89cbf75bb5be0e93a2c56dba60",
+      "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
       "source_tier": 2
@@ -800,7 +690,7 @@
       "source": "news.sina.com.cn",
       "published_at": "2023-10-30T19:04:00+08:00",
       "feed": "bing:无锡 AI",
-      "fingerprint": "54eaa7ceb09241329d8b287e3acc80d97cc2fa89",
+      "fingerprint": "e18e251cb5df257d88ee1ead0f954f6d03163bae",
       "domain": "news.sina.com.cn",
       "trusted": false,
       "source_tier": 1
@@ -811,7 +701,7 @@
       "source": "news.sina.com.cn",
       "published_at": "2023-09-23T11:14:00+08:00",
       "feed": "bing:无锡AI",
-      "fingerprint": "675fb48264ce00fdbd99ea5f73ce66117923a4a1",
+      "fingerprint": "219da3e5f905e4e820ab4fc925ef71276e2c8d39",
       "domain": "news.sina.com.cn",
       "trusted": false,
       "source_tier": 1
@@ -822,7 +712,7 @@
       "source": "js.chinanews.com.cn",
       "published_at": "2023-06-12T15:00:00+08:00",
       "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "dc6f5abc439d58f2cbafbf23776fe5f0caee9f94",
+      "fingerprint": "b6a88bbd40d48ab7d0dceb54b31e2c237d0da082",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
