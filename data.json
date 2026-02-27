@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-28T04:45:24.242070+08:00",
+  "updated_at": "2026-02-28T06:43:26.637592+08:00",
   "item_count": 65,
   "items": [
     {
@@ -73,7 +73,7 @@
       "url": "https://finance.sina.com.cn/roll/2026-01-18/doc-inhhsmvf9126581.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-01-18T05:50:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "46b958b3bfd20ce4a8cd35161442d105ad2c1cf8",
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -128,7 +128,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
       "published_at": "2026-01-04T14:27:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yangtse.com",
       "trusted": true,
