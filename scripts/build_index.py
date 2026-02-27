@@ -741,7 +741,6 @@ def build_html(items: list[dict]) -> str:
         "  <main>",
         '  <section class="card">',
         "  <h1>无锡AI</h1>",
-        '  <p class="meta">自动更新，仅提供标题与原文链接。</p>',
         '  <p class="intro">聚合无锡AI新闻、无锡人工智能新闻，重点关注无锡本地人工智能产业、技术与应用动态。</p>',
     ]
 

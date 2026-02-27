@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T10:11:14.158238+08:00",
+  "updated_at": "2026-02-27T10:17:44.818113+08:00",
   "item_count": 64,
   "items": [
     {
@@ -172,7 +172,7 @@
       "url": "http://www.js.xinhuanet.com/20251112/d79589992e0f40429c9db59a2089312b/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-11-11T23:59:00+08:00",
-      "feed": "bing:无锡AI:xinhuanet.com",
+      "feed": "bing:无锡 AI:xinhuanet.com",
       "fingerprint": "b6312c109cce6f2e36de5758a2155cb69d7f036c",
       "domain": "js.xinhuanet.com",
       "trusted": true,
@@ -667,7 +667,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
