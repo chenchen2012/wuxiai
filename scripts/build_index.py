@@ -544,11 +544,12 @@ def dedupe_items(items: list[dict]) -> list[dict]:
             by_fp[fp] = item
 
     deduped = list(by_fp.values())
+    # Homepage should be strictly freshness-first: newest items at the top.
     deduped.sort(
         key=lambda x: (
+            x.get("published_at", ""),
             int(x.get("source_tier", 0)),
             1 if x.get("trusted") else 0,
-            x.get("published_at", ""),
         ),
         reverse=True,
     )
@@ -620,9 +621,19 @@ def build_html(items: list[dict]) -> str:
         },
         ensure_ascii=False,
     )
+    # Render order is newest-first for better readability.
+    sorted_items = sorted(
+        items,
+        key=lambda x: (
+            x.get("published_at", ""),
+            int(x.get("source_tier", 0)),
+            1 if x.get("trusted") else 0,
+        ),
+        reverse=True,
+    )
     display_items = []
     source_counts = {}
-    for item in items:
+    for item in sorted_items:
         src = str(item.get("source", "未知来源")).strip() or "未知来源"
         if source_counts.get(src, 0) >= MAX_PER_SOURCE_ON_PAGE:
             continue
