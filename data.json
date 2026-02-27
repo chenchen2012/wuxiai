@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-02-27T10:17:44.818113+08:00",
-  "item_count": 64,
+  "updated_at": "2026-02-27T11:08:16.324841+08:00",
+  "item_count": 65,
   "items": [
     {
       "title": "组队上岗！春晚同款机器人空降无锡！? - thepaper.cn",
@@ -95,19 +95,19 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -128,7 +128,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
       "published_at": "2026-01-04T14:27:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yangtse.com",
       "trusted": true,
@@ -194,7 +194,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
       "domain": "wxrb.com",
       "trusted": true,
@@ -494,6 +494,17 @@
       "feed": "bing:无锡 AI",
       "fingerprint": "f229c51ad5e2633e27b27f7bca1dc6892fa4df1f",
       "domain": "wxrb.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡机器人家族，进击！ - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_30578410",
+      "source": "m.thepaper.cn",
+      "published_at": "2025-04-05T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "fd4b815eb226cfcc20871c9d8ba2d760ca9dde52",
+      "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
