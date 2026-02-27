@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-02-27T22:58:41.955501+08:00",
+  "updated_at": "2026-02-28T00:56:45.114145+08:00",
   "item_count": 65,
   "items": [
     {
@@ -95,7 +95,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
@@ -194,7 +194,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
       "domain": "wxrb.com",
       "trusted": true,
@@ -524,7 +524,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_30473014",
       "source": "thepaper.cn",
       "published_at": "2025-03-24T15:07:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
+      "feed": "bing:无锡AI:thepaper.cn",
       "fingerprint": "6b672ff71ad47735e8715c65055e48ecebf63a90",
       "domain": "thepaper.cn",
       "trusted": true,
