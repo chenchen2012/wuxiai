@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-01T21:09:43.411951+08:00",
-  "item_count": 65,
+  "updated_at": "2026-03-01T22:41:42.426427+08:00",
+  "item_count": 66,
   "items": [
     {
       "title": "组队上岗！春晚同款机器人空降无锡！? - thepaper.cn",
@@ -67,6 +67,17 @@
       "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
+    },
+    {
+      "title": "无锡高新区“硬核”军团闪耀CES 2026 车联天下、菲沃泰等亮相共舞AI浪潮",
+      "url": "https://www.stcn.com/article/detail/3600144.html",
+      "source": "stcn.com",
+      "published_at": "2026-01-19T17:21:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "7314e85dc5ebb2c20758ea901d72a11126515ccb",
+      "domain": "stcn.com",
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "全省第二！无锡3款AI医疗产品入选",
