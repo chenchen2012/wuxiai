@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-02T00:44:30.686119+08:00",
-  "item_count": 66,
+  "updated_at": "2026-03-02T02:51:02.623892+08:00",
+  "item_count": 67,
   "items": [
     {
       "title": "组队上岗！春晚同款机器人空降无锡！? - thepaper.cn",
@@ -40,7 +40,7 @@
       "url": "https://wap.yzwb.net/wap/news/4919939.html",
       "source": "wap.yzwb.net",
       "published_at": "2026-02-08T06:07:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "cde10eb12eb01f70b5926ab2b2112992fc4aaccd",
       "domain": "wap.yzwb.net",
       "trusted": true,
@@ -164,6 +164,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "4183b307090f7196a0551c0900925f631ba47b77",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "当课堂遇上AI，无锡孩子的学习有趣而精彩",
+      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202511/t20251119_291265.html",
+      "source": "yangtse.com",
+      "published_at": "2025-11-19T22:33:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "4618d5eda50836feaeb55a034054c6e6adbdf887",
+      "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2
     },
