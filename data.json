@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-01T16:47:46.380070+08:00",
+  "updated_at": "2026-03-01T18:44:09.856251+08:00",
   "item_count": 65,
   "items": [
     {
@@ -18,7 +18,7 @@
       "url": "https://m.thepaper.cn/newsDetail_forward_32616268",
       "source": "m.thepaper.cn",
       "published_at": "2026-02-22T04:15:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:thepaper.cn",
       "fingerprint": "6b6cb0315c9933de3eaace4e5d0d53ed223406b1",
       "domain": "m.thepaper.cn",
       "trusted": true,
@@ -40,7 +40,7 @@
       "url": "https://wap.yzwb.net/wap/news/4919939.html",
       "source": "wap.yzwb.net",
       "published_at": "2026-02-08T06:07:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "cde10eb12eb01f70b5926ab2b2112992fc4aaccd",
       "domain": "wap.yzwb.net",
       "trusted": true,
@@ -117,7 +117,7 @@
       "url": "https://m.thepaper.cn/newsDetail_forward_32309634",
       "source": "m.thepaper.cn",
       "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:thepaper.cn",
       "fingerprint": "f26b8de698bc56a518ea67cfe72925d15b43840b",
       "domain": "m.thepaper.cn",
       "trusted": true,
@@ -161,7 +161,7 @@
       "url": "https://www.ah.chinanews.com.cn/news/2025/1113/337764.shtml",
       "source": "ah.chinanews.com.cn",
       "published_at": "2025-11-13T16:00:00+08:00",
-      "feed": "google:无锡 AI",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "fb4a7e2faf8417052fcb64051ce9772f09e6439b",
       "domain": "ah.chinanews.com.cn",
       "trusted": true,
