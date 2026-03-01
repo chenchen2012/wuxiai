@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-01T11:23:22.581690+08:00",
+  "updated_at": "2026-03-01T13:31:27.969583+08:00",
   "item_count": 65,
   "items": [
     {
@@ -128,7 +128,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
       "published_at": "2026-01-04T14:27:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yangtse.com",
       "trusted": true,
