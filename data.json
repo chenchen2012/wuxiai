@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-03-02T15:16:32.044149+08:00",
-  "item_count": 70,
+  "updated_at": "2026-03-02T17:01:51.452043+08:00",
+  "item_count": 71,
   "items": [
     {
-      "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 凤凰网",
+      "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 手机凤凰网",
       "url": "https://i.ifeng.com/c/8qKU2Jjj7C6",
       "source": "i.ifeng.com",
       "published_at": "2026-03-01T14:42:16+08:00",
@@ -670,6 +670,17 @@
       "feed": "bing:无锡 AI:people.com.cn",
       "fingerprint": "dfdbe6e1544ea1a63910dae1c2ff5706ce024b2d",
       "domain": "finance.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "“人形机器人”第一股，为何重注无锡？ - thepaper.cn",
+      "url": "https://www.thepaper.cn/newsDetail_forward_27904561",
+      "source": "thepaper.cn",
+      "published_at": "2024-06-29T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "c619fb5fecc6e4632f8a7b3775a47e218e0131af",
+      "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
