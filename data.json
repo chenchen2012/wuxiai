@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-02T11:11:06.686492+08:00",
-  "item_count": 67,
+  "updated_at": "2026-03-02T13:20:30.328523+08:00",
+  "item_count": 70,
   "items": [
+    {
+      "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 凤凰网",
+      "url": "https://i.ifeng.com/c/8qKU2Jjj7C6",
+      "source": "i.ifeng.com",
+      "published_at": "2026-03-01T14:42:16+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "111440b8a2d8fa7bade63bca2092b542e735d6e0",
+      "domain": "i.ifeng.com",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "组队上岗！春晚同款机器人空降无锡！? - thepaper.cn",
       "url": "https://m.thepaper.cn/newsDetail_forward_32645713",
@@ -37,12 +48,12 @@
     },
     {
       "title": "从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 紫牛新闻",
-      "url": "https://wap.yzwb.net/wap/news/4919939.html",
-      "source": "wap.yzwb.net",
-      "published_at": "2026-02-08T06:07:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202602/t20260208_320234.html",
+      "source": "yzwb.net",
+      "published_at": "2026-02-08T22:07:00+08:00",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "cde10eb12eb01f70b5926ab2b2112992fc4aaccd",
-      "domain": "wap.yzwb.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -117,7 +128,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -432,6 +443,17 @@
       "source_tier": 2
     },
     {
+      "title": "江苏首个！无锡造出农业机器人“AI大脑” - 紫牛新闻",
+      "url": "https://wap.yzwb.net/wap/news/4548791.html",
+      "source": "wap.yzwb.net",
+      "published_at": "2025-06-05T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "6c3320decdb67ebec4cc0518e1b30191b95e5886",
+      "domain": "wap.yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "“智慧天眼”秒锁定，无锡上线省内首个AI直播监测系统 - 新华报业网",
       "url": "https://www.xhby.net/content/s68399513e4b0825be0272f86.html",
       "source": "xhby.net",
@@ -736,6 +758,17 @@
       "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "b6a88bbd40d48ab7d0dceb54b31e2c237d0da082",
       "domain": "js.chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "全国首个文心千帆大模型平台落户无锡梁溪，助力智能制造升级 - 紫牛新闻",
+      "url": "https://wap.yzwb.net/wap/news/3001398.html",
+      "source": "wap.yzwb.net",
+      "published_at": "2023-06-08T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "6612e563e22a1771802addcd05cd908f4a4f770e",
+      "domain": "wap.yzwb.net",
       "trusted": true,
       "source_tier": 2
     }
