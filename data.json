@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-03-02T17:01:51.452043+08:00",
+  "updated_at": "2026-03-02T19:02:31.497959+08:00",
   "item_count": 71,
   "items": [
     {
-      "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 手机凤凰网",
+      "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 凤凰网",
       "url": "https://i.ifeng.com/c/8qKU2Jjj7C6",
       "source": "i.ifeng.com",
       "published_at": "2026-03-01T14:42:16+08:00",
@@ -128,7 +128,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -194,7 +194,7 @@
       "url": "https://www.ah.chinanews.com.cn/news/2025/1113/337764.shtml",
       "source": "ah.chinanews.com.cn",
       "published_at": "2025-11-13T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 AI",
       "fingerprint": "fb4a7e2faf8417052fcb64051ce9772f09e6439b",
       "domain": "ah.chinanews.com.cn",
       "trusted": true,
