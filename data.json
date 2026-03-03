@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-03T13:19:00.014747+08:00",
-  "item_count": 72,
+  "updated_at": "2026-03-03T15:11:05.422036+08:00",
+  "item_count": 74,
   "items": [
+    {
+      "title": "人工智能与计算机学院与无锡市工信局开展合作交流座谈 - 江南大学新闻网",
+      "url": "https://news.jiangnan.edu.cn/info/1065/106642.htm",
+      "source": "news.jiangnan.edu.cn",
+      "published_at": "2026-03-03T14:12:48+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "126318da5c716ce2577bc86a485803bd498a0205",
+      "domain": "news.jiangnan.edu.cn",
+      "trusted": true,
+      "source_tier": 3
+    },
     {
       "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 手机凤凰网",
       "url": "https://i.ifeng.com/c/8qKU2Jjj7C6",
@@ -146,6 +157,17 @@
       "source_tier": 2
     },
     {
+      "title": "124.32亿元！芯片+AI+航天……无锡全投了！ - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32310360",
+      "source": "m.thepaper.cn",
+      "published_at": "2026-01-04T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "81d0d794c1607eacf4f7ee66fd82aceeeeaff74c",
+      "domain": "m.thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "无锡：AI赋能精准匹配 “智聘引擎”助推高效就业服务",
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yangtse.com",
@@ -282,7 +304,7 @@
       "url": "http://www.js.xinhuanet.com/20251009/2558a36778944653861b9b3277b64281/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2025-10-09T08:35:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
+      "feed": "bing:无锡AI:xinhuanet.com",
       "fingerprint": "8a956c2be7c418b709821d069ef8a1929c3f4a0e",
       "domain": "js.xinhuanet.com",
       "trusted": true,
