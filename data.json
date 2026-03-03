@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-03T16:59:56.574147+08:00",
-  "item_count": 74,
+  "updated_at": "2026-03-03T19:00:04.298700+08:00",
+  "item_count": 75,
   "items": [
+    {
+      "title": "聚焦人工智能 无锡锡山30亿元基金启航 - chinanews.com.cn",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-03T17:28:11+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
     {
       "title": "人工智能与计算机学院与无锡市工信局开展合作交流座谈 - 江南大学新闻网",
       "url": "https://news.jiangnan.edu.cn/info/1065/106642.htm",
@@ -14,7 +25,7 @@
       "source_tier": 3
     },
     {
-      "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 手机凤凰网",
+      "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 凤凰网",
       "url": "https://i.ifeng.com/c/8qKU2Jjj7C6",
       "source": "i.ifeng.com",
       "published_at": "2026-03-01T14:42:16+08:00",
