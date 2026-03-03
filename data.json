@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-03T06:47:09.868758+08:00",
-  "item_count": 71,
+  "updated_at": "2026-03-03T11:13:46.277719+08:00",
+  "item_count": 72,
   "items": [
     {
       "title": "全球首个！全国首单！无锡“AI+”遍地开花！_凤凰网 - 手机凤凰网",
@@ -560,6 +560,17 @@
       "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "6e0b8ce35087fc617f333a530faab9f2932a9118",
       "domain": "js.chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "国内首次！机器人要在无锡开运动会！ - thepaper.cn",
+      "url": "https://www.thepaper.cn/newsDetail_forward_30481949",
+      "source": "thepaper.cn",
+      "published_at": "2025-03-25T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "cbdc3f200a3979c469b7ffe4e7c2426edd3176f1",
+      "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
