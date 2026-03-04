@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-04T21:22:06.160007+08:00",
+  "updated_at": "2026-03-04T22:57:14.018833+08:00",
   "item_count": 78,
   "items": [
     {
@@ -575,15 +575,15 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：AI赋能 人工智能产业逐浪前行",
-      "url": "https://finance.sina.com.cn/roll/2025-04-18/doc-inetqeau4914927.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2025-04-18T10:26:00+08:00",
-      "feed": "bing:无锡 AI",
+      "title": "江苏无锡：AI赋能 人工智能产业逐浪前行 - 新华报业网",
+      "url": "https://www.xhby.net/content/s6801a968e4b0b8e94c5002af.html",
+      "source": "xhby.net",
+      "published_at": "2025-04-18T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "a19af7e8c0df40faa697b5cf53dce6bcebc96884",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "提升为城市发展战略，最高奖励2亿元……无锡发布“人工智能+”重磅政策 - 紫牛新闻",
