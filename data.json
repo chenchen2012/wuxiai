@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-04T10:50:16.240254+08:00",
-  "item_count": 76,
+  "updated_at": "2026-03-04T13:14:04.813819+08:00",
+  "item_count": 77,
   "items": [
     {
       "title": "聚焦人工智能 无锡锡山30亿元基金启航 - 新浪新闻_手机新浪网",
@@ -483,6 +483,17 @@
       "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "03c1c0e8be60b89c008cdc50b8886dc6aae677cf",
       "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "破解“认证”瓶颈、共享“检测”资源 ，无锡为中小企业提质“精准导航”无锡造出农业机器人“AI大脑” - 紫牛新闻",
+      "url": "http://www.yzwb.net/news/jiangsu/wuxi/202506/t20250607_218065.html",
+      "source": "yzwb.net",
+      "published_at": "2025-06-07T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "0402a151ec59973c87a697fc570d6ea77eee21b9",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
