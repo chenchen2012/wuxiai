@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-04T15:06:07.923074+08:00",
-  "item_count": 77,
+  "updated_at": "2026-03-04T16:56:46.124656+08:00",
+  "item_count": 78,
   "items": [
     {
       "title": "聚焦人工智能 无锡锡山30亿元基金启航 - 新浪新闻_手机新浪网",
@@ -109,6 +109,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "期待！无锡机器人要上春晚啦！ - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32461038",
+      "source": "m.thepaper.cn",
+      "published_at": "2026-01-25T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "c8df1297b2ca73ccd41ddcf5266c5bae46cf8bad",
+      "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
