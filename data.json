@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T04:49:03.982304+08:00",
-  "item_count": 78,
+  "updated_at": "2026-03-05T06:49:58.869173+08:00",
+  "item_count": 79,
   "items": [
     {
       "title": "聚焦人工智能 无锡锡山30亿元基金启航 - 新浪新闻_手机新浪网",
@@ -183,8 +183,19 @@
       "url": "https://m.thepaper.cn/newsDetail_forward_32309634",
       "source": "m.thepaper.cn",
       "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "f26b8de698bc56a518ea67cfe72925d15b43840b",
+      "domain": "m.thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
+      "source": "m.thepaper.cn",
+      "published_at": "2026-01-04T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "5e257cc3b8751153025cd72def3e074b5c3347e1",
       "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
