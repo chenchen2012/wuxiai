@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-06T04:53:28.351518+08:00",
+  "updated_at": "2026-03-06T07:22:49.987244+08:00",
   "item_count": 80,
   "items": [
     {
@@ -18,7 +18,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-03-03T17:28:11+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -73,7 +73,7 @@
       "url": "https://m.thepaper.cn/newsDetail_forward_32590820",
       "source": "m.thepaper.cn",
       "published_at": "2026-02-12T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:thepaper.cn",
       "fingerprint": "07653342df3677452d778b2b683d80a0f06541fb",
       "domain": "m.thepaper.cn",
       "trusted": true,
@@ -84,7 +84,7 @@
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202602/t20260208_320234.html",
       "source": "yzwb.net",
       "published_at": "2026-02-08T22:07:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "cde10eb12eb01f70b5926ab2b2112992fc4aaccd",
       "domain": "yzwb.net",
       "trusted": true,
@@ -172,7 +172,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
