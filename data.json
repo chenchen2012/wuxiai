@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-05T11:08:40.132634+08:00",
-  "item_count": 79,
+  "updated_at": "2026-03-05T13:17:36.960671+08:00",
+  "item_count": 80,
   "items": [
     {
       "title": "聚焦人工智能 无锡锡山30亿元基金启航 - 新浪新闻_手机新浪网",
@@ -351,6 +351,17 @@
       "feed": "bing:无锡AI:xinhuanet.com",
       "fingerprint": "8a956c2be7c418b709821d069ef8a1929c3f4a0e",
       "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "江苏无锡：抢占“AI+”赛道 绘就智造新图景，以“人工智能之解”答好“新型工业化之问” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202509/t20250911_262496.html",
+      "source": "yzwb.net",
+      "published_at": "2025-09-11T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "c82ad323373bf10706651f9eca5e21fe481f965a",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
