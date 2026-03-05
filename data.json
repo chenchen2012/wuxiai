@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-05T23:05:07.454102+08:00",
+  "updated_at": "2026-03-06T02:21:22.541745+08:00",
   "item_count": 80,
   "items": [
     {
@@ -190,17 +190,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
-      "source": "m.thepaper.cn",
-      "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "5e257cc3b8751153025cd72def3e074b5c3347e1",
-      "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡：AI赋能精准匹配 “智聘引擎”助推高效就业服务 - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yzwb.net",
@@ -208,6 +197,17 @@
       "feed": "google:无锡 AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
+      "source": "m.thepaper.cn",
+      "published_at": "2026-01-04T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "5e257cc3b8751153025cd72def3e074b5c3347e1",
+      "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
