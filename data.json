@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-06T15:07:47.276588+08:00",
-  "item_count": 80,
+  "updated_at": "2026-03-06T16:55:33.170606+08:00",
+  "item_count": 83,
   "items": [
     {
       "title": "聚焦人工智能 无锡锡山30亿元基金启航 - 新浪新闻_手机新浪网",
@@ -102,6 +102,17 @@
       "source_tier": 2
     },
     {
+      "title": "江苏无锡：AI 牵手文旅打造高品质旅游新场景 - 人民网",
+      "url": "http://tuyou.people.com.cn/albumsDetail?aid=2033644&pid=15195581",
+      "source": "tuyou.people.com.cn",
+      "published_at": "2026-01-28T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "53723c51b7401cf5b5a3d54b91e6af16f4997126",
+      "domain": "tuyou.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
       "source": "yzwb.net",
@@ -161,7 +172,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
@@ -293,7 +304,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
       "domain": "wxrb.com",
       "trusted": true,
@@ -685,6 +696,17 @@
       "source_tier": 2
     },
     {
+      "title": "敢当弄潮儿 奋力挑大梁｜深度求索，无锡打造“AI治之城”",
+      "url": "https://finance.sina.com.cn/roll/2025-03-23/doc-ineqqwqw9193890.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2025-03-23T08:57:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "996ccabc45be3ceff6fe3f4bed46bbc285cee989",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
       "title": "江苏无锡：竞速人形机器人，全力抢占千亿“赛点” - 新华报业网",
       "url": "https://www.xhby.net/content/s67dc9bc2e4b0fec08799f871.html",
       "source": "xhby.net",
@@ -736,6 +758,17 @@
       "feed": "bing:无锡 AI:xinhuanet.com",
       "fingerprint": "d4635b01a0e7a5e0fe5ada8384bb348029c601bd",
       "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡“高新造”算力全面适配DeepSeek，助力加快AI产业布局",
+      "url": "https://www.wxrb.com/doc/2025/02/15/388945.shtml",
+      "source": "wxrb.com",
+      "published_at": "2025-02-15T00:01:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "39c58b03643329a0450f0a239945839acd141e03",
+      "domain": "wxrb.com",
       "trusted": true,
       "source_tier": 2
     },
@@ -832,7 +865,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
