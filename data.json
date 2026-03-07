@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-08T02:50:29.283477+08:00",
+  "updated_at": "2026-03-08T04:39:37.061912+08:00",
   "item_count": 87,
   "items": [
     {
@@ -113,13 +113,13 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
-      "source": "yzwb.net",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
+      "source": "xhby.net",
       "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
-      "domain": "yzwb.net",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -190,17 +190,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
-      "source": "m.thepaper.cn",
-      "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "5e257cc3b8751153025cd72def3e074b5c3347e1",
-      "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡：AI赋能精准匹配 “智聘引擎”助推高效就业服务 - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260104_307553.html",
       "source": "yzwb.net",
@@ -208,6 +197,17 @@
       "feed": "google:无锡 AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
+      "source": "m.thepaper.cn",
+      "published_at": "2026-01-04T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "5e257cc3b8751153025cd72def3e074b5c3347e1",
+      "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -898,7 +898,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
