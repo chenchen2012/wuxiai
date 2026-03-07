@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-07T21:08:54.806360+08:00",
-  "item_count": 86,
+  "updated_at": "2026-03-07T22:41:11.421833+08:00",
+  "item_count": 87,
   "items": [
     {
       "title": "聚焦人工智能 无锡锡山30亿元基金启航 - 新浪新闻_手机新浪网",
@@ -945,6 +945,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "6612e563e22a1771802addcd05cd908f4a4f770e",
       "domain": "wap.yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "国内最大机器人仓库上线，菜鸟网络宣布其无锡未来园区投用 - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_2564444",
+      "source": "m.thepaper.cn",
+      "published_at": "2018-10-25T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "cf864f0b3606322ede763623fe3d86eb37aa4e9d",
+      "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
     }
