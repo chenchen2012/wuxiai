@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-07T10:44:21.965489+08:00",
-  "item_count": 84,
+  "updated_at": "2026-03-07T13:07:52.512279+08:00",
+  "item_count": 86,
   "items": [
     {
       "title": "聚焦人工智能 无锡锡山30亿元基金启航 - 新浪新闻_手机新浪网",
@@ -201,17 +201,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡：AI赋能精准匹配 “智聘引擎”助推高效就业服务 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260104_307553.html",
-      "source": "yzwb.net",
-      "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 AI",
-      "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
       "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
       "source": "m.thepaper.cn",
@@ -219,6 +208,17 @@
       "feed": "google:无锡 人工智能:thepaper.cn",
       "fingerprint": "5e257cc3b8751153025cd72def3e074b5c3347e1",
       "domain": "m.thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡：AI赋能精准匹配 “智聘引擎”助推高效就业服务 - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260104_307553.html",
+      "source": "yzwb.net",
+      "published_at": "2026-01-04T16:00:00+08:00",
+      "feed": "google:无锡 AI",
+      "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -252,6 +252,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "4183b307090f7196a0551c0900925f631ba47b77",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡造具身智能机器人，硬核出道！ - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32056872",
+      "source": "m.thepaper.cn",
+      "published_at": "2025-11-27T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "815c9f62c2aa758f616c893d19ce57fcff3acde7",
+      "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -458,7 +469,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -480,7 +491,7 @@
       "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
       "source": "view.inews.qq.com",
       "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
       "domain": "view.inews.qq.com",
       "trusted": false,
@@ -700,7 +711,7 @@
       "url": "https://finance.sina.com.cn/roll/2025-03-23/doc-ineqqwqw9193890.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2025-03-23T08:57:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "996ccabc45be3ceff6fe3f4bed46bbc285cee989",
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -751,6 +762,17 @@
       "source_tier": 2
     },
     {
+      "title": "无锡：AI赋能，数智超声大模型提供全新诊断方案",
+      "url": "https://www.wxrb.com/doc/2025/03/11/392454.shtml",
+      "source": "wxrb.com",
+      "published_at": "2025-03-12T01:35:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "cfc341abbb2ea86d6a6090c622092d7e3d36f555",
+      "domain": "wxrb.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "AI赋能，无锡突破这项技术瓶颈！",
       "url": "https://www.thepaper.cn/newsDetail_forward_30362774",
       "source": "thepaper.cn",
@@ -788,7 +810,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -832,7 +854,7 @@
       "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
       "source": "js.ifeng.com",
       "published_at": "2024-06-06T14:12:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "b3d8ac74b4be24c151812b9fb23d5e40d0df3425",
       "domain": "js.ifeng.com",
       "trusted": false,
