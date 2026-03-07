@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-08T00:43:56.548002+08:00",
+  "updated_at": "2026-03-08T02:50:29.283477+08:00",
   "item_count": 87,
   "items": [
     {
@@ -113,13 +113,13 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
-      "source": "xhby.net",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
+      "source": "yzwb.net",
       "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -190,17 +190,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡打造“OPC”AI创业生态，请看《浪尖周报》第56期 - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_32309634",
-      "source": "m.thepaper.cn",
-      "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "f26b8de698bc56a518ea67cfe72925d15b43840b",
-      "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
       "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
       "source": "m.thepaper.cn",
@@ -219,6 +208,17 @@
       "feed": "google:无锡 AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡打造“OPC”AI创业生态，请看《浪尖周报》第56期 - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32309634",
+      "source": "m.thepaper.cn",
+      "published_at": "2026-01-04T16:00:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "f26b8de698bc56a518ea67cfe72925d15b43840b",
+      "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
