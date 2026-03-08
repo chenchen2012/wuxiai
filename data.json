@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-08T11:12:15.470776+08:00",
+  "updated_at": "2026-03-08T13:14:59.340897+08:00",
   "item_count": 87,
   "items": [
     {
@@ -172,7 +172,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
@@ -315,7 +315,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
       "domain": "wxrb.com",
       "trusted": true,
@@ -898,7 +898,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
