@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09T02:51:54.650860+08:00",
+  "updated_at": "2026-03-09T04:42:12.326607+08:00",
   "item_count": 88,
   "items": [
     {
@@ -190,17 +190,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡：AI赋能精准匹配 “智聘引擎”助推高效就业服务 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260104_307553.html",
-      "source": "yzwb.net",
-      "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 AI",
-      "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
       "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
       "source": "m.thepaper.cn",
@@ -208,6 +197,17 @@
       "feed": "google:无锡 人工智能:thepaper.cn",
       "fingerprint": "5e257cc3b8751153025cd72def3e074b5c3347e1",
       "domain": "m.thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡：AI赋能精准匹配 “智聘引擎”助推高效就业服务 - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260104_307553.html",
+      "source": "yzwb.net",
+      "published_at": "2026-01-04T16:00:00+08:00",
+      "feed": "google:无锡 AI",
+      "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -271,7 +271,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202511/t20251119_291265.html",
       "source": "yangtse.com",
       "published_at": "2025-11-19T22:33:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "4618d5eda50836feaeb55a034054c6e6adbdf887",
       "domain": "yangtse.com",
       "trusted": true,
