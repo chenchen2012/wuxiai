@@ -21,6 +21,7 @@ HISTORY_PATH = os.path.join(ROOT_DIR, "history.html")
 DATA_PATH = os.path.join(ROOT_DIR, "data.json")
 ROBOTS_PATH = os.path.join(ROOT_DIR, "robots.txt")
 SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
+HISTORY_PAGE_PREFIX = "history-page-"
 
 CST = timezone(timedelta(hours=8))
 USER_AGENT = "Mozilla/5.0 (compatible; WuxiAINewsBot/2.0; +https://wuxiai.com/)"
@@ -799,7 +800,7 @@ def write_data_json(items: list[dict]) -> None:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
-def write_seo_files(updated_iso: str) -> None:
+def write_seo_files(updated_iso: str, items: list[dict]) -> None:
     updated_date = updated_iso[:10] if updated_iso else datetime.now(CST).strftime("%Y-%m-%d")
     robots = "\n".join(
         [
@@ -810,32 +811,35 @@ def write_seo_files(updated_iso: str) -> None:
             "",
         ]
     )
-    sitemap = "\n".join(
-        [
-            '<?xml version="1.0" encoding="UTF-8"?>',
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-            "  <url>",
-            "    <loc>https://wuxiai.com/</loc>",
-            f"    <lastmod>{updated_date}</lastmod>",
-            "    <changefreq>hourly</changefreq>",
-            "    <priority>1.0</priority>",
-            "  </url>",
-            "  <url>",
-            "    <loc>https://wuxiai.com/contact.html</loc>",
-            f"    <lastmod>{updated_date}</lastmod>",
-            "    <changefreq>monthly</changefreq>",
-            "    <priority>0.6</priority>",
-            "  </url>",
-            "  <url>",
-            "    <loc>https://wuxiai.com/history.html</loc>",
-            f"    <lastmod>{updated_date}</lastmod>",
-            "    <changefreq>hourly</changefreq>",
-            "    <priority>0.8</priority>",
-            "  </url>",
-            "</urlset>",
-            "",
-        ]
-    )
+    sitemap_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+        "  <url>",
+        "    <loc>https://wuxiai.com/</loc>",
+        f"    <lastmod>{updated_date}</lastmod>",
+        "    <changefreq>hourly</changefreq>",
+        "    <priority>1.0</priority>",
+        "  </url>",
+        "  <url>",
+        "    <loc>https://wuxiai.com/contact.html</loc>",
+        f"    <lastmod>{updated_date}</lastmod>",
+        "    <changefreq>monthly</changefreq>",
+        "    <priority>0.6</priority>",
+        "  </url>",
+    ]
+    for page_number in range(1, get_history_page_count(items) + 1):
+        sitemap_lines.extend(
+            [
+                "  <url>",
+                f"    <loc>{history_page_url(page_number)}</loc>",
+                f"    <lastmod>{updated_date}</lastmod>",
+                "    <changefreq>hourly</changefreq>",
+                f"    <priority>{'0.8' if page_number == 1 else '0.7'}</priority>",
+                "  </url>",
+            ]
+        )
+    sitemap_lines.extend(["</urlset>", ""])
+    sitemap = "\n".join(sitemap_lines)
     with open(ROBOTS_PATH, "w", encoding="utf-8") as f:
         f.write(robots)
     with open(SITEMAP_PATH, "w", encoding="utf-8") as f:
@@ -852,6 +856,7 @@ def build_page_html(
     intro: str,
     show_limit: Optional[int],
     more_link_html: str = "",
+    page_meta: str = "",
 ) -> str:
     now_iso = datetime.now(CST).isoformat()
     seo_json_ld = json.dumps(
@@ -930,6 +935,8 @@ def build_page_html(
         "    a:hover { text-decoration: underline; }",
         "    .src { color: var(--muted); font-size: 13px; }",
         "    .more { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; }",
+        "    .pager { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: center; }",
+        "    .pager span { color: var(--muted); }",
         "    .contact { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); color: #4b5563; font-size: 14px; }",
         "    .footer-nav { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }",
         "    .footer-label { color: #6b7280; margin-right: 6px; }",
@@ -941,6 +948,8 @@ def build_page_html(
         f"  <h1>{html.escape(heading)}</h1>",
         f'  <p class="intro">{html.escape(intro)}</p>',
     ]
+    if page_meta:
+        lines.append(f'  <p class="meta">{html.escape(page_meta)}</p>')
 
     if not items:
         lines.append("  <p>暂无可展示的新闻，请稍后再试。</p>")
@@ -986,18 +995,83 @@ def build_home_html(items: list[dict]) -> str:
     )
 
 
-def build_history_html(items: list[dict]) -> str:
+def history_page_filename(page_number: int) -> str:
+    if page_number <= 1:
+        return "history.html"
+    return f"{HISTORY_PAGE_PREFIX}{page_number}.html"
+
+
+def history_page_url(page_number: int) -> str:
+    return f"https://wuxiai.com/{history_page_filename(page_number)}"
+
+
+def get_history_page_count(items: list[dict]) -> int:
+    history_item_count = max(len(items) - MAX_ITEMS, 0)
+    if history_item_count == 0:
+        return 0
+    return (history_item_count + MAX_ITEMS - 1) // MAX_ITEMS
+
+
+def build_history_navigation(page_number: int, total_pages: int) -> str:
+    prev_html = (
+        f'<a href="/{history_page_filename(page_number - 1)}">上一页</a>'
+        if page_number > 1
+        else '<a href="/">返回首页最新新闻</a>'
+    )
+    next_html = (
+        f'<a href="/{history_page_filename(page_number + 1)}">下一页</a>'
+        if page_number < total_pages
+        else "已经到底了"
+    )
+    return (
+        '<div class="pager">'
+        f"<span>第 {page_number} 页，共 {total_pages} 页</span>"
+        f"<span>{prev_html} | {next_html}</span>"
+        "</div>"
+    )
+
+
+def build_history_html(items: list[dict], page_number: int, total_pages: int) -> str:
     history_items = items[MAX_ITEMS:]
+    start = (page_number - 1) * MAX_ITEMS
+    end = start + MAX_ITEMS
+    page_items = history_items[start:end]
     return build_page_html(
-        items=history_items,
-        page_title="无锡AI历史新闻",
-        canonical_url="https://wuxiai.com/history.html",
+        items=page_items,
+        page_title=(
+            "无锡AI历史新闻"
+            if page_number == 1
+            else f"无锡AI历史新闻 - 第 {page_number} 页"
+        ),
+        canonical_url=history_page_url(page_number),
         description="无锡AI历史新闻归档页，按时间倒序查看更早的无锡人工智能与机器人相关资讯。",
         heading="无锡AI历史新闻",
-        intro="这里收录首页之外的更早新闻，按时间倒序展示。",
+        intro="这里收录首页之外的更早新闻，按时间倒序分页展示。",
         show_limit=None,
-        more_link_html='返回 <a href="/">首页最新新闻</a>',
+        more_link_html=build_history_navigation(page_number, total_pages),
+        page_meta=f"归档分页：第 {page_number} 页 / 共 {total_pages} 页",
     )
+
+
+def write_history_pages(items: list[dict]) -> None:
+    total_pages = get_history_page_count(items)
+    expected_paths = set()
+    if total_pages == 0:
+        if os.path.exists(HISTORY_PATH):
+            os.remove(HISTORY_PATH)
+    else:
+        for page_number in range(1, total_pages + 1):
+            path = os.path.join(ROOT_DIR, history_page_filename(page_number))
+            expected_paths.add(path)
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(build_history_html(items, page_number, total_pages))
+
+    for name in os.listdir(ROOT_DIR):
+        if not name.startswith(HISTORY_PAGE_PREFIX) or not name.endswith(".html"):
+            continue
+        path = os.path.join(ROOT_DIR, name)
+        if path not in expected_paths and os.path.exists(path):
+            os.remove(path)
 
 
 def collect_items() -> list[dict]:
@@ -1026,11 +1100,10 @@ def main():
     items = collect_items()
     updated_iso = datetime.now(CST).isoformat()
     write_data_json(items)
-    write_seo_files(updated_iso)
+    write_seo_files(updated_iso, items)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write(build_home_html(items))
-    with open(HISTORY_PATH, "w", encoding="utf-8") as f:
-        f.write(build_history_html(items))
+    write_history_pages(items)
 
 
 if __name__ == "__main__":
