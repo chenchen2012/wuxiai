@@ -166,6 +166,10 @@ AI_TOPIC_KEYWORDS = [
     "算法",
 ]
 
+INDIRECT_AI_TOPIC_KEYWORDS = [
+    "养龙虾",
+]
+
 AUTHORITATIVE_DOMAIN_SUFFIXES = (
     ".gov.cn",
     ".edu.cn",
@@ -278,10 +282,12 @@ def is_relevant(item: dict) -> bool:
 
 
 def is_wuxi_ai_topic(item: dict) -> bool:
-    text = str(item.get("title", "")).lower()
-    has_location = any(k in text for k in LOCATION_KEYWORDS)
-    has_ai_topic = any(k in text for k in AI_TOPIC_KEYWORDS) or bool(
-        re.search(r"(?<![a-z0-9])ai(?![a-z0-9])", text)
+    title_text = str(item.get("title", "")).lower()
+    has_location = any(k in title_text for k in LOCATION_KEYWORDS)
+    has_ai_topic = (
+        any(k in title_text for k in AI_TOPIC_KEYWORDS)
+        or any(k in title_text for k in INDIRECT_AI_TOPIC_KEYWORDS)
+        or bool(re.search(r"(?<![a-z0-9])ai(?![a-z0-9])", title_text))
     )
     return has_location and has_ai_topic
 
