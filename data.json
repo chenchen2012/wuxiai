@@ -1,29 +1,7 @@
 {
-  "updated_at": "2026-03-09T21:06:40.522347+08:00",
-  "item_count": 53,
+  "updated_at": "2026-03-09T21:19:04.957018+08:00",
+  "item_count": 43,
   "items": [
-    {
-      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - 新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-03-09/doc-inhqmcpn0561897.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-09T20:42:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "290da1e1e69d597b85c940f8ff28d203ad1d8b3a",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
-      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-09T20:35:17+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "fbf9a0fae7f15870546d6c3723265d66e05051dc",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
     {
       "title": "无锡发布“养龙虾”12条，苏州考虑补贴“养龙虾” - 新浪财经",
       "url": "https://finance.sina.com.cn/jjxw/2026-03-09/doc-inhqkxfq0656925.shtml",
@@ -47,13 +25,13 @@
       "source_tier": 1
     },
     {
-      "title": "跟进深圳龙岗，无锡高新区拟对“养龙虾”单项最高补贴500万 - thepaper.cn",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32732697?commTag=true",
-      "source": "thepaper.cn",
-      "published_at": "2026-03-09T16:49:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "fa1ea45b56ed439f04e0881735b5d46f4d34bb62",
-      "domain": "thepaper.cn",
+      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-09T13:47:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "290da1e1e69d597b85c940f8ff28d203ad1d8b3a",
+      "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -69,6 +47,17 @@
       "source_tier": 1
     },
     {
+      "title": "跟进深圳龙岗，无锡高新区拟对“养龙虾”单项最高补贴500万",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32732697?commTag=true",
+      "source": "thepaper.cn",
+      "published_at": "2026-03-09T10:15:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "fa1ea45b56ed439f04e0881735b5d46f4d34bb62",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "无锡高新区发布“养龙虾”12条，最高补贴500万",
       "url": "https://www.thepaper.cn/newsDetail_forward_32732513",
       "source": "thepaper.cn",
@@ -76,17 +65,6 @@
       "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "a6866dfd611e96e1b512f59dccf3246fadfda275",
       "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡商业航天产业步入“产能释放期” - 人民网－江苏频道",
-      "url": "http://js.people.com.cn/n2/2026/0309/c360301-41518158.html",
-      "source": "js.people.com.cn",
-      "published_at": "2026-03-09T07:01:00+08:00",
-      "feed": "google:无锡 人工智能:people.com.cn",
-      "fingerprint": "a963edda653e4d416624f86af2bd7f461a1432b4",
-      "domain": "js.people.com.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -102,50 +80,6 @@
       "source_tier": 2
     },
     {
-      "title": "盐宜铁路无锡段按下建设“加速键” - 人民网－江苏频道",
-      "url": "http://js.people.com.cn/n2/2026/0305/c360302-41515292.html",
-      "source": "js.people.com.cn",
-      "published_at": "2026-03-05T06:55:00+08:00",
-      "feed": "google:无锡 人工智能:people.com.cn",
-      "fingerprint": "dd52cf5b701a04f865d1522c1282ea1e70792653",
-      "domain": "js.people.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡：元宵传情践文明 雷锋精神暖锡城 - 人民网－江苏频道",
-      "url": "http://js.people.com.cn/n2/2026/0304/c360303-41514850.html",
-      "source": "js.people.com.cn",
-      "published_at": "2026-03-04T11:33:00+08:00",
-      "feed": "google:无锡 人工智能:people.com.cn",
-      "fingerprint": "eeca108858f02bcfa5d4f05b1ca355816071fada",
-      "domain": "js.people.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡旺庄街道“春芽启岁·策马逐新”寒假充电站系列活动收官 - 人民网－江苏频道",
-      "url": "http://js.people.com.cn/n2/2026/0303/c360303-41514225.html",
-      "source": "js.people.com.cn",
-      "published_at": "2026-03-03T18:17:00+08:00",
-      "feed": "google:无锡 人工智能:people.com.cn",
-      "fingerprint": "c7c23be44cb70b0b80ea469ecd91a60ff2300947",
-      "domain": "js.people.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "聚焦人工智能 无锡锡山30亿元基金启航 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-03T17:28:11+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "人工智能与计算机学院与无锡市工信局开展合作交流座谈 - 江南大学新闻网",
       "url": "https://news.jiangnan.edu.cn/info/1065/106642.htm",
       "source": "news.jiangnan.edu.cn",
@@ -157,57 +91,13 @@
       "source_tier": 3
     },
     {
-      "title": "无锡东港镇 “三沉三实”赋能基层善治新实践",
-      "url": "https://xh.xhby.net/pc/con/202603/03/content_1533225.html",
-      "source": "xh.xhby.net",
-      "published_at": "2026-03-02T23:59:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "5838580e46395b3bb366d0b4acd6b9b3a2bc54ad",
-      "domain": "xh.xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡、苏州两地携手闹元宵 文明实践情暖太湖湾",
-      "url": "https://www.chinanews.com.cn/sh/2026/02-28/10578434.shtml",
+      "title": "聚焦人工智能 无锡锡山30亿元基金启航",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-02-28T14:41:00+08:00",
+      "published_at": "2026-03-03T09:56:00+08:00",
       "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "0a86564d00690f487e9a01f6ce9847676bfbc4bb",
+      "fingerprint": "950c68bdd46998d9ed9785ca0be77a9725030966",
       "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡锡山又一高端制造业项目签约落地 - js.chinanews.com.cn",
-      "url": "https://www.js.chinanews.com.cn/news/2026/0228/232550.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2026-02-28T14:18:10+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "78b183c95854bf11397711f0a8c63aff320a2b08",
-      "domain": "js.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "【新春走基层】马不停蹄全球“掘金”，无锡外贸企业冲刺新春 ...",
-      "url": "https://www.xhby.net/content/s699ef623e4b0303f7f925f71.html",
-      "source": "xhby.net",
-      "published_at": "2026-02-26T09:38:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "f2ff7cb0095d934f9b6c32f4b65fa9f0eff14cb2",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "热气腾腾的中国年｜江苏无锡：“烟火气”+“黑科技”，点燃新春 ...",
-      "url": "https://www.xhby.net/content/s699d72b2e4b09e8284a39585.html",
-      "source": "xhby.net",
-      "published_at": "2026-02-24T09:56:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "1ff149ca0d2b53be1d028f8afa1f09a1ba82a085",
-      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -278,12 +168,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2

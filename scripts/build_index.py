@@ -179,6 +179,20 @@ CONTENT_AI_TOPIC_KEYWORDS = AI_TOPIC_KEYWORDS + [
     "开爪",
 ]
 
+NON_AI_TITLE_KEYWORDS = [
+    "铁路",
+    "元宵",
+    "街道",
+    "东港镇",
+    "旺庄",
+    "善治",
+    "文明",
+    "商业航天",
+    "签约落地",
+    "外贸企业",
+    "新春",
+]
+
 AUTHORITATIVE_DOMAIN_SUFFIXES = (
     ".gov.cn",
     ".edu.cn",
@@ -307,8 +321,17 @@ def text_has_ai_topic(text: str, include_indirect: bool = False) -> bool:
     )
 
 
+def is_obviously_non_ai_title(title: str) -> bool:
+    title_text = (title or "").lower()
+    if text_has_ai_topic(title_text, include_indirect=True):
+        return False
+    return any(k in title_text for k in NON_AI_TITLE_KEYWORDS)
+
+
 def is_wuxi_ai_topic(item: dict) -> bool:
     title_text = str(item.get("title", ""))
+    if is_obviously_non_ai_title(title_text):
+        return False
     if text_has_location(title_text) and text_has_ai_topic(
         title_text, include_indirect=True
     ):
@@ -399,16 +422,19 @@ def extract_article_context(html_text: str) -> str:
             if cleaned:
                 snippets.append(cleaned)
 
-    cleaned_html = re.sub(r"<!--.*?-->", " ", html_text, flags=re.DOTALL)
-    cleaned_html = re.sub(
-        r"<(script|style|noscript|svg|iframe)[^>]*>.*?</\1>",
-        " ",
-        cleaned_html,
-        flags=re.IGNORECASE | re.DOTALL,
-    )
-    body_text = normalize_whitespace(re.sub(r"<[^>]+>", " ", cleaned_html))
-    if body_text:
-        snippets.append(body_text[:ARTICLE_CONTEXT_LIMIT])
+    paragraphs = []
+    for match in re.findall(r"<p\b[^>]*>(.*?)</p>", html_text, flags=re.IGNORECASE | re.DOTALL):
+        cleaned = normalize_whitespace(re.sub(r"<[^>]+>", " ", match))
+        if len(cleaned) < 30:
+            continue
+        if cleaned in paragraphs:
+            continue
+        paragraphs.append(cleaned)
+        if len(paragraphs) >= 3:
+            break
+
+    if paragraphs:
+        snippets.append(" ".join(paragraphs))
 
     return normalize_whitespace(" ".join(snippets))[:ARTICLE_CONTEXT_LIMIT]
 
