@@ -1016,7 +1016,7 @@ def build_history_navigation(page_number: int, total_pages: int) -> str:
     prev_html = (
         f'<a href="/{history_page_filename(page_number - 1)}">上一页</a>'
         if page_number > 1
-        else '<a href="/">返回首页最新新闻</a>'
+        else "已经是第一页"
     )
     next_html = (
         f'<a href="/{history_page_filename(page_number + 1)}">下一页</a>'
@@ -1026,7 +1026,7 @@ def build_history_navigation(page_number: int, total_pages: int) -> str:
     return (
         '<div class="pager">'
         f"<span>第 {page_number} 页，共 {total_pages} 页</span>"
-        f"<span>{prev_html} | {next_html}</span>"
+        f'<span><a href="/">返回首页最新新闻</a> | {prev_html} | {next_html}</span>'
         "</div>"
     )
 
