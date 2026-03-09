@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-09T06:42:17.572781+08:00",
+  "updated_at": "2026-03-09T11:15:16.621666+08:00",
   "item_count": 88,
   "items": [
     {
@@ -179,12 +179,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -315,7 +315,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
       "domain": "wxrb.com",
       "trusted": true,
