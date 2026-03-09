@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-03-09T21:19:04.957018+08:00",
-  "item_count": 43,
+  "updated_at": "2026-03-09T21:20:17.351367+08:00",
+  "item_count": 44,
   "items": [
+    {
+      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - 新浪财经",
+      "url": "https://finance.sina.com.cn/roll/2026-03-09/doc-inhqmcpn0561897.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-09T20:42:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "290da1e1e69d597b85c940f8ff28d203ad1d8b3a",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-09T20:35:17+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "fbf9a0fae7f15870546d6c3723265d66e05051dc",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
     {
       "title": "无锡发布“养龙虾”12条，苏州考虑补贴“养龙虾” - 新浪财经",
       "url": "https://finance.sina.com.cn/jjxw/2026-03-09/doc-inhqkxfq0656925.shtml",
@@ -25,13 +47,13 @@
       "source_tier": 1
     },
     {
-      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-09T13:47:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "290da1e1e69d597b85c940f8ff28d203ad1d8b3a",
-      "domain": "chinanews.com.cn",
+      "title": "跟进深圳龙岗，无锡高新区拟对“养龙虾”单项最高补贴500万 - thepaper.cn",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32732697?commTag=true",
+      "source": "thepaper.cn",
+      "published_at": "2026-03-09T16:49:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "fa1ea45b56ed439f04e0881735b5d46f4d34bb62",
+      "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -45,17 +67,6 @@
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
-    },
-    {
-      "title": "跟进深圳龙岗，无锡高新区拟对“养龙虾”单项最高补贴500万",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32732697?commTag=true",
-      "source": "thepaper.cn",
-      "published_at": "2026-03-09T10:15:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "fa1ea45b56ed439f04e0881735b5d46f4d34bb62",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
     },
     {
       "title": "无锡高新区发布“养龙虾”12条，最高补贴500万",
@@ -80,6 +91,17 @@
       "source_tier": 2
     },
     {
+      "title": "聚焦人工智能 无锡锡山30亿元基金启航 - chinanews.com.cn",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-03T17:28:11+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "人工智能与计算机学院与无锡市工信局开展合作交流座谈 - 江南大学新闻网",
       "url": "https://news.jiangnan.edu.cn/info/1065/106642.htm",
       "source": "news.jiangnan.edu.cn",
@@ -89,17 +111,6 @@
       "domain": "news.jiangnan.edu.cn",
       "trusted": true,
       "source_tier": 3
-    },
-    {
-      "title": "聚焦人工智能 无锡锡山30亿元基金启航",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-03T09:56:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "950c68bdd46998d9ed9785ca0be77a9725030966",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
     },
     {
       "title": "从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 紫牛新闻",
@@ -168,12 +179,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
