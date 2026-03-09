@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-09T21:36:02.397035+08:00",
-  "item_count": 53,
+  "updated_at": "2026-03-09T21:39:57.897877+08:00",
+  "item_count": 56,
   "items": [
+    {
+      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - 新浪财经",
+      "url": "https://finance.sina.com.cn/roll/2026-03-09/doc-inhqmcpn0561897.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-09T20:42:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "290da1e1e69d597b85c940f8ff28d203ad1d8b3a",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
@@ -29,7 +40,7 @@
       "url": "http://www.js.chinanews.com.cn/news/2026/0309/232675.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-09T18:15:21+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "907c699f87e985fbc04b2139f18d4f7e5c4274f1",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
@@ -91,6 +102,17 @@
       "source_tier": 2
     },
     {
+      "title": "刚因春晚“爆红”，又入选无锡重点实验室，这家具身智能上市公司 ...",
+      "url": "https://www.xhby.net/content/s69a949e8e4b00d434b763625.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-05T17:16:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "4c056a1167cd9f59c5040097eba269d18281d8c5",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "无锡梁溪中小学迎来别开生面的“校园迎新日” - js.chinanews.com.cn",
       "url": "https://www.js.chinanews.com.cn/news/2026/0305/232622.html",
       "source": "js.chinanews.com.cn",
@@ -106,7 +128,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-03-03T17:28:11+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -128,7 +150,7 @@
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202602/t20260208_320234.html",
       "source": "yzwb.net",
       "published_at": "2026-02-08T22:07:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "cde10eb12eb01f70b5926ab2b2112992fc4aaccd",
       "domain": "yzwb.net",
       "trusted": true,
@@ -139,7 +161,7 @@
       "url": "https://www.xhby.net/content/s697c9114e4b037c73eea960a.html",
       "source": "xhby.net",
       "published_at": "2026-01-30T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "918705a2d1f2e1ba5cfb9b081c8c78fdfd7d1c5f",
       "domain": "xhby.net",
       "trusted": true,
@@ -157,13 +179,13 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
-      "source": "yzwb.net",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
+      "source": "xhby.net",
       "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
-      "domain": "yzwb.net",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -263,6 +285,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "f5dc5493d9677d4dc3e9e1329af9a75c6e332f59",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "江苏无锡：AI赋能人才服务，用工场景迎来“智变”",
+      "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
+      "source": "wxrb.com",
+      "published_at": "2025-11-09T03:55:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
+      "domain": "wxrb.com",
       "trusted": true,
       "source_tier": 2
     },
