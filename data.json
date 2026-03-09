@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10T01:09:30.359942+08:00",
+  "updated_at": "2026-03-10T03:10:22.087323+08:00",
   "item_count": 52,
   "items": [
     {
@@ -51,7 +51,7 @@
       "url": "https://www.xhby.net/content/s69a949e8e4b00d434b763625.html",
       "source": "xhby.net",
       "published_at": "2026-03-05T17:16:00+08:00",
-      "feed": "bing:无锡AI:xhby.net",
+      "feed": "bing:无锡 AI:xhby.net",
       "fingerprint": "4c056a1167cd9f59c5040097eba269d18281d8c5",
       "domain": "xhby.net",
       "trusted": true,
@@ -124,13 +124,13 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
-      "source": "yzwb.net",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
+      "source": "xhby.net",
       "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
-      "domain": "yzwb.net",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -168,12 +168,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -315,7 +315,7 @@
       "url": "http://renshi.people.com.cn/n1/2025/0716/c139617-40522667.html",
       "source": "renshi.people.com.cn",
       "published_at": "2025-07-16T09:51:00+08:00",
-      "feed": "bing:无锡AI:people.com.cn",
+      "feed": "bing:无锡 AI:people.com.cn",
       "fingerprint": "f681db30a53aee08d577c4d0e6cd517b8b241109",
       "domain": "renshi.people.com.cn",
       "trusted": true,
@@ -513,7 +513,7 @@
       "url": "https://finance.people.com.cn/n1/2024/1003/c1004-40332781.html",
       "source": "finance.people.com.cn",
       "published_at": "2024-10-03T14:28:00+08:00",
-      "feed": "bing:无锡AI:people.com.cn",
+      "feed": "bing:无锡 AI:people.com.cn",
       "fingerprint": "dfdbe6e1544ea1a63910dae1c2ff5706ce024b2d",
       "domain": "finance.people.com.cn",
       "trusted": true,
