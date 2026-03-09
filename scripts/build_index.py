@@ -23,13 +23,17 @@ SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
 CST = timezone(timedelta(hours=8))
 USER_AGENT = "Mozilla/5.0 (compatible; WuxiAINewsBot/2.0; +https://wuxiai.com/)"
 FETCH_TIMEOUT_SECONDS = 10
+ARTICLE_FETCH_TIMEOUT_SECONDS = 8
 DECODE_TIMEOUT_SECONDS = 2.2
 MAX_WORKERS = 8
+ARTICLE_REVIEW_WORKERS = 4
 MAX_ITEMS = 12
 MAX_PER_SOURCE_ON_PAGE = 3
 MAX_PER_FEED = 20
 CACHE_LIMIT = 120
 MAX_GOOGLE_DECODE_ITEMS = 120
+MAX_CONTENT_REVIEW_ITEMS = 48
+ARTICLE_CONTEXT_LIMIT = 6000
 
 KEYWORDS = [
     "无锡 人工智能",
@@ -170,10 +174,17 @@ INDIRECT_AI_TOPIC_KEYWORDS = [
     "养龙虾",
 ]
 
+CONTENT_AI_TOPIC_KEYWORDS = AI_TOPIC_KEYWORDS + [
+    "openclaw",
+    "开爪",
+]
+
 AUTHORITATIVE_DOMAIN_SUFFIXES = (
     ".gov.cn",
     ".edu.cn",
 )
+
+ARTICLE_CONTEXT_CACHE = {}
 
 
 def build_bing_rss_url(keyword: str) -> str:
@@ -281,15 +292,37 @@ def is_relevant(item: dict) -> bool:
     return any(k in text for k in RELEVANCE_KEYWORDS)
 
 
-def is_wuxi_ai_topic(item: dict) -> bool:
-    title_text = str(item.get("title", "")).lower()
-    has_location = any(k in title_text for k in LOCATION_KEYWORDS)
-    has_ai_topic = (
-        any(k in title_text for k in AI_TOPIC_KEYWORDS)
-        or any(k in title_text for k in INDIRECT_AI_TOPIC_KEYWORDS)
-        or bool(re.search(r"(?<![a-z0-9])ai(?![a-z0-9])", title_text))
+def text_has_location(text: str) -> bool:
+    lt = (text or "").lower()
+    return any(k in lt for k in LOCATION_KEYWORDS)
+
+
+def text_has_ai_topic(text: str, include_indirect: bool = False) -> bool:
+    lt = (text or "").lower()
+    keywords = CONTENT_AI_TOPIC_KEYWORDS[:]
+    if include_indirect:
+        keywords += INDIRECT_AI_TOPIC_KEYWORDS
+    return any(k in lt for k in keywords) or bool(
+        re.search(r"(?<![a-z0-9])ai(?![a-z0-9])", lt)
     )
-    return has_location and has_ai_topic
+
+
+def is_wuxi_ai_topic(item: dict) -> bool:
+    title_text = str(item.get("title", ""))
+    if text_has_location(title_text) and text_has_ai_topic(
+        title_text, include_indirect=True
+    ):
+        return True
+
+    context_text = " ".join(
+        [
+            str(item.get("title", "")),
+            str(item.get("url", "")),
+            str(item.get("source", "")),
+            str(item.get("content_text", "")),
+        ]
+    )
+    return text_has_location(context_text) and text_has_ai_topic(context_text)
 
 
 def clean_url(url: str) -> str:
@@ -330,6 +363,116 @@ def parse_time_to_iso(pub_date: str) -> str:
         return dt.astimezone(CST).isoformat()
     except Exception:
         return ""
+
+
+def decode_html_bytes(html_bytes: bytes, charset_hint: str = "") -> str:
+    encodings = []
+    if charset_hint:
+        encodings.append(charset_hint)
+    encodings.extend(["utf-8", "gb18030", "gbk"])
+    seen = set()
+    for encoding in encodings:
+        if not encoding or encoding in seen:
+            continue
+        seen.add(encoding)
+        try:
+            return html_bytes.decode(encoding)
+        except Exception:
+            continue
+    return html_bytes.decode("utf-8", errors="ignore")
+
+
+def normalize_whitespace(text: str) -> str:
+    return re.sub(r"\s+", " ", html.unescape(text or "")).strip()
+
+
+def extract_article_context(html_text: str) -> str:
+    snippets = []
+    for pattern in [
+        r"<title[^>]*>(.*?)</title>",
+        r'<meta[^>]+name=["\']description["\'][^>]+content=["\'](.*?)["\']',
+        r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\'](.*?)["\']',
+        r'<meta[^>]+name=["\']keywords["\'][^>]+content=["\'](.*?)["\']',
+    ]:
+        for match in re.findall(pattern, html_text, flags=re.IGNORECASE | re.DOTALL):
+            cleaned = normalize_whitespace(re.sub(r"<[^>]+>", " ", match))
+            if cleaned:
+                snippets.append(cleaned)
+
+    cleaned_html = re.sub(r"<!--.*?-->", " ", html_text, flags=re.DOTALL)
+    cleaned_html = re.sub(
+        r"<(script|style|noscript|svg|iframe)[^>]*>.*?</\1>",
+        " ",
+        cleaned_html,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    body_text = normalize_whitespace(re.sub(r"<[^>]+>", " ", cleaned_html))
+    if body_text:
+        snippets.append(body_text[:ARTICLE_CONTEXT_LIMIT])
+
+    return normalize_whitespace(" ".join(snippets))[:ARTICLE_CONTEXT_LIMIT]
+
+
+def fetch_article_context(url: str) -> str:
+    cached = ARTICLE_CONTEXT_CACHE.get(url)
+    if cached is not None:
+        return cached
+
+    text = ""
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=ARTICLE_FETCH_TIMEOUT_SECONDS) as resp:
+            raw_bytes = resp.read()
+            charset = resp.headers.get_content_charset() or ""
+            text = extract_article_context(decode_html_bytes(raw_bytes, charset))
+    except Exception:
+        text = ""
+
+    ARTICLE_CONTEXT_CACHE[url] = text
+    return text
+
+
+def needs_article_review(item: dict) -> bool:
+    title_text = str(item.get("title", ""))
+    if text_has_ai_topic(title_text, include_indirect=True):
+        return False
+    text = " ".join(
+        [
+            str(item.get("title", "")),
+            str(item.get("url", "")),
+            str(item.get("source", "")),
+        ]
+    )
+    return text_has_location(text)
+
+
+def enrich_items_with_article_context(items: list[dict]) -> list[dict]:
+    candidates = []
+    for idx, item in enumerate(items):
+        if not needs_article_review(item):
+            continue
+        candidates.append((idx, str(item.get("published_at", ""))))
+
+    if not candidates:
+        return items
+
+    candidates.sort(key=lambda x: x[1], reverse=True)
+    candidates = candidates[:MAX_CONTENT_REVIEW_ITEMS]
+
+    with ThreadPoolExecutor(max_workers=ARTICLE_REVIEW_WORKERS) as executor:
+        future_map = {
+            executor.submit(fetch_article_context, str(items[idx].get("url", ""))): idx
+            for idx, _ in candidates
+        }
+        for future in as_completed(future_map):
+            idx = future_map[future]
+            try:
+                context_text = future.result()
+            except Exception:
+                context_text = ""
+            if context_text:
+                items[idx]["content_text"] = context_text
+    return items
 
 
 def format_cst_time(iso_time: str) -> str:
@@ -615,10 +758,14 @@ def dedupe_items(items: list[dict]) -> list[dict]:
 
 
 def write_data_json(items: list[dict]) -> None:
+    serializable_items = []
+    for item in items:
+        cloned = {k: v for k, v in item.items() if k != "content_text"}
+        serializable_items.append(cloned)
     payload = {
         "updated_at": datetime.now(CST).isoformat(),
-        "item_count": len(items),
-        "items": items,
+        "item_count": len(serializable_items),
+        "items": serializable_items,
     }
     with open(DATA_PATH, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
@@ -796,6 +943,7 @@ def collect_items() -> list[dict]:
 
     existing = load_existing_items()
     merged = resolve_google_links(raw_items + existing)
+    merged = enrich_items_with_article_context(merged)
     merged = dedupe_items(merged)
     return merged[:CACHE_LIMIT]
 
