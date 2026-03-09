@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-09T20:54:52.587311+08:00",
-  "item_count": 41,
+  "updated_at": "2026-03-09T21:06:40.522347+08:00",
+  "item_count": 53,
   "items": [
     {
       "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - 新浪财经",
@@ -25,6 +25,17 @@
       "source_tier": 2
     },
     {
+      "title": "无锡发布“养龙虾”12条，苏州考虑补贴“养龙虾” - 新浪财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-09/doc-inhqkxfq0656925.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-09T19:22:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "ffcf4737ea68ad34b5acdd424c0a70bf831ccc8c",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
       "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
       "url": "https://companies.caixin.com/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
@@ -47,6 +58,17 @@
       "source_tier": 2
     },
     {
+      "title": "无锡发布“养龙虾”12条，单项支持最高达500万元",
+      "url": "https://finance.sina.com.cn/wm/2026-03-09/doc-inhqksxt6977909.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-09T10:28:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "b5b7e7402604f833a0651f4001c6a2be2d6023bd",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
       "title": "无锡高新区发布“养龙虾”12条，最高补贴500万",
       "url": "https://www.thepaper.cn/newsDetail_forward_32732513",
       "source": "thepaper.cn",
@@ -54,6 +76,61 @@
       "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "a6866dfd611e96e1b512f59dccf3246fadfda275",
       "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡商业航天产业步入“产能释放期” - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0309/c360301-41518158.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-09T07:01:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "a963edda653e4d416624f86af2bd7f461a1432b4",
+      "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡梁溪中小学迎来别开生面的“校园迎新日” - js.chinanews.com.cn",
+      "url": "https://www.js.chinanews.com.cn/news/2026/0305/232622.html",
+      "source": "js.chinanews.com.cn",
+      "published_at": "2026-03-05T16:34:25+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "f2fa123b508cada78e61488d4a235a3f3e7b78d8",
+      "domain": "js.chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "盐宜铁路无锡段按下建设“加速键” - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0305/c360302-41515292.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-05T06:55:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "dd52cf5b701a04f865d1522c1282ea1e70792653",
+      "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡：元宵传情践文明 雷锋精神暖锡城 - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0304/c360303-41514850.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-04T11:33:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "eeca108858f02bcfa5d4f05b1ca355816071fada",
+      "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡旺庄街道“春芽启岁·策马逐新”寒假充电站系列活动收官 - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0303/c360303-41514225.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-03T18:17:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "c7c23be44cb70b0b80ea469ecd91a60ff2300947",
+      "domain": "js.people.com.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -78,6 +155,61 @@
       "domain": "news.jiangnan.edu.cn",
       "trusted": true,
       "source_tier": 3
+    },
+    {
+      "title": "无锡东港镇 “三沉三实”赋能基层善治新实践",
+      "url": "https://xh.xhby.net/pc/con/202603/03/content_1533225.html",
+      "source": "xh.xhby.net",
+      "published_at": "2026-03-02T23:59:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "5838580e46395b3bb366d0b4acd6b9b3a2bc54ad",
+      "domain": "xh.xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡、苏州两地携手闹元宵 文明实践情暖太湖湾",
+      "url": "https://www.chinanews.com.cn/sh/2026/02-28/10578434.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-02-28T14:41:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "0a86564d00690f487e9a01f6ce9847676bfbc4bb",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡锡山又一高端制造业项目签约落地 - js.chinanews.com.cn",
+      "url": "https://www.js.chinanews.com.cn/news/2026/0228/232550.html",
+      "source": "js.chinanews.com.cn",
+      "published_at": "2026-02-28T14:18:10+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "78b183c95854bf11397711f0a8c63aff320a2b08",
+      "domain": "js.chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "【新春走基层】马不停蹄全球“掘金”，无锡外贸企业冲刺新春 ...",
+      "url": "https://www.xhby.net/content/s699ef623e4b0303f7f925f71.html",
+      "source": "xhby.net",
+      "published_at": "2026-02-26T09:38:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "f2ff7cb0095d934f9b6c32f4b65fa9f0eff14cb2",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "热气腾腾的中国年｜江苏无锡：“烟火气”+“黑科技”，点燃新春 ...",
+      "url": "https://www.xhby.net/content/s699d72b2e4b09e8284a39585.html",
+      "source": "xhby.net",
+      "published_at": "2026-02-24T09:56:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "1ff149ca0d2b53be1d028f8afa1f09a1ba82a085",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 紫牛新闻",
