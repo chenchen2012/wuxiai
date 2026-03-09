@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10T04:51:34.545816+08:00",
+  "updated_at": "2026-03-10T06:47:55.304311+08:00",
   "item_count": 52,
   "items": [
     {
@@ -29,14 +29,14 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0309/232675.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-09T18:15:21+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "907c699f87e985fbc04b2139f18d4f7e5c4274f1",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
       "url": "https://companies.caixin.com/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
@@ -73,7 +73,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-03-03T17:28:11+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -124,7 +124,7 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 扬子晚报",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
       "source": "yzwb.net",
       "published_at": "2026-01-26T16:00:00+08:00",
@@ -223,7 +223,7 @@
       "source_tier": 2
     },
     {
-      "title": "“AI赋能·智联世界”城市形象国际传播（无锡）论坛成功举办 - 扬子晚报",
+      "title": "“AI赋能·智联世界”城市形象国际传播（无锡）论坛成功举办 - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202511/t20251109_287215.html",
       "source": "yzwb.net",
       "published_at": "2025-11-09T16:00:00+08:00",
@@ -245,7 +245,7 @@
       "source_tier": 2
     },
     {
-      "title": "人工智能重塑技工教育新图景——全国百所院校无锡共话产教融合新路径 - 扬子晚报",
+      "title": "人工智能重塑技工教育新图景——全国百所院校无锡共话产教融合新路径 - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202510/t20251027_282237.html",
       "source": "yzwb.net",
       "published_at": "2025-10-27T15:00:00+08:00",
@@ -256,7 +256,7 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：抢占“AI+”赛道 绘就智造新图景，以“人工智能之解”答好“新型工业化之问” - 扬子晚报",
+      "title": "江苏无锡：抢占“AI+”赛道 绘就智造新图景，以“人工智能之解”答好“新型工业化之问” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/yw/202509/t20250911_262496.html",
       "source": "yzwb.net",
       "published_at": "2025-09-11T15:00:00+08:00",
@@ -344,7 +344,7 @@
       "source_tier": 1
     },
     {
-      "title": "无锡绘制AI医药“智慧蓝图” - 扬子晚报",
+      "title": "无锡绘制AI医药“智慧蓝图” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202506/t20250618_223378.html",
       "source": "yzwb.net",
       "published_at": "2025-06-18T15:00:00+08:00",
@@ -366,7 +366,7 @@
       "source_tier": 1
     },
     {
-      "title": "破解“认证”瓶颈、共享“检测”资源 ，无锡为中小企业提质“精准导航”无锡造出农业机器人“AI大脑” - 扬子晚报",
+      "title": "破解“认证”瓶颈、共享“检测”资源 ，无锡为中小企业提质“精准导航”无锡造出农业机器人“AI大脑” - 紫牛新闻",
       "url": "http://www.yzwb.net/news/jiangsu/wuxi/202506/t20250607_218065.html",
       "source": "yzwb.net",
       "published_at": "2025-06-07T15:00:00+08:00",
@@ -377,7 +377,7 @@
       "source_tier": 2
     },
     {
-      "title": "江苏首个！无锡造出农业机器人“AI大脑” - 扬子晚报",
+      "title": "江苏首个！无锡造出农业机器人“AI大脑” - 紫牛新闻",
       "url": "https://wap.yzwb.net/wap/news/4548791.html",
       "source": "wap.yzwb.net",
       "published_at": "2025-06-05T15:00:00+08:00",
@@ -421,7 +421,7 @@
       "source_tier": 2
     },
     {
-      "title": "无锡机器人天团，还是太全面了 - 扬子晚报",
+      "title": "无锡机器人天团，还是太全面了 - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202504/t20250428_198882.html",
       "source": "yzwb.net",
       "published_at": "2025-04-28T15:00:00+08:00",
@@ -553,7 +553,7 @@
       "source_tier": 2
     },
     {
-      "title": "全国首个文心千帆大模型平台落户无锡梁溪，助力智能制造升级 - 扬子晚报",
+      "title": "全国首个文心千帆大模型平台落户无锡梁溪，助力智能制造升级 - 紫牛新闻",
       "url": "https://wap.yzwb.net/wap/news/3001398.html",
       "source": "wap.yzwb.net",
       "published_at": "2023-06-08T15:00:00+08:00",
