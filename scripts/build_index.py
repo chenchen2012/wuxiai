@@ -6,6 +6,7 @@ import os
 import re
 import subprocess
 import sys
+from typing import Optional
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -16,6 +17,7 @@ from email.utils import parsedate_to_datetime
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT_PATH = os.path.join(ROOT_DIR, "index.html")
+HISTORY_PATH = os.path.join(ROOT_DIR, "history.html")
 DATA_PATH = os.path.join(ROOT_DIR, "data.json")
 ROBOTS_PATH = os.path.join(ROOT_DIR, "robots.txt")
 SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
@@ -824,6 +826,12 @@ def write_seo_files(updated_iso: str) -> None:
             "    <changefreq>monthly</changefreq>",
             "    <priority>0.6</priority>",
             "  </url>",
+            "  <url>",
+            "    <loc>https://wuxiai.com/history.html</loc>",
+            f"    <lastmod>{updated_date}</lastmod>",
+            "    <changefreq>hourly</changefreq>",
+            "    <priority>0.8</priority>",
+            "  </url>",
             "</urlset>",
             "",
         ]
@@ -834,16 +842,26 @@ def write_seo_files(updated_iso: str) -> None:
         f.write(sitemap)
 
 
-def build_html(items: list[dict]) -> str:
+def build_page_html(
+    *,
+    items: list[dict],
+    page_title: str,
+    canonical_url: str,
+    description: str,
+    heading: str,
+    intro: str,
+    show_limit: Optional[int],
+    more_link_html: str = "",
+) -> str:
     now_iso = datetime.now(CST).isoformat()
     seo_json_ld = json.dumps(
         {
             "@context": "https://schema.org",
             "@type": "CollectionPage",
-            "name": "无锡AI",
-            "url": "https://wuxiai.com/",
+            "name": page_title,
+            "url": canonical_url,
             "inLanguage": "zh-CN",
-            "description": "无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。",
+            "description": description,
             "isPartOf": {
                 "@type": "WebSite",
                 "name": "无锡AI",
@@ -866,11 +884,11 @@ def build_html(items: list[dict]) -> str:
     source_counts = {}
     for item in sorted_items:
         src = str(item.get("source", "未知来源")).strip() or "未知来源"
-        if source_counts.get(src, 0) >= MAX_PER_SOURCE_ON_PAGE:
+        if show_limit is not None and source_counts.get(src, 0) >= MAX_PER_SOURCE_ON_PAGE:
             continue
         source_counts[src] = source_counts.get(src, 0) + 1
         display_items.append(item)
-        if len(display_items) >= MAX_ITEMS:
+        if show_limit is not None and len(display_items) >= show_limit:
             break
 
     lines = [
@@ -879,23 +897,23 @@ def build_html(items: list[dict]) -> str:
         "<head>",
         '  <meta charset="utf-8">',
         '  <meta name="viewport" content="width=device-width, initial-scale=1">',
-        '  <meta name="description" content="无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。">',
+        f'  <meta name="description" content="{html.escape(description, quote=True)}">',
         '  <meta name="keywords" content="无锡AI新闻, 无锡人工智能新闻, 无锡AI, 无锡人工智能">',
         '  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
         '  <meta name="applicable-device" content="pc,mobile">',
         '  <meta name="renderer" content="webkit">',
-        '  <link rel="canonical" href="https://wuxiai.com/">',
+        f'  <link rel="canonical" href="{html.escape(canonical_url, quote=True)}">',
         '  <meta property="og:type" content="website">',
         '  <meta property="og:locale" content="zh_CN">',
         '  <meta property="og:site_name" content="无锡AI">',
-        '  <meta property="og:title" content="无锡AI">',
-        '  <meta property="og:description" content="无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。">',
-        '  <meta property="og:url" content="https://wuxiai.com/">',
+        f'  <meta property="og:title" content="{html.escape(page_title, quote=True)}">',
+        f'  <meta property="og:description" content="{html.escape(description, quote=True)}">',
+        f'  <meta property="og:url" content="{html.escape(canonical_url, quote=True)}">',
         '  <meta name="twitter:card" content="summary">',
-        '  <meta name="twitter:title" content="无锡AI">',
-        '  <meta name="twitter:description" content="无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。">',
+        f'  <meta name="twitter:title" content="{html.escape(page_title, quote=True)}">',
+        f'  <meta name="twitter:description" content="{html.escape(description, quote=True)}">',
         f'  <meta property="article:modified_time" content="{html.escape(now_iso)}">',
-        "  <title>无锡AI</title>",
+        f"  <title>{html.escape(page_title)}</title>",
         f'  <script type="application/ld+json">{seo_json_ld}</script>',
         "  <style>",
         "    :root { --bg: #f5f7fb; --paper: #ffffff; --text: #1f2937; --muted: #6b7280; --line: #e5e7eb; --brand: #1d4ed8; }",
@@ -911,6 +929,7 @@ def build_html(items: list[dict]) -> str:
         "    a { color: var(--brand); text-decoration: none; }",
         "    a:hover { text-decoration: underline; }",
         "    .src { color: var(--muted); font-size: 13px; }",
+        "    .more { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; }",
         "    .contact { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); color: #4b5563; font-size: 14px; }",
         "    .footer-nav { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }",
         "    .footer-label { color: #6b7280; margin-right: 6px; }",
@@ -919,8 +938,8 @@ def build_html(items: list[dict]) -> str:
         "<body>",
         "  <main>",
         '  <section class="card">',
-        "  <h1>无锡AI</h1>",
-        '  <p class="intro">聚合无锡AI新闻、无锡人工智能新闻，重点关注无锡本地人工智能产业、技术与应用动态。</p>',
+        f"  <h1>{html.escape(heading)}</h1>",
+        f'  <p class="intro">{html.escape(intro)}</p>',
     ]
 
     if not items:
@@ -936,6 +955,8 @@ def build_html(items: list[dict]) -> str:
                 f'    <li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a><br><span class="src">{source} | {pub_date}</span></li>'
             )
         lines.append("  </ul>")
+        if more_link_html:
+            lines.append(f'  <div class="more">{more_link_html}</div>')
 
     lines.extend(
         [
@@ -950,6 +971,33 @@ def build_html(items: list[dict]) -> str:
         ]
     )
     return "\n".join(lines)
+
+
+def build_home_html(items: list[dict]) -> str:
+    return build_page_html(
+        items=items,
+        page_title="无锡AI",
+        canonical_url="https://wuxiai.com/",
+        description="无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。",
+        heading="无锡AI",
+        intro="聚合无锡AI新闻、无锡人工智能新闻，重点关注无锡本地人工智能产业、技术与应用动态。",
+        show_limit=MAX_ITEMS,
+        more_link_html='想看更早的内容？<a href="/history.html">查看历史新闻</a>',
+    )
+
+
+def build_history_html(items: list[dict]) -> str:
+    history_items = items[MAX_ITEMS:]
+    return build_page_html(
+        items=history_items,
+        page_title="无锡AI历史新闻",
+        canonical_url="https://wuxiai.com/history.html",
+        description="无锡AI历史新闻归档页，按时间倒序查看更早的无锡人工智能与机器人相关资讯。",
+        heading="无锡AI历史新闻",
+        intro="这里收录首页之外的更早新闻，按时间倒序展示。",
+        show_limit=None,
+        more_link_html='返回 <a href="/">首页最新新闻</a>',
+    )
 
 
 def collect_items() -> list[dict]:
@@ -979,9 +1027,10 @@ def main():
     updated_iso = datetime.now(CST).isoformat()
     write_data_json(items)
     write_seo_files(updated_iso)
-    html_content = build_html(items)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        f.write(html_content)
+        f.write(build_home_html(items))
+    with open(HISTORY_PATH, "w", encoding="utf-8") as f:
+        f.write(build_history_html(items))
 
 
 if __name__ == "__main__":
