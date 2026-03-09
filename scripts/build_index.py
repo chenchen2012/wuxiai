@@ -181,6 +181,18 @@ CONTENT_AI_TOPIC_KEYWORDS = AI_TOPIC_KEYWORDS + [
     "openclaw",
     "开爪",
 ]
+EVENT_ENTITY_KEYWORDS = [
+    "产业基金",
+    "基金",
+    "实验室",
+    "产业园",
+    "创新中心",
+    "智算中心",
+    "研究院",
+    "论坛",
+    "联盟",
+    "政策",
+]
 
 NON_AI_TITLE_KEYWORDS = [
     "铁路",
@@ -550,6 +562,58 @@ def titles_are_near_duplicate(a: str, b: str) -> bool:
     return ratio >= 0.84
 
 
+def normalize_amount_marker(raw: str) -> str:
+    text = (raw or "").replace("万元", "万").replace("亿元", "亿")
+    return text
+
+
+def extract_event_markers(title: str) -> dict:
+    raw = html.unescape(title or "")
+    normalized = normalize_title(raw)
+    markers = {
+        "locations": set(),
+        "topics": set(),
+        "numbers": set(),
+        "entities": set(),
+    }
+
+    for match in re.findall(r"(无锡(?:高新区|新区|市|锡山|梁溪|滨湖|新吴区|经开区)?)", raw):
+        markers["locations"].add(match)
+    for match in re.findall(r"(江阴(?:市)?|宜兴(?:市)?|江南大学)", raw):
+        markers["locations"].add(match)
+    if "养虾" in raw or "养龙虾" in raw:
+        markers["topics"].add("养龙虾")
+    for keyword in CONTENT_AI_TOPIC_KEYWORDS:
+        if keyword in normalized:
+            markers["topics"].add(keyword)
+    for amount in re.findall(r"\d+(?:\.\d+)?(?:万|万元|亿|亿元|条)", raw):
+        markers["numbers"].add(normalize_amount_marker(amount))
+    for keyword in EVENT_ENTITY_KEYWORDS:
+        if keyword in raw:
+            markers["entities"].add(keyword)
+    return markers
+
+
+def are_same_event(title_a: str, title_b: str) -> bool:
+    markers_a = extract_event_markers(title_a)
+    markers_b = extract_event_markers(title_b)
+    shared_locations = markers_a["locations"] & markers_b["locations"]
+    shared_topics = markers_a["topics"] & markers_b["topics"]
+    shared_numbers = markers_a["numbers"] & markers_b["numbers"]
+    shared_entities = markers_a["entities"] & markers_b["entities"]
+    title_similarity = SequenceMatcher(
+        None, normalize_title(title_a), normalize_title(title_b)
+    ).ratio()
+
+    if not shared_locations or not shared_topics:
+        return False
+    if shared_numbers:
+        return True
+    if shared_entities and title_similarity >= 0.62:
+        return True
+    return title_similarity >= 0.72
+
+
 def extract_direct_url(link: str) -> str:
     parsed = urllib.parse.urlparse(link)
     domain = normalize_domain(link)
@@ -753,6 +817,35 @@ def dedupe_items(items: list[dict]) -> list[dict]:
         found_idx = None
         for i, existing in enumerate(merged):
             if titles_are_near_duplicate(
+                str(item.get("title", "")), str(existing.get("title", ""))
+            ):
+                found_idx = i
+                break
+        if found_idx is None:
+            merged.append(item)
+            continue
+
+        prev = merged[found_idx]
+        prev_time = str(prev.get("published_at", ""))
+        cur_time = str(item.get("published_at", ""))
+        prev_tier = int(prev.get("source_tier", 0))
+        cur_tier = int(item.get("source_tier", 0))
+        prev_trusted = 1 if prev.get("trusted") else 0
+        cur_trusted = 1 if item.get("trusted") else 0
+        prev_score = (prev_tier, prev_trusted, prev_time)
+        cur_score = (cur_tier, cur_trusted, cur_time)
+        if cur_score > prev_score:
+            merged[found_idx] = item
+
+    deduped = merged
+
+    # Event pass: collapse cross-source rewrites of the same news event
+    # when titles share the same location, AI topic, and key factual markers.
+    merged = []
+    for item in deduped:
+        found_idx = None
+        for i, existing in enumerate(merged):
+            if are_same_event(
                 str(item.get("title", "")), str(existing.get("title", ""))
             ):
                 found_idx = i

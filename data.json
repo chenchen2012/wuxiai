@@ -1,18 +1,7 @@
 {
-  "updated_at": "2026-03-09T21:39:57.897877+08:00",
-  "item_count": 56,
+  "updated_at": "2026-03-09T21:58:54.944440+08:00",
+  "item_count": 49,
   "items": [
-    {
-      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - 新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-03-09/doc-inhqmcpn0561897.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-09T20:42:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "290da1e1e69d597b85c940f8ff28d203ad1d8b3a",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
-    },
     {
       "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
@@ -56,72 +45,6 @@
       "domain": "companies.caixin.com",
       "trusted": false,
       "source_tier": 1
-    },
-    {
-      "title": "跟进深圳龙岗，无锡高新区拟对“养龙虾”单项最高补贴500万 - thepaper.cn",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32732697?commTag=true",
-      "source": "thepaper.cn",
-      "published_at": "2026-03-09T16:49:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "fa1ea45b56ed439f04e0881735b5d46f4d34bb62",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡高新区的“养虾”12条，瞄准了“AI+工业”和个人创业",
-      "url": "https://news.sina.com.cn/o/2026-03-09/doc-inhqmcph6801288.shtml",
-      "source": "news.sina.com.cn",
-      "published_at": "2026-03-09T13:43:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "e784d31200a17da1b379a798384793207110828a",
-      "domain": "news.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
-      "title": "无锡发布“养龙虾”12条，单项支持最高达500万元",
-      "url": "https://finance.sina.com.cn/wm/2026-03-09/doc-inhqksxt6977909.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-09T10:28:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "b5b7e7402604f833a0651f4001c6a2be2d6023bd",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
-      "title": "无锡高新区发布“养龙虾”12条，最高补贴500万",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32732513",
-      "source": "thepaper.cn",
-      "published_at": "2026-03-09T08:43:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "a6866dfd611e96e1b512f59dccf3246fadfda275",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "刚因春晚“爆红”，又入选无锡重点实验室，这家具身智能上市公司 ...",
-      "url": "https://www.xhby.net/content/s69a949e8e4b00d434b763625.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-05T17:16:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "4c056a1167cd9f59c5040097eba269d18281d8c5",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡梁溪中小学迎来别开生面的“校园迎新日” - js.chinanews.com.cn",
-      "url": "https://www.js.chinanews.com.cn/news/2026/0305/232622.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2026-03-05T16:34:25+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "f2fa123b508cada78e61488d4a235a3f3e7b78d8",
-      "domain": "js.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
     },
     {
       "title": "聚焦人工智能 无锡锡山30亿元基金启航 - chinanews.com.cn",
