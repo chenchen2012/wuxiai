@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11T01:08:30.847454+08:00",
+  "updated_at": "2026-03-11T03:08:40.937031+08:00",
   "item_count": 54,
   "items": [
     {
@@ -14,15 +14,15 @@
       "source_tier": 2
     },
     {
-      "title": "无锡高新区全周期服务“养龙虾”专家：精准卡位 推动制造业与AI ...",
-      "url": "https://news.sina.com.cn/zx/gj/2026-03-10/doc-inhqphnp6162858.shtml",
-      "source": "news.sina.com.cn",
-      "published_at": "2026-03-10T13:15:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "fc0d377d41b39a294c40ea300b53c1019e14eb88",
-      "domain": "news.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
+      "title": "无锡高新区全周期服务“养龙虾”专家：精准卡位 推动制造业与AI深度融合 - 中央广播电视总台",
+      "url": "https://js.cnr.cn/yw/20260310/t20260310_527547859.shtml",
+      "source": "js.cnr.cn",
+      "published_at": "2026-03-10T13:41:54+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "4ca720610cd1ff8087349d83830bc3fce08a8bab",
+      "domain": "js.cnr.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
@@ -58,7 +58,7 @@
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
       "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
@@ -183,7 +183,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
@@ -216,7 +216,7 @@
       "url": "https://finance.sina.com.cn/jjxw/2026-01-04/doc-inhfcphs7540542.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-01-04T15:01:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "finance.sina.com.cn",
       "trusted": false,
