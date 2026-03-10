@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10T17:00:53.853587+08:00",
+  "updated_at": "2026-03-10T19:00:54.110134+08:00",
   "item_count": 52,
   "items": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
-      "url": "https://companies.caixin.com/2026-03-09/102421257.html",
+      "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
       "feed": "google:无锡 人工智能",
@@ -172,7 +172,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -535,7 +535,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
