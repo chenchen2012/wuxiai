@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-03-10T19:00:54.110134+08:00",
-  "item_count": 52,
+  "updated_at": "2026-03-10T21:38:20.115674+08:00",
+  "item_count": 54,
   "items": [
+    {
+      "title": "软通动力三项目落地无锡滨湖 总投资10亿元 - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0310/c360301-41520192.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-10T20:50:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "3e30ebcc55249db6926929d4fc7e1f7e01debb92",
+      "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡高新区全周期服务“养龙虾”专家：精准卡位 推动制造业与AI ...",
+      "url": "https://news.sina.com.cn/zx/gj/2026-03-10/doc-inhqphnp6162858.shtml",
+      "source": "news.sina.com.cn",
+      "published_at": "2026-03-10T13:15:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "fc0d377d41b39a294c40ea300b53c1019e14eb88",
+      "domain": "news.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
@@ -535,7 +557,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
