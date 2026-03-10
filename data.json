@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-10T15:09:13.011269+08:00",
-  "item_count": 53,
+  "updated_at": "2026-03-10T17:00:53.853587+08:00",
+  "item_count": 52,
   "items": [
+    {
+      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-09T20:35:17+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "fbf9a0fae7f15870546d6c3723265d66e05051dc",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
     {
       "title": "无锡发布“养龙虾”12条，苏州考虑补贴“养龙虾” - 新浪财经",
       "url": "https://finance.sina.com.cn/jjxw/2026-03-09/doc-inhqkxfq0656925.shtml",
@@ -32,28 +43,6 @@
       "feed": "google:无锡 人工智能",
       "fingerprint": "faf8a8f427167faacf0a76e360687d283cf90fb5",
       "domain": "companies.caixin.com",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
-      "title": "跟进深圳龙岗，无锡高新区拟对“养龙虾”单项最高补贴500万 - thepaper.cn",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32732697?commTag=true",
-      "source": "thepaper.cn",
-      "published_at": "2026-03-09T16:49:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "fa1ea45b56ed439f04e0881735b5d46f4d34bb62",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡高新区的“养虾”12条，瞄准了“AI+工业”和个人创业",
-      "url": "https://news.sina.com.cn/o/2026-03-09/doc-inhqmcph6801288.shtml",
-      "source": "news.sina.com.cn",
-      "published_at": "2026-03-09T13:43:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "e784d31200a17da1b379a798384793207110828a",
-      "domain": "news.sina.com.cn",
       "trusted": false,
       "source_tier": 1
     },
@@ -183,7 +172,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -205,7 +194,7 @@
       "url": "https://finance.sina.com.cn/jjxw/2026-01-04/doc-inhfcphs7540542.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-01-04T15:01:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
       "domain": "finance.sina.com.cn",
       "trusted": false,
