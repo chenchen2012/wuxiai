@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10T21:38:20.115674+08:00",
+  "updated_at": "2026-03-10T23:09:38.517172+08:00",
   "item_count": 54,
   "items": [
     {
@@ -183,7 +183,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
@@ -535,7 +535,7 @@
       "url": "https://finance.people.com.cn/n1/2024/1003/c1004-40332781.html",
       "source": "finance.people.com.cn",
       "published_at": "2024-10-03T14:28:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
+      "feed": "bing:无锡AI:people.com.cn",
       "fingerprint": "dfdbe6e1544ea1a63910dae1c2ff5706ce024b2d",
       "domain": "finance.people.com.cn",
       "trusted": true,
