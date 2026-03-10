@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-10T06:47:55.304311+08:00",
+  "updated_at": "2026-03-10T10:49:59.193368+08:00",
   "item_count": 52,
   "items": [
     {
@@ -29,7 +29,7 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0309/232675.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-09T18:15:21+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "907c699f87e985fbc04b2139f18d4f7e5c4274f1",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
@@ -73,7 +73,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-03-03T17:28:11+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -91,11 +91,11 @@
       "source_tier": 3
     },
     {
-      "title": "从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 扬子晚报",
+      "title": "从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202602/t20260208_320234.html",
       "source": "yzwb.net",
       "published_at": "2026-02-08T22:07:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "cde10eb12eb01f70b5926ab2b2112992fc4aaccd",
       "domain": "yzwb.net",
       "trusted": true,
@@ -168,12 +168,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
