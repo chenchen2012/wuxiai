@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-11T13:17:18.601435+08:00",
+  "updated_at": "2026-03-11T15:12:03.384537+08:00",
   "item_count": 58,
   "items": [
     {
@@ -36,7 +36,7 @@
       "source_tier": 2
     },
     {
-      "title": "无锡高新区全周期服务“养龙虾”专家：精准卡位 推动制造业与AI深度融合 - 中央广播电视总台",
+      "title": "无锡高新区全周期服务“养龙虾”专家：精准卡位 推动制造业与AI深度融合 - 央广网",
       "url": "https://js.cnr.cn/yw/20260310/t20260310_527547859.shtml",
       "source": "js.cnr.cn",
       "published_at": "2026-03-10T13:41:54+08:00",
@@ -69,17 +69,6 @@
       "source_tier": 2
     },
     {
-      "title": "无锡发布“养龙虾”12条，苏州考虑补贴“养龙虾” - 新浪财经",
-      "url": "https://finance.sina.com.cn/jjxw/2026-03-09/doc-inhqkxfq0656925.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-09T19:22:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "ffcf4737ea68ad34b5acdd424c0a70bf831ccc8c",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
       "title": "无锡高新区设30亿元AI产业基金 深耕“AI+制造” - js.chinanews.com.cn",
       "url": "https://www.js.chinanews.com.cn/news/2026/0309/232675.html",
       "source": "js.chinanews.com.cn",
@@ -100,6 +89,17 @@
       "domain": "companies.caixin.com",
       "trusted": false,
       "source_tier": 1
+    },
+    {
+      "title": "一人成军！最高补贴500万！无锡发布“养龙虾”12条！",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32732552",
+      "source": "thepaper.cn",
+      "published_at": "2026-03-09T14:53:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "2641b5cf7f2d861feae6cdae50b6d188b8490892",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "刚因春晚“爆红”，又入选无锡重点实验室，这家具身智能上市公司 ...",
@@ -216,7 +216,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
@@ -227,7 +227,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "feed": "bing:无锡AI:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -590,7 +590,7 @@
       "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
       "source": "js.ifeng.com",
       "published_at": "2024-06-06T14:12:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "b3d8ac74b4be24c151812b9fb23d5e40d0df3425",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -601,7 +601,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
