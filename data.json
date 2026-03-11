@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-12T01:10:42.499928+08:00",
-  "item_count": 60,
+  "updated_at": "2026-03-12T03:10:53.007038+08:00",
+  "item_count": 59,
   "items": [
     {
       "title": "AI防癌，无锡全民癌症防控插上“数智翅膀”！",
@@ -69,17 +69,6 @@
       "source_tier": 1
     },
     {
-      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-09T20:35:17+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "fbf9a0fae7f15870546d6c3723265d66e05051dc",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡高新区设30亿元AI产业基金 深耕“AI+制造” - js.chinanews.com.cn",
       "url": "https://www.js.chinanews.com.cn/news/2026/0309/232675.html",
       "source": "js.chinanews.com.cn",
@@ -113,6 +102,17 @@
       "source_tier": 2
     },
     {
+      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-09T13:47:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "290da1e1e69d597b85c940f8ff28d203ad1d8b3a",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "刚因春晚“爆红”，又入选无锡重点实验室，这家具身智能上市公司 ...",
       "url": "https://www.xhby.net/content/s69a949e8e4b00d434b763625.html",
       "source": "xhby.net",
@@ -120,28 +120,6 @@
       "feed": "bing:无锡 AI:xhby.net",
       "fingerprint": "4c056a1167cd9f59c5040097eba269d18281d8c5",
       "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡梁溪中小学迎来别开生面的“校园迎新日” - js.chinanews.com.cn",
-      "url": "https://www.js.chinanews.com.cn/news/2026/0305/232622.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2026-03-05T16:34:25+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "f2fa123b508cada78e61488d4a235a3f3e7b78d8",
-      "domain": "js.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "聚焦人工智能 无锡锡山30亿元基金启航 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-03T17:28:11+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
-      "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -155,6 +133,17 @@
       "domain": "news.jiangnan.edu.cn",
       "trusted": true,
       "source_tier": 3
+    },
+    {
+      "title": "聚焦人工智能 无锡锡山30亿元基金启航",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-03T09:56:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "950c68bdd46998d9ed9785ca0be77a9725030966",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 紫牛新闻",
@@ -238,7 +227,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
