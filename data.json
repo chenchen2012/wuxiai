@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-03-11T06:47:01.126858+08:00",
-  "item_count": 54,
+  "updated_at": "2026-03-11T10:49:28.031544+08:00",
+  "item_count": 57,
   "items": [
+    {
+      "title": "多地宣布下场“养龙虾”：深圳无锡合肥出手，最高扶持1000万",
+      "url": "https://finance.sina.com.cn/wm/2026-03-11/doc-inhqqqfs5653720.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-11T02:03:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "874eb42b1be5aa8359ef3c12a52ff46bbe2c83e6",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
+      "title": "软件研发补贴最高500万元，30亿元产业基金护航……无锡高新区全力 ...",
+      "url": "https://finance.sina.com.cn/roll/2026-03-11/doc-inhqqixw2792899.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-10T23:17:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "69bf8869bfc4f70200d2d5c11c67a06bc553ee44",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "软通动力三项目落地无锡滨湖 总投资10亿元 - 人民网－江苏频道",
       "url": "http://js.people.com.cn/n2/2026/0310/c360301-41520192.html",
@@ -326,7 +348,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -359,7 +381,7 @@
       "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
       "source": "view.inews.qq.com",
       "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
       "domain": "view.inews.qq.com",
       "trusted": false,
@@ -509,11 +531,22 @@
       "source_tier": 2
     },
     {
+      "title": "让“大象”与“蚂蚁”共舞，江苏无锡打响AI深度赋能工业“发令枪”",
+      "url": "https://www.wxrb.com/doc/2025/02/17/389203.shtml",
+      "source": "wxrb.com",
+      "published_at": "2025-02-17T09:52:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "f507e13dc46b1e2e9d00e019a0518c570e0289bd",
+      "domain": "wxrb.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "太湖亿芯智算中心部署DeepSeek，助力无锡高新区加快AI产业布局",
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
