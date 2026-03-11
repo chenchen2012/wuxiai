@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-11T10:49:28.031544+08:00",
-  "item_count": 57,
+  "updated_at": "2026-03-11T13:17:18.601435+08:00",
+  "item_count": 58,
   "items": [
     {
       "title": "多地宣布下场“养龙虾”：深圳无锡合肥出手，最高扶持1000万",
@@ -45,6 +45,17 @@
       "domain": "js.cnr.cn",
       "trusted": true,
       "source_tier": 2
+    },
+    {
+      "title": "政府下场“养龙虾”，深圳、无锡……下一个会是谁？ - 新浪财经",
+      "url": "https://finance.sina.com.cn/wm/2026-03-10/doc-inhqneyy0176394.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-10T08:06:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "d2980cd68d105c3924b491a7f3e0efd3ae678877",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
