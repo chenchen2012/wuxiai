@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-11T19:01:17.969014+08:00",
-  "item_count": 59,
+  "updated_at": "2026-03-11T21:38:32.053224+08:00",
+  "item_count": 60,
   "items": [
     {
       "title": "AI防癌，无锡全民癌症防控插上“数智翅膀”！",
@@ -91,7 +91,7 @@
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
       "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
@@ -190,13 +190,13 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
-      "source": "xhby.net",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
+      "source": "yzwb.net",
       "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -559,6 +559,17 @@
       "published_at": "2025-02-17T09:52:00+08:00",
       "feed": "bing:无锡 AI",
       "fingerprint": "f507e13dc46b1e2e9d00e019a0518c570e0289bd",
+      "domain": "wxrb.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡“高新造”算力全面适配DeepSeek，助力加快AI产业布局",
+      "url": "https://www.wxrb.com/doc/2025/02/15/388945.shtml",
+      "source": "wxrb.com",
+      "published_at": "2025-02-15T00:01:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "39c58b03643329a0450f0a239945839acd141e03",
       "domain": "wxrb.com",
       "trusted": true,
       "source_tier": 2
