@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-03-12T17:03:00.678050+08:00",
-  "item_count": 61,
+  "updated_at": "2026-03-12T19:00:22.406994+08:00",
+  "item_count": 62,
   "items": [
+    {
+      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴” - 新华报业网",
+      "url": "https://www.xhby.net/content/s69b281d4e4b09187ac9bdb2e.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-12T17:05:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "38dc63f767b297aaf0652179ed1fd794b77f4451",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "【他山之石】江苏无锡：推出“车路云一体化”赋能城市管理AI场景应用",
+      "url": "https://news.qq.com/rain/a/20260312A06FUV00",
+      "source": "news.qq.com",
+      "published_at": "2026-03-12T10:42:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "ab76ee488168623e52da8748955a70dc29dd3296",
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "AI防癌，无锡全民癌症防控插上“数智翅膀”！",
       "url": "https://news.qq.com/rain/a/20260311A0633J00",
@@ -91,7 +113,7 @@
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
       "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
@@ -109,28 +131,6 @@
       "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "2641b5cf7f2d861feae6cdae50b6d188b8490892",
       "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "刚因春晚“爆红”，又入选无锡重点实验室，这家具身智能上市公司 ...",
-      "url": "https://www.xhby.net/content/s69a949e8e4b00d434b763625.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-05T17:16:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "4c056a1167cd9f59c5040097eba269d18281d8c5",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "无锡梁溪中小学迎来别开生面的“校园迎新日” - js.chinanews.com.cn",
-      "url": "https://www.js.chinanews.com.cn/news/2026/0305/232622.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2026-03-05T16:34:25+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "f2fa123b508cada78e61488d4a235a3f3e7b78d8",
-      "domain": "js.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -351,6 +351,17 @@
       "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "051863c9f5f1335b4ac71daca8650e23e5845e83",
       "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "从“算得快”到“用得广”，无锡打造“高密算力之城” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202508/t20250812_248824.html",
+      "source": "yzwb.net",
+      "published_at": "2025-08-12T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "50df74c92db05ec66e66706ce9c7be443ed52982",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -634,7 +645,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
