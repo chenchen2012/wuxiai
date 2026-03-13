@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-13T18:57:17.235931+08:00",
-  "item_count": 65,
+  "updated_at": "2026-03-13T21:34:23.593063+08:00",
+  "item_count": 66,
   "items": [
+    {
+      "title": "无锡发行全国首单存算一体科创债 - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0313/c360301-41522245.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-13T07:12:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "93de2c5d9af6171cf3d525317c7c8c1e74eaafae",
+      "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
     {
       "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴” - 新华报业网",
       "url": "https://www.xhby.net/content/s69b281d4e4b09187ac9bdb2e.html",
@@ -124,7 +135,7 @@
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
       "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
@@ -212,13 +223,13 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
-      "source": "yzwb.net",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
+      "source": "xhby.net",
       "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
-      "domain": "yzwb.net",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
