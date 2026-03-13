@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-13T06:45:52.618220+08:00",
-  "item_count": 63,
+  "updated_at": "2026-03-13T11:08:26.499319+08:00",
+  "item_count": 64,
   "items": [
     {
       "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴”",
@@ -135,17 +135,6 @@
       "source_tier": 2
     },
     {
-      "title": "聚焦人工智能 无锡锡山30亿元基金启航 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-03T17:28:11+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "人工智能与计算机学院与无锡市工信局开展合作交流座谈 - 江南大学新闻网",
       "url": "https://news.jiangnan.edu.cn/info/1065/106642.htm",
       "source": "news.jiangnan.edu.cn",
@@ -155,6 +144,28 @@
       "domain": "news.jiangnan.edu.cn",
       "trusted": true,
       "source_tier": 3
+    },
+    {
+      "title": "聚焦人工智能 无锡锡山30亿元基金启航",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-03T09:56:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "950c68bdd46998d9ed9785ca0be77a9725030966",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市 - 新浪财经",
+      "url": "http://finance.sina.com.cn/stock/t/2026-02-22/doc-inhnrnnx8527255.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-02-22T16:00:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "6b6cb0315c9933de3eaace4e5d0d53ed223406b1",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 紫牛新闻",
@@ -190,13 +201,13 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
-      "source": "xhby.net",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260126_315626.html",
+      "source": "yzwb.net",
       "published_at": "2026-01-26T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -216,7 +227,7 @@
       "url": "https://finance.sina.com.cn/roll/2026-01-14/doc-inhhfmkx5300068.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-01-14T06:14:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "7c90fa9dbca70bcc7cbc43eafd098087bbf88c64",
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -304,7 +315,7 @@
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202511/t20251109_287215.html",
       "source": "yzwb.net",
       "published_at": "2025-11-09T16:00:00+08:00",
-      "feed": "google:无锡 AI",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "f5dc5493d9677d4dc3e9e1329af9a75c6e332f59",
       "domain": "yzwb.net",
       "trusted": true,
