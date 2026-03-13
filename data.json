@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-03-13T16:59:09.431466+08:00",
-  "item_count": 64,
+  "updated_at": "2026-03-13T18:57:17.235931+08:00",
+  "item_count": 65,
   "items": [
     {
-      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴”",
+      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴” - 新华报业网",
       "url": "https://www.xhby.net/content/s69b281d4e4b09187ac9bdb2e.html",
       "source": "xhby.net",
-      "published_at": "2026-03-12T18:05:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
+      "published_at": "2026-03-12T17:05:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "38dc63f767b297aaf0652179ed1fd794b77f4451",
       "domain": "xhby.net",
       "trusted": true,
@@ -34,6 +34,17 @@
       "domain": "news.qq.com",
       "trusted": false,
       "source_tier": 1
+    },
+    {
+      "title": "软通动力中国区总部在无锡揭牌成立",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32747296",
+      "source": "thepaper.cn",
+      "published_at": "2026-03-11T14:51:00+08:00",
+      "feed": "bing:无锡AI:thepaper.cn",
+      "fingerprint": "791883687d26a1d13c8faf39651a60d26230adcd",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "多地宣布下场“养龙虾”：深圳无锡合肥出手，最高扶持1000万",
@@ -135,17 +146,6 @@
       "source_tier": 2
     },
     {
-      "title": "聚焦人工智能 无锡锡山30亿元基金启航 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-03T17:28:11+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "2d64e3f85f1350e35f66659681c605b318933a35",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "人工智能与计算机学院与无锡市工信局开展合作交流座谈 - 江南大学新闻网",
       "url": "https://news.jiangnan.edu.cn/info/1065/106642.htm",
       "source": "news.jiangnan.edu.cn",
@@ -155,6 +155,17 @@
       "domain": "news.jiangnan.edu.cn",
       "trusted": true,
       "source_tier": 3
+    },
+    {
+      "title": "聚焦人工智能 无锡锡山30亿元基金启航",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-03T09:56:00+08:00",
+      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "fingerprint": "950c68bdd46998d9ed9785ca0be77a9725030966",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市 - 新浪财经",
@@ -315,7 +326,7 @@
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202511/t20251109_287215.html",
       "source": "yzwb.net",
       "published_at": "2025-11-09T16:00:00+08:00",
-      "feed": "google:无锡 AI",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "f5dc5493d9677d4dc3e9e1329af9a75c6e332f59",
       "domain": "yzwb.net",
       "trusted": true,
@@ -667,7 +678,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
