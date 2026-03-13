@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13T15:12:46.344261+08:00",
+  "updated_at": "2026-03-13T16:59:09.431466+08:00",
   "item_count": 64,
   "items": [
     {
@@ -315,7 +315,7 @@
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202511/t20251109_287215.html",
       "source": "yzwb.net",
       "published_at": "2025-11-09T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "feed": "google:无锡 AI",
       "fingerprint": "f5dc5493d9677d4dc3e9e1329af9a75c6e332f59",
       "domain": "yzwb.net",
       "trusted": true,
@@ -667,7 +667,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
