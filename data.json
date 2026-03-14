@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-14T21:15:25.705872+08:00",
-  "item_count": 67,
+  "updated_at": "2026-03-14T22:47:28.502702+08:00",
+  "item_count": 68,
   "items": [
+    {
+      "title": "无锡电信手把手教你“养龙虾”，解锁AI新体验！",
+      "url": "https://finance.sina.com.cn/roll/2026-03-14/doc-inhqypen4013923.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-14T14:21:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "a21631b73120b927b91f367f5d64b317698d6333",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "无锡发行全国首单存算一体科创债 - 人民网－江苏频道",
       "url": "http://js.people.com.cn/n2/2026/0313/c360301-41522245.html",
@@ -14,11 +25,11 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴” - 新华报业网",
+      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴”",
       "url": "https://www.xhby.net/content/s69b281d4e4b09187ac9bdb2e.html",
       "source": "xhby.net",
-      "published_at": "2026-03-12T17:05:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "published_at": "2026-03-12T18:05:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
       "fingerprint": "38dc63f767b297aaf0652179ed1fd794b77f4451",
       "domain": "xhby.net",
       "trusted": true,
@@ -84,7 +95,7 @@
       "url": "http://js.people.com.cn/n2/2026/0310/c360301-41520192.html",
       "source": "js.people.com.cn",
       "published_at": "2026-03-10T20:50:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:people.com.cn",
       "fingerprint": "be85c963366768fd34b047b119330f65cb2b46ad",
       "domain": "js.people.com.cn",
       "trusted": true,
@@ -128,7 +139,7 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0309/232675.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-09T18:15:21+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "907c699f87e985fbc04b2139f18d4f7e5c4274f1",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
