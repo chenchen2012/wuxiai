@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-15T04:45:29.890502+08:00",
-  "item_count": 68,
+  "updated_at": "2026-03-15T06:45:51.903162+08:00",
+  "item_count": 69,
   "items": [
     {
       "title": "无锡电信手把手教你“养龙虾”，解锁AI新体验！",
@@ -25,13 +25,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴”",
-      "url": "https://www.xhby.net/content/s69b281d4e4b09187ac9bdb2e.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-12T18:05:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
+      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202603/t20260312_330772.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-12T17:10:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "38dc63f767b297aaf0652179ed1fd794b77f4451",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -271,19 +271,19 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -582,6 +582,17 @@
       "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "a19af7e8c0df40faa697b5cf53dce6bcebc96884",
       "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无锡机器人家族，进击！ - thepaper.cn",
+      "url": "https://m.thepaper.cn/newsDetail_forward_30578410",
+      "source": "m.thepaper.cn",
+      "published_at": "2025-04-05T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:thepaper.cn",
+      "fingerprint": "fd4b815eb226cfcc20871c9d8ba2d760ca9dde52",
+      "domain": "m.thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
