@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-14T22:47:28.502702+08:00",
+  "updated_at": "2026-03-15T00:49:55.800681+08:00",
   "item_count": 68,
   "items": [
     {
@@ -95,14 +95,14 @@
       "url": "http://js.people.com.cn/n2/2026/0310/c360301-41520192.html",
       "source": "js.people.com.cn",
       "published_at": "2026-03-10T20:50:00+08:00",
-      "feed": "google:无锡 人工智能:people.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "be85c963366768fd34b047b119330f65cb2b46ad",
       "domain": "js.people.com.cn",
       "trusted": true,
       "source_tier": 2
     },
     {
-      "title": "无锡高新区全周期服务“养龙虾”专家：精准卡位 推动制造业与AI深度融合 - 央广网",
+      "title": "无锡高新区全周期服务“养龙虾”专家：精准卡位 推动制造业与AI深度融合 - 中央广播电视总台",
       "url": "https://js.cnr.cn/yw/20260310/t20260310_527547859.shtml",
       "source": "js.cnr.cn",
       "published_at": "2026-03-10T13:41:54+08:00",
@@ -111,6 +111,17 @@
       "domain": "js.cnr.cn",
       "trusted": true,
       "source_tier": 2
+    },
+    {
+      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - 神州学人",
+      "url": "http://www.chisa.edu.cn/bussiness/202603/t20260310_2111452586.html",
+      "source": "chisa.edu.cn",
+      "published_at": "2026-03-10T12:51:27+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "290da1e1e69d597b85c940f8ff28d203ad1d8b3a",
+      "domain": "chisa.edu.cn",
+      "trusted": false,
+      "source_tier": 3
     },
     {
       "title": "政府下场“养龙虾”，深圳、无锡……下一个会是谁？ - 新浪财经",
@@ -124,29 +135,18 @@
       "source_tier": 1
     },
     {
-      "title": "无锡高新区拟发布12条“养龙虾”政策 最高补贴500万元 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-09/10584178.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-09T20:35:17+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "fbf9a0fae7f15870546d6c3723265d66e05051dc",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡高新区设30亿元AI产业基金 深耕“AI+制造” - js.chinanews.com.cn",
       "url": "https://www.js.chinanews.com.cn/news/2026/0309/232675.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-09T18:15:21+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "907c699f87e985fbc04b2139f18d4f7e5c4274f1",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
       "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
