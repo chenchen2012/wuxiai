@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-15T18:49:58.382669+08:00",
+  "updated_at": "2026-03-15T21:17:11.751447+08:00",
   "item_count": 71,
   "items": [
     {
@@ -62,7 +62,7 @@
       "url": "https://news.qq.com/rain/a/20260311A0633J00",
       "source": "news.qq.com",
       "published_at": "2026-03-11T22:45:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "5dc33096cbecd235fc6c121bd4e82ffebf995fb1",
       "domain": "news.qq.com",
       "trusted": false,
@@ -157,13 +157,13 @@
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
-      "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
-      "source": "companies.caixin.com",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
+      "url": "https://m.caixin.com/m/2026-03-09/102421254.html",
+      "source": "m.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
       "feed": "google:无锡 人工智能",
       "fingerprint": "faf8a8f427167faacf0a76e360687d283cf90fb5",
-      "domain": "companies.caixin.com",
+      "domain": "m.caixin.com",
       "trusted": false,
       "source_tier": 1
     },
@@ -469,7 +469,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -689,7 +689,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -744,7 +744,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
