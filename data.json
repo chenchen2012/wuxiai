@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-15T21:17:11.751447+08:00",
+  "updated_at": "2026-03-15T22:50:27.195855+08:00",
   "item_count": 71,
   "items": [
     {
@@ -157,13 +157,13 @@
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
-      "url": "https://m.caixin.com/m/2026-03-09/102421254.html",
-      "source": "m.caixin.com",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - companies.caixin.com",
+      "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
+      "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "faf8a8f427167faacf0a76e360687d283cf90fb5",
-      "domain": "m.caixin.com",
+      "fingerprint": "a0433b7d6629016c6a71f8b28698c0740c3f86c9",
+      "domain": "companies.caixin.com",
       "trusted": false,
       "source_tier": 1
     },
@@ -744,7 +744,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
