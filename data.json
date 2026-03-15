@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-15T11:31:21.895070+08:00",
-  "item_count": 70,
+  "updated_at": "2026-03-15T13:45:05.880149+08:00",
+  "item_count": 69,
   "items": [
     {
       "title": "无锡电信手把手教你“养龙虾”，解锁AI新体验！",
@@ -25,13 +25,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴”",
-      "url": "https://www.xhby.net/content/s69b281d4e4b09187ac9bdb2e.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-12T18:05:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
+      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202603/t20260312_330772.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-12T17:10:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "38dc63f767b297aaf0652179ed1fd794b77f4451",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -51,7 +51,7 @@
       "url": "https://news.qq.com/rain/a/20260311A0633J00",
       "source": "news.qq.com",
       "published_at": "2026-03-11T22:45:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "5dc33096cbecd235fc6c121bd4e82ffebf995fb1",
       "domain": "news.qq.com",
       "trusted": false,
@@ -146,12 +146,12 @@
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - companies.caixin.com",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
       "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
       "feed": "google:无锡 人工智能",
-      "fingerprint": "a0433b7d6629016c6a71f8b28698c0740c3f86c9",
+      "fingerprint": "faf8a8f427167faacf0a76e360687d283cf90fb5",
       "domain": "companies.caixin.com",
       "trusted": false,
       "source_tier": 1
@@ -166,17 +166,6 @@
       "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
-    },
-    {
-      "title": "无锡高新区的“养虾”12条，瞄准了“AI+工业”和个人创业",
-      "url": "https://news.sina.com.cn/o/2026-03-09/doc-inhqmcph6801288.shtml",
-      "source": "news.sina.com.cn",
-      "published_at": "2026-03-09T13:43:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "e784d31200a17da1b379a798384793207110828a",
-      "domain": "news.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
     },
     {
       "title": "人工智能与计算机学院与无锡市工信局开展合作交流座谈 - 江南大学新闻网",
@@ -289,12 +278,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -733,7 +722,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
