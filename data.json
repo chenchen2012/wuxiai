@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-16T04:46:42.827847+08:00",
+  "updated_at": "2026-03-16T06:47:59.672268+08:00",
   "item_count": 71,
   "items": [
     {
@@ -36,13 +36,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴”",
-      "url": "https://www.xhby.net/content/s69b281d4e4b09187ac9bdb2e.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-12T18:05:00+08:00",
-      "feed": "bing:无锡AI:xhby.net",
+      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202603/t20260312_330772.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-12T17:10:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "38dc63f767b297aaf0652179ed1fd794b77f4451",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -744,7 +744,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
