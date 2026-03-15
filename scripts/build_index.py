@@ -962,7 +962,7 @@ def build_page_html(
             "description": description,
             "isPartOf": {
                 "@type": "WebSite",
-                "name": "无锡AI",
+                "name": "无锡人工智能",
                 "url": "https://wuxiai.com/",
             },
         },
@@ -996,14 +996,14 @@ def build_page_html(
         '  <meta charset="utf-8">',
         '  <meta name="viewport" content="width=device-width, initial-scale=1">',
         f'  <meta name="description" content="{html.escape(description, quote=True)}">',
-        '  <meta name="keywords" content="无锡AI新闻, 无锡人工智能新闻, 无锡AI, 无锡人工智能">',
+        '  <meta name="keywords" content="无锡人工智能新闻, 无锡人工智能, 无锡 人工智能, Wuxi AI">',
         '  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
         '  <meta name="applicable-device" content="pc,mobile">',
         '  <meta name="renderer" content="webkit">',
         f'  <link rel="canonical" href="{html.escape(canonical_url, quote=True)}">',
         '  <meta property="og:type" content="website">',
         '  <meta property="og:locale" content="zh_CN">',
-        '  <meta property="og:site_name" content="无锡AI">',
+        '  <meta property="og:site_name" content="无锡人工智能">',
         f'  <meta property="og:title" content="{html.escape(page_title, quote=True)}">',
         f'  <meta property="og:description" content="{html.escape(description, quote=True)}">',
         f'  <meta property="og:url" content="{html.escape(canonical_url, quote=True)}">',
@@ -1078,11 +1078,11 @@ def build_page_html(
 def build_home_html(items: list[dict]) -> str:
     return build_page_html(
         items=items,
-        page_title="无锡AI",
+        page_title="无锡人工智能",
         canonical_url="https://wuxiai.com/",
-        description="无锡AI新闻与无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。",
-        heading="无锡AI",
-        intro="聚合无锡AI新闻、无锡人工智能新闻，重点关注无锡本地人工智能产业、技术与应用动态。",
+        description="无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。",
+        heading="无锡人工智能",
+        intro="聚合无锡人工智能新闻，重点关注无锡本地人工智能产业、技术与应用动态。",
         show_limit=MAX_ITEMS,
         more_link_html='想看更早的内容？<a href="/history.html">查看历史新闻</a>',
     )
@@ -1132,13 +1132,13 @@ def build_history_html(items: list[dict], page_number: int, total_pages: int) ->
     return build_page_html(
         items=page_items,
         page_title=(
-            "无锡AI历史新闻"
+            "无锡人工智能历史新闻"
             if page_number == 1
-            else f"无锡AI历史新闻 - 第 {page_number} 页"
+            else f"无锡人工智能历史新闻 - 第 {page_number} 页"
         ),
         canonical_url=history_page_url(page_number),
-        description="无锡AI历史新闻归档页，按时间倒序查看更早的无锡人工智能与机器人相关资讯。",
-        heading="无锡AI历史新闻",
+        description="无锡人工智能历史新闻归档页，按时间倒序查看更早的无锡人工智能与机器人相关资讯。",
+        heading="无锡人工智能历史新闻",
         intro="这里收录首页之外的更早新闻，按时间倒序分页展示。",
         show_limit=None,
         more_link_html=build_history_navigation(page_number, total_pages),
