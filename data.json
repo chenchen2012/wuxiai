@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-15T13:45:05.880149+08:00",
-  "item_count": 69,
+  "updated_at": "2026-03-15T15:13:19.339635+08:00",
+  "item_count": 71,
   "items": [
+    {
+      "title": "无锡“AI未来之城”：免费领“龙虾”Agent，最高补贴500万",
+      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202603/t20260315_331708.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-15T06:55:00+08:00",
+      "feed": "bing:Wuxi AI",
+      "fingerprint": "bdb3da7d2f41e90ecf07336c8bfceecc6c7b44a8",
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2
+    },
     {
       "title": "无锡电信手把手教你“养龙虾”，解锁AI新体验！",
       "url": "https://finance.sina.com.cn/roll/2026-03-14/doc-inhqypen4013923.shtml",
@@ -190,6 +201,17 @@
       "source_tier": 2
     },
     {
+      "title": "抢占“人工智能+ 医疗健康”新赛道， 江大附院“黄金救生圈”跑出 ...",
+      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202603/t20260302_326982.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-02T09:23:00+08:00",
+      "feed": "bing:Wuxi AI",
+      "fingerprint": "3f2802d67d128861470e49065b58c9b17b0a305b",
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市 - 新浪财经",
       "url": "http://finance.sina.com.cn/stock/t/2026-02-22/doc-inhnrnnx8527255.shtml",
       "source": "finance.sina.com.cn",
@@ -278,12 +300,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
