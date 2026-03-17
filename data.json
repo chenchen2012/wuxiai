@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-17T13:37:49.645269+08:00",
-  "item_count": 76,
+  "updated_at": "2026-03-17T15:19:21.053996+08:00",
+  "item_count": 73,
   "items": [
     {
       "title": "工业经济这块压舱石，无锡要用AI好好打磨",
@@ -168,7 +168,7 @@
       "source_tier": 2
     },
     {
-      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - Caixin.com",
+      "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
       "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
       "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
@@ -388,17 +388,6 @@
       "source_tier": 2
     },
     {
-      "title": "头部大厂，加码无锡！",
-      "url": "https://js.ifeng.com/c/8oVb0qk1N2t",
-      "source": "js.ifeng.com",
-      "published_at": "2025-11-23T19:35:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "31c4607cdeaaa96e5f954dcbf9cc8869400f96da",
-      "domain": "js.ifeng.com",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
       "title": "合肥无锡联合教研 AI为心理健康教育注入新动能 - ah.chinanews.com.cn",
       "url": "https://www.ah.chinanews.com.cn/news/2025/1113/337764.shtml",
       "source": "ah.chinanews.com.cn",
@@ -432,17 +421,6 @@
       "source_tier": 2
     },
     {
-      "title": "万物智联！无锡踏浪“无尽前沿”",
-      "url": "https://js.ifeng.com/c/8ntyMEW44IR",
-      "source": "js.ifeng.com",
-      "published_at": "2025-10-31T18:22:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "538cf62addfbbbf5c943d0042e9a546cd4ab7395",
-      "domain": "js.ifeng.com",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
       "title": "人工智能重塑技工教育新图景——全国百所院校无锡共话产教融合新路径 - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202510/t20251027_282237.html",
       "source": "yzwb.net",
@@ -471,17 +449,6 @@
       "published_at": "2025-08-27T15:00:00+08:00",
       "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "051863c9f5f1335b4ac71daca8650e23e5845e83",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "探秘！无锡公安元宇宙、警务数字人",
-      "url": "https://www.xhby.net/content/s68ae658de4b09ac140bc2f17.html",
-      "source": "xhby.net",
-      "published_at": "2025-08-27T10:55:00+08:00",
-      "feed": "bing:Wuxi AI:xhby.net",
-      "fingerprint": "b81b67f3f43c92d6b6dbe9037a235c5f87c7730c",
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
