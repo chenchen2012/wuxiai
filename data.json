@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-19T04:57:13.303510+08:00",
+  "updated_at": "2026-03-19T06:49:13.275202+08:00",
   "item_count": 75,
   "items": [
     {
@@ -36,13 +36,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
-      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-17T20:52:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-17T20:17:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -315,7 +315,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
@@ -392,7 +392,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/23/427912.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-24T00:39:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "19f30fcee21f731deb3e20618d6bd707e8db0acd",
       "domain": "wxrb.com",
       "trusted": true,
