@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-03-19T13:37:55.495422+08:00",
+  "updated_at": "2026-03-19T15:14:01.778320+08:00",
   "item_count": 77,
   "items": [
     {
-      "title": "江苏无锡：国模国芯“养龙虾”，数智赋能激活 OPC 创业新生态 - 新浪财经",
+      "title": "江苏无锡：国模国芯“养龙虾”，数智赋能激活 OPC 创业新生态 - 新浪网",
       "url": "https://finance.sina.com.cn/jjxw/2026-03-18/doc-inhrmayt9373100.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-18T18:09:00+08:00",
@@ -36,13 +36,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
-      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-17T20:52:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-17T20:17:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -180,12 +180,12 @@
     },
     {
       "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
-      "url": "https://m.caixin.com/m/2026-03-09/102421254.html",
-      "source": "m.caixin.com",
+      "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
+      "source": "companies.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
       "feed": "google:无锡 人工智能",
       "fingerprint": "faf8a8f427167faacf0a76e360687d283cf90fb5",
-      "domain": "m.caixin.com",
+      "domain": "companies.caixin.com",
       "trusted": false,
       "source_tier": 1
     },
@@ -194,7 +194,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32732516",
       "source": "thepaper.cn",
       "published_at": "2026-03-09T15:31:00+08:00",
-      "feed": "bing:无锡 大模型:thepaper.cn",
+      "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "31e72bf2e685ac819fb042253bff41f1f642337f",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -403,7 +403,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/23/427912.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-24T00:39:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "19f30fcee21f731deb3e20618d6bd707e8db0acd",
       "domain": "wxrb.com",
       "trusted": true,
