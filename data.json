@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-19T11:20:18.356043+08:00",
-  "item_count": 75,
+  "updated_at": "2026-03-19T13:37:55.495422+08:00",
+  "item_count": 77,
   "items": [
     {
       "title": "江苏无锡：国模国芯“养龙虾”，数智赋能激活 OPC 创业新生态 - 新浪财经",
@@ -36,13 +36,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
-      "source": "yzwb.net",
-      "published_at": "2026-03-17T20:17:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T20:52:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "yzwb.net",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -180,14 +180,25 @@
     },
     {
       "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
-      "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
-      "source": "companies.caixin.com",
+      "url": "https://m.caixin.com/m/2026-03-09/102421254.html",
+      "source": "m.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
-      "feed": "google:无锡 AI",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "faf8a8f427167faacf0a76e360687d283cf90fb5",
-      "domain": "companies.caixin.com",
+      "domain": "m.caixin.com",
       "trusted": false,
       "source_tier": 1
+    },
+    {
+      "title": "无锡高新区：All in人工智能！",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32732516",
+      "source": "thepaper.cn",
+      "published_at": "2026-03-09T15:31:00+08:00",
+      "feed": "bing:无锡 大模型:thepaper.cn",
+      "fingerprint": "31e72bf2e685ac819fb042253bff41f1f642337f",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "一人成军！最高补贴500万！无锡发布“养龙虾”12条！",
@@ -615,6 +626,17 @@
       "feed": "bing:无锡 AI:chinanews.com.cn",
       "fingerprint": "346a0116d9fd35a2e5c5825ab94cc8a4df814bdf",
       "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "3年内打造300亿级产业集群 无锡竞逐人形机器人产业新赛道 - 新华报业网",
+      "url": "https://www.xhby.net/content/s681ecba9e4b0e2f2f54c1103.html",
+      "source": "xhby.net",
+      "published_at": "2025-05-10T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "aa56143d7bc82f06cea646116a9ee4df4182f50d",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
