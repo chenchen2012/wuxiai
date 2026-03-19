@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T03:14:52.106103+08:00",
+  "updated_at": "2026-03-20T04:56:46.937219+08:00",
   "item_count": 78,
   "items": [
     {
@@ -36,13 +36,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
-      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-17T20:52:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-17T20:17:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -106,7 +106,7 @@
       "url": "https://news.qq.com/rain/a/20260312A06FUV00",
       "source": "news.qq.com",
       "published_at": "2026-03-12T10:42:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "ab76ee488168623e52da8748955a70dc29dd3296",
       "domain": "news.qq.com",
       "trusted": false,
@@ -180,12 +180,12 @@
     },
     {
       "title": "“养龙虾”潮起 深圳、上海、无锡政府发布政策支持 - 财新",
-      "url": "https://companies.caixin.com/m/2026-03-09/102421257.html",
-      "source": "companies.caixin.com",
+      "url": "https://m.caixin.com/m/2026-03-09/102421254.html",
+      "source": "m.caixin.com",
       "published_at": "2026-03-09T17:49:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 AI",
       "fingerprint": "faf8a8f427167faacf0a76e360687d283cf90fb5",
-      "domain": "companies.caixin.com",
+      "domain": "m.caixin.com",
       "trusted": false,
       "source_tier": 1
     },
@@ -194,7 +194,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32732516",
       "source": "thepaper.cn",
       "published_at": "2026-03-09T15:31:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
+      "feed": "bing:无锡 人工智能:thepaper.cn",
       "fingerprint": "31e72bf2e685ac819fb042253bff41f1f642337f",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -337,7 +337,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
