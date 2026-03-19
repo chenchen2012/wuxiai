@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T01:14:54.652536+08:00",
+  "updated_at": "2026-03-20T03:14:52.106103+08:00",
   "item_count": 78,
   "items": [
     {
@@ -106,7 +106,7 @@
       "url": "https://news.qq.com/rain/a/20260312A06FUV00",
       "source": "news.qq.com",
       "published_at": "2026-03-12T10:42:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "ab76ee488168623e52da8748955a70dc29dd3296",
       "domain": "news.qq.com",
       "trusted": false,
@@ -344,12 +344,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -568,7 +568,7 @@
       "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
       "source": "view.inews.qq.com",
       "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
       "domain": "view.inews.qq.com",
       "trusted": false,
@@ -755,7 +755,7 @@
       "url": "https://www.wxrb.com/doc/2025/02/15/388945.shtml",
       "source": "wxrb.com",
       "published_at": "2025-02-15T00:01:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "39c58b03643329a0450f0a239945839acd141e03",
       "domain": "wxrb.com",
       "trusted": true,
@@ -799,7 +799,7 @@
       "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
       "source": "js.ifeng.com",
       "published_at": "2024-06-06T14:12:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "b3d8ac74b4be24c151812b9fb23d5e40d0df3425",
       "domain": "js.ifeng.com",
       "trusted": false,
