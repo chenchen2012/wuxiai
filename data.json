@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-20T18:57:41.713202+08:00",
-  "item_count": 79,
+  "updated_at": "2026-03-20T21:34:43.779279+08:00",
+  "item_count": 80,
   "items": [
+    {
+      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
+      "url": "https://finance.sina.com.cn/roll/2026-03-20/doc-inhrrrer8028800.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-20T17:49:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "248f70fff19616598ca28a67c997514baf4554d7",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "盛业“AI未来之城”以“养龙虾”为锚点 激活无锡AI产业集聚新动能",
       "url": "https://news.qq.com/rain/a/20260320A06REO00",
@@ -47,13 +58,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
-      "source": "yzwb.net",
-      "published_at": "2026-03-17T20:17:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T20:52:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "yzwb.net",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -205,7 +216,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32732516",
       "source": "thepaper.cn",
       "published_at": "2026-03-09T15:31:00+08:00",
-      "feed": "bing:无锡 人工智能:thepaper.cn",
+      "feed": "bing:无锡AI:thepaper.cn",
       "fingerprint": "31e72bf2e685ac819fb042253bff41f1f642337f",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -355,12 +366,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
