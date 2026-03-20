@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-20T15:13:50.382530+08:00",
-  "item_count": 78,
+  "updated_at": "2026-03-20T16:59:51.422919+08:00",
+  "item_count": 79,
   "items": [
+    {
+      "title": "盛业“AI未来之城”以“养龙虾”为锚点 激活无锡AI产业集聚新动能",
+      "url": "https://news.qq.com/rain/a/20260320A06REO00",
+      "source": "news.qq.com",
+      "published_at": "2026-03-20T09:46:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "8365c8cbc7711eca44f3cb7c31b35cf3aa119d91",
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "江苏无锡：国模国芯“养龙虾”，数智赋能激活 OPC 创业新生态 - 新浪网",
       "url": "https://finance.sina.com.cn/jjxw/2026-03-18/doc-inhrmayt9373100.shtml",
@@ -36,13 +47,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
-      "source": "yzwb.net",
-      "published_at": "2026-03-17T20:17:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T20:52:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "yzwb.net",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
