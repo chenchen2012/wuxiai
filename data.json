@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-21T21:12:30.525684+08:00",
-  "item_count": 81,
+  "updated_at": "2026-03-21T22:44:48.720871+08:00",
+  "item_count": 82,
   "items": [
     {
       "title": "无锡惠山\"桃花约\"擦亮开放合作名片 智聚产业新动能 - js.chinanews.com.cn",
@@ -89,6 +89,17 @@
       "domain": "js.people.com.cn",
       "trusted": true,
       "source_tier": 2
+    },
+    {
+      "title": "AI+制造 无锡“+”出了什么？",
+      "url": "https://finance.sina.com.cn/wm/2026-03-17/doc-inhrhavx8208480.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-17T01:49:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "cde12ac8428464d8b3f69e07583e9974bebcaa6d",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "均普智能在无锡成立机器人公司 - 新浪财经",
@@ -568,7 +579,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -601,7 +612,7 @@
       "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
       "source": "view.inews.qq.com",
       "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
       "domain": "view.inews.qq.com",
       "trusted": false,
@@ -799,7 +810,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
