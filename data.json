@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-22T16:52:07.349730+08:00",
-  "item_count": 83,
+  "updated_at": "2026-03-22T18:47:39.917390+08:00",
+  "item_count": 88,
   "items": [
     {
       "title": "无锡惠山\"桃花约\"擦亮开放合作名片 智聚产业新动能 - js.chinanews.com.cn",
@@ -157,6 +157,17 @@
       "source_tier": 1
     },
     {
+      "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴”",
+      "url": "https://www.xhby.net/content/s69b281d4e4b09187ac9bdb2e.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-12T18:05:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "38dc63f767b297aaf0652179ed1fd794b77f4451",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "【他山之石】江苏无锡：推出“车路云一体化”赋能城市管理AI场景应用",
       "url": "https://news.qq.com/rain/a/20260312A06FUV00",
       "source": "news.qq.com",
@@ -177,6 +188,17 @@
       "domain": "news.qq.com",
       "trusted": false,
       "source_tier": 1
+    },
+    {
+      "title": "软通动力中国区总部在无锡揭牌成立",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32747296",
+      "source": "thepaper.cn",
+      "published_at": "2026-03-11T14:51:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "791883687d26a1d13c8faf39651a60d26230adcd",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "多地宣布下场“养龙虾”：深圳无锡合肥出手，最高扶持1000万",
@@ -403,7 +425,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 大模型:chinanews.com.cn",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -476,6 +498,17 @@
       "source_tier": 2
     },
     {
+      "title": "头部大厂，加码无锡！",
+      "url": "https://js.ifeng.com/c/8oVb0qk1N2t",
+      "source": "js.ifeng.com",
+      "published_at": "2025-11-23T19:35:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "31c4607cdeaaa96e5f954dcbf9cc8869400f96da",
+      "domain": "js.ifeng.com",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
       "title": "合肥无锡联合教研 AI为心理健康教育注入新动能 - ah.chinanews.com.cn",
       "url": "https://www.ah.chinanews.com.cn/news/2025/1113/337764.shtml",
       "source": "ah.chinanews.com.cn",
@@ -498,6 +531,17 @@
       "source_tier": 2
     },
     {
+      "title": "江苏无锡：新机遇，“智”共赢！智能传播绘盛景 携手共赴新征程",
+      "url": "https://news.sina.com.cn/zx/gj/2025-11-10/doc-infwwexc1780484.shtml",
+      "source": "news.sina.com.cn",
+      "published_at": "2025-11-10T00:00:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "1a5d39e22487390cc7931da12d141711b5bf185c",
+      "domain": "news.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
       "title": "“AI赋能·智联世界”城市形象国际传播（无锡）论坛成功举办 - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202511/t20251109_287215.html",
       "source": "yzwb.net",
@@ -518,6 +562,17 @@
       "domain": "wxrb.com",
       "trusted": true,
       "source_tier": 2
+    },
+    {
+      "title": "规上营收超2500亿元！无锡何以成为“物联网巨擘”？",
+      "url": "https://js.ifeng.com/c/8nqUf2dYeDR",
+      "source": "js.ifeng.com",
+      "published_at": "2025-10-29T15:09:00+08:00",
+      "feed": "bing:无锡AI",
+      "fingerprint": "1e686b55186c8cec0213519028b7611b08908b10",
+      "domain": "js.ifeng.com",
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "人工智能重塑技工教育新图景——全国百所院校无锡共话产教融合新路径 - 紫牛新闻",
@@ -590,7 +645,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -623,7 +678,7 @@
       "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
       "source": "view.inews.qq.com",
       "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
       "domain": "view.inews.qq.com",
       "trusted": false,
@@ -821,7 +876,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -854,7 +909,7 @@
       "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
       "source": "js.ifeng.com",
       "published_at": "2024-06-06T14:12:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "b3d8ac74b4be24c151812b9fb23d5e40d0df3425",
       "domain": "js.ifeng.com",
       "trusted": false,
