@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-23T06:45:14.698967+08:00",
-  "item_count": 84,
+  "updated_at": "2026-03-23T11:23:57.536945+08:00",
+  "item_count": 85,
   "items": [
+    {
+      "title": "AI穿戴万亿级新蓝海，无锡已入局！",
+      "url": "https://finance.sina.com.cn/wm/2026-03-23/doc-inhrxrmy1315591.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-23T02:20:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "bec332d8e17306c778321c15de29059523535f85",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
+    },
     {
       "title": "【产业洞察】全面！2025年无锡市未来产业布局全景图谱（附产业政策、产业空间布局、产业发展现状、产业发展规划） - 新浪财经",
       "url": "https://finance.sina.com.cn/roll/2026-03-22/doc-inhrvnny2278337.shtml?froms=ggmp",
@@ -15,7 +26,7 @@
     },
     {
       "title": "无锡惠山\"桃花约\"擦亮开放合作名片 智聚产业新动能 - js.chinanews.com.cn",
-      "url": "http://www.js.chinanews.com.cn/news/2026/0321/232829.html",
+      "url": "https://www.js.chinanews.com.cn/news/2026/0321/232829.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-21T10:21:26+08:00",
       "feed": "google:无锡 人工智能:chinanews.com.cn",
@@ -62,7 +73,7 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0318/232785.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-18T14:23:26+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "ea716d175d4d644de7f7ea30487a8fa1641d50c6",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
@@ -337,7 +348,7 @@
       "url": "https://www.xhby.net/content/s697c9114e4b037c73eea960a.html",
       "source": "xhby.net",
       "published_at": "2026-01-30T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "918705a2d1f2e1ba5cfb9b081c8c78fdfd7d1c5f",
       "domain": "xhby.net",
       "trusted": true,
