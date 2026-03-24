@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T04:58:15.361329+08:00",
+  "updated_at": "2026-03-25T06:50:29.118476+08:00",
   "item_count": 89,
   "items": [
     {
@@ -271,7 +271,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32732516",
       "source": "thepaper.cn",
       "published_at": "2026-03-09T15:31:00+08:00",
-      "feed": "bing:无锡 人工智能:thepaper.cn",
+      "feed": "bing:无锡 大模型:thepaper.cn",
       "fingerprint": "31e72bf2e685ac819fb042253bff41f1f642337f",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -667,7 +667,7 @@
       "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
       "source": "view.inews.qq.com",
       "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
       "domain": "view.inews.qq.com",
       "trusted": false,
