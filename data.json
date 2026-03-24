@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T17:08:54.049781+08:00",
+  "updated_at": "2026-03-24T19:09:40.916071+08:00",
   "item_count": 86,
   "items": [
     {
@@ -51,7 +51,7 @@
       "url": "https://news.qq.com/rain/a/20260320A06REO00",
       "source": "news.qq.com",
       "published_at": "2026-03-20T09:46:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "8365c8cbc7711eca44f3cb7c31b35cf3aa119d91",
       "domain": "news.qq.com",
       "trusted": false,
@@ -271,7 +271,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32732516",
       "source": "thepaper.cn",
       "published_at": "2026-03-09T15:31:00+08:00",
-      "feed": "bing:无锡 大模型:thepaper.cn",
+      "feed": "bing:无锡 人工智能:thepaper.cn",
       "fingerprint": "31e72bf2e685ac819fb042253bff41f1f642337f",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -898,7 +898,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
