@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-24T23:19:52.694956+08:00",
-  "item_count": 86,
+  "updated_at": "2026-03-25T01:14:35.823985+08:00",
+  "item_count": 88,
   "items": [
     {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
@@ -91,6 +91,17 @@
       "source_tier": 2
     },
     {
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T20:52:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "无锡锡山东璟人工智能创新港揭牌 - 人民网－江苏频道",
       "url": "http://js.people.com.cn/n2/2026/0317/c360301-41526278.html",
       "source": "js.people.com.cn",
@@ -98,17 +109,6 @@
       "feed": "google:无锡 人工智能:people.com.cn",
       "fingerprint": "91a0dc2463fd66285eccee105caabd57777178dc",
       "domain": "js.people.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青”",
-      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-17T15:19:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -520,6 +520,17 @@
       "source_tier": 2
     },
     {
+      "title": "“龙虾十二条”见格局，无锡高新区抢占AI赛道",
+      "url": "https://js.ifeng.com/c/8rNLwNwiSmt",
+      "source": "js.ifeng.com",
+      "published_at": "2025-11-09T16:42:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "fd7fe1287fe307bcdf1d40afd04a4a26e06ad3f4",
+      "domain": "js.ifeng.com",
+      "trusted": false,
+      "source_tier": 1
+    },
+    {
       "title": "“AI赋能·智联世界”城市形象国际传播（无锡）论坛成功举办 - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202511/t20251109_287215.html",
       "source": "yzwb.net",
@@ -538,6 +549,17 @@
       "feed": "bing:无锡AI",
       "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
       "domain": "wxrb.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "惠企红利不容错过 预申报2026年度无锡市人工智能产业发展资金项目启动 - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202510/t20251030_283448.html",
+      "source": "yzwb.net",
+      "published_at": "2025-10-30T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "d5f3f709d02484e22d55d7529dc0939f408c1a03",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
