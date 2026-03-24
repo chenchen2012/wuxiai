@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-24T21:51:13.291211+08:00",
+  "updated_at": "2026-03-24T23:19:52.694956+08:00",
   "item_count": 86,
   "items": [
     {
@@ -51,7 +51,7 @@
       "url": "https://news.qq.com/rain/a/20260320A06REO00",
       "source": "news.qq.com",
       "published_at": "2026-03-20T09:46:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "8365c8cbc7711eca44f3cb7c31b35cf3aa119d91",
       "domain": "news.qq.com",
       "trusted": false,
@@ -91,17 +91,6 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
-      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-17T20:52:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡锡山东璟人工智能创新港揭牌 - 人民网－江苏频道",
       "url": "http://js.people.com.cn/n2/2026/0317/c360301-41526278.html",
       "source": "js.people.com.cn",
@@ -109,6 +98,17 @@
       "feed": "google:无锡 人工智能:people.com.cn",
       "fingerprint": "91a0dc2463fd66285eccee105caabd57777178dc",
       "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青”",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T15:19:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -139,7 +139,7 @@
       "url": "https://news.qq.com/rain/a/20260316A05GQR00",
       "source": "news.qq.com",
       "published_at": "2026-03-16T08:06:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "3096c2df2e1db042e82f91dda3febb2b0521dbee",
       "domain": "news.qq.com",
       "trusted": false,
@@ -414,7 +414,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
