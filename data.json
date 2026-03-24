@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-25T01:14:35.823985+08:00",
-  "item_count": 88,
+  "updated_at": "2026-03-25T03:21:48.080309+08:00",
+  "item_count": 89,
   "items": [
     {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
@@ -73,7 +73,7 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0318/232785.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-18T14:23:26+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "ea716d175d4d644de7f7ea30487a8fa1641d50c6",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
@@ -271,7 +271,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32732516",
       "source": "thepaper.cn",
       "published_at": "2026-03-09T15:31:00+08:00",
-      "feed": "bing:无锡 人工智能:thepaper.cn",
+      "feed": "bing:无锡 大模型:thepaper.cn",
       "fingerprint": "31e72bf2e685ac819fb042253bff41f1f642337f",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -634,7 +634,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -865,7 +865,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -925,6 +925,17 @@
       "domain": "js.xinhuanet.com",
       "trusted": true,
       "source_tier": 2
+    },
+    {
+      "title": "无锡：“圈数字化、圈AI”，又一次擦亮产业链",
+      "url": "https://news.sina.com.cn/sx/2023-10-30/detail-imzswvsh3709074.shtml",
+      "source": "news.sina.com.cn",
+      "published_at": "2023-10-30T19:04:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "e18e251cb5df257d88ee1ead0f954f6d03163bae",
+      "domain": "news.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1
     },
     {
       "title": "AI引领 慧营销360百城增长大会-无锡站成功举行，助力中小企业拥抱AI ...",
