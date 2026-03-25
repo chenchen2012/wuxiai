@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-25T15:18:12.684723+08:00",
-  "item_count": 89,
+  "updated_at": "2026-03-25T17:09:14.203452+08:00",
+  "item_count": 90,
   "items": [
     {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
@@ -73,7 +73,7 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0318/232785.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-18T14:23:26+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "ea716d175d4d644de7f7ea30487a8fa1641d50c6",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
@@ -91,6 +91,17 @@
       "source_tier": 2
     },
     {
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T20:52:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "无锡锡山东璟人工智能创新港揭牌 - 人民网－江苏频道",
       "url": "http://js.people.com.cn/n2/2026/0317/c360301-41526278.html",
       "source": "js.people.com.cn",
@@ -98,17 +109,6 @@
       "feed": "google:无锡 人工智能:people.com.cn",
       "fingerprint": "91a0dc2463fd66285eccee105caabd57777178dc",
       "domain": "js.people.com.cn",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青”",
-      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-17T15:19:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -161,7 +161,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32767340",
       "source": "thepaper.cn",
       "published_at": "2026-03-14T15:50:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
+      "feed": "bing:无锡AI:thepaper.cn",
       "fingerprint": "ebf0a9b5504a17471d5536f19674361154bb4d02",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -249,7 +249,7 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0309/232675.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-09T18:15:21+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "907c699f87e985fbc04b2139f18d4f7e5c4274f1",
       "domain": "js.chinanews.com.cn",
       "trusted": true,
@@ -348,7 +348,7 @@
       "url": "https://www.xhby.net/content/s697c9114e4b037c73eea960a.html",
       "source": "xhby.net",
       "published_at": "2026-01-30T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "918705a2d1f2e1ba5cfb9b081c8c78fdfd7d1c5f",
       "domain": "xhby.net",
       "trusted": true,
@@ -425,7 +425,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "feed": "bing:无锡 大模型:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -571,6 +571,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "e92e9335d3650b4c2a79b77de42547ede9c6653a",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "市级机关“无锡景•家国情 AI‘尚’无锡”智享汇活动综述",
+      "url": "https://www.thepaper.cn/newsDetail_forward_31745237",
+      "source": "thepaper.cn",
+      "published_at": "2025-10-09T15:49:00+08:00",
+      "feed": "bing:无锡AI:thepaper.cn",
+      "fingerprint": "6d2b54f590acbeb9a9328338110be21c544bb8cd",
+      "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
