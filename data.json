@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-25T19:07:46.014431+08:00",
-  "item_count": 90,
+  "updated_at": "2026-03-25T21:50:07.810524+08:00",
+  "item_count": 91,
   "items": [
     {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
@@ -91,13 +91,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
-      "source": "yzwb.net",
-      "published_at": "2026-03-17T20:17:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T20:52:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "yzwb.net",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -161,7 +161,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32767340",
       "source": "thepaper.cn",
       "published_at": "2026-03-14T15:50:00+08:00",
-      "feed": "bing:无锡AI:thepaper.cn",
+      "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "ebf0a9b5504a17471d5536f19674361154bb4d02",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -403,7 +403,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_32374723",
       "source": "thepaper.cn",
       "published_at": "2026-01-13T15:20:00+08:00",
-      "feed": "bing:无锡AI:thepaper.cn",
+      "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "854f394138b64045b39109fd580dab452407bc30",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -425,7 +425,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "feed": "bing:无锡 大模型:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -579,7 +579,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_31745237",
       "source": "thepaper.cn",
       "published_at": "2025-10-09T15:49:00+08:00",
-      "feed": "bing:无锡AI:thepaper.cn",
+      "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "6d2b54f590acbeb9a9328338110be21c544bb8cd",
       "domain": "thepaper.cn",
       "trusted": true,
@@ -846,6 +846,17 @@
       "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "ee51be4e42168dd34827dc2dcc45b3612aa798c9",
       "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "更懂无锡人！“AI政务服务助手”再升级",
+      "url": "https://www.thepaper.cn/newsDetail_forward_30396165",
+      "source": "thepaper.cn",
+      "published_at": "2025-03-14T19:33:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "8da79bac4c8061774f21ab450904c2ddf260709d",
+      "domain": "thepaper.cn",
       "trusted": true,
       "source_tier": 2
     },
