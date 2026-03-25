@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T06:50:29.118476+08:00",
+  "updated_at": "2026-03-25T11:18:53.522509+08:00",
   "item_count": 89,
   "items": [
     {
@@ -399,15 +399,15 @@
       "source_tier": 1
     },
     {
-      "title": "清华+无锡，AI制药突破登上全球顶刊",
-      "url": "https://finance.sina.com.cn/roll/2026-01-14/doc-inhhfmkx5300068.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-01-14T06:14:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "7c90fa9dbca70bcc7cbc43eafd098087bbf88c64",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
+      "title": "清华+无锡！AI制药突破登上全球科研顶刊",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32374723",
+      "source": "thepaper.cn",
+      "published_at": "2026-01-13T15:20:00+08:00",
+      "feed": "bing:无锡AI:thepaper.cn",
+      "fingerprint": "854f394138b64045b39109fd580dab452407bc30",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "一人一AI开局创业！无锡首届“创响无锡”全国大学生OPC菁英赛启动",
@@ -491,7 +491,7 @@
       "url": "https://www.wxrb.com/doc/2025/11/23/427912.shtml",
       "source": "wxrb.com",
       "published_at": "2025-11-24T00:39:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "19f30fcee21f731deb3e20618d6bd707e8db0acd",
       "domain": "wxrb.com",
       "trusted": true,
