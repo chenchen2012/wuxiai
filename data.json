@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-25T23:21:30.949921+08:00",
-  "item_count": 92,
+  "updated_at": "2026-03-26T01:17:28.792721+08:00",
+  "item_count": 93,
   "items": [
     {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
@@ -425,7 +425,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 大模型:chinanews.com.cn",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -619,6 +619,17 @@
       "source_tier": 2
     },
     {
+      "title": "首发首秀，无锡有个关于“世界级AI”的梦想～",
+      "url": "https://www.thepaper.cn/newsDetail_forward_31249842",
+      "source": "thepaper.cn",
+      "published_at": "2025-07-28T18:05:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "87fd1218532a57c5b932af894baafa26f12fa207",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "无锡AI团队首次登顶“全球最难榜单”",
       "url": "https://finance.sina.com.cn/roll/2025-07-27/doc-infhwiaa1282536.shtml",
       "source": "finance.sina.com.cn",
@@ -656,7 +667,7 @@
       "url": "http://renshi.people.com.cn/n1/2025/0716/c139617-40522667.html",
       "source": "renshi.people.com.cn",
       "published_at": "2025-07-16T09:51:00+08:00",
-      "feed": "bing:无锡AI:people.com.cn",
+      "feed": "bing:无锡 AI:people.com.cn",
       "fingerprint": "f681db30a53aee08d577c4d0e6cd517b8b241109",
       "domain": "renshi.people.com.cn",
       "trusted": true,
@@ -920,7 +931,7 @@
       "url": "https://finance.people.com.cn/n1/2024/1003/c1004-40332781.html",
       "source": "finance.people.com.cn",
       "published_at": "2024-10-03T14:28:00+08:00",
-      "feed": "bing:无锡AI:people.com.cn",
+      "feed": "bing:无锡 AI:people.com.cn",
       "fingerprint": "dfdbe6e1544ea1a63910dae1c2ff5706ce024b2d",
       "domain": "finance.people.com.cn",
       "trusted": true,
