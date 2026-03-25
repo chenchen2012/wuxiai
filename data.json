@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-25T21:50:07.810524+08:00",
-  "item_count": 91,
+  "updated_at": "2026-03-25T23:21:30.949921+08:00",
+  "item_count": 92,
   "items": [
     {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
@@ -656,7 +656,7 @@
       "url": "http://renshi.people.com.cn/n1/2025/0716/c139617-40522667.html",
       "source": "renshi.people.com.cn",
       "published_at": "2025-07-16T09:51:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
+      "feed": "bing:无锡AI:people.com.cn",
       "fingerprint": "f681db30a53aee08d577c4d0e6cd517b8b241109",
       "domain": "renshi.people.com.cn",
       "trusted": true,
@@ -861,6 +861,17 @@
       "source_tier": 2
     },
     {
+      "title": "AI赋能，无锡突破这项技术瓶颈！",
+      "url": "https://www.thepaper.cn/newsDetail_forward_30362774",
+      "source": "thepaper.cn",
+      "published_at": "2025-03-11T14:48:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "52ffb7d90f90c1376eb72fd711fff4eb17ae12cf",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "让“大象”与“蚂蚁”共舞，江苏无锡打响AI深度赋能工业“发令枪”",
       "url": "https://www.wxrb.com/doc/2025/02/17/389203.shtml",
       "source": "wxrb.com",
@@ -909,7 +920,7 @@
       "url": "https://finance.people.com.cn/n1/2024/1003/c1004-40332781.html",
       "source": "finance.people.com.cn",
       "published_at": "2024-10-03T14:28:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
+      "feed": "bing:无锡AI:people.com.cn",
       "fingerprint": "dfdbe6e1544ea1a63910dae1c2ff5706ce024b2d",
       "domain": "finance.people.com.cn",
       "trusted": true,
