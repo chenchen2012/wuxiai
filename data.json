@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-25T13:38:58.083148+08:00",
+  "updated_at": "2026-03-25T15:18:12.684723+08:00",
   "item_count": 89,
   "items": [
     {
@@ -91,17 +91,6 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
-      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-17T20:52:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡锡山东璟人工智能创新港揭牌 - 人民网－江苏频道",
       "url": "http://js.people.com.cn/n2/2026/0317/c360301-41526278.html",
       "source": "js.people.com.cn",
@@ -109,6 +98,17 @@
       "feed": "google:无锡 人工智能:people.com.cn",
       "fingerprint": "91a0dc2463fd66285eccee105caabd57777178dc",
       "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青”",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T15:19:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
