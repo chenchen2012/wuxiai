@@ -54,4 +54,10 @@
     <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://wuxiai.com/history-page-8.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

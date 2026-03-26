@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-03-26T19:11:41.132115+08:00",
-  "item_count": 94,
+  "updated_at": "2026-03-26T21:58:47.438990+08:00",
+  "item_count": 97,
   "items": [
+    {
+      "title": "江苏无锡举办会展目的地建设大会 以融合创新共筑会展经济新高地 - chinanews.com.cn",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-26/10593412.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-26T21:27:29+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "f6decd0b58c1f00fa951a996fadbae98cd7cde84",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "“春假”来了，无锡“科技研学”开启招募 - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202603/t20260326_335677.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-26T18:13:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "f94c69d7ce858455fa32339463ec0a7d8bd6f8b1",
+      "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
     {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
       "url": "https://finance.sina.com.cn/wm/2026-03-23/doc-inhrxrmy1315591.shtml",
@@ -36,7 +58,7 @@
       "source_tier": 2
     },
     {
-      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪网",
+      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
       "url": "https://finance.sina.com.cn/wm/2026-03-20/doc-inhrrrew0795091.shtml?froms=ggmp",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-20T17:49:00+08:00",
@@ -87,6 +109,17 @@
       "feed": "google:无锡 人工智能",
       "fingerprint": "d9467d689e7b347fb6b550a99ffb0a45c0b1ea3c",
       "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-17T20:17:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
+      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -656,7 +689,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -920,7 +953,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
