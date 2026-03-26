@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T03:32:22.445009+08:00",
+  "updated_at": "2026-03-27T04:51:28.874824+08:00",
   "item_count": 99,
   "items": [
     {
@@ -29,7 +29,7 @@
       "url": "https://finance.sina.com.cn/wm/2026-03-23/doc-inhrxrmy1315591.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-23T02:20:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "bec332d8e17306c778321c15de29059523535f85",
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -73,7 +73,7 @@
       "url": "https://news.qq.com/rain/a/20260320A06REO00",
       "source": "news.qq.com",
       "published_at": "2026-03-20T09:46:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "8365c8cbc7711eca44f3cb7c31b35cf3aa119d91",
       "domain": "news.qq.com",
       "trusted": false,
@@ -161,7 +161,7 @@
       "url": "https://news.qq.com/rain/a/20260316A05GQR00",
       "source": "news.qq.com",
       "published_at": "2026-03-16T08:06:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3096c2df2e1db042e82f91dda3febb2b0521dbee",
       "domain": "news.qq.com",
       "trusted": false,
@@ -194,7 +194,7 @@
       "url": "https://finance.sina.com.cn/roll/2026-03-14/doc-inhqypen4013923.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-14T14:21:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "a21631b73120b927b91f367f5d64b317698d6333",
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -443,12 +443,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
