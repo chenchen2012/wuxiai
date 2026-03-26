@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-26T21:58:47.438990+08:00",
-  "item_count": 97,
+  "updated_at": "2026-03-26T23:40:43.273295+08:00",
+  "item_count": 98,
   "items": [
     {
       "title": "江苏无锡举办会展目的地建设大会 以融合创新共筑会展经济新高地 - chinanews.com.cn",
@@ -436,19 +436,19 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -689,7 +689,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -953,7 +953,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -993,6 +993,17 @@
       "source_tier": 1
     },
     {
+      "title": "生物医药产业规模超两千亿，“物联网之都”无锡欲借AI超车",
+      "url": "https://www.thepaper.cn/newsDetail_forward_27356502?commTag=true",
+      "source": "thepaper.cn",
+      "published_at": "2024-05-13T15:57:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "48360428fd5f85ef6cb445e841f800d663212622",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "我AI的江苏丨华春莹转发推荐！无锡“这两样”为何能强势出圈？ - 新华报业网",
       "url": "https://www.xhby.net/content/s66015289e4b09dde337fdf93.html",
       "source": "xhby.net",
@@ -1008,7 +1019,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
