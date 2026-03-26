@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T06:56:47.096139+08:00",
+  "updated_at": "2026-03-26T11:27:20.360004+08:00",
   "item_count": 94,
   "items": [
     {
@@ -36,7 +36,7 @@
       "source_tier": 2
     },
     {
-      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪网",
+      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
       "url": "https://finance.sina.com.cn/wm/2026-03-20/doc-inhrrrew0795091.shtml?froms=ggmp",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-20T17:49:00+08:00",
@@ -91,13 +91,13 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 新华报业网",
-      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
-      "source": "xhby.net",
-      "published_at": "2026-03-17T20:52:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-17T20:17:00+08:00",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "xhby.net",
+      "domain": "yzwb.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -425,7 +425,7 @@
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 大模型:chinanews.com.cn",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -656,7 +656,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -755,7 +755,7 @@
       "url": "https://www.chinanews.com.cn/jk/2025/05-16/10416689.shtml",
       "source": "chinanews.com.cn",
       "published_at": "2025-05-16T11:22:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
+      "feed": "bing:无锡AI:chinanews.com.cn",
       "fingerprint": "346a0116d9fd35a2e5c5825ab94cc8a4df814bdf",
       "domain": "chinanews.com.cn",
       "trusted": true,
@@ -920,7 +920,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -953,7 +953,7 @@
       "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
       "source": "js.ifeng.com",
       "published_at": "2024-06-06T14:12:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "b3d8ac74b4be24c151812b9fb23d5e40d0df3425",
       "domain": "js.ifeng.com",
       "trusted": false,
