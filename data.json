@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-26T23:40:43.273295+08:00",
-  "item_count": 98,
+  "updated_at": "2026-03-27T01:18:47.419484+08:00",
+  "item_count": 99,
   "items": [
     {
       "title": "江苏无锡举办会展目的地建设大会 以融合创新共筑会展经济新高地 - chinanews.com.cn",
@@ -443,12 +443,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -832,7 +832,7 @@
       "url": "https://www.xhby.net/content/s6801a968e4b0b8e94c5002af.html",
       "source": "xhby.net",
       "published_at": "2025-04-18T10:22:00+08:00",
-      "feed": "bing:无锡AI:xhby.net",
+      "feed": "bing:无锡 AI:xhby.net",
       "fingerprint": "a19af7e8c0df40faa697b5cf53dce6bcebc96884",
       "domain": "xhby.net",
       "trusted": true,
@@ -892,6 +892,17 @@
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
+    },
+    {
+      "title": "深度求索，无锡打造“AI治之城”",
+      "url": "https://xh.xhby.net/pc/con/202503/23/content_1432102.html",
+      "source": "xh.xhby.net",
+      "published_at": "2025-03-23T01:00:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "61315c3929c6e24f8cb4db940d6ad3ef870b0e5c",
+      "domain": "xh.xhby.net",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "党建领航 双团共创 江苏党建引领“人工智能+”人才发展专题研讨会在无锡举办 - 新华报业网",
