@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-26T15:36:36.409784+08:00",
+  "updated_at": "2026-03-26T17:14:07.224070+08:00",
   "item_count": 95,
   "items": [
     {
@@ -36,7 +36,7 @@
       "source_tier": 2
     },
     {
-      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪网",
+      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
       "url": "https://finance.sina.com.cn/wm/2026-03-20/doc-inhrrrew0795091.shtml?froms=ggmp",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-20T17:49:00+08:00",
@@ -91,17 +91,6 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/yw/202603/t20260317_332514.html",
-      "source": "yzwb.net",
-      "published_at": "2026-03-17T20:17:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "无锡锡山东璟人工智能创新港揭牌 - 人民网－江苏频道",
       "url": "http://js.people.com.cn/n2/2026/0317/c360301-41526278.html",
       "source": "js.people.com.cn",
@@ -109,6 +98,17 @@
       "feed": "google:无锡 人工智能:people.com.cn",
       "fingerprint": "91a0dc2463fd66285eccee105caabd57777178dc",
       "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "江苏无锡：让企业坐“C位”，政企合力续写“基业长青”",
+      "url": "https://www.xhby.net/content/s69b94ea3e4b045d3a5e79580.html",
+      "source": "xhby.net",
+      "published_at": "2026-03-17T15:19:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "65ffacfec9c6c74fc792b1c9cae4b967c153153c",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -366,11 +366,11 @@
       "source_tier": 2
     },
     {
-      "title": "无锡“智变”：从“制造之城”到“AI之城”",
+      "title": "无锡“智变”：从“制造之城”到“AI之城” - 新华报业网",
       "url": "https://www.xhby.net/content/s6977398ce4b041b20c17a6db.html",
       "source": "xhby.net",
-      "published_at": "2026-01-26T17:53:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
+      "published_at": "2026-01-26T16:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
       "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
       "domain": "xhby.net",
       "trusted": true,
@@ -421,12 +421,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -678,7 +678,7 @@
       "url": "http://renshi.people.com.cn/n1/2025/0716/c139617-40522667.html",
       "source": "renshi.people.com.cn",
       "published_at": "2025-07-16T09:51:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
+      "feed": "bing:无锡AI:people.com.cn",
       "fingerprint": "f681db30a53aee08d577c4d0e6cd517b8b241109",
       "domain": "renshi.people.com.cn",
       "trusted": true,
@@ -953,7 +953,7 @@
       "url": "https://finance.people.com.cn/n1/2024/1003/c1004-40332781.html",
       "source": "finance.people.com.cn",
       "published_at": "2024-10-03T14:28:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
+      "feed": "bing:无锡AI:people.com.cn",
       "fingerprint": "dfdbe6e1544ea1a63910dae1c2ff5706ce024b2d",
       "domain": "finance.people.com.cn",
       "trusted": true,
