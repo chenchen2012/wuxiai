@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-27T21:43:28.537168+08:00",
+  "updated_at": "2026-03-27T23:09:03.080555+08:00",
   "item_count": 99,
   "items": [
     {
@@ -47,7 +47,7 @@
       "source_tier": 1
     },
     {
-      "title": "【产业洞察】全面！2025年无锡市未来产业布局全景图谱（附产业政策、产业空间布局、产业发展现状、产业发展规划） - 新浪网",
+      "title": "【产业洞察】全面！2025年无锡市未来产业布局全景图谱（附产业政策、产业空间布局、产业发展现状、产业发展规划） - 新浪财经",
       "url": "https://finance.sina.com.cn/roll/2026-03-22/doc-inhrvnny2278337.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-22T09:00:00+08:00",
@@ -443,12 +443,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -1005,10 +1005,10 @@
     },
     {
       "title": "生物医药产业规模超两千亿，“物联网之都”无锡欲借AI超车",
-      "url": "https://www.thepaper.cn/newsDetail_forward_27356502",
+      "url": "https://www.thepaper.cn/newsDetail_forward_27356502?commTag=true",
       "source": "thepaper.cn",
       "published_at": "2024-05-13T15:57:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
+      "feed": "bing:无锡AI:thepaper.cn",
       "fingerprint": "48360428fd5f85ef6cb445e841f800d663212622",
       "domain": "thepaper.cn",
       "trusted": true,
