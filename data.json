@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-27T19:07:17.335764+08:00",
+  "updated_at": "2026-03-27T21:43:28.537168+08:00",
   "item_count": 99,
   "items": [
     {
-      "title": "智云无锡、电信有AI——云端共赴锡城春日之约",
-      "url": "http://www.js.xinhuanet.com/20260327/b5aee971cb174d67bbf344fac6e2116b/c.html",
-      "source": "js.xinhuanet.com",
-      "published_at": "2026-03-27T09:58:00+08:00",
-      "feed": "bing:无锡 AI:xinhuanet.com",
+      "title": "智云无锡、电信有AI——云端共赴锡城春日之约 - 新华网江苏频道",
+      "url": "http://js.news.cn/20260327/b5aee971cb174d67bbf344fac6e2116b/c.html",
+      "source": "js.news.cn",
+      "published_at": "2026-03-27T18:33:36+08:00",
+      "feed": "google:无锡 人工智能",
       "fingerprint": "9fe8da07480ceddd9d37e82074c25fb53765fa69",
-      "domain": "js.xinhuanet.com",
+      "domain": "js.news.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -69,8 +69,8 @@
       "source_tier": 2
     },
     {
-      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪网",
-      "url": "https://finance.sina.com.cn/roll/2026-03-20/doc-inhrrrer8028800.shtml",
+      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
+      "url": "https://finance.sina.com.cn/wm/2026-03-20/doc-inhrrrew0795091.shtml?froms=ggmp",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-20T17:49:00+08:00",
       "feed": "google:无锡 人工智能",
@@ -436,19 +436,19 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -689,7 +689,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -872,6 +872,17 @@
       "source_tier": 2
     },
     {
+      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
+      "source": "xhby.net",
+      "published_at": "2025-03-23T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "敢当弄潮儿 奋力挑大梁｜深度求索，无锡打造“AI治之城”",
       "url": "https://finance.sina.com.cn/roll/2025-03-23/doc-ineqqwqw9193890.shtml",
       "source": "finance.sina.com.cn",
@@ -881,17 +892,6 @@
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
-    },
-    {
-      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城”",
-      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
-      "source": "xhby.net",
-      "published_at": "2025-03-23T08:16:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
     },
     {
       "title": "深度求索，无锡打造“AI治之城”",
@@ -964,7 +964,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -997,7 +997,7 @@
       "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
       "source": "js.ifeng.com",
       "published_at": "2024-06-06T14:12:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "b3d8ac74b4be24c151812b9fb23d5e40d0df3425",
       "domain": "js.ifeng.com",
       "trusted": false,
@@ -1005,10 +1005,10 @@
     },
     {
       "title": "生物医药产业规模超两千亿，“物联网之都”无锡欲借AI超车",
-      "url": "https://www.thepaper.cn/newsDetail_forward_27356502?commTag=true",
+      "url": "https://www.thepaper.cn/newsDetail_forward_27356502",
       "source": "thepaper.cn",
       "published_at": "2024-05-13T15:57:00+08:00",
-      "feed": "bing:无锡AI:thepaper.cn",
+      "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "48360428fd5f85ef6cb445e841f800d663212622",
       "domain": "thepaper.cn",
       "trusted": true,
