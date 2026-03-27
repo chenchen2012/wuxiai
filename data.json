@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-28T04:55:49.285898+08:00",
-  "item_count": 98,
+  "updated_at": "2026-03-28T06:52:14.728855+08:00",
+  "item_count": 99,
   "items": [
     {
       "title": "智云无锡、电信有AI——云端共赴锡城春日之约 - 新华网江苏频道",
@@ -70,7 +70,7 @@
     },
     {
       "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-03-20/doc-inhrrrer8028800.shtml?froms=ggmp",
+      "url": "https://finance.sina.com.cn/roll/2026-03-20/doc-inhrrrer8028800.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-20T17:49:00+08:00",
       "feed": "google:无锡 人工智能",
@@ -432,12 +432,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -505,6 +505,17 @@
       "feed": "bing:无锡 AI",
       "fingerprint": "19f30fcee21f731deb3e20618d6bd707e8db0acd",
       "domain": "wxrb.com",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "无难事 悉心办｜数据无锡：创新“AI改革”硬举措，优化“营商环境 ...",
+      "url": "https://www.xhby.net/content/s691ac5d4e4b054c4a0b07b48.html",
+      "source": "xhby.net",
+      "published_at": "2025-11-17T14:51:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "c1442c0b85a07dcd7357df3833728335648428f1",
+      "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2
     },
@@ -678,7 +689,7 @@
       "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
       "source": "wxrb.com",
       "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
       "domain": "wxrb.com",
       "trusted": true,
@@ -711,7 +722,7 @@
       "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
       "source": "view.inews.qq.com",
       "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
       "domain": "view.inews.qq.com",
       "trusted": false,
@@ -861,6 +872,17 @@
       "source_tier": 2
     },
     {
+      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
+      "source": "xhby.net",
+      "published_at": "2025-03-23T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "敢当弄潮儿 奋力挑大梁｜深度求索，无锡打造“AI治之城”",
       "url": "https://finance.sina.com.cn/roll/2025-03-23/doc-ineqqwqw9193890.shtml",
       "source": "finance.sina.com.cn",
@@ -870,17 +892,6 @@
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
-    },
-    {
-      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城”",
-      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
-      "source": "xhby.net",
-      "published_at": "2025-03-23T08:16:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
     },
     {
       "title": "深度求索，无锡打造“AI治之城”",
@@ -953,7 +964,7 @@
       "url": "https://js.ifeng.com/c/8gpddHldBNF",
       "source": "js.ifeng.com",
       "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
       "domain": "js.ifeng.com",
       "trusted": false,
