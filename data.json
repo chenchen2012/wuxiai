@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-27T17:08:25.216065+08:00",
-  "item_count": 98,
+  "updated_at": "2026-03-27T19:07:17.335764+08:00",
+  "item_count": 99,
   "items": [
     {
       "title": "智云无锡、电信有AI——云端共赴锡城春日之约",
@@ -69,7 +69,7 @@
       "source_tier": 2
     },
     {
-      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
+      "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪网",
       "url": "https://finance.sina.com.cn/roll/2026-03-20/doc-inhrrrer8028800.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-20T17:49:00+08:00",
@@ -109,6 +109,17 @@
       "feed": "google:无锡 人工智能:chinanews.com.cn",
       "fingerprint": "ea716d175d4d644de7f7ea30487a8fa1641d50c6",
       "domain": "js.chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "500强企业中国区总部，为何落户无锡滨湖区？ - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0318/c358232-41526449.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-18T08:22:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "d9467d689e7b347fb6b550a99ffb0a45c0b1ea3c",
+      "domain": "js.people.com.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -861,17 +872,6 @@
       "source_tier": 2
     },
     {
-      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
-      "source": "xhby.net",
-      "published_at": "2025-03-23T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "敢当弄潮儿 奋力挑大梁｜深度求索，无锡打造“AI治之城”",
       "url": "https://finance.sina.com.cn/roll/2025-03-23/doc-ineqqwqw9193890.shtml",
       "source": "finance.sina.com.cn",
@@ -881,6 +881,17 @@
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
+    },
+    {
+      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城”",
+      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
+      "source": "xhby.net",
+      "published_at": "2025-03-23T08:16:00+08:00",
+      "feed": "bing:无锡 AI:xhby.net",
+      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
     },
     {
       "title": "深度求索，无锡打造“AI治之城”",
