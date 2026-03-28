@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-03-28T13:35:18.336916+08:00",
-  "item_count": 101,
+  "updated_at": "2026-03-28T15:13:52.765152+08:00",
+  "item_count": 102,
   "items": [
     {
       "title": "新水岛“智能体”加持，无锡生产企业用水实现“双清零” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202603/t20260328_336310.html",
       "source": "yzwb.net",
       "published_at": "2026-03-28T13:23:00+08:00",
-      "feed": "google:无锡 人工智能",
+      "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "126a9064a25c8da9d93325ddf25d3ed7b57d7964",
       "domain": "yzwb.net",
       "trusted": true,
@@ -927,6 +927,17 @@
       "source_tier": 2
     },
     {
+      "title": "江苏无锡：竞速人形机器人，全力抢占千亿“赛点” - 新华报业网",
+      "url": "https://www.xhby.net/content/s67dc9bc2e4b0fec08799f871.html",
+      "source": "xhby.net",
+      "published_at": "2025-03-21T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "4d8175a74132efdc2b8a8accb5c058119ff31f31",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "党建领航 双团共创 江苏党建引领“人工智能+”人才发展专题研讨会在无锡举办 - 新华报业网",
       "url": "https://www.xhby.net/content/s67d94875e4b0ed434077acff.html",
       "source": "xhby.net",
@@ -1052,7 +1063,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
+      "feed": "bing:无锡 大模型:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
@@ -1063,7 +1074,7 @@
       "url": "https://news.sina.com.cn/sx/2023-10-30/detail-imzswvsh3709074.shtml",
       "source": "news.sina.com.cn",
       "published_at": "2023-10-30T19:04:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "fingerprint": "e18e251cb5df257d88ee1ead0f954f6d03163bae",
       "domain": "news.sina.com.cn",
       "trusted": false,
