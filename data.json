@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-28T11:15:52.458757+08:00",
-  "item_count": 100,
+  "updated_at": "2026-03-28T13:35:18.336916+08:00",
+  "item_count": 101,
   "items": [
+    {
+      "title": "新水岛“智能体”加持，无锡生产企业用水实现“双清零” - 紫牛新闻",
+      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202603/t20260328_336310.html",
+      "source": "yzwb.net",
+      "published_at": "2026-03-28T13:23:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "126a9064a25c8da9d93325ddf25d3ed7b57d7964",
+      "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
     {
       "title": "智云无锡、电信有AI——云端共赴锡城春日之约 - 新华网江苏频道",
       "url": "http://js.news.cn/20260327/b5aee971cb174d67bbf344fac6e2116b/c.html",
@@ -48,7 +59,7 @@
     },
     {
       "title": "【产业洞察】全面！2025年无锡市未来产业布局全景图谱（附产业政策、产业空间布局、产业发展现状、产业发展规划） - 新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-03-22/doc-inhrvnny2278337.shtml",
+      "url": "https://finance.sina.com.cn/roll/2026-03-22/doc-inhrvnny2278337.shtml?froms=ggmp",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-22T09:00:00+08:00",
       "feed": "google:无锡 人工智能",
@@ -432,12 +443,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T11:47:00+08:00",
-      "feed": "bing:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
+      "published_at": "2026-01-05T16:00:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -843,7 +854,7 @@
       "url": "https://www.xhby.net/content/s6801a968e4b0b8e94c5002af.html",
       "source": "xhby.net",
       "published_at": "2025-04-18T10:22:00+08:00",
-      "feed": "bing:无锡AI:xhby.net",
+      "feed": "bing:无锡 AI:xhby.net",
       "fingerprint": "a19af7e8c0df40faa697b5cf53dce6bcebc96884",
       "domain": "xhby.net",
       "trusted": true,
@@ -883,6 +894,17 @@
       "source_tier": 2
     },
     {
+      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城” - 新华报业网",
+      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
+      "source": "xhby.net",
+      "published_at": "2025-03-23T15:00:00+08:00",
+      "feed": "google:无锡 人工智能:xhby.net",
+      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "敢当弄潮儿 奋力挑大梁｜深度求索，无锡打造“AI治之城”",
       "url": "https://finance.sina.com.cn/roll/2025-03-23/doc-ineqqwqw9193890.shtml",
       "source": "finance.sina.com.cn",
@@ -894,22 +916,11 @@
       "source_tier": 1
     },
     {
-      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城”",
-      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
-      "source": "xhby.net",
-      "published_at": "2025-03-23T08:16:00+08:00",
-      "feed": "bing:无锡AI:xhby.net",
-      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "深度求索，无锡打造“AI治之城”",
       "url": "https://xh.xhby.net/pc/con/202503/23/content_1432102.html",
       "source": "xh.xhby.net",
       "published_at": "2025-03-23T01:00:00+08:00",
-      "feed": "bing:无锡AI:xhby.net",
+      "feed": "bing:无锡 AI:xhby.net",
       "fingerprint": "61315c3929c6e24f8cb4db940d6ad3ef870b0e5c",
       "domain": "xh.xhby.net",
       "trusted": true,
@@ -1041,7 +1052,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
