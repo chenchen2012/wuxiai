@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28T16:57:40.751217+08:00",
+  "updated_at": "2026-03-28T18:51:27.869454+08:00",
   "item_count": 103,
   "items": [
     {
@@ -69,23 +69,23 @@
       "source_tier": 2
     },
     {
+      "title": "全国两会上生态环境部部长黄润秋提到的“黑灯实验室”，无锡率先 ...",
+      "url": "https://www.thepaper.cn/newsDetail_forward_32828231",
+      "source": "thepaper.cn",
+      "published_at": "2026-03-25T17:15:00+08:00",
+      "feed": "bing:无锡 AI:thepaper.cn",
+      "fingerprint": "cd87bac3e0b129793ded5983ebdebbe20b05dd72",
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
       "url": "https://finance.sina.com.cn/wm/2026-03-23/doc-inhrxrmy1315591.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-03-23T02:20:00+08:00",
       "feed": "bing:无锡 AI",
       "fingerprint": "bec332d8e17306c778321c15de29059523535f85",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1
-    },
-    {
-      "title": "【产业洞察】全面！2025年无锡市未来产业布局全景图谱（附产业政策、产业空间布局、产业发展现状、产业发展规划） - 新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2026-03-22/doc-inhrvnny2278337.shtml?froms=ggmp",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-22T09:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "f872fcb64d4abe15f9eed404d74d8f3e8de550fd",
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
@@ -447,7 +447,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
       "source": "yangtse.com",
       "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
       "domain": "yangtse.com",
       "trusted": true,
