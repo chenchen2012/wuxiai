@@ -73,6 +73,14 @@ MIN_RELEVANCE_SCORE = env_int("WUXIAI_MIN_RELEVANCE_SCORE", 8)
 MIN_EXTRACTED_CONTENT_LENGTH = env_int("WUXIAI_MIN_EXTRACTED_CONTENT_LENGTH", 180)
 SUMMARY_MIN_CONTENT_LENGTH = env_int("WUXIAI_SUMMARY_MIN_CONTENT_LENGTH", 260)
 SUMMARY_MAX_INPUT_CHARS = env_int("WUXIAI_SUMMARY_MAX_INPUT_CHARS", 3200)
+MAX_ITEM_AGE_DAYS = env_int("WUXIAI_MAX_ITEM_AGE_DAYS", 45)
+MAX_EXISTING_ITEM_AGE_DAYS = env_int("WUXIAI_MAX_EXISTING_ITEM_AGE_DAYS", 21)
+STALE_WEAK_ITEM_AGE_DAYS = env_int("WUXIAI_STALE_WEAK_ITEM_AGE_DAYS", 10)
+FRESHNESS_HALF_LIFE_DAYS = env_float("WUXIAI_FRESHNESS_HALF_LIFE_DAYS", 3.5)
+SUMMARY_RECENT_BACKFILL_DAYS = env_int("WUXIAI_SUMMARY_BACKFILL_RECENT_DAYS", 7)
+MAX_SUMMARY_ITEMS_PER_RUN = env_int("WUXIAI_MAX_SUMMARY_ITEMS_PER_RUN", 8)
+SUMMARY_WORKERS = env_int("WUXIAI_SUMMARY_WORKERS", 2)
+MAX_FEED_SOURCES = env_int("WUXIAI_MAX_FEED_SOURCES", 96)
 SUMMARY_ENABLED = env_bool("WUXIAI_ENABLE_SUMMARY", True)
 SUMMARY_NEW_ONLY = env_bool("WUXIAI_SUMMARY_ONLY_NEW", True)
 SUMMARY_BULK_BACKFILL = env_bool("WUXIAI_SUMMARY_BULK_BACKFILL", False)
@@ -91,21 +99,24 @@ LLM_MODEL = (
 ).strip()
 
 CHINA_NEWS_SITE_FILTERS = [
-    "xinhuanet.com",
     "news.cn",
+    "people.com.cn",
     "chinanews.com.cn",
     "thepaper.cn",
-    "people.com.cn",
     "cnr.cn",
+    "xhby.net",
+    "yzwb.net",
+    "wxrb.com",
+    "subaonet.com",
+]
+
+EXPANDED_SITE_FILTERS = [
+    "xinhuanet.com",
     "jiangsu.gov.cn",
     "wuxi.gov.cn",
     "suzhou.gov.cn",
-    "xhby.net",
-    "yzwb.net",
     "yangtse.com",
-    "wxrb.com",
     "news.jiangnan.edu.cn",
-    "subaonet.com",
     "cs.com.cn",
 ]
 
@@ -119,6 +130,9 @@ TOPIC_GROUPS = [
             "无锡 机器人",
             "无锡 具身智能",
             "无锡 智能制造 AI",
+            "无锡 工业AI",
+            "无锡 机器视觉",
+            "无锡 人形机器人",
         ],
     },
     {
@@ -130,6 +144,9 @@ TOPIC_GROUPS = [
             "苏州 机器人",
             "苏州 工业机器人",
             "苏州 具身智能",
+            "苏州 工业AI",
+            "苏州 机器视觉",
+            "苏州 人形机器人",
         ],
     },
     {
@@ -140,7 +157,9 @@ TOPIC_GROUPS = [
             "长三角 机器人",
             "长三角 智能制造",
             "长三角 具身智能",
-            "江苏 人工智能 机器人",
+            "长三角 工业AI",
+            "长三角 机器视觉",
+            "长三角 人形机器人",
         ],
     },
 ]
@@ -268,6 +287,8 @@ AI_CORE_KEYWORDS = {
     "工业机器人": 5,
     "人形机器人": 6,
     "自动化": 2,
+    "工业ai": 5,
+    "机器视觉": 5,
 }
 
 AI_CONTEXT_KEYWORDS = {
@@ -281,9 +302,16 @@ AI_CONTEXT_KEYWORDS = {
     "研究院": 2,
     "政策": 2,
     "招商": -2,
-    "文旅": 1,
+    "文旅": -2,
     "医疗": 1,
     "工业": 1,
+    "项目": 2,
+    "落地": 2,
+    "合作": 1,
+    "产线": 2,
+    "工厂": 2,
+    "融资": 2,
+    "基金": 2,
 }
 
 WEAK_RELATED_PATTERNS = [
@@ -294,6 +322,78 @@ WEAK_RELATED_PATTERNS = [
     "以旧换新",
     "短视频",
     "文旅宣传",
+    "春假",
+    "研学",
+    "会展",
+    "旅游",
+    "论坛成功举办",
+    "招聘",
+    "筛查",
+    "招募",
+    "春日之约",
+    "国际传播",
+]
+
+STRONG_RELEVANCE_KEYWORDS = {
+    "政策": 3,
+    "项目": 3,
+    "融资": 3,
+    "基金": 3,
+    "合作": 2,
+    "落地": 3,
+    "投产": 3,
+    "工厂": 3,
+    "产线": 3,
+    "实验室": 3,
+    "研究院": 3,
+    "创新中心": 3,
+    "产业园": 3,
+    "智算中心": 3,
+    "江南大学": 2,
+    "高校": 1,
+}
+
+EXPLICIT_TARGET_TOPIC_KEYWORDS = [
+    "人工智能",
+    "机器人",
+    "智能制造",
+    "工业ai",
+    "机器视觉",
+    "具身智能",
+    "自动化",
+    "工业机器人",
+    "人形机器人",
+    "大模型",
+    "智能体",
+    "算力",
+]
+
+INDUSTRIAL_SIGNAL_KEYWORDS = [
+    "项目",
+    "政策",
+    "基金",
+    "融资",
+    "合作",
+    "落地",
+    "工厂",
+    "产线",
+    "园区",
+    "研究院",
+    "实验室",
+    "创新中心",
+    "智算中心",
+]
+
+SOFT_EVENT_TITLE_PATTERNS = [
+    "春假",
+    "研学",
+    "招聘",
+    "峰会",
+    "论坛",
+    "恳谈会",
+    "展会",
+    "大会",
+    "国际传播",
 ]
 
 NON_AI_TITLE_KEYWORDS = [
@@ -327,6 +427,29 @@ def build_google_rss_url(keyword: str) -> str:
     )
 
 
+def feed_priority(name: str) -> tuple[int, int]:
+    score = 0
+    if name.startswith("google:") and name.count(":") == 1:
+        score += 120
+    if name.startswith("bing:") and name.count(":") == 1:
+        score += 100
+    if any(site in name for site in CHINA_NEWS_SITE_FILTERS):
+        score += 80
+    if any(site in name for site in {"wxrb.com", "yzwb.net", "xhby.net", "subaonet.com", "news.jiangnan.edu.cn"}):
+        score += 20
+    if "无锡" in name:
+        score += 18
+    elif "苏州" in name:
+        score += 14
+    elif "长三角" in name:
+        score += 10
+    if "机器人" in name or "具身智能" in name or "机器视觉" in name:
+        score += 8
+    if "工业AI" in name or "智能制造" in name:
+        score += 6
+    return (-score, len(name))
+
+
 FEED_SOURCES = []
 for group in TOPIC_GROUPS:
     for keyword in group["keywords"]:
@@ -335,6 +458,11 @@ for group in TOPIC_GROUPS:
         for site in CHINA_NEWS_SITE_FILTERS:
             scoped_keyword = f"{keyword} site:{site}"
             FEED_SOURCES.append((f"google:{keyword}:{site}", build_google_rss_url(scoped_keyword)))
+        for site in EXPANDED_SITE_FILTERS:
+            scoped_keyword = f"{keyword} site:{site}"
+            FEED_SOURCES.append((f"bing:{keyword}:{site}", build_bing_rss_url(scoped_keyword)))
+
+FEED_SOURCES = sorted(FEED_SOURCES, key=lambda pair: feed_priority(pair[0]))[:MAX_FEED_SOURCES]
 
 
 def fetch_url(url: str) -> bytes:
@@ -454,6 +582,44 @@ def decode_html_bytes(html_bytes: bytes, charset_hint: str = "") -> str:
 
 def normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(text or "")).strip()
+
+
+def now_cst() -> datetime:
+    return datetime.now(CST)
+
+
+def parse_iso_datetime(value: str) -> Optional[datetime]:
+    if not value:
+        return None
+    try:
+        dt = datetime.fromisoformat(value)
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=CST)
+    return dt.astimezone(CST)
+
+
+def age_in_days(iso_time: str) -> float:
+    dt = parse_iso_datetime(iso_time)
+    if not dt:
+        return 9999.0
+    return max((now_cst() - dt).total_seconds() / 86400.0, 0.0)
+
+
+def freshness_score(iso_time: str) -> tuple[int, str]:
+    age_days = age_in_days(iso_time)
+    if age_days <= 1:
+        return 10, f"新鲜度:24h内({age_days:.1f}天)"
+    if age_days <= 3:
+        return 8, f"新鲜度:3天内({age_days:.1f}天)"
+    if age_days <= 7:
+        return 6, f"新鲜度:7天内({age_days:.1f}天)"
+    if age_days <= 14:
+        return 3, f"新鲜度:14天内({age_days:.1f}天)"
+    if age_days <= MAX_ITEM_AGE_DAYS:
+        return max(0, int(round(4 - (age_days / max(FRESHNESS_HALF_LIFE_DAYS, 1.0))))), f"新鲜度:偏旧({age_days:.1f}天)"
+    return -6, f"新鲜度:过旧({age_days:.1f}天)"
 
 
 def strip_html_tags(text: str) -> str:
@@ -695,6 +861,8 @@ def load_existing_items() -> list[dict]:
             continue
         cloned = dict(item)
         cloned["_existing"] = True
+        if age_in_days(str(cloned.get("published_at", ""))) > MAX_EXISTING_ITEM_AGE_DAYS:
+            continue
         loaded.append(cloned)
     return loaded
 
@@ -727,6 +895,24 @@ def detect_regions(text: str) -> list[str]:
                 hits.append(region)
                 break
     return hits
+
+
+def title_tokens(title: str) -> set[str]:
+    normalized = normalize_whitespace(title)
+    chinese_tokens = set(re.findall(r"[\u4e00-\u9fff]{2,6}", normalized))
+    latin_tokens = set(token.lower() for token in re.findall(r"[A-Za-z0-9]{2,}", normalized))
+    tokens = chinese_tokens | latin_tokens
+    return {token for token in tokens if token not in {"新闻", "发布", "江苏", "中国"}}
+
+
+def title_token_similarity(a: str, b: str) -> float:
+    tokens_a = title_tokens(a)
+    tokens_b = title_tokens(b)
+    if not tokens_a or not tokens_b:
+        return 0.0
+    overlap = len(tokens_a & tokens_b)
+    union = len(tokens_a | tokens_b)
+    return overlap / max(union, 1)
 
 
 def region_score(text: str) -> tuple[int, list[str]]:
@@ -776,6 +962,18 @@ def has_core_ai_topic(text: str) -> bool:
     return False
 
 
+def has_explicit_target_topic(text: str) -> bool:
+    lowered = (text or "").lower()
+    if contains_ai_token(lowered):
+        return True
+    return any(keyword in lowered for keyword in EXPLICIT_TARGET_TOPIC_KEYWORDS)
+
+
+def has_industrial_signal(text: str) -> bool:
+    lowered = (text or "").lower()
+    return any(keyword in lowered for keyword in INDUSTRIAL_SIGNAL_KEYWORDS)
+
+
 def is_obviously_non_ai_title(title: str) -> bool:
     lowered = (title or "").lower()
     if has_core_ai_topic(lowered):
@@ -801,6 +999,10 @@ def relevance_score(item: dict) -> tuple[int, list[str]]:
     score += topic_points
     reasons.extend(topic_reasons)
 
+    freshness_points, freshness_reason = freshness_score(str(item.get("published_at", "")))
+    score += freshness_points
+    reasons.append(freshness_reason)
+
     title_points, title_region_reasons = region_score(title)
     score += min(title_points, 10)
     reasons.extend([f"标题命中:{reason}" for reason in title_region_reasons])
@@ -819,9 +1021,14 @@ def relevance_score(item: dict) -> tuple[int, list[str]]:
         reasons.append("正文:信息较完整")
 
     lowered = body.lower()
+    for keyword, weight in STRONG_RELEVANCE_KEYWORDS.items():
+        if keyword.lower() in lowered:
+            score += weight
+            reasons.append(f"强相关:{keyword}")
+
     for pattern in WEAK_RELATED_PATTERNS:
         if pattern.lower() in lowered:
-            score -= 3
+            score -= 5
             reasons.append(f"弱相关:{pattern}")
 
     return score, reasons
@@ -829,6 +1036,7 @@ def relevance_score(item: dict) -> tuple[int, list[str]]:
 
 def is_target_story(item: dict) -> tuple[bool, str, list[str], int]:
     title = str(item.get("title", ""))
+    content_text = str(item.get("content_text", ""))
     if is_obviously_non_ai_title(title):
         return False, "标题明显偏离AI主题", [], 0
     combined = combine_candidate_text(item)
@@ -837,7 +1045,19 @@ def is_target_story(item: dict) -> tuple[bool, str, list[str], int]:
         return False, "未命中无锡/苏州/长三角区域", [], 0
     if not has_core_ai_topic(combined):
         return False, "未命中人工智能/机器人核心主题", regions, 0
+    if not has_explicit_target_topic(title) and not (has_explicit_target_topic(content_text) and has_industrial_signal(combined)):
+        return False, "缺少明确目标技术主题", regions, 0
+    if any(pattern in title for pattern in SOFT_EVENT_TITLE_PATTERNS) and not any(
+        keyword in combined.lower()
+        for keyword in ["机器人", "具身智能", "机器视觉", "智能制造", "工业ai", "大模型", "算力", "政策", "项目", "落地"]
+    ):
+        return False, "偏活动化/宣传化且产业信号不足", regions, 0
     score, reasons = relevance_score(item)
+    item_age_days = age_in_days(str(item.get("published_at", "")))
+    if item_age_days > MAX_ITEM_AGE_DAYS:
+        return False, f"过旧({item_age_days:.1f}天>{MAX_ITEM_AGE_DAYS}天)", reasons, score
+    if item_age_days > STALE_WEAK_ITEM_AGE_DAYS and score < MIN_RELEVANCE_SCORE + 8:
+        return False, f"偏旧且相关性不足({item_age_days:.1f}天)", reasons, score
     if score < MIN_RELEVANCE_SCORE:
         return False, f"相关性分数过低({score}<{MIN_RELEVANCE_SCORE})", regions, score
     return True, "", reasons, score
@@ -916,16 +1136,19 @@ def titles_are_near_duplicate(a: str, b: str) -> bool:
         if shorter >= 10 and shorter / max(longer, 1) >= 0.74:
             return True
     ratio = SequenceMatcher(None, ta, tb).ratio()
-    return ratio >= TITLE_SIMILARITY_THRESHOLD
+    token_ratio = title_token_similarity(a, b)
+    return ratio >= TITLE_SIMILARITY_THRESHOLD or token_ratio >= 0.78
 
 
 def richer_item_score(item: dict) -> tuple:
     return (
         int(item.get("relevance_score", 0)),
+        freshness_score(str(item.get("published_at", "")))[0],
         int(item.get("source_tier", 0)),
         1 if item.get("trusted") else 0,
         1 if str(item.get("domain", "")).endswith(AUTHORITATIVE_DOMAIN_SUFFIXES) else 0,
         extracted_content_length(item),
+        1 if item.get("summary_confidence") not in {"", "low", None} else 0,
         len(str(item.get("summary", ""))),
         str(item.get("published_at", "")),
     )
@@ -951,25 +1174,43 @@ def tag_story(item: dict) -> list[str]:
     text = combine_candidate_text(item).lower()
     tags = []
     if "无锡" in text or "wuxi" in text:
-        tags.extend(["无锡", "无锡AI"])
+        tags.append("无锡")
     if "苏州" in text or "suzhou" in text:
-        tags.extend(["苏州", "苏州AI"])
+        tags.append("苏州")
     if "长三角" in text or "江浙沪" in text:
         tags.append("长三角")
+    if "人工智能" in text or contains_ai_token(text):
+        tags.append("人工智能")
     if "机器人" in text:
         tags.append("机器人")
     if "具身智能" in text:
         tags.append("具身智能")
+    if "机器视觉" in text:
+        tags.append("机器视觉")
     if "大模型" in text:
         tags.append("大模型")
     if "智能制造" in text or "制造业" in text:
         tags.append("智能制造")
+    if "工业ai" in text:
+        tags.append("工业AI")
+    if "自动化" in text:
+        tags.append("自动化")
     if "产业基金" in text or "基金" in text:
-        tags.append("产业基金")
-    if "政策" in text or "方案" in text:
+        tags.append("融资")
+    if "政策" in text or "方案" in text or "支持" in text:
         tags.append("政策")
+    if "项目" in text:
+        tags.append("项目")
+    if "合作" in text:
+        tags.append("合作")
+    if "落地" in text or "投用" in text or "启用" in text:
+        tags.append("落地")
+    if "工厂" in text or "产线" in text:
+        tags.append("工厂")
     if "实验室" in text or "研究院" in text or "创新中心" in text:
-        tags.append("科研平台")
+        tags.append("科研")
+    if "论坛" in text or "大会" in text:
+        tags.append("论坛")
     seen = set()
     final_tags = []
     for tag in tags:
@@ -986,16 +1227,22 @@ def fallback_why_it_matters(item: dict) -> str:
     tags = item.get("tags") or []
     summary = str(item.get("summary", "")).strip()
     title = str(item.get("title", "")).strip()
-    if "产业基金" in tags or "政策" in tags:
-        return "反映当地正在用政策和资金把AI与机器人项目推向产业化。"
+    if "政策" in tags:
+        return "能直接反映地方政府是否在继续加码 AI 与机器人产业支持。"
+    if "融资" in tags:
+        return "这类资金与基金动态通常最能提前反映区域产业布局方向。"
+    if "项目" in tags or "落地" in tags:
+        return "说明区域 AI/机器人项目正在从口号走向真实落地。"
     if "机器人" in tags or "具身智能" in tags:
-        return "可用来观察区域机器人产业链和落地场景是否在继续升温。"
+        return "可用来观察区域机器人产业链和实际应用场景是否继续升温。"
     if "智能制造" in tags:
-        return "这类消息更能体现AI是否真正进入制造业的实际生产环节。"
+        return "更能体现 AI 是否真正进入制造业的一线生产和工厂流程。"
+    if "科研" in tags:
+        return "有助于判断本地高校和研究机构是否正在向产业侧持续输送能力。"
     if summary and len(summary) >= 30:
-        return "有助于快速判断这条新闻对区域AI产业、应用场景或项目落地的实际意义。"
+        return "有助于快速判断这条消息会不会转化成区域产业合作、项目或场景机会。"
     if title:
-        return "适合继续跟踪其是否会带来本地项目、合作或产业扩张。"
+        return "值得继续跟踪它是否会带来后续的本地合作、项目或产业扩张。"
     return ""
 
 
@@ -1116,25 +1363,49 @@ def should_summarize(item: dict) -> bool:
     if SUMMARY_BULK_BACKFILL:
         return extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH
     if SUMMARY_NEW_ONLY and item.get("_existing"):
-        return False
+        return age_in_days(str(item.get("published_at", ""))) <= SUMMARY_RECENT_BACKFILL_DAYS and extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH
     return extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH
 
 
 def enrich_items_with_summaries(items: list[dict], provider: SummaryProvider) -> list[dict]:
-    for item in items:
+    candidates = []
+    for idx, item in enumerate(items):
         if not should_summarize(item):
             if extracted_content_length(item) < SUMMARY_MIN_CONTENT_LENGTH and not item.get("summary"):
                 item.setdefault("summary_confidence", "low")
             continue
-        result = provider.summarize(item)
-        if not result:
-            item.setdefault("summary_confidence", "low")
-            continue
-        item["summary"] = result.get("summary", "")
-        item["why_it_matters"] = result.get("why_it_matters", "")
-        item["summary_confidence"] = result.get("summary_confidence", "medium")
-        if result.get("tags"):
-            item["tags"] = result["tags"][:5]
+        candidates.append((idx, item))
+
+    candidates.sort(
+        key=lambda pair: (
+            int(pair[1].get("relevance_score", 0)),
+            freshness_score(str(pair[1].get("published_at", "")))[0],
+            extracted_content_length(pair[1]),
+        ),
+        reverse=True,
+    )
+    candidates = candidates[:MAX_SUMMARY_ITEMS_PER_RUN]
+    if not candidates:
+        return items
+
+    with ThreadPoolExecutor(max_workers=max(1, SUMMARY_WORKERS)) as executor:
+        future_map = {executor.submit(provider.summarize, item): idx for idx, item in candidates}
+        for future in as_completed(future_map):
+            idx = future_map[future]
+            item = items[idx]
+            try:
+                result = future.result()
+            except Exception as exc:
+                log_event("summary", f"摘要任务失败: {item.get('title', '')} | {exc}")
+                result = None
+            if not result:
+                item.setdefault("summary_confidence", "low")
+                continue
+            item["summary"] = result.get("summary", "")
+            item["why_it_matters"] = result.get("why_it_matters", "")
+            item["summary_confidence"] = result.get("summary_confidence", "medium")
+            if result.get("tags"):
+                item["tags"] = result["tags"][:5]
     return items
 
 
@@ -1194,6 +1465,8 @@ def dedupe_items(items: list[dict]) -> list[dict]:
         fuzzy_hit_idx = None
         for idx, existing_item in enumerate(accepted_items):
             if titles_are_near_duplicate(title, str(existing_item.get("title", ""))):
+                token_ratio = title_token_similarity(title, str(existing_item.get("title", "")))
+                log_event("dedupe", f"标题相似去重候选({token_ratio:.2f}): {title} ~= {existing_item.get('title', '')}")
                 fuzzy_hit_idx = idx
                 break
         if fuzzy_hit_idx is not None:
@@ -1237,6 +1510,7 @@ def dedupe_items(items: list[dict]) -> list[dict]:
     accepted_items.sort(
         key=lambda item: (
             int(item.get("relevance_score", 0)),
+            freshness_score(str(item.get("published_at", "")))[0],
             int(item.get("source_tier", 0)),
             1 if item.get("trusted") else 0,
             extracted_content_length(item),
@@ -1334,7 +1608,7 @@ def render_news_item(news: dict) -> str:
     summary = html.escape(str(news.get("summary", "")).strip())
     why_it_matters = html.escape(str(news.get("why_it_matters", "")).strip())
     tags = news.get("tags") if isinstance(news.get("tags"), list) else []
-    tag_html = "".join(f'<span class="tag">{html.escape(str(tag))}</span>' for tag in tags[:5])
+    tag_html = "".join(f'<span class="tag">{html.escape(str(tag))}</span>' for tag in tags[:3])
 
     lines = [
         '    <article class="news-item">',
@@ -1384,6 +1658,7 @@ def build_page_html(
         items,
         key=lambda item: (
             int(item.get("relevance_score", 0)),
+            freshness_score(str(item.get("published_at", "")))[0],
             int(item.get("source_tier", 0)),
             1 if item.get("trusted") else 0,
             extracted_content_length(item),

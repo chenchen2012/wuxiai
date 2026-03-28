@@ -1,730 +1,160 @@
 {
-  "updated_at": "2026-03-28T21:19:27.829504+08:00",
-  "item_count": 107,
+  "updated_at": "2026-03-28T21:23:00.292593+08:00",
+  "item_count": 31,
   "items": [
     {
-      "title": "无锡梁溪：具身智能机器人迎来“加速跑” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202512/t20251212_299686.html",
-      "source": "yzwb.net",
-      "published_at": "2025-12-12T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "2c38ec04491eb832fb6393f73349a6cf6b1de749",
-      "domain": "yzwb.net",
+      "title": "江苏：系统布局 机器人产业“加速跑”",
+      "url": "http://www.js.xinhuanet.com/20260320/a2f7b1d7199b416a8f29dd8af67f0a57/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2026-03-20T03:41:00+08:00",
+      "feed": "bing:无锡 AI:xinhuanet.com",
+      "rss_description": "3月17日在位于南京市江宁开发区的汇川技术南京基地生产车间拍摄的机器人产品。 近年来，江苏省将具身智能机器人纳入未来产业重点布局，在南京、苏州、无锡等多地建设具身智能机器人创新中心、数据采集训练中心，成立江苏省具身智能机器人产业联盟，成员涵盖整机及零部件企业、高校院所、用户单位、金融机构等近300家，为产业发展提供核心支撑。在工业机器人领域，江苏省集聚埃斯顿、汇川技术等龙头企业，形成整机与核心 ...",
+      "_is_new_candidate": true,
+      "domain": "js.xinhuanet.com",
       "trusted": true,
       "source_tier": 2,
-      "relevance_score": 35,
+      "fingerprint": "ee58632140805d337551f5f4deaab99fc3e3ed75",
+      "relevance_score": 68,
       "ranking_reasons": [
         "区域:无锡",
+        "区域:苏州",
         "主题:机器人",
         "主题:具身智能",
-        "标题命中:区域:无锡",
+        "主题:工业机器人",
+        "主题:自动化",
+        "新鲜度:14天内(8.7天)",
         "标题命中:主题:机器人",
-        "标题命中:主题:具身智能",
-        "来源:可信媒体"
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:政策",
+        "强相关:产线",
+        "强相关:实验室",
+        "强相关:创新中心",
+        "强相关:高校"
       ],
+      "summary_confidence": "low",
       "tags": [
         "无锡",
-        "无锡AI",
+        "苏州",
         "机器人",
-        "具身智能"
-      ],
-      "summary_confidence": "low"
+        "具身智能",
+        "科研"
+      ]
     },
     {
-      "title": "无锡造具身智能机器人，硬核出道！ - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_32056872",
-      "source": "m.thepaper.cn",
-      "published_at": "2025-11-27T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "815c9f62c2aa758f616c893d19ce57fcff3acde7",
-      "domain": "m.thepaper.cn",
+      "title": "“春假”来了，无锡“科技研学”开启招募",
+      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202603/t20260326_335677.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-26T11:12:00+08:00",
+      "feed": "bing:无锡 AI:yangtse.com",
+      "rss_description": "此外，无锡市科学技术协会特别策划“春日科普探索之旅”，精选涵盖智能制造、航天科技、交通安全、卫生健康、生态环保和科学家精神等领域的二十个特色科普教育基地，诚邀全市中小学生及家庭共赴这场寓教于乐的科技盛宴，诸如江阴科技馆、宜兴科技馆、光大环保能源（江阴）有限公司等。",
+      "_is_new_candidate": true,
+      "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2,
-      "relevance_score": 35,
+      "fingerprint": "f94c69d7ce858455fa32339463ec0a7d8bd6f8b1",
+      "relevance_score": 67,
       "ranking_reasons": [
         "区域:无锡",
+        "主题:人工智能",
         "主题:机器人",
         "主题:具身智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "标题命中:主题:具身智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人",
-        "具身智能"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "3年内打造300亿级产业集群 无锡竞逐人形机器人产业新赛道 - 新华报业网",
-      "url": "https://www.xhby.net/content/s681ecba9e4b0e2f2f54c1103.html",
-      "source": "xhby.net",
-      "published_at": "2025-05-10T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "aa56143d7bc82f06cea646116a9ee4df4182f50d",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 35,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "主题:人形机器人",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "标题命中:主题:人形机器人",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "江苏无锡：竞速人形机器人，全力抢占千亿“赛点” - 新华报业网",
-      "url": "https://www.xhby.net/content/s67dc9bc2e4b0fec08799f871.html",
-      "source": "xhby.net",
-      "published_at": "2025-03-21T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "4d8175a74132efdc2b8a8accb5c058119ff31f31",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 35,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "主题:人形机器人",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "标题命中:主题:人形机器人",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "全国首个文心千帆大模型平台落户无锡梁溪，助力智能制造升级 - 紫牛新闻",
-      "url": "https://wap.yzwb.net/wap/news/3001398.html",
-      "source": "wap.yzwb.net",
-      "published_at": "2023-06-08T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "6612e563e22a1771802addcd05cd908f4a4f770e",
-      "domain": "wap.yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 34,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:大模型",
+        "主题:智能体",
+        "主题:算法",
         "主题:智能制造",
+        "主题:工业机器人",
+        "主题:机器视觉",
+        "主题:AI",
+        "新鲜度:3天内(2.4天)",
         "标题命中:区域:无锡",
-        "标题命中:主题:大模型",
-        "标题命中:主题:智能制造",
-        "来源:可信媒体"
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:产线",
+        "强相关:实验室",
+        "弱相关:春假",
+        "弱相关:研学",
+        "弱相关:招募"
       ],
+      "summary_confidence": "low",
       "tags": [
         "无锡",
-        "无锡AI",
-        "大模型",
         "智能制造"
-      ],
-      "summary_confidence": "low"
+      ]
     },
     {
-      "title": "江苏无锡：抢占“AI+”赛道 绘就智造新图景，以“人工智能之解”答好“新型工业化之问” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/yw/202509/t20250911_262496.html",
-      "source": "yzwb.net",
-      "published_at": "2025-09-11T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "c82ad323373bf10706651f9eca5e21fe481f965a",
-      "domain": "yzwb.net",
+      "title": "苏州市相城区再添AI硬核认证！两大算法通过国家级备案",
+      "url": "https://www.yangtse.com/news/jiangsu/suzhou/202603/t20260318_332754.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-18T11:00:00+08:00",
+      "feed": "bing:苏州 AI:yangtse.com",
+      "rss_description": "近日，国家互联网信息办公室公告第十六批深度合成服务算法备案信息，相城区企业江苏西顿科技有限公司的西顿精益制造工业大模型算法和苏州知行元科技有限公司的元极生成式多模态算法通过备案。",
+      "_is_new_candidate": true,
+      "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2,
-      "relevance_score": 33,
+      "fingerprint": "c5c50a8df300ddb0a7ca63ad43302883a814b06a",
+      "relevance_score": 62,
       "ranking_reasons": [
-        "区域:无锡",
+        "区域:苏州",
         "主题:人工智能",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "江苏无锡：竞逐大模型赛道，发现更多AI新力量 - 新华报业网",
-      "url": "https://www.xhby.net/content/s67543fcee4b09f022e598c76.html",
-      "source": "xhby.net",
-      "published_at": "2024-12-07T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "ba0aa304ca9e3c5cb22974133d4f01267789cc11",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 33,
-      "ranking_reasons": [
-        "区域:无锡",
         "主题:大模型",
+        "主题:算法",
+        "主题:自动化",
         "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:大模型",
+        "新鲜度:14天内(10.4天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:算法",
         "标题命中:主题:AI",
-        "来源:可信媒体"
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:落地",
+        "强相关:工厂",
+        "强相关:创新中心"
       ],
+      "summary_confidence": "low",
       "tags": [
-        "无锡",
-        "无锡AI",
+        "苏州",
+        "人工智能",
         "大模型"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡观察丨从“苏南模式”到“AI范式” 无锡打造“人工智能+”标杆 ...",
-      "url": "https://www.wxrb.com/doc/2025/07/17/410523.shtml",
-      "source": "wxrb.com",
-      "published_at": "2025-07-17T14:35:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "38097898983350b5d495e80772adf656efa91be4",
-      "domain": "wxrb.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 32,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "破解“认证”瓶颈、共享“检测”资源 ，无锡为中小企业提质“精准导航”无锡造出农业机器人“AI大脑” - 紫牛新闻",
-      "url": "http://www.yzwb.net/news/jiangsu/wuxi/202506/t20250607_218065.html",
-      "source": "yzwb.net",
-      "published_at": "2025-06-07T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "0402a151ec59973c87a697fc570d6ea77eee21b9",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 32,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "江苏首个！无锡造出农业机器人“AI大脑” - 紫牛新闻",
-      "url": "https://wap.yzwb.net/wap/news/4548791.html",
-      "source": "wap.yzwb.net",
-      "published_at": "2025-06-05T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "6c3320decdb67ebec4cc0518e1b30191b95e5886",
-      "domain": "wap.yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 32,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "洞察无锡“AI+”|无锡与人工智能对话：一场会的三重含义 - 新华网江苏频道",
-      "url": "http://js.news.cn/20250430/6045ec5d437043b2b3cb853cb1ff59ca/c.html",
-      "source": "js.news.cn",
-      "published_at": "2025-04-30T15:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "767342de15d1746454d2d314ffeb0b8dabc8ca6e",
-      "domain": "js.news.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 32,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "江苏无锡：AI赋能 人工智能产业逐浪前行",
-      "url": "https://www.xhby.net/content/s6801a968e4b0b8e94c5002af.html",
-      "source": "xhby.net",
-      "published_at": "2025-04-18T10:22:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "a19af7e8c0df40faa697b5cf53dce6bcebc96884",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 32,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
+      ]
     },
     {
       "title": "盛业“AI未来之城”以“养龙虾”为锚点 激活无锡AI产业集聚新动能",
       "url": "https://news.qq.com/rain/a/20260320A06REO00",
       "source": "news.qq.com",
       "published_at": "2026-03-20T09:46:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "rss_description": "产业是城市发展的根基，AI是数字经济的核心引擎。3月14日，盛业（6069.HK）“AI未来之城”举办的免费安装OpenClaw+免费送大模型Token“养龙虾”活动圆满举办，这场以技术普及为切口、以生态赋能为核心的活动，不仅成为AI产业落地的标志性事件，更彰显了盛业“AI未来之城”作为全国首个AI产业数字生态基地，在算力供给、政策 ...",
       "_is_new_candidate": false,
       "domain": "news.qq.com",
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "8365c8cbc7711eca44f3cb7c31b35cf3aa119d91",
-      "relevance_score": 31,
+      "relevance_score": 62,
       "ranking_reasons": [
         "区域:无锡",
+        "主题:机器人",
         "主题:大模型",
         "主题:算力",
+        "主题:智能制造",
         "主题:AI",
+        "新鲜度:14天内(8.5天)",
         "标题命中:区域:无锡",
-        "标题命中:主题:AI"
+        "标题命中:主题:AI",
+        "正文:信息较完整",
+        "强相关:政策",
+        "强相关:项目",
+        "强相关:落地",
+        "强相关:智算中心"
       ],
       "summary_confidence": "low",
       "tags": [
         "无锡",
-        "无锡AI",
+        "人工智能",
         "大模型",
-        "政策"
-      ]
-    },
-    {
-      "title": "长三角人工智能暗战：无锡正在打造“应用第一城”",
-      "url": "https://view.inews.qq.com/a/20250624A01Q8R00",
-      "source": "view.inews.qq.com",
-      "published_at": "2025-06-24T08:10:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "99e3557e66abe45a38414f074fedf399de32ef6f",
-      "domain": "view.inews.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 31,
-      "ranking_reasons": [
-        "区域:无锡",
-        "区域:长三角",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:区域:长三角",
-        "标题命中:主题:人工智能"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "长三角"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "Josef Kittler人工智能研究院在无锡启动 - js.chinanews.com.cn",
-      "url": "http://www.js.chinanews.com.cn/news/2023/0612/217285.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2023-06-12T15:00:00+08:00",
-      "feed": "google:无锡人工智能:chinanews.com.cn",
-      "rss_description": "Josef Kittler人工智能研究院在无锡启动 js.chinanews.com.cn",
-      "_is_new_candidate": false,
-      "domain": "js.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "b6a88bbd40d48ab7d0dceb54b31e2c237d0da082",
-      "relevance_score": 30,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "科研平台"
-      ]
-    },
-    {
-      "title": "苏州人工智能OPC大会，首次提出“单人+AI即独角兽”未来产业形态",
-      "url": "https://view.inews.qq.com/a/20251112A036BW00",
-      "source": "view.inews.qq.com",
-      "published_at": "2025-11-12T12:52:00+08:00",
-      "feed": "bing:苏州 AI",
-      "rss_description": "如今的人工智能行业百花齐放、百舸争流，竞争已经从技术比拼扩大到整个生态的博弈。 作为中国最强地级市，江苏苏州给出了的AI发展方案，在2025江苏人工智能创新发展大会暨首届人工智能OPC大会上，苏州在全球范围内首次提出“单人+AI”的OPC新范式，以500名 ...",
-      "_is_new_candidate": true,
-      "domain": "view.inews.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "22b54b45db4e45eb24162f6b0e1684a661223c27",
-      "relevance_score": 30,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:人工智能",
-        "主题:AI",
-        "标题命中:区域:苏州",
-        "标题命中:主题:人工智能",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "苏州AI",
-        "政策"
-      ]
-    },
-    {
-      "title": "长三角AI生物医药产业联盟在江苏无锡成立",
-      "url": "https://www.chinanews.com.cn/jk/2025/05-16/10416689.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2025-05-16T11:22:00+08:00",
-      "feed": "bing:无锡AI:chinanews.com.cn",
-      "fingerprint": "346a0116d9fd35a2e5c5825ab94cc8a4df814bdf",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 29,
-      "ranking_reasons": [
-        "区域:无锡",
-        "区域:长三角",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:区域:长三角",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "长三角"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡电信手把手教你“养龙虾”，解锁AI新体验！",
-      "url": "https://finance.sina.com.cn/roll/2026-03-14/doc-inhqypen4013923.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-14T14:21:00+08:00",
-      "feed": "bing:无锡 AI",
-      "rss_description": "还在为火爆全网的AI智能体“小龙虾”（OpenClaw）心动不已，却苦于“不会装、不敢装、怕中毒”？别担心，一份“养虾攻略”已送达！ 为让AI技术真正惠及市民，打破人工智能的应用门槛，3月14日，无锡电信在人民路营业厅举办了一场AI“小龙虾”（OpenClaw）实操公益培训活动，邀请对AI智能体感兴趣的市民朋友共同参与。 这份“养虾攻略”的背后，是无锡电信践行“好服务，更随心”理念的一次生动实践。",
-      "_is_new_candidate": false,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "a21631b73120b927b91f367f5d64b317698d6333",
-      "relevance_score": 29,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "主题:智能体",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "人工智能与计算机学院与无锡市工信局开展合作交流座谈 - 江南大学新闻网",
-      "url": "https://news.jiangnan.edu.cn/info/1065/106642.htm",
-      "source": "news.jiangnan.edu.cn",
-      "published_at": "2026-03-03T14:12:48+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "126318da5c716ce2577bc86a485803bd498a0205",
-      "domain": "news.jiangnan.edu.cn",
-      "trusted": true,
-      "source_tier": 3,
-      "relevance_score": 28,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体",
-        "来源:官方/高校"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡人工智能:chinanews.com.cn",
-      "rss_description": "江苏无锡打造算力装备产业园 助力AI产业生态升级 chinanews.com.cn",
-      "_is_new_candidate": false,
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
-      "relevance_score": 28,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:算力",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:算力",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "无锡“高新造”算力全面适配DeepSeek，助力加快AI产业布局",
-      "url": "https://www.wxrb.com/doc/2025/02/15/388945.shtml",
-      "source": "wxrb.com",
-      "published_at": "2025-02-15T00:01:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "39c58b03643329a0450f0a239945839acd141e03",
-      "domain": "wxrb.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 28,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:算力",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:算力",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "AI+时代，苏州要打造“超级个体”！",
-      "url": "https://js.ifeng.com/c/8oBvP8yMFlK",
-      "source": "js.ifeng.com",
-      "published_at": "2025-11-11T14:53:00+08:00",
-      "feed": "bing:苏州 AI",
-      "rss_description": "“一个人就是一个团队”？在AI爆炸的今天，这已是现实！ 借助大模型、AI编程和自动化工具，一个“超级个体”就能独立完成从产品研发到市场运营的全链路闭环。这就是“AI时代的OPC（One Person Company）”——个人携一群“AI员工”就能撑起一家公司，成为潜在 ...",
-      "_is_new_candidate": true,
-      "domain": "js.ifeng.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "4feed7deb4bacf12b4bc08370ed26ad093b90bc6",
-      "relevance_score": 28,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:大模型",
-        "主题:自动化",
-        "主题:AI",
-        "标题命中:区域:苏州",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "苏州AI",
-        "大模型"
-      ]
-    },
-    {
-      "title": "无锡市和华为云打造的人工智能创新中心启动 - 新浪财经",
-      "url": "https://finance.sina.com.cn/roll/2025-07-12/doc-inffeqst8449405.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2025-07-12T15:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "e546849c1d8b9a93d847c763b7891231177f6747",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 28,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "科研平台"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "108款大模型完成备案！DeepSeek火爆让长三角AI企业坐不住了 - 央广网",
-      "url": "https://www.cnr.cn/shanghai/tpgzcsj/20250212/t20250212_527069343.shtml",
-      "source": "cnr.cn",
-      "published_at": "2025-02-12T16:00:00+08:00",
-      "feed": "google:无锡人工智能:cnr.cn",
-      "rss_description": "108款大模型完成备案！DeepSeek火爆让长三角AI企业坐不住了 央广网",
-      "_is_new_candidate": true,
-      "domain": "cnr.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "474900c5c6f2832edc93fcefcbbd07503eaaca36",
-      "relevance_score": 27,
-      "ranking_reasons": [
-        "区域:长三角",
-        "主题:大模型",
-        "主题:AI",
-        "标题命中:区域:长三角",
-        "标题命中:主题:大模型",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "长三角",
-        "大模型"
-      ]
-    },
-    {
-      "title": "长三角AI应用场景案例征集启动，人民网智能体一体机同步亮相",
-      "url": "https://news.qq.com/rain/a/20251213A05ZWC00",
-      "source": "news.qq.com",
-      "published_at": "2025-12-13T19:17:00+08:00",
-      "feed": "bing:长三角 AI",
-      "rss_description": "昨天下午，作为2025全球开发者先锋大会的重要环节，“AI赋能 共创未来”长三角人工智能应用场景案例征集启动暨人民网智能体发布活动在上海张江科学会堂举行。 本次活动由人民网、上海信投、张江AI创新小镇、库帕思、平安人寿等机构共同发起。",
-      "_is_new_candidate": true,
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "a2ae2b51c4707f2b9b1ec93119986c17b7a47d86",
-      "relevance_score": 27,
-      "ranking_reasons": [
-        "区域:长三角",
-        "主题:人工智能",
-        "主题:智能体",
-        "主题:AI",
-        "标题命中:区域:长三角",
-        "标题命中:主题:智能体",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "长三角"
-      ]
-    },
-    {
-      "title": "江苏无锡：全域协同推进人工智能+教育 - nju.edu.cn",
-      "url": "https://www.nju.edu.cn/info/1056/433071.htm",
-      "source": "nju.edu.cn",
-      "published_at": "2025-07-21T15:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "05407836870876edbdc56f5c396dad8d5dd8af9a",
-      "domain": "nju.edu.cn",
-      "trusted": false,
-      "source_tier": 3,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:官方/高校"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "宁波银行牵头无锡市首笔 民营企业科技创新债券成功落地 - chinanews.com.cn",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-28/10594430.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-28T16:48:15+08:00",
-      "feed": "google:无锡人工智能:chinanews.com.cn",
-      "rss_description": "宁波银行牵头无锡市首笔 民营企业科技创新债券成功落地 chinanews.com.cn",
-      "_is_new_candidate": true,
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "51b117cae705939ae10b86358403db157e6696d3",
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "主题:算力",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "来源:可信媒体",
-        "正文:信息较完整"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
+        "政策",
+        "落地"
       ]
     },
     {
@@ -732,24 +162,245 @@
       "url": "http://js.people.com.cn/n2/2026/0327/c360307-41536343.html",
       "source": "js.people.com.cn",
       "published_at": "2026-03-27T20:39:00+08:00",
-      "feed": "google:无锡人工智能:people.com.cn",
-      "rss_description": "第二十五届全国大学生机器人大赛机甲大师高校联盟赛（江苏站）在江阴开幕 人民网－江苏频道",
-      "_is_new_candidate": false,
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "c191019f905cf1fc6cf391c8b5c41298eb444824",
       "domain": "js.people.com.cn",
       "trusted": true,
       "source_tier": 2,
-      "fingerprint": "c191019f905cf1fc6cf391c8b5c41298eb444824",
-      "relevance_score": 26,
+      "relevance_score": 60,
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
+        "主题:具身智能",
+        "主题:机器视觉",
+        "新鲜度:3天内(1.0天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
-        "来源:可信媒体"
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:基金",
+        "强相关:合作",
+        "强相关:落地",
+        "强相关:高校",
+        "弱相关:招聘"
+      ],
+      "tags": [
+        "机器人"
+      ],
+      "summary_confidence": "low"
+    },
+    {
+      "title": "新水岛“智能体”加持，无锡生产企业用水实现“双清零”",
+      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202603/t20260328_336310.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-28T06:23:00+08:00",
+      "feed": "bing:无锡 AI:yangtse.com",
+      "rss_description": "像造汽车一样建水厂！在3月27日于无锡市锡山区举行的“智启新水岛 共创AI水自由新蓝海”2026金科环境生态合作伙伴启航大会上，相关企业负责人发出来这样的“豪言”。作为金科环境较早深耕的区域，无锡市锡山区多家“用水大户”已借助于其“新水岛”、“水萝卜AI智能体”等科技产品及服务的加持，实现了企业生产用水的零取水和零排水，这样的“低碳化”成效为无锡的绿色发展注入强劲动力。",
+      "_is_new_candidate": false,
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "126a9064a25c8da9d93325ddf25d3ed7b57d7964",
+      "relevance_score": 58,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:机器人",
+        "主题:智能体",
+        "主题:AI",
+        "新鲜度:24h内(0.6天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:智能体",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:合作",
+        "强相关:工厂"
+      ],
+      "summary": "在无锡市锡山区，金科环境通过其‘新水岛’和‘水萝卜AI智能体’等科技产品，帮助当地生产企业如能达热电实现了生产用水的零取水和零排水。这些模块化、智能化的水处理系统不仅节省了土地、设备和用水成本，还提升了安全性，实现了经济效益和社会效益的双赢。目前，锡山区已建成5个‘新水岛’项目，显著降低了运营成本和人力需求。",
+      "why_it_matters": "为什么值得关注：这项技术展示了智能化水处理如何助力工业节水减排，推动绿色低碳发展，具有广泛的应用潜力。",
+      "summary_confidence": "high",
+      "tags": [
+        "智能水处理",
+        "工业节水",
+        "绿色低碳",
+        "模块化技术",
+        "无锡案例"
+      ]
+    },
+    {
+      "title": "产品远销16个国家！苏州市相城区企业亮相国际展会",
+      "url": "https://www.yangtse.com/news/jiangsu/suzhou/202603/t20260326_335574.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-26T08:57:00+08:00",
+      "feed": "bing:苏州 工业AI:yangtse.com",
+      "rss_description": "阿普奇是一家集工业AI计算机设计、研发、制造、销售、交付于一体的软硬件全自研高新技术企业。2023年开始重点布局海外市场，目前与汽车零配件设备制造商、智能环保设备商等多家国际头部企业达成长期合作，并与国际化平台IEAC（中国新质制造出海联盟）达成战略合作关系。",
+      "_is_new_candidate": true,
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "d2df38d7238d9bbe7a98c6b54456faa6f656f230",
+      "relevance_score": 58,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "主题:智能制造",
+        "主题:自动化",
+        "主题:工业ai",
+        "主题:AI",
+        "新鲜度:3天内(2.5天)",
+        "标题命中:区域:苏州",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:合作",
+        "强相关:产线"
       ],
       "summary_confidence": "low",
       "tags": [
-        "机器人"
+        "苏州",
+        "人工智能",
+        "工业AI",
+        "合作"
+      ]
+    },
+    {
+      "title": "AI时代“单人成军”，常熟探索OPC发展新路径",
+      "url": "https://www.yangtse.com/news/jiangsu/suzhou/202603/t20260327_336044.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-27T10:11:00+08:00",
+      "feed": "bing:无锡 工业AI:yangtse.com",
+      "rss_description": "在今年的全国两会上，智能体首次被写入政府工作报告，OPC（一人公司）也成为代表委员热议的关键词。省政府工作报告提出，支持人工智能OPC创新创业，推动“单人成军”蔚然成林。随着大模型、智能工具加快普及，AI时代个人创业门槛持续降低，越来越多创业者开始借助技术力量，以更轻的组织形态切入市场。 在这样的背景下，常熟正把OPC作为观察人工智能落地、推动创新创业发展的一个重要切口。3月26日下午，“链盟”沙 ...",
+      "_is_new_candidate": true,
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "07b31c59abf218115f334ac8a995eb96a0ccef1c",
+      "relevance_score": 51,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:人工智能",
+        "主题:大模型",
+        "主题:智能体",
+        "主题:AI",
+        "新鲜度:3天内(1.5天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "人工智能",
+        "大模型",
+        "政策",
+        "落地"
+      ]
+    },
+    {
+      "title": "智算跨越，产业新章！2026“桃花约”惠山投资合作恳谈会举行",
+      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202603/t20260321_333850.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-21T09:28:00+08:00",
+      "feed": "bing:无锡 工业AI:yangtse.com",
+      "rss_description": "在3月20日，农历二月二“龙抬头”这一生机勃发的日子里，2026“桃花约”惠山投资合作恳谈会如约而至，圆满举行。当天，来自全国各地的重要客商、行业精英与各界嘉宾齐聚惠山，以花为媒、共商合作，畅叙友谊、共谋发展。特别是活动当天，国产智算服务器成功下线，智元具身机器人正式交付，一系列务实成果为惠山区高质量发展注入强劲动能。",
+      "_is_new_candidate": true,
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "0ee670d2153ba9ffb5a48aa5d5ee7c48514b63d5",
+      "relevance_score": 51,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:人工智能",
+        "主题:机器人",
+        "主题:算力",
+        "主题:AI",
+        "新鲜度:14天内(7.5天)",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:政策",
+        "强相关:项目",
+        "强相关:合作",
+        "强相关:落地",
+        "强相关:研究院"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "机器人",
+        "合作"
+      ]
+    },
+    {
+      "title": "无锡“AI未来之城”：免费领“龙虾”Agent，最高补贴500万",
+      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202603/t20260315_331708.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-15T06:55:00+08:00",
+      "feed": "bing:无锡 AI:yangtse.com",
+      "rss_description": "3月14日上午9点，无锡金融八街1号“AI未来之城”18楼人声鼎沸。这里没有海鲜大餐，却上演了一场科技圈的“养虾”宴席——盛业联手RollingAI免费教市民“养龙虾”，从安装部署、模型配置、政策解读、算力支持，提供一站式从“装”到“玩”的服务全流程。不少市民通过网络报名来到现场把“龙虾”领回家。",
+      "_is_new_candidate": false,
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "bdb3da7d2f41e90ecf07336c8bfceecc6c7b44a8",
+      "relevance_score": 51,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:大模型",
+        "主题:算力",
+        "主题:AI",
+        "新鲜度:14天内(13.6天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:政策",
+        "强相关:项目",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "政策"
+      ]
+    },
+    {
+      "title": "靖江人工智能OPC项目取得新突破 星凝互动AI漫剧产业项目签约",
+      "url": "http://www.js.xinhuanet.com/20260321/03daf31144be48e8924cf1a24241f68a/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2026-03-21T13:28:00+08:00",
+      "feed": "bing:无锡 AI:xinhuanet.com",
+      "rss_description": "AI漫剧是生成式人工智能与动漫产业跨界融合的产物，当前正进入高速增长的黄金发展期。星凝互动AI漫剧产业项目由无锡星凝互动有限公司投资建设，依托企业在漫剧内容创作和商业化运营领域的核心优势，盘活靖江国有企业资产，打造集AI工具自研、剧本内容创作、创作者培育等功能于一体的AI剧产业基地。",
+      "_is_new_candidate": true,
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "536f69df1f6267968a4b45e05bec294dbe41a2d2",
+      "relevance_score": 49,
+      "ranking_reasons": [
+        "区域:无锡",
+        "区域:长三角",
+        "主题:人工智能",
+        "主题:算力",
+        "主题:AI",
+        "新鲜度:14天内(7.3天)",
+        "标题命中:主题:人工智能",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:政策",
+        "强相关:项目",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "项目"
       ]
     },
     {
@@ -757,626 +408,95 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0318/232785.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-03-18T14:23:26+08:00",
-      "feed": "google:无锡人工智能:chinanews.com.cn",
-      "rss_description": "无锡东璟人工智能创新港揭牌 “智创方舟”同步启航 js.chinanews.com.cn",
-      "_is_new_candidate": false,
-      "domain": "js.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
+      "feed": "google:无锡 人工智能",
       "fingerprint": "ea716d175d4d644de7f7ea30487a8fa1641d50c6",
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "无锡锡山东璟人工智能创新港揭牌 - 人民网－江苏频道",
-      "url": "http://js.people.com.cn/n2/2026/0317/c360301-41526278.html",
-      "source": "js.people.com.cn",
-      "published_at": "2026-03-17T19:42:00+08:00",
-      "feed": "google:无锡 人工智能:people.com.cn",
-      "fingerprint": "91a0dc2463fd66285eccee105caabd57777178dc",
-      "domain": "js.people.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡高新区全周期服务“养龙虾”专家：精准卡位 推动制造业与AI深度融合 - 中央广播电视总台",
-      "url": "https://js.cnr.cn/yw/20260310/t20260310_527547859.shtml",
-      "source": "js.cnr.cn",
-      "published_at": "2026-03-10T13:41:54+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "4ca720610cd1ff8087349d83830bc3fce08a8bab",
-      "domain": "js.cnr.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "智能制造"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡高新区设30亿元AI产业基金 深耕“AI+制造” - js.chinanews.com.cn",
-      "url": "https://www.js.chinanews.com.cn/news/2026/0309/232675.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2026-03-09T18:15:21+08:00",
-      "feed": "google:无锡人工智能:chinanews.com.cn",
-      "rss_description": "无锡高新区设30亿元AI产业基金 深耕“AI+制造” js.chinanews.com.cn",
-      "_is_new_candidate": false,
       "domain": "js.chinanews.com.cn",
       "trusted": true,
       "source_tier": 2,
-      "fingerprint": "907c699f87e985fbc04b2139f18d4f7e5c4274f1",
-      "relevance_score": 26,
+      "relevance_score": 49,
       "ranking_reasons": [
         "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "产业基金"
-      ]
-    },
-    {
-      "title": "无锡高新区：All in人工智能！",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32732516",
-      "source": "thepaper.cn",
-      "published_at": "2026-03-09T15:31:00+08:00",
-      "feed": "bing:无锡 大模型:thepaper.cn",
-      "fingerprint": "31e72bf2e685ac819fb042253bff41f1f642337f",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "聚焦人工智能 无锡锡山30亿元基金启航",
-      "url": "https://www.chinanews.com.cn/cj/2026/03-03/10580190.shtml",
-      "source": "chinanews.com.cn",
-      "published_at": "2026-03-03T09:56:00+08:00",
-      "feed": "bing:无锡 AI:chinanews.com.cn",
-      "fingerprint": "950c68bdd46998d9ed9785ca0be77a9725030966",
-      "domain": "chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "产业基金"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "从“双师课堂”到科创社团，无锡这里探索人工智能教育“新路径” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202602/t20260208_320234.html",
-      "source": "yzwb.net",
-      "published_at": "2026-02-08T22:07:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "cde10eb12eb01f70b5926ab2b2112992fc4aaccd",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡市人工智能行业协会揭牌成立，“平台+生态”双轮驱动产业创新发展 - 新华报业网",
-      "url": "https://www.xhby.net/content/s697c9114e4b037c73eea960a.html",
-      "source": "xhby.net",
-      "published_at": "2026-01-30T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "918705a2d1f2e1ba5cfb9b081c8c78fdfd7d1c5f",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "一份新春祝福背后的无锡机器人产业发展之思 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260122_313972.html",
-      "source": "yzwb.net",
-      "published_at": "2026-01-22T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "a8d5720adc344bae539408a62ad5fe9a2c97d833",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "加快打造“人工智能+”标杆城市，无锡和腾讯云开启合作新篇章",
-      "url": "https://www.wxrb.com/doc/2025/11/23/427912.shtml",
-      "source": "wxrb.com",
-      "published_at": "2025-11-24T00:39:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "19f30fcee21f731deb3e20618d6bd707e8db0acd",
-      "domain": "wxrb.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "惠企红利不容错过 预申报2026年度无锡市人工智能产业发展资金项目启动 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202510/t20251030_283448.html",
-      "source": "yzwb.net",
-      "published_at": "2025-10-30T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "d5f3f709d02484e22d55d7529dc0939f408c1a03",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "人工智能重塑技工教育新图景——全国百所院校无锡共话产教融合新路径 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202510/t20251027_282237.html",
-      "source": "yzwb.net",
-      "published_at": "2025-10-27T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "e92e9335d3650b4c2a79b77de42547ede9c6653a",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "江苏创青春“人工智能+”产业链大赛决赛在无锡举行 - js.chinanews.com.cn",
-      "url": "http://www.js.chinanews.com.cn/news/2025/0901/229909.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2025-09-01T15:00:00+08:00",
-      "feed": "google:无锡人工智能:chinanews.com.cn",
-      "rss_description": "江苏创青春“人工智能+”产业链大赛决赛在无锡举行 js.chinanews.com.cn",
-      "_is_new_candidate": false,
-      "domain": "js.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "5d9bd392e298bd004fd190d2164f13c7bb3e1caf",
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "无锡机器人天团，还是太全面了 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202504/t20250428_198882.html",
-      "source": "yzwb.net",
-      "published_at": "2025-04-28T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "97c55eed3e11cde4a79e29decbf8e731b8688828",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡机器人家族，进击！ - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_30578410",
-      "source": "m.thepaper.cn",
-      "published_at": "2025-04-05T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "fd4b815eb226cfcc20871c9d8ba2d760ca9dde52",
-      "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "解码人工智能协同创新基地 无锡老城以“智”焕新 - js.chinanews.com.cn",
-      "url": "https://www.js.chinanews.com.cn/news/2025/0327/227649.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2025-03-27T15:00:00+08:00",
-      "feed": "google:无锡人工智能:chinanews.com.cn",
-      "rss_description": "解码人工智能协同创新基地 无锡老城以“智”焕新 js.chinanews.com.cn",
-      "_is_new_candidate": false,
-      "domain": "js.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "6e0b8ce35087fc617f333a530faab9f2932a9118",
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "党建领航 双团共创 江苏党建引领“人工智能+”人才发展专题研讨会在无锡举办 - 新华报业网",
-      "url": "https://www.xhby.net/content/s67d94875e4b0ed434077acff.html",
-      "source": "xhby.net",
-      "published_at": "2025-03-18T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "ee51be4e42168dd34827dc2dcc45b3612aa798c9",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "国内最大机器人仓库上线，菜鸟网络宣布其无锡未来园区投用 - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_2564444",
-      "source": "m.thepaper.cn",
-      "published_at": "2018-10-25T15:00:00+08:00",
-      "feed": "google:无锡人工智能:thepaper.cn",
-      "rss_description": "国内最大机器人仓库上线，菜鸟网络宣布其无锡未来园区投用 thepaper.cn",
-      "_is_new_candidate": false,
-      "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "cf864f0b3606322ede763623fe3d86eb37aa4e9d",
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ]
-    },
-    {
-      "title": "无锡“智变”：从“制造之城”到“AI之城”",
-      "url": "https://view.inews.qq.com/a/20260126A07D3800",
-      "source": "view.inews.qq.com",
-      "published_at": "2026-01-26T22:58:00+08:00",
-      "feed": "bing:无锡 AI",
-      "rss_description": "人工智能作为引领新一轮科技革命和产业变革的颠覆性技术，已成为国际竞争的新焦点和经济社会高质量发展的新引擎。 从2024年“人工智能+”行动首次被写入政府工作报告，到2025年8月国务院印发《关于深入实施“人工智能+”行动的意见》，以科技、产业 ...",
-      "_is_new_candidate": false,
-      "domain": "view.inews.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "7e4c37d77aead2ba0ddcd60840c50358f63fe62d",
-      "relevance_score": 25,
-      "ranking_reasons": [
-        "区域:无锡",
+        "区域:长三角",
         "主题:人工智能",
         "主题:AI",
+        "新鲜度:14天内(10.3天)",
         "标题命中:区域:无锡",
-        "标题命中:主题:AI"
+        "标题命中:主题:人工智能",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:落地"
       ],
-      "summary_confidence": "low",
       "tags": [
         "无锡",
         "无锡AI"
-      ]
+      ],
+      "summary_confidence": "low"
     },
     {
-      "title": "All in AI？苏州“十五五”打算这么干···",
-      "url": "https://news.qq.com/rain/a/20260123A08DEB00",
+      "title": "上海牵手苏州市相城区，重磅项目签约落地！",
+      "url": "https://news.qq.com/rain/a/20260326A06FA000",
       "source": "news.qq.com",
-      "published_at": "2026-01-23T21:24:00+08:00",
-      "feed": "bing:苏州 AI",
-      "rss_description": "最强地级市，要在人工智能全面发力了。 近日，各地正在密集召开两会。记者获悉，1月22日，在苏州十七届人大五次会议上，苏州在政府工作报告中提到，2026年是“十五五”开局之年，重点推动经济实现质的有效提升和量的合理增长，预期地区生产总值增长5%以上 ...",
-      "_is_new_candidate": true,
+      "published_at": "2026-03-26T11:19:00+08:00",
+      "feed": "bing:苏州 工业AI",
+      "rss_description": "从顶尖科研机构到人工智能基础设施，从智能制造到人工智能产业，拥有“天时地利人和”的苏州市相城区，正成为沪苏资源交汇的“强磁场”。抢抓沪苏（州）同城化发展机遇，推动两地产业协同与优势互补，日前，在上海举行的2026苏州相城（上海）产业发展推介会暨苏州北站TOD招商大会上，一批沪苏合作项目签约落地，为苏州市相 ...",
+      "_is_new_candidate": false,
       "domain": "news.qq.com",
       "trusted": false,
       "source_tier": 1,
-      "fingerprint": "43af0186fe161b6854529fe3e3af3cd8ac3590b3",
-      "relevance_score": 25,
+      "fingerprint": "376dbf9cbe2bdc31accc211bd093fc1487506908",
+      "relevance_score": 47,
       "ranking_reasons": [
         "区域:苏州",
         "主题:人工智能",
-        "主题:AI",
+        "主题:智能制造",
+        "新鲜度:3天内(2.4天)",
         "标题命中:区域:苏州",
-        "标题命中:主题:AI"
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:合作",
+        "强相关:落地"
       ],
       "summary_confidence": "low",
       "tags": [
         "苏州",
-        "苏州AI"
+        "人工智能",
+        "智能制造",
+        "项目",
+        "合作"
       ]
     },
     {
-      "title": "聚力打造AI青年创新创业首选地！10所国内顶尖高校500名学子齐聚苏州",
-      "url": "https://news.qq.com/rain/a/20251111A04W7900",
-      "source": "news.qq.com",
-      "published_at": "2025-11-11T16:34:00+08:00",
-      "feed": "bing:苏州 AI",
-      "rss_description": "现代快报讯（记者 高达）为深入贯彻落实国家“人工智能+”行动战略，加快推进江苏及苏州人工智能产业高质量发展，“知名高校学子创新创业苏州行”活动于11月11日至13日举办。现代快报记者了解到，本次活动聚焦人工智能领域，邀请来自北京大学、清华 ...",
-      "_is_new_candidate": true,
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "c1cf612f58e1ba5f0fe5f6447fb4af4f80b7aa80",
-      "relevance_score": 25,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:人工智能",
-        "主题:AI",
-        "标题命中:区域:苏州",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "苏州AI"
-      ]
-    },
-    {
-      "title": "新水岛“智能体”加持，无锡生产企业用水实现“双清零” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202603/t20260328_336310.html",
-      "source": "yzwb.net",
-      "published_at": "2026-03-28T13:23:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "126a9064a25c8da9d93325ddf25d3ed7b57d7964",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 24,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:智能体",
-        "标题命中:区域:无锡",
-        "标题命中:主题:智能体",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "全国首个钉钉AI应用服务中心签约落户苏州高新区",
-      "url": "https://www.yangtse.com/news/ch/202602/t20260202_317777.html",
+      "title": "江苏无锡：国模国芯“养龙虾”，数智赋能激活 OPC 创业新生态",
+      "url": "https://www.yangtse.com/news/yw/202603/t20260318_332651.html",
       "source": "yangtse.com",
-      "published_at": "2026-02-02T13:00:00+08:00",
-      "feed": "bing:苏州 AI",
-      "rss_description": "1月31日，以“AI赋能 实业跃迁”为主题的2026苏州AI钉峰会在苏州高新区举办。钉钉副总裁马力骏在会上表示，苏州区域近80%的中国500强企业都在用钉钉，印证了苏州作为制造业高地在数字化转型中的前瞻布局与实践成效。 与此同时，全国首个钉钉AI应用服务中心 ...",
+      "published_at": "2026-03-18T08:13:00+08:00",
+      "feed": "bing:无锡 AI:yangtse.com",
+      "rss_description": "当下，AI技术和工具正处于高速迭代期，无锡梁溪科技城此次OpenClaw的成功部署与服务上线，是推动“人工智能+”行动、打造智能经济新形态的重要探索。下一步，科技城将持续深耕人工智能领域，以国模国芯筑牢产业根基，以AI赋能激活产业新动能，为无锡数字经济高质量发展注入持久科技力量。",
       "_is_new_candidate": true,
       "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2,
-      "fingerprint": "361f8adefbdf7f0caf19c2d907679f4f28b4a0ed",
-      "relevance_score": 24,
+      "fingerprint": "4e565af49e040745640e546cd59b2620fdfff712",
+      "relevance_score": 46,
       "ranking_reasons": [
-        "区域:苏州",
+        "区域:无锡",
+        "主题:人工智能",
+        "主题:大模型",
+        "主题:智能体",
+        "主题:算力",
         "主题:AI",
-        "标题命中:区域:苏州",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
+        "新鲜度:14天内(10.5天)",
+        "标题命中:区域:无锡",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:落地"
       ],
       "summary_confidence": "low",
       "tags": [
-        "苏州",
-        "苏州AI",
-        "智能制造"
+        "无锡",
+        "人工智能"
       ]
-    },
-    {
-      "title": "江苏无锡：AI 牵手文旅打造高品质旅游新场景 - 人民网",
-      "url": "http://tuyou.people.com.cn/albumsDetail?aid=2033644&pid=15195581",
-      "source": "tuyou.people.com.cn",
-      "published_at": "2026-01-28T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:people.com.cn",
-      "fingerprint": "53723c51b7401cf5b5a3d54b91e6af16f4997126",
-      "domain": "tuyou.people.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 24,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "让“大象”与“蚂蚁”共舞，江苏无锡打响AI深度赋能工业“发令枪”",
-      "url": "https://www.wxrb.com/doc/2025/02/17/389203.shtml",
-      "source": "wxrb.com",
-      "published_at": "2025-02-17T09:52:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "f507e13dc46b1e2e9d00e019a0518c570e0289bd",
-      "domain": "wxrb.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 24,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
     },
     {
       "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
@@ -1388,931 +508,18 @@
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
-      "relevance_score": 24,
+      "relevance_score": 44,
       "ranking_reasons": [
         "区域:无锡",
         "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "均普智能在无锡成立机器人公司 - 新浪财经",
-      "url": "https://finance.sina.com.cn/jjxw/2026-03-16/doc-inhrcxww2849788.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-16T11:02:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "28b316a907a609bf99d53d5818e71f45a9a0b9d5",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 24,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "标题命中:区域:无锡",
-        "标题命中:主题:机器人"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "机器人"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡2025：智改数转网联提速，建“人工智能+”标杆城市 - 新浪财经",
-      "url": "http://finance.sina.com.cn/stock/t/2026-02-22/doc-inhnrnnx8527255.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-02-22T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "6b6cb0315c9933de3eaace4e5d0d53ed223406b1",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 24,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "标题命中:区域:无锡",
-        "标题命中:主题:人工智能"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "太湖亿芯智算中心部署DeepSeek，助力无锡高新区加快AI产业布局",
-      "url": "https://js.ifeng.com/c/8gpddHldBNF",
-      "source": "js.ifeng.com",
-      "published_at": "2025-02-09T16:29:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "3e905b2fb40c4ce17cb97dd94711150f23a9a351",
-      "domain": "js.ifeng.com",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 24,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "申论｜对比长三角、京津冀与珠三角AI人才政策，上海该如何引才和育才",
-      "url": "https://finance.sina.com.cn/stock/t/2026-01-05/doc-inhfhavp8068843.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-01-05T17:19:00+08:00",
-      "feed": "bing:长三角 AI",
-      "rss_description": "近年来，各个国家相继将人工智能（Artificial Intelligence，简称AI）上升到国家战略高度，开始谋划与本国产业基础、发展格局和治理体系相适应的“破局之路”。在这场全球竞赛中，人才是赢得AI技术竞争的关键资源。在国家之间的AI人才竞争中，中国已超越美国 ...",
-      "_is_new_candidate": true,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "d3da73e5b3db930826b518342b9b03587f5d9f2e",
-      "relevance_score": 23,
-      "ranking_reasons": [
-        "区域:长三角",
-        "主题:人工智能",
-        "主题:AI",
-        "标题命中:区域:长三角",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "长三角",
-        "政策"
-      ]
-    },
-    {
-      "title": "头部大厂，加码无锡！",
-      "url": "https://js.ifeng.com/c/8oVb0qk1N2t",
-      "source": "js.ifeng.com",
-      "published_at": "2025-11-23T19:35:00+08:00",
-      "feed": "bing:无锡 AI",
-      "rss_description": "对腾讯而言，无锡从来不是普通的合作城市——而是其深耕长三角、布局人工智能的“战略支点”。 11月21日，腾讯全球数字生态大会城市峰会上，深圳市腾讯计算机系统有限公司与无锡签署了战略合作协议，共同推动人工智能在多领域的深度融合应用，培育新 ...",
-      "_is_new_candidate": true,
-      "domain": "js.ifeng.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "31c4607cdeaaa96e5f954dcbf9cc8869400f96da",
-      "relevance_score": 23,
-      "ranking_reasons": [
-        "区域:无锡",
-        "区域:长三角",
-        "主题:人工智能",
-        "标题命中:区域:无锡"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI",
-        "长三角"
-      ]
-    },
-    {
-      "title": "智云无锡、电信有AI——云端共赴锡城春日之约 - 新华网江苏频道",
-      "url": "http://js.news.cn/20260327/b5aee971cb174d67bbf344fac6e2116b/c.html",
-      "source": "js.news.cn",
-      "published_at": "2026-03-27T18:33:36+08:00",
-      "feed": "google:无锡人工智能:news.cn",
-      "rss_description": "智云无锡、电信有AI——云端共赴锡城春日之约 新华网江苏频道",
-      "_is_new_candidate": false,
-      "domain": "js.news.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "9fe8da07480ceddd9d37e82074c25fb53765fa69",
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "无锡“AI未来之城”：免费领“龙虾”Agent，最高补贴500万",
-      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202603/t20260315_331708.html",
-      "source": "yangtse.com",
-      "published_at": "2026-03-15T06:55:00+08:00",
-      "feed": "bing:Wuxi AI",
-      "fingerprint": "bdb3da7d2f41e90ecf07336c8bfceecc6c7b44a8",
-      "domain": "yangtse.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "最高1000万元！无锡这里放出支持AI创新“大招”",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32767340",
-      "source": "thepaper.cn",
-      "published_at": "2026-03-14T15:50:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "ebf0a9b5504a17471d5536f19674361154bb4d02",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "清华+无锡！AI制药突破登上全球科研顶刊",
-      "url": "https://www.thepaper.cn/newsDetail_forward_32374723",
-      "source": "thepaper.cn",
-      "published_at": "2026-01-13T15:20:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "854f394138b64045b39109fd580dab452407bc30",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "一人一AI开局创业！无锡首届“创响无锡”全国大学生OPC菁英赛启动",
-      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202601/t20260106_308342.html",
-      "source": "yangtse.com",
-      "published_at": "2026-01-06T17:05:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "7a861b7b3776f4c35a41581dc7dbd1f9e94b5ba0",
-      "domain": "yangtse.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡算力装备产业园正式揭牌 - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_32311860",
-      "source": "m.thepaper.cn",
-      "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:thepaper.cn",
-      "fingerprint": "5e257cc3b8751153025cd72def3e074b5c3347e1",
-      "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:算力",
-        "标题命中:区域:无锡",
-        "标题命中:主题:算力",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡：AI赋能精准匹配 “智聘引擎”助推高效就业服务 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202601/t20260104_307553.html",
-      "source": "yzwb.net",
-      "published_at": "2026-01-04T16:00:00+08:00",
-      "feed": "google:无锡 AI",
-      "fingerprint": "db5ef14ceacd58c3e5b837032cd54d92a404fbd1",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "AI与特教深度融合，无锡为特殊孩子打造个性化成长之路 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202512/t20251203_296400.html",
-      "source": "yzwb.net",
-      "published_at": "2025-12-03T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "4183b307090f7196a0551c0900925f631ba47b77",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无难事 悉心办｜数据无锡：创新“AI改革”硬举措，优化“营商环境 ...",
-      "url": "https://www.xhby.net/content/s691ac5d4e4b054c4a0b07b48.html",
-      "source": "xhby.net",
-      "published_at": "2025-11-17T14:51:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "e3ccc870b5d7635f6024568d6b6398503ce35de4",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "合肥无锡联合教研 AI为心理健康教育注入新动能 - ah.chinanews.com.cn",
-      "url": "https://www.ah.chinanews.com.cn/news/2025/1113/337764.shtml",
-      "source": "ah.chinanews.com.cn",
-      "published_at": "2025-11-13T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "fb4a7e2faf8417052fcb64051ce9772f09e6439b",
-      "domain": "ah.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡“智”造新故事：AI如何赋能城市传播？",
-      "url": "https://www.wxrb.com/doc/2025/11/09/426174.shtml",
-      "source": "wxrb.com",
-      "published_at": "2025-11-10T03:02:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "41ca43b644eefe6cc59be4fad2801d0a9053cd24",
-      "domain": "wxrb.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "“AI赋能·智联世界”城市形象国际传播（无锡）论坛成功举办 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202511/t20251109_287215.html",
-      "source": "yzwb.net",
-      "published_at": "2025-11-09T16:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "f5dc5493d9677d4dc3e9e1329af9a75c6e332f59",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "江苏无锡：AI赋能人才服务，用工场景迎来“智变”",
-      "url": "https://www.wxrb.com/doc/2025/11/09/426059.shtml",
-      "source": "wxrb.com",
-      "published_at": "2025-11-09T03:55:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "63ddf8ad142d7f48d9f2c9bce308c5c34506aff5",
-      "domain": "wxrb.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "市级机关“无锡景•家国情 AI‘尚’无锡”智享汇活动综述",
-      "url": "https://www.thepaper.cn/newsDetail_forward_31745237",
-      "source": "thepaper.cn",
-      "published_at": "2025-10-09T15:49:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "6d2b54f590acbeb9a9328338110be21c544bb8cd",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "“AI+IC”，无锡滨湖开启芯片设计“下一场变革”",
-      "url": "https://xh.xhby.net/pc/con/202509/15/content_1485404.html",
-      "source": "xh.xhby.net",
-      "published_at": "2025-09-15T01:00:00+08:00",
-      "feed": "bing:无锡AI:xhby.net",
-      "fingerprint": "60047f80cb45f5279b44eb27f4296f7a25c69a4d",
-      "domain": "xh.xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "创投观察站｜无锡国资青睐，这家无锡企业加速AI芯片研发 - 新华报业网",
-      "url": "https://www.xhby.net/content/s68aec6d7e4b0a4a27e84f5b0.html",
-      "source": "xhby.net",
-      "published_at": "2025-08-27T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "4f89467f667408860c0cdf9ce8616df3a47b9be6",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "从“算得快”到“用得广”，无锡打造“高密算力之城” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/yw/202508/t20250812_248824.html",
-      "source": "yzwb.net",
-      "published_at": "2025-08-12T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "50df74c92db05ec66e66706ce9c7be443ed52982",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:算力",
-        "标题命中:区域:无锡",
-        "标题命中:主题:算力",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "首发首秀，无锡有个关于“世界级AI”的梦想～",
-      "url": "https://www.thepaper.cn/newsDetail_forward_31249842",
-      "source": "thepaper.cn",
-      "published_at": "2025-07-28T18:05:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "87fd1218532a57c5b932af894baafa26f12fa207",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "江苏无锡：干部学AI争做弄潮儿",
-      "url": "http://renshi.people.com.cn/n1/2025/0716/c139617-40522667.html",
-      "source": "renshi.people.com.cn",
-      "published_at": "2025-07-16T09:51:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
-      "fingerprint": "f681db30a53aee08d577c4d0e6cd517b8b241109",
-      "domain": "renshi.people.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡绘制AI医药“智慧蓝图” - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/wuxi/202506/t20250618_223378.html",
-      "source": "yzwb.net",
-      "published_at": "2025-06-18T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:yzwb.net",
-      "fingerprint": "3c4c58e09076fb39dff01eee71409d61b7714aec",
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "“智慧天眼”秒锁定，无锡上线省内首个AI直播监测系统 - 新华报业网",
-      "url": "https://www.xhby.net/content/s68399513e4b0825be0272f86.html",
-      "source": "xhby.net",
-      "published_at": "2025-05-30T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "172cdc2d1e75434a18f090606932f0fb292a6c79",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "中国电信无锡分公司AI加持：天翼云“成就”樱花云",
-      "url": "https://www.thepaper.cn/newsDetail_forward_30473014",
-      "source": "thepaper.cn",
-      "published_at": "2025-03-24T15:07:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "6b672ff71ad47735e8715c65055e48ecebf63a90",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
-      "source": "xhby.net",
-      "published_at": "2025-03-23T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "深度求索，无锡打造“AI治之城”",
-      "url": "https://xh.xhby.net/pc/con/202503/23/content_1432102.html",
-      "source": "xh.xhby.net",
-      "published_at": "2025-03-23T01:00:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
-      "fingerprint": "61315c3929c6e24f8cb4db940d6ad3ef870b0e5c",
-      "domain": "xh.xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "更懂无锡人！“AI政务服务助手”再升级",
-      "url": "https://www.thepaper.cn/newsDetail_forward_30396165",
-      "source": "thepaper.cn",
-      "published_at": "2025-03-14T19:33:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "8da79bac4c8061774f21ab450904c2ddf260709d",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "AI赋能，无锡突破这项技术瓶颈！",
-      "url": "https://www.thepaper.cn/newsDetail_forward_30362774",
-      "source": "thepaper.cn",
-      "published_at": "2025-03-11T14:48:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "52ffb7d90f90c1376eb72fd711fff4eb17ae12cf",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "“数字引领·智启新程”首届AI数字人论坛在无锡举办",
-      "url": "https://finance.people.com.cn/n1/2024/1003/c1004-40332781.html",
-      "source": "finance.people.com.cn",
-      "published_at": "2024-10-03T14:28:00+08:00",
-      "feed": "bing:无锡 AI:people.com.cn",
-      "fingerprint": "dfdbe6e1544ea1a63910dae1c2ff5706ce024b2d",
-      "domain": "finance.people.com.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "生物医药产业规模超两千亿，“物联网之都”无锡欲借AI超车",
-      "url": "https://www.thepaper.cn/newsDetail_forward_27356502?commTag=true",
-      "source": "thepaper.cn",
-      "published_at": "2024-05-13T15:57:00+08:00",
-      "feed": "bing:无锡 AI:thepaper.cn",
-      "fingerprint": "48360428fd5f85ef6cb445e841f800d663212622",
-      "domain": "thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "我AI的江苏丨华春莹转发推荐！无锡“这两样”为何能强势出圈？ - 新华报业网",
-      "url": "https://www.xhby.net/content/s66015289e4b09dde337fdf93.html",
-      "source": "xhby.net",
-      "published_at": "2024-03-25T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "00612c4da4e5a46fb68a6c45a26f9effaa167650",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡：加快推动算力发展 铸强数字经济“新引擎”",
-      "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
-      "source": "js.xinhuanet.com",
-      "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 人工智能:xinhuanet.com",
-      "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
-      "domain": "js.xinhuanet.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:算力",
-        "标题命中:区域:无锡",
-        "标题命中:主题:算力",
-        "来源:可信媒体"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "工业经济这块压舱石，无锡要用AI好好打磨",
-      "url": "https://news.qq.com/rain/a/20260316A05GQR00",
-      "source": "news.qq.com",
-      "published_at": "2026-03-16T08:06:00+08:00",
-      "feed": "bing:无锡 AI",
-      "rss_description": "工业经济，一向是无锡的“压舱石”。过去的2025年，无锡的工业经济又交出了一份沉甸甸的答卷：规上工业产值达2.71万亿、较“十三五”末增加1万亿；规模超2000亿的产业集群达到了8个，新增国家级绿色工厂48家、超过了历年总和；新增国家专精特新“小巨人”117家、省级企业技术中心127家，累计分别达463家、720家，均列江苏第 ...",
-      "_is_new_candidate": false,
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "3096c2df2e1db042e82f91dda3febb2b0521dbee",
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "系统性规避“AI幻觉”，实现四大应用场景链接，长三角一体化大 ...",
-      "url": "https://news.qq.com/rain/a/20260113A01CH200",
-      "source": "news.qq.com",
-      "published_at": "2026-01-13T06:31:00+08:00",
-      "feed": "bing:长三角 AI",
-      "rss_description": "1月10日，长三角一体化大模型发布与场景应用链接大会在上海财经大学科技园国际会议中心举办。本次会议由上海财经大学中国式现代化研究院、上海财经大学长三角与长江经济带发展研究院、中国区域科学协会空间分析专业委员会和全国经济地理研究会城市群 ...",
-      "_is_new_candidate": true,
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "714930522498d50466a005f9632a22db3aff0cd7",
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:长三角",
         "主题:大模型",
-        "主题:AI",
-        "标题命中:区域:长三角",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "长三角",
-        "大模型",
-        "科研平台"
-      ]
-    },
-    {
-      "title": "抢占“人工智能+ 医疗健康”新赛道， 江大附院“黄金救生圈”跑出 ...",
-      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202603/t20260302_326982.html",
-      "source": "yangtse.com",
-      "published_at": "2026-03-02T09:23:00+08:00",
-      "feed": "bing:Wuxi AI",
-      "fingerprint": "3f2802d67d128861470e49065b58c9b17b0a305b",
-      "domain": "yangtse.com",
-      "trusted": true,
-      "source_tier": 2,
-      "relevance_score": 21,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
+        "主题:算法",
+        "主题:算力",
+        "新鲜度:14天内(8.1天)",
+        "标题命中:区域:无锡",
         "标题命中:主题:人工智能",
-        "来源:可信媒体"
+        "正文:信息较完整",
+        "强相关:落地"
       ],
       "tags": [
         "无锡",
@@ -2321,287 +528,69 @@
       "summary_confidence": "low"
     },
     {
-      "title": "潮际好麦受聘“长三角AI服装产业创新联盟”委员，AI重构服装零售 ...",
-      "url": "https://news.sina.com.cn/sx/2025-12-15/detail-inhawaui2463068.shtml",
-      "source": "news.sina.com.cn",
-      "published_at": "2025-12-15T13:31:00+08:00",
-      "feed": "bing:长三角 AI",
-      "rss_description": "2025年12月3日，为扎实推进江苏省“1650”产业体系构建，由江苏省工信厅、江苏省纺织工程学会指导，江苏服装品牌协同创新中心与人工智能赋能服装产业创新联盟主办的 “2025服装产业AI场景创新应用高峰论坛” 南京国际博览中心盛大召开。 本次论坛以“AI赋能 ...",
-      "_is_new_candidate": true,
-      "domain": "news.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "bcf1f096f7ef489b7b891abdcfeda3bd4d6fd855",
-      "relevance_score": 21,
+      "title": "无锡锡山东璟人工智能创新港揭牌 - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0317/c360301-41526278.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-17T19:42:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "91a0dc2463fd66285eccee105caabd57777178dc",
+      "domain": "js.people.com.cn",
+      "trusted": true,
+      "source_tier": 2,
+      "relevance_score": 42,
       "ranking_reasons": [
+        "区域:无锡",
         "区域:长三角",
         "主题:人工智能",
         "主题:AI",
-        "标题命中:区域:长三角",
-        "标题命中:主题:AI"
+        "新鲜度:14天内(11.1天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:人工智能",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:合作",
+        "强相关:落地",
+        "弱相关:招聘"
       ],
-      "summary_confidence": "low",
       "tags": [
-        "长三角",
-        "科研平台"
+        "无锡",
+        "无锡AI"
+      ],
+      "summary_confidence": "low"
+    },
+    {
+      "title": "健康吴中新场景:从“心肺联筛”到“早筛早管”，人工智能筑起生命 ...",
+      "url": "https://www.yangtse.com/news/jiangsu/suzhou/202603/t20260328_336359.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-28T08:09:00+08:00",
+      "feed": "bing:苏州 AI:yangtse.com",
+      "rss_description": "依托人工智能技术的深度赋能，苏州市吴中区已连续两年将“心肺联筛”纳入民生实事项目，通过AI辅助诊断技术，构建起相关疾病的“筛诊治管”一体化健康服务体系。从智慧预警到闭环管理，我们正以数字化手段破解基层医疗“筛不完、看不准、管不及”的 ...",
+      "_is_new_candidate": true,
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "8fcb0f1801ac23d10898d8348b2495cdfb1a67d7",
+      "relevance_score": 39,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:人工智能",
+        "主题:AI",
+        "新鲜度:24h内(0.6天)",
+        "标题命中:主题:人工智能",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目"
+      ],
+      "summary": "苏州市吴中区将人工智能技术应用于医疗领域，通过AI辅助诊断构建了从筛查到管理的健康服务体系。该举措旨在解决基层医疗中筛查不全面、诊断不准确和管理不及时的问题。文章还强调了心血管疾病年轻化趋势，并提醒公众关注日常生活中的健康风险。",
+      "why_it_matters": "为什么值得关注：因为它展示了人工智能如何提升基层医疗效率，并有助于预防心血管疾病等突发健康事件。",
+      "summary_confidence": "high",
+      "tags": [
+        "人工智能医疗",
+        "心血管健康",
+        "基层医疗",
+        "早筛早管",
+        "数字化健康"
       ]
-    },
-    {
-      "title": "AI穿戴万亿级新蓝海，无锡已入局！",
-      "url": "https://finance.sina.com.cn/wm/2026-03-23/doc-inhrxrmy1315591.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-23T02:20:00+08:00",
-      "feed": "bing:无锡 AI",
-      "rss_description": "技术突破与成本下降迎来历史性交汇，市场数据也印证着这一拐点。研究机构Omdia数据显示，2025年全球AI眼镜出货量达870万台，同比激增322%，其中中国市场占比10.9%。放眼更广阔的可穿戴设备赛道，2024年全球市场规模已达1798亿美元，预计到2034年将突破9952亿美元——一个万亿级的蓝海市场正在加速成型。 当视线落在异国菜单上，翻译与个性化菜品推荐同步浮现；目光扫过电影海报，评分、预 ...",
-      "_is_new_candidate": false,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "bec332d8e17306c778321c15de29059523535f85",
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "AI+制造 无锡“+”出了什么？",
-      "url": "https://finance.sina.com.cn/wm/2026-03-17/doc-inhrhavx8208480.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-17T01:49:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "cde12ac8428464d8b3f69e07583e9974bebcaa6d",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "【他山之石】江苏无锡：推出“车路云一体化”赋能城市管理AI场景应用",
-      "url": "https://news.qq.com/rain/a/20260312A06FUV00",
-      "source": "news.qq.com",
-      "published_at": "2026-03-12T10:42:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "ab76ee488168623e52da8748955a70dc29dd3296",
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "AI防癌，无锡全民癌症防控插上“数智翅膀”！",
-      "url": "https://news.qq.com/rain/a/20260311A0633J00",
-      "source": "news.qq.com",
-      "published_at": "2026-03-11T22:45:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "5dc33096cbecd235fc6c121bd4e82ffebf995fb1",
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡高新区“硬核”军团闪耀CES 2026 车联天下、菲沃泰等亮相共舞AI浪潮",
-      "url": "https://www.stcn.com/article/detail/3600144.html",
-      "source": "stcn.com",
-      "published_at": "2026-01-19T17:21:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "7314e85dc5ebb2c20758ea901d72a11126515ccb",
-      "domain": "stcn.com",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "“龙虾十二条”见格局，无锡高新区抢占AI赛道",
-      "url": "https://js.ifeng.com/c/8rNLwNwiSmt",
-      "source": "js.ifeng.com",
-      "published_at": "2025-11-09T16:42:00+08:00",
-      "feed": "bing:无锡 AI",
-      "rss_description": "科技潮涌千帆竞，开源赋能启新程。近日，一款名为OpenClaw（中文昵称“开爪”）的开源AI Agent框架席卷开发者社区，凭借低门槛、高活跃度的特性，被网友戏称为“人人都能养的龙虾”，折射出开源AI生态蓬勃发展的强劲活力。 当前，全球开源AI生态正处于快速 ...",
-      "_is_new_candidate": false,
-      "domain": "js.ifeng.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "fd7fe1287fe307bcdf1d40afd04a4a26e06ad3f4",
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ]
-    },
-    {
-      "title": "无锡AI团队首次登顶“全球最难榜单”",
-      "url": "https://finance.sina.com.cn/roll/2025-07-27/doc-infhwiaa1282536.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2025-07-27T06:50:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "baacde99cf0340d3bc308013285c0af7027d7952",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡滨湖区：以AI“智”创未来",
-      "url": "https://news.qq.com/rain/a/20250614A034CM00",
-      "source": "news.qq.com",
-      "published_at": "2025-06-14T11:41:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "efb063a88b736b469105290029c4cc539852c43c",
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "敢当弄潮儿 奋力挑大梁｜深度求索，无锡打造“AI治之城”",
-      "url": "https://finance.sina.com.cn/roll/2025-03-23/doc-ineqqwqw9193890.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2025-03-23T08:57:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "acbdfacacb86c07f39ce5226bae3dc2eb0aa6acb",
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡滨湖区：携手清华创新之力 共启AI发展新篇",
-      "url": "https://js.ifeng.com/c/8aBqbQEKa6B",
-      "source": "js.ifeng.com",
-      "published_at": "2024-06-06T14:12:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "b3d8ac74b4be24c151812b9fb23d5e40d0df3425",
-      "domain": "js.ifeng.com",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
-    },
-    {
-      "title": "无锡：“圈数字化、圈AI”，又一次擦亮产业链",
-      "url": "https://news.sina.com.cn/sx/2023-10-30/detail-imzswvsh3709074.shtml",
-      "source": "news.sina.com.cn",
-      "published_at": "2023-10-30T19:04:00+08:00",
-      "feed": "bing:无锡 AI",
-      "fingerprint": "e18e251cb5df257d88ee1ead0f954f6d03163bae",
-      "domain": "news.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "relevance_score": 20,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:AI",
-        "标题命中:区域:无锡",
-        "标题命中:主题:AI"
-      ],
-      "tags": [
-        "无锡",
-        "无锡AI"
-      ],
-      "summary_confidence": "low"
     },
     {
       "title": "太湖论道｜“AI赋能高端制造”印刷包装产业高质量发展大会成功举办",
@@ -2615,66 +604,410 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "7636e519c0730f65f7ceddba3503ce7044e43a52",
-      "relevance_score": 19,
+      "relevance_score": 37,
       "ranking_reasons": [
         "区域:苏州",
         "主题:人工智能",
+        "主题:智能制造",
+        "主题:工业ai",
         "主题:AI",
-        "标题命中:主题:AI"
+        "新鲜度:7天内(5.4天)",
+        "标题命中:主题:AI",
+        "正文:信息较完整"
       ],
       "summary_confidence": "low",
       "tags": [
         "苏州",
-        "苏州AI"
+        "人工智能",
+        "论坛"
       ]
     },
     {
-      "title": "江苏无锡：新机遇，“智”共赢！智能传播绘盛景 携手共赴新征程",
-      "url": "https://news.sina.com.cn/zx/gj/2025-11-10/doc-infwwexc1780484.shtml",
-      "source": "news.sina.com.cn",
-      "published_at": "2025-11-10T00:00:00+08:00",
-      "feed": "bing:无锡 AI",
-      "rss_description": "太湖之畔，宾朋满座。连续五年在无锡举办的中国国际智能传播论坛已成为促进高水平国际交流合作、推动智能传播产业发展的重要平台。 在今年的国际智能传播论坛上，专家学者、媒体、企业家和海内外青年代表齐聚一堂，深入探索城市形象国际传播、AI数字 ...",
-      "_is_new_candidate": true,
-      "domain": "news.sina.com.cn",
+      "title": "AI穿戴万亿级新蓝海，无锡已入局！",
+      "url": "https://finance.sina.com.cn/wm/2026-03-23/doc-inhrxrmy1315591.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-23T02:20:00+08:00",
+      "feed": "bing:无锡AI",
+      "rss_description": "技术突破与成本下降迎来历史性交汇，市场数据也印证着这一拐点。研究机构Omdia数据显示，2025年全球AI眼镜出货量达870万台，同比激增322%，其中中国市场占比10.9%。放眼更广阔的可穿戴设备赛道，2024年全球市场规模已达1798亿美元，预计到2034年将突破9952亿美元——一个万亿级的蓝海市场正在加速成型。 当视线落在异国菜单上，翻译与个性化菜品推荐同步浮现；目光扫过电影海报，评分、预 ...",
+      "_is_new_candidate": false,
+      "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
-      "fingerprint": "1a5d39e22487390cc7931da12d141711b5bf185c",
-      "relevance_score": 17,
+      "fingerprint": "bec332d8e17306c778321c15de29059523535f85",
+      "relevance_score": 35,
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "标题命中:区域:无锡"
+        "新鲜度:7天内(5.8天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "正文:信息较完整",
+        "强相关:投产",
+        "强相关:产线"
       ],
       "summary_confidence": "low",
       "tags": [
         "无锡",
-        "无锡AI"
+        "人工智能"
       ]
     },
     {
-      "title": "AI引领 慧营销360百城增长大会-无锡站成功举行，助力中小企业拥抱AI ...",
-      "url": "https://news.sina.com.cn/sx/2023-09-23/detail-imznsfir1464412.shtml",
+      "title": "打造长三角北翼AI赋能标杆 AI应用赋能中心项目签约落户苏锡通园区",
+      "url": "https://www.yangtse.com/news/jiangsu/202603/t20260321_333776.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-21T12:44:00+08:00",
+      "feed": "bing:长三角 AI:yangtse.com",
+      "rss_description": "3月20日，总投资5000万元的南通AI应用赋能中心项目正式签约落户苏锡通科技产业园区。项目由江苏智慧保业科技有限公司投资建设，聚焦“AI应用、AI培训、AI实训”三位一体发展，将搭建产业AI对接平台、运营数字人直播基地、建设OPC社区等核心载体，为南通 ...",
+      "_is_new_candidate": true,
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "9cdbd262121e0e0bce41751732f77c66053ddd67",
+      "relevance_score": 35,
+      "ranking_reasons": [
+        "区域:长三角",
+        "主题:人工智能",
+        "主题:AI",
+        "新鲜度:14天内(7.4天)",
+        "标题命中:区域:长三角",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:落地",
+        "强相关:产业园",
+        "弱相关:营销"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "长三角",
+        "人工智能",
+        "项目"
+      ]
+    },
+    {
+      "title": "工业经济这块压舱石，无锡要用AI好好打磨",
+      "url": "https://news.qq.com/rain/a/20260316A05GQR00",
+      "source": "news.qq.com",
+      "published_at": "2026-03-16T08:06:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "工业经济，一向是无锡的“压舱石”。过去的2025年，无锡的工业经济又交出了一份沉甸甸的答卷：规上工业产值达2.71万亿、较“十三五”末增加1万亿；规模超2000亿的产业集群达到了8个，新增国家级绿色工厂48家、超过了历年总和；新增国家专精特新“小巨人”117家、省级企业技术中心127家，累计分别达463家、720家，均列江苏第 ...",
+      "_is_new_candidate": false,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "3096c2df2e1db042e82f91dda3febb2b0521dbee",
+      "relevance_score": 35,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:智能制造",
+        "主题:AI",
+        "新鲜度:14天内(12.6天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "正文:信息较完整",
+        "强相关:工厂"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "工厂"
+      ]
+    },
+    {
+      "title": "AI训练有了绿电后盾 平湖绿电追着算力跑",
+      "url": "http://www.zj.xinhuanet.com/20260317/eb6d0dd164eb4ec1aa25511934b0ddf4/c.html",
+      "source": "zj.xinhuanet.com",
+      "published_at": "2026-03-17T02:36:00+08:00",
+      "feed": "bing:长三角 AI:xinhuanet.com",
+      "rss_description": "在杭州湾平湖海域，海风拂过嘉兴海上风电场，124台风机缓缓旋转，将无尽风能转化为绿色电力，日均可提供694万千瓦时的清洁电量。35公里外，位于平湖市新埭镇的平湖长三角智算中心内，机柜指示灯如繁星闪烁，源源不绝的海上风能支撑着中心每天数以万计的AI训练、遥感数据处理任务。",
+      "_is_new_candidate": true,
+      "domain": "zj.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "6c15c763204ff957bc284031421a5379e86f3da0",
+      "relevance_score": 34,
+      "ranking_reasons": [
+        "区域:长三角",
+        "主题:算力",
+        "主题:AI",
+        "新鲜度:14天内(11.8天)",
+        "标题命中:主题:算力",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:智算中心"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "长三角",
+        "人工智能"
+      ]
+    },
+    {
+      "title": "均普智能在无锡成立机器人公司 - 新浪财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-03-16/doc-inhrcxww2849788.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-16T11:02:00+08:00",
+      "feed": "google:无锡 人工智能",
+      "fingerprint": "28b316a907a609bf99d53d5818e71f45a9a0b9d5",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "relevance_score": 34,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:人工智能",
+        "主题:机器人",
+        "主题:工业机器人",
+        "新鲜度:14天内(12.4天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:机器人",
+        "正文:信息较完整",
+        "弱相关:招聘"
+      ],
+      "tags": [
+        "无锡",
+        "无锡AI",
+        "机器人"
+      ],
+      "summary_confidence": "low"
+    },
+    {
+      "title": "2026类脑计算基础研究与产业化论坛在长阳创谷成功举行",
+      "url": "http://sh.xinhuanet.com/20260327/0527d36f90834d689c34014716303ba3/c.html",
+      "source": "sh.xinhuanet.com",
+      "published_at": "2026-03-27T02:24:00+08:00",
+      "feed": "bing:长三角 AI:xinhuanet.com",
+      "rss_description": "3月25日，作为“海科汇2026年上海（长三角）科技人才周”的环节之一，一场以“类脑计算基础研究与产业化”为主题的高端论坛在上海杨浦区长阳创谷举行。论坛汇聚了顶尖科学家、产业领袖、金融资本与政策制定者，以前瞻视野共同探讨“脑启发计算”如何重塑人工智能的底层逻辑，为上海抢占全球AI竞争的战略制高点提供了思想盛宴与行动建言。 本次论坛由中共上海市科学技术工作委员会、上海市科学技术委员会指导，上 ...",
+      "_is_new_candidate": true,
+      "domain": "sh.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "872872e323b93db0a842182dd233a917f52aa5eb",
+      "relevance_score": 33,
+      "ranking_reasons": [
+        "区域:长三角",
+        "主题:人工智能",
+        "主题:AI",
+        "新鲜度:3天内(1.8天)",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:政策",
+        "强相关:融资"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "长三角",
+        "人工智能",
+        "政策",
+        "论坛"
+      ]
+    },
+    {
+      "title": "无锡高新区发布“养龙虾”12条，最高补贴500万",
+      "url": "https://news.sina.com.cn/c/2026-03-09/doc-inhqknrn9920211.shtml",
       "source": "news.sina.com.cn",
-      "published_at": "2023-09-23T11:14:00+08:00",
-      "feed": "bing:无锡AI",
-      "fingerprint": "219da3e5f905e4e820ab4fc925ef71276e2c8d39",
+      "published_at": "2026-03-09T16:33:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "最近，科技圈被一只“龙虾”刷了屏。 一款名为OpenClaw（中文昵称“开爪”）的开源AI Agent框架席卷开发者社区，因其低门槛、高活跃度的特性，被网友戏称为“人人都能养的龙虾”。一时间，“今天你养龙虾了吗”成为技术圈的新晋暗号。 而无锡高新区已经 ...",
+      "_is_new_candidate": true,
       "domain": "news.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
-      "relevance_score": 17,
+      "fingerprint": "a6866dfd611e96e1b512f59dccf3246fadfda275",
+      "relevance_score": 33,
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
+        "新鲜度:偏旧(19.2天)",
+        "标题命中:区域:无锡",
+        "正文:信息较完整",
+        "强相关:政策",
+        "强相关:项目",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能"
+      ]
+    },
+    {
+      "title": "崇川抢占人工智能产业发展制高点",
+      "url": "http://www.js.xinhuanet.com/20260318/fe662fe31f17434ab9c7b974a487b33b/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2026-03-18T04:46:00+08:00",
+      "feed": "bing:长三角 工业AI:xinhuanet.com",
+      "rss_description": "主城崇川，正以前所未有的决心和力度，抢占人工智能产业发展制高点。 《南通市崇川区“十五五”人工智能产业发展专项规划》及《南通市崇川区人工智能产业发展三年行动方案（2026—2028年）》18日正式发布，一套目标清晰、路径明确、举措扎实的AI产业发展体系首次全景呈现。 目标定位： 站“C位”，打造长三角特色应用城区 作为主城核心区，崇川在全市人工智能产业布局中被赋予重任——市委、市政 ...",
+      "_is_new_candidate": true,
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "7fd6f781aa94a1c1ff516ee48eb10661d407ac7c",
+      "relevance_score": 30,
+      "ranking_reasons": [
+        "区域:长三角",
+        "主题:人工智能",
+        "主题:AI",
+        "新鲜度:14天内(10.7天)",
+        "标题命中:主题:人工智能",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "长三角",
+        "人工智能",
+        "政策"
+      ]
+    },
+    {
+      "title": "AI+制造 无锡“+”出了什么？",
+      "url": "https://finance.sina.com.cn/wm/2026-03-17/doc-inhrhavx8208480.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-17T01:49:00+08:00",
+      "feed": "bing:无锡 AI",
+      "fingerprint": "cde12ac8428464d8b3f69e07583e9974bebcaa6d",
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "relevance_score": 30,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:人工智能",
+        "主题:AI",
+        "新鲜度:14天内(11.8天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
-        "弱相关:营销"
+        "正文:信息较完整"
       ],
       "tags": [
         "无锡",
         "无锡AI"
       ],
       "summary_confidence": "low"
+    },
+    {
+      "title": "无锡电信手把手教你“养龙虾”，解锁AI新体验！",
+      "url": "https://finance.sina.com.cn/roll/2026-03-14/doc-inhqypen4013923.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-14T14:21:00+08:00",
+      "feed": "bing:无锡AI",
+      "rss_description": "还在为火爆全网的AI智能体“小龙虾”（OpenClaw）心动不已，却苦于“不会装、不敢装、怕中毒”？别担心，一份“养虾攻略”已送达！ 为让AI技术真正惠及市民，打破人工智能的应用门槛，3月14日，无锡电信在人民路营业厅举办了一场AI“小龙虾”（OpenClaw）实操公益培训活动，邀请对AI智能体感兴趣的市民朋友共同参与。 这份“养虾攻略”的背后，是无锡电信践行“好服务，更随心”理念的一次生动实践。",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "a21631b73120b927b91f367f5d64b317698d6333",
+      "relevance_score": 30,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:人工智能",
+        "主题:智能体",
+        "主题:AI",
+        "新鲜度:偏旧(14.3天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "正文:信息较完整"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能"
+      ]
+    },
+    {
+      "title": "智云无锡、电信有AI——云端共赴锡城春日之约",
+      "url": "http://www.js.xinhuanet.com/20260327/b5aee971cb174d67bbf344fac6e2116b/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2026-03-27T09:58:00+08:00",
+      "feed": "bing:无锡 AI:xinhuanet.com",
+      "rss_description": "春风拂太湖，樱开满锡城。近日，中国电信无锡分公司（以下称“无锡电信”）联合无锡地铁集团，正式启动“智云无锡、电信有AI”云赏樱系列活动！此次活动不仅是对春日美景的礼赞，更是无锡电信践行“云改数转智惠”战略、落实“智云无锡”建设的生动实践。",
+      "_is_new_candidate": false,
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "9fe8da07480ceddd9d37e82074c25fb53765fa69",
+      "relevance_score": 28,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:算法",
+        "主题:AI",
+        "新鲜度:3天内(1.5天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "弱相关:春日之约"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能"
+      ]
+    },
+    {
+      "title": "立刻资讯将携GenAI原生创新成果亮相领润生态战略峰会",
+      "url": "http://jjckb.xinhuanet.com/20260325/655c489aa6524c1eb0a983a3531d2bdf/c.html",
+      "source": "jjckb.xinhuanet.com",
+      "published_at": "2026-03-25T09:37:00+08:00",
+      "feed": "bing:苏州 AI:xinhuanet.com",
+      "rss_description": "2026领润生态战略峰会将于3月26日在苏州启幕。作为领润孵化器重点孵化项目，北京智讯蜂巢旗下的AI资讯平台立刻资讯将携前沿产品矩阵与核心技术成果亮相。 立刻资讯是国内GenAI深度理解资讯平台，核心团队来自快手、百度、滴滴等一线互联网企业，并已搭建“广告变现+模型能力付费”双轮驱动路径。 据悉，本次发布会上，立刻资讯将现场展示AI资讯产品能力、用户增长成果与未来发展规划，借助领润孵化器生态资源， ...",
+      "_is_new_candidate": true,
+      "domain": "jjckb.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "fe5abcafbf3594fb8b4e6aef866ca6273b8472d8",
+      "relevance_score": 28,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:AI",
+        "新鲜度:7天内(3.5天)",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:合作"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "人工智能",
+        "项目"
+      ]
+    },
+    {
+      "title": "南通“货通全球”，AI已在路上",
+      "url": "http://www.js.xinhuanet.com/20260318/e03221bd326b4ac8bf99400c9b2bfaa9/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2026-03-18T03:15:00+08:00",
+      "feed": "bing:长三角 AI:xinhuanet.com",
+      "rss_description": "3月20日，南通第二届新电商发展会议将在南通中关村信息谷产业园区举办。AI新家纺成为本次会议汇聚行业智慧、链接全球资源的重要话题。南通作为长三角一体化发展格局中的关键节点，正以新电商为突破口，加速推动数字经济与实体经济深度融合。 当天，京东集团、快手电商、淘天集团、抖音集团、小红书、聚水潭、新石器无人车、全球跨境电商协会、TEMU、TIKTOK SHOP、美客多、沃尔玛全球电商、SHEIN、C ...",
+      "_is_new_candidate": true,
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "3f90c3815e1d6c1cc21068b08b78d136bb0accea",
+      "relevance_score": 27,
+      "ranking_reasons": [
+        "区域:长三角",
+        "主题:AI",
+        "新鲜度:14天内(10.8天)",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "正文:信息较完整",
+        "强相关:合作",
+        "强相关:落地",
+        "强相关:产业园"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "长三角",
+        "人工智能"
+      ]
     }
   ]
 }
