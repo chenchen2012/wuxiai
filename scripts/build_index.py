@@ -6,7 +6,7 @@ import os
 import re
 import subprocess
 import sys
-from typing import Optional
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -14,6 +14,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from difflib import SequenceMatcher
 from email.utils import parsedate_to_datetime
+from typing import Optional
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUTPUT_PATH = os.path.join(ROOT_DIR, "index.html")
@@ -24,9 +25,9 @@ SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
 HISTORY_PAGE_PREFIX = "history-page-"
 
 CST = timezone(timedelta(hours=8))
-USER_AGENT = "Mozilla/5.0 (compatible; WuxiAINewsBot/2.0; +https://wuxiai.com/)"
-FETCH_TIMEOUT_SECONDS = 10
-ARTICLE_FETCH_TIMEOUT_SECONDS = 8
+USER_AGENT = "Mozilla/5.0 (compatible; WuxiAINewsBot/3.0; +https://wuxiai.com/)"
+FETCH_TIMEOUT_SECONDS = 12
+ARTICLE_FETCH_TIMEOUT_SECONDS = 10
 DECODE_TIMEOUT_SECONDS = 2.2
 MAX_WORKERS = 8
 ARTICLE_REVIEW_WORKERS = 4
@@ -35,15 +36,113 @@ MAX_PER_SOURCE_ON_PAGE = 3
 MAX_PER_FEED = 20
 CACHE_LIMIT = 120
 MAX_GOOGLE_DECODE_ITEMS = 120
-MAX_CONTENT_REVIEW_ITEMS = 48
-ARTICLE_CONTEXT_LIMIT = 6000
+MAX_CONTENT_REVIEW_ITEMS = 64
+ARTICLE_CONTEXT_LIMIT = 9000
 
-KEYWORDS = [
-    "无锡 人工智能",
-    "无锡 AI",
-    "无锡AI",
-    "Wuxi AI",
-    "无锡 大模型",
+
+def env_int(name: str, default: int) -> int:
+    raw = os.getenv(name, "").strip()
+    if not raw:
+        return default
+    try:
+        return int(raw)
+    except ValueError:
+        return default
+
+
+def env_float(name: str, default: float) -> float:
+    raw = os.getenv(name, "").strip()
+    if not raw:
+        return default
+    try:
+        return float(raw)
+    except ValueError:
+        return default
+
+
+def env_bool(name: str, default: bool) -> bool:
+    raw = os.getenv(name, "").strip().lower()
+    if not raw:
+        return default
+    return raw in {"1", "true", "yes", "on"}
+
+
+TITLE_SIMILARITY_THRESHOLD = env_float("WUXIAI_DUPLICATE_TITLE_SIMILARITY", 0.88)
+CONTENT_SIMILARITY_THRESHOLD = env_float("WUXIAI_CONTENT_SIMILARITY_THRESHOLD", 0.82)
+MIN_RELEVANCE_SCORE = env_int("WUXIAI_MIN_RELEVANCE_SCORE", 8)
+MIN_EXTRACTED_CONTENT_LENGTH = env_int("WUXIAI_MIN_EXTRACTED_CONTENT_LENGTH", 180)
+SUMMARY_MIN_CONTENT_LENGTH = env_int("WUXIAI_SUMMARY_MIN_CONTENT_LENGTH", 260)
+SUMMARY_MAX_INPUT_CHARS = env_int("WUXIAI_SUMMARY_MAX_INPUT_CHARS", 3200)
+SUMMARY_ENABLED = env_bool("WUXIAI_ENABLE_SUMMARY", True)
+SUMMARY_NEW_ONLY = env_bool("WUXIAI_SUMMARY_ONLY_NEW", True)
+SUMMARY_BULK_BACKFILL = env_bool("WUXIAI_SUMMARY_BULK_BACKFILL", False)
+
+SUMMARY_PROVIDER = (os.getenv("WUXIAI_LLM_PROVIDER", "deepseek") or "deepseek").strip().lower()
+LLM_API_KEY = os.getenv("WUXIAI_LLM_API_KEY") or os.getenv("DEEPSEEK_API_KEY") or ""
+LLM_BASE_URL = (
+    os.getenv("WUXIAI_LLM_BASE_URL")
+    or os.getenv("DEEPSEEK_BASE_URL")
+    or "https://api.deepseek.com"
+).rstrip("/")
+LLM_MODEL = (
+    os.getenv("WUXIAI_LLM_MODEL")
+    or os.getenv("DEEPSEEK_MODEL")
+    or "deepseek-chat"
+).strip()
+
+CHINA_NEWS_SITE_FILTERS = [
+    "xinhuanet.com",
+    "news.cn",
+    "chinanews.com.cn",
+    "thepaper.cn",
+    "people.com.cn",
+    "cnr.cn",
+    "jiangsu.gov.cn",
+    "wuxi.gov.cn",
+    "suzhou.gov.cn",
+    "xhby.net",
+    "yzwb.net",
+    "yangtse.com",
+    "wxrb.com",
+    "news.jiangnan.edu.cn",
+    "subaonet.com",
+    "cs.com.cn",
+]
+
+TOPIC_GROUPS = [
+    {
+        "name": "无锡人工智能",
+        "keywords": [
+            "无锡人工智能",
+            "无锡 AI",
+            "无锡AI",
+            "无锡 机器人",
+            "无锡 具身智能",
+            "无锡 智能制造 AI",
+        ],
+    },
+    {
+        "name": "苏州人工智能",
+        "keywords": [
+            "苏州人工智能",
+            "苏州 AI",
+            "苏州AI",
+            "苏州 机器人",
+            "苏州 工业机器人",
+            "苏州 具身智能",
+        ],
+    },
+    {
+        "name": "长三角人工智能",
+        "keywords": [
+            "长三角 人工智能",
+            "长三角 AI",
+            "长三角 机器人",
+            "长三角 智能制造",
+            "长三角 具身智能",
+            "江苏 人工智能 机器人",
+        ],
+    },
 ]
 
 TRUSTED_DOMAINS = [
@@ -63,25 +162,14 @@ TRUSTED_DOMAINS = [
     "yzwb.net",
     "wuxi.gov.cn",
     "jiangsu.gov.cn",
+    "suzhou.gov.cn",
     "news.jiangnan.edu.cn",
     "jschina.com.cn",
     "wxrb.com",
     "yangtse.com",
     "jstv.com",
     "china.org.cn",
-]
-
-PRIORITY_SITE_FILTERS = [
-    "xinhuanet.com",
-    "chinanews.com.cn",
-    "thepaper.cn",
-    "people.com.cn",
-    "xhby.net",
-    "yzwb.net",
-]
-
-GOOGLE_SITE_FILTERS = PRIORITY_SITE_FILTERS + [
-    "sina.cn",
+    "subaonet.com",
 ]
 
 BLOCKED_DOMAINS = [
@@ -100,6 +188,7 @@ QUALIFIED_NEWS_DOMAINS = [
     "ifeng.com",
     "caixin.com",
     "stcn.com",
+    "cls.cn",
 ]
 
 TRUSTED_SOURCE_KEYWORDS = [
@@ -118,6 +207,8 @@ TRUSTED_SOURCE_KEYWORDS = [
     "江南大学新闻网",
     "无锡日报",
     "无锡观察",
+    "苏州日报",
+    "引力播",
 ]
 
 BLOCKED_SOURCE_KEYWORDS = [
@@ -142,78 +233,85 @@ AD_KEYWORDS = [
     "团购",
     "邀请码",
     "加微信",
-    "vx",
+    "直播带货",
 ]
 
-RELEVANCE_KEYWORDS = [
-    "无锡",
-    "wuxi",
-    "江阴",
-    "宜兴",
-    "江苏",
-    "jiangsu",
-    "江南大学",
-]
+PRIMARY_REGIONS = {
+    "无锡": {
+        "aliases": ["无锡", "wuxi", "江阴", "宜兴", "新吴区", "滨湖区", "梁溪区", "锡山区", "惠山区", "经开区", "江南大学"],
+        "weight": 7,
+        "tags": ["无锡", "无锡AI", "无锡机器人"],
+    },
+    "苏州": {
+        "aliases": ["苏州", "suzhou", "昆山", "常熟", "张家港", "太仓", "吴江", "相城", "工业园区", "苏州工业园区"],
+        "weight": 7,
+        "tags": ["苏州", "苏州AI", "苏州机器人"],
+    },
+    "长三角": {
+        "aliases": ["长三角", "yangtze river delta", "江浙沪", "沪苏浙皖", "一体化示范区"],
+        "weight": 4,
+        "tags": ["长三角", "区域协同"],
+    },
+}
 
-LOCATION_KEYWORDS = [
-    "无锡",
-    "wuxi",
-    "江阴",
-    "宜兴",
-]
+AI_CORE_KEYWORDS = {
+    "人工智能": 5,
+    "ai": 4,
+    "机器人": 5,
+    "具身智能": 6,
+    "大模型": 5,
+    "智能体": 4,
+    "算法": 2,
+    "算力": 3,
+    "机器学习": 4,
+    "智能制造": 4,
+    "工业机器人": 5,
+    "人形机器人": 6,
+    "自动化": 2,
+}
 
-AI_TOPIC_KEYWORDS = [
-    "人工智能",
-    "大模型",
-    "算力",
-    "机器人",
-    "机器学习",
-    "智能体",
-    "aigc",
-    "算法",
-]
+AI_CONTEXT_KEYWORDS = {
+    "模型": 1,
+    "训练": 1,
+    "制造业": 2,
+    "产业基金": 2,
+    "实验室": 2,
+    "智算中心": 2,
+    "创新中心": 2,
+    "研究院": 2,
+    "政策": 2,
+    "招商": -2,
+    "文旅": 1,
+    "医疗": 1,
+    "工业": 1,
+}
 
-INDIRECT_AI_TOPIC_KEYWORDS = [
-    "养龙虾",
-]
-
-CONTENT_AI_TOPIC_KEYWORDS = AI_TOPIC_KEYWORDS + [
-    "openclaw",
-    "开爪",
-]
-EVENT_ENTITY_KEYWORDS = [
-    "产业基金",
-    "基金",
-    "实验室",
-    "产业园",
-    "创新中心",
-    "智算中心",
-    "研究院",
-    "论坛",
-    "联盟",
-    "政策",
+WEAK_RELATED_PATTERNS = [
+    "课程",
+    "培训班",
+    "营销",
+    "家电促销",
+    "以旧换新",
+    "短视频",
+    "文旅宣传",
 ]
 
 NON_AI_TITLE_KEYWORDS = [
     "铁路",
     "元宵",
     "街道",
-    "东港镇",
-    "旺庄",
-    "善治",
-    "文明",
-    "商业航天",
-    "签约落地",
+    "文明城市",
     "外贸企业",
-    "新春",
+    "促消费",
+    "家装",
 ]
 
-AUTHORITATIVE_DOMAIN_SUFFIXES = (
-    ".gov.cn",
-    ".edu.cn",
-)
+AUTHORITATIVE_DOMAIN_SUFFIXES = (".gov.cn", ".edu.cn")
+ARTICLE_CONTEXT_CACHE: dict[str, str] = {}
 
-ARTICLE_CONTEXT_CACHE = {}
+
+def log_event(stage: str, message: str) -> None:
+    print(f"[{stage}] {message}", file=sys.stderr)
 
 
 def build_bing_rss_url(keyword: str) -> str:
@@ -230,15 +328,13 @@ def build_google_rss_url(keyword: str) -> str:
 
 
 FEED_SOURCES = []
-for kw in KEYWORDS:
-    FEED_SOURCES.append((f"bing:{kw}", build_bing_rss_url(kw)))
-    FEED_SOURCES.append((f"google:{kw}", build_google_rss_url(kw)))
-    for site in PRIORITY_SITE_FILTERS:
-        scoped_kw = f"{kw} site:{site}"
-        FEED_SOURCES.append((f"bing:{kw}:{site}", build_bing_rss_url(scoped_kw)))
-    for site in GOOGLE_SITE_FILTERS:
-        scoped_kw = f"{kw} site:{site}"
-        FEED_SOURCES.append((f"google:{kw}:{site}", build_google_rss_url(scoped_kw)))
+for group in TOPIC_GROUPS:
+    for keyword in group["keywords"]:
+        FEED_SOURCES.append((f"bing:{keyword}", build_bing_rss_url(keyword)))
+        FEED_SOURCES.append((f"google:{keyword}", build_google_rss_url(keyword)))
+        for site in CHINA_NEWS_SITE_FILTERS:
+            scoped_keyword = f"{keyword} site:{site}"
+            FEED_SOURCES.append((f"google:{keyword}:{site}", build_google_rss_url(scoped_keyword)))
 
 
 def fetch_url(url: str) -> bytes:
@@ -273,14 +369,14 @@ def is_blocked_domain(domain: str) -> bool:
     return any(domain_matches(domain, pattern) for pattern in BLOCKED_DOMAINS)
 
 
-def is_ad_title(title: str) -> bool:
-    lt = (title or "").strip().lower()
-    return any(k in lt for k in AD_KEYWORDS)
-
-
 def is_trusted_source(source: str) -> bool:
-    s = (source or "").strip()
-    return any(k in s for k in TRUSTED_SOURCE_KEYWORDS)
+    source_text = (source or "").strip()
+    return any(keyword in source_text for keyword in TRUSTED_SOURCE_KEYWORDS)
+
+
+def is_blocked_source(source: str) -> bool:
+    source_text = (source or "").strip()
+    return any(keyword in source_text for keyword in BLOCKED_SOURCE_KEYWORDS)
 
 
 def is_authoritative_channel(domain: str, source: str) -> bool:
@@ -288,11 +384,7 @@ def is_authoritative_channel(domain: str, source: str) -> bool:
         return False
     if domain.endswith(AUTHORITATIVE_DOMAIN_SUFFIXES):
         return True
-    return (
-        is_trusted_domain(domain)
-        or is_trusted_source(source)
-        or is_qualified_news_domain(domain)
-    )
+    return is_trusted_domain(domain) or is_trusted_source(source) or is_qualified_news_domain(domain)
 
 
 def source_tier(domain: str, source: str) -> int:
@@ -305,64 +397,6 @@ def source_tier(domain: str, source: str) -> int:
     return 0
 
 
-def is_blocked_source(source: str) -> bool:
-    s = (source or "").strip()
-    return any(k in s for k in BLOCKED_SOURCE_KEYWORDS)
-
-
-def is_relevant(item: dict) -> bool:
-    text = " ".join(
-        [
-            str(item.get("title", "")),
-            str(item.get("url", "")),
-            str(item.get("source", "")),
-        ]
-    ).lower()
-    return any(k in text for k in RELEVANCE_KEYWORDS)
-
-
-def text_has_location(text: str) -> bool:
-    lt = (text or "").lower()
-    return any(k in lt for k in LOCATION_KEYWORDS)
-
-
-def text_has_ai_topic(text: str, include_indirect: bool = False) -> bool:
-    lt = (text or "").lower()
-    keywords = CONTENT_AI_TOPIC_KEYWORDS[:]
-    if include_indirect:
-        keywords += INDIRECT_AI_TOPIC_KEYWORDS
-    return any(k in lt for k in keywords) or bool(
-        re.search(r"(?<![a-z0-9])ai(?![a-z0-9])", lt)
-    )
-
-
-def is_obviously_non_ai_title(title: str) -> bool:
-    title_text = (title or "").lower()
-    if text_has_ai_topic(title_text, include_indirect=True):
-        return False
-    return any(k in title_text for k in NON_AI_TITLE_KEYWORDS)
-
-
-def is_wuxi_ai_topic(item: dict) -> bool:
-    title_text = str(item.get("title", ""))
-    if is_obviously_non_ai_title(title_text):
-        return False
-    if text_has_location(title_text) and text_has_ai_topic(
-        title_text, include_indirect=True
-    ):
-        return True
-
-    context_text = " ".join(
-        [
-            str(item.get("title", "")),
-            str(item.get("url", "")),
-            str(item.get("source", "")),
-            str(item.get("content_text", "")),
-        ]
-    )
-    return text_has_location(context_text) and text_has_ai_topic(context_text)
-
-
 def clean_url(url: str) -> str:
     try:
         parsed = urllib.parse.urlparse(url)
@@ -370,15 +404,13 @@ def clean_url(url: str) -> str:
         return url.strip()
     if not parsed.scheme or not parsed.netloc:
         return url.strip()
-
     query_items = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
     kept = []
-    for k, v in query_items:
-        lk = k.lower()
-        if lk.startswith("utm_") or lk in {"spm", "from", "ref", "source", "cmpid"}:
+    for key, value in query_items:
+        lowered = key.lower()
+        if lowered.startswith("utm_") or lowered in {"spm", "from", "ref", "source", "cmpid"}:
             continue
-        kept.append((k, v))
-
+        kept.append((key, value))
     return urllib.parse.urlunparse(
         (
             parsed.scheme.lower(),
@@ -424,33 +456,36 @@ def normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(text or "")).strip()
 
 
+def strip_html_tags(text: str) -> str:
+    return normalize_whitespace(re.sub(r"<[^>]+>", " ", text or ""))
+
+
 def extract_article_context(html_text: str) -> str:
     snippets = []
-    for pattern in [
+    meta_patterns = [
         r"<title[^>]*>(.*?)</title>",
         r'<meta[^>]+name=["\']description["\'][^>]+content=["\'](.*?)["\']',
         r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\'](.*?)["\']',
         r'<meta[^>]+name=["\']keywords["\'][^>]+content=["\'](.*?)["\']',
-    ]:
+    ]
+    for pattern in meta_patterns:
         for match in re.findall(pattern, html_text, flags=re.IGNORECASE | re.DOTALL):
-            cleaned = normalize_whitespace(re.sub(r"<[^>]+>", " ", match))
+            cleaned = strip_html_tags(match)
             if cleaned:
                 snippets.append(cleaned)
 
     paragraphs = []
     for match in re.findall(r"<p\b[^>]*>(.*?)</p>", html_text, flags=re.IGNORECASE | re.DOTALL):
-        cleaned = normalize_whitespace(re.sub(r"<[^>]+>", " ", match))
-        if len(cleaned) < 30:
+        cleaned = strip_html_tags(match)
+        if len(cleaned) < 28:
             continue
         if cleaned in paragraphs:
             continue
         paragraphs.append(cleaned)
-        if len(paragraphs) >= 3:
+        if len(paragraphs) >= 5:
             break
-
     if paragraphs:
         snippets.append(" ".join(paragraphs))
-
     return normalize_whitespace(" ".join(snippets))[:ARTICLE_CONTEXT_LIMIT]
 
 
@@ -458,7 +493,6 @@ def fetch_article_context(url: str) -> str:
     cached = ARTICLE_CONTEXT_CACHE.get(url)
     if cached is not None:
         return cached
-
     text = ""
     try:
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -466,54 +500,11 @@ def fetch_article_context(url: str) -> str:
             raw_bytes = resp.read()
             charset = resp.headers.get_content_charset() or ""
             text = extract_article_context(decode_html_bytes(raw_bytes, charset))
-    except Exception:
+    except Exception as exc:
+        log_event("extract", f"抓取正文失败: {url} | {exc}")
         text = ""
-
     ARTICLE_CONTEXT_CACHE[url] = text
     return text
-
-
-def needs_article_review(item: dict) -> bool:
-    title_text = str(item.get("title", ""))
-    if text_has_ai_topic(title_text, include_indirect=True):
-        return False
-    text = " ".join(
-        [
-            str(item.get("title", "")),
-            str(item.get("url", "")),
-            str(item.get("source", "")),
-        ]
-    )
-    return text_has_location(text)
-
-
-def enrich_items_with_article_context(items: list[dict]) -> list[dict]:
-    candidates = []
-    for idx, item in enumerate(items):
-        if not needs_article_review(item):
-            continue
-        candidates.append((idx, str(item.get("published_at", ""))))
-
-    if not candidates:
-        return items
-
-    candidates.sort(key=lambda x: x[1], reverse=True)
-    candidates = candidates[:MAX_CONTENT_REVIEW_ITEMS]
-
-    with ThreadPoolExecutor(max_workers=ARTICLE_REVIEW_WORKERS) as executor:
-        future_map = {
-            executor.submit(fetch_article_context, str(items[idx].get("url", ""))): idx
-            for idx, _ in candidates
-        }
-        for future in as_completed(future_map):
-            idx = future_map[future]
-            try:
-                context_text = future.result()
-            except Exception:
-                context_text = ""
-            if context_text:
-                items[idx]["content_text"] = context_text
-    return items
 
 
 def format_cst_time(iso_time: str) -> str:
@@ -529,89 +520,43 @@ def format_cst_time(iso_time: str) -> str:
 
 
 def normalize_title(title: str) -> str:
-    t = html.unescape(title or "").strip().lower()
-    t = re.sub(r"\s+", " ", t)
-    if " - " in t:
-        parts = t.split(" - ")
-        if len(parts[-1]) <= 12:
-            t = " - ".join(parts[:-1])
-    t = re.sub(r"[^\w\u4e00-\u9fff]+", "", t)
-    return t
+    value = html.unescape(title or "").strip().lower()
+    value = re.sub(r"\s+", " ", value)
+    value = re.sub(r"(?:\||｜|_)+\s*[^|｜_]+$", "", value)
+    if " - " in value:
+        parts = value.split(" - ")
+        if len(parts[-1]) <= 14:
+            value = " - ".join(parts[:-1])
+    value = re.sub(r"[^\w\u4e00-\u9fff]+", "", value)
+    return value
 
 
-def item_fingerprint(title: str, url: str) -> str:
-    t = normalize_title(title)
-    # Cross-source dedupe by normalized topic title (not by domain),
-    # so the homepage doesn't show the same story repeated from multiple sites.
-    return hashlib.sha1(t.encode("utf-8")).hexdigest()
+def normalize_content_for_similarity(text: str) -> str:
+    value = normalize_whitespace(text).lower()
+    value = re.sub(r"[^\w\u4e00-\u9fff]+", "", value)
+    return value
 
 
-def titles_are_near_duplicate(a: str, b: str) -> bool:
-    ta = normalize_title(a)
-    tb = normalize_title(b)
-    if not ta or not tb:
-        return False
-    if ta == tb:
-        return True
-    if ta in tb or tb in ta:
-        shorter = min(len(ta), len(tb))
-        longer = max(len(ta), len(tb))
-        if shorter >= 10 and shorter / max(longer, 1) >= 0.72:
-            return True
-    ratio = SequenceMatcher(None, ta, tb).ratio()
-    return ratio >= 0.84
+def char_shingles(text: str, size: int = 6) -> set[str]:
+    if len(text) < size:
+        return {text} if text else set()
+    return {text[i : i + size] for i in range(0, len(text) - size + 1)}
 
 
-def normalize_amount_marker(raw: str) -> str:
-    text = (raw or "").replace("万元", "万").replace("亿元", "亿")
-    return text
-
-
-def extract_event_markers(title: str) -> dict:
-    raw = html.unescape(title or "")
-    normalized = normalize_title(raw)
-    markers = {
-        "locations": set(),
-        "topics": set(),
-        "numbers": set(),
-        "entities": set(),
-    }
-
-    for match in re.findall(r"(无锡(?:高新区|新区|市|锡山|梁溪|滨湖|新吴区|经开区)?)", raw):
-        markers["locations"].add(match)
-    for match in re.findall(r"(江阴(?:市)?|宜兴(?:市)?|江南大学)", raw):
-        markers["locations"].add(match)
-    if "养虾" in raw or "养龙虾" in raw:
-        markers["topics"].add("养龙虾")
-    for keyword in CONTENT_AI_TOPIC_KEYWORDS:
-        if keyword in normalized:
-            markers["topics"].add(keyword)
-    for amount in re.findall(r"\d+(?:\.\d+)?(?:万|万元|亿|亿元|条)", raw):
-        markers["numbers"].add(normalize_amount_marker(amount))
-    for keyword in EVENT_ENTITY_KEYWORDS:
-        if keyword in raw:
-            markers["entities"].add(keyword)
-    return markers
-
-
-def are_same_event(title_a: str, title_b: str) -> bool:
-    markers_a = extract_event_markers(title_a)
-    markers_b = extract_event_markers(title_b)
-    shared_locations = markers_a["locations"] & markers_b["locations"]
-    shared_topics = markers_a["topics"] & markers_b["topics"]
-    shared_numbers = markers_a["numbers"] & markers_b["numbers"]
-    shared_entities = markers_a["entities"] & markers_b["entities"]
-    title_similarity = SequenceMatcher(
-        None, normalize_title(title_a), normalize_title(title_b)
-    ).ratio()
-
-    if not shared_locations or not shared_topics:
-        return False
-    if shared_numbers:
-        return True
-    if shared_entities and title_similarity >= 0.62:
-        return True
-    return title_similarity >= 0.72
+def content_similarity(a: str, b: str) -> float:
+    na = normalize_content_for_similarity(a)
+    nb = normalize_content_for_similarity(b)
+    if not na or not nb:
+        return 0.0
+    if na == nb:
+        return 1.0
+    sa = char_shingles(na)
+    sb = char_shingles(nb)
+    if not sa or not sb:
+        return 0.0
+    overlap = len(sa & sb)
+    union = len(sa | sb)
+    return overlap / max(union, 1)
 
 
 def extract_direct_url(link: str) -> str:
@@ -666,10 +611,8 @@ def resolve_google_links(items: list[dict]) -> list[dict]:
             candidate_indexes.append(idx)
             if len(candidate_indexes) >= MAX_GOOGLE_DECODE_ITEMS:
                 break
-
     if not candidate_indexes:
         return items
-
     updates = {}
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_map = {
@@ -682,23 +625,17 @@ def resolve_google_links(items: list[dict]) -> list[dict]:
                 decoded = future.result()
             except Exception:
                 continue
-            if not decoded:
-                continue
-            updates[idx] = decoded
-
-    if not updates:
-        return items
-
+            if decoded:
+                updates[idx] = decoded
     resolved = []
     for idx, item in enumerate(items):
         if idx not in updates:
             resolved.append(item)
             continue
         cloned = dict(item)
-        decoded_url = updates[idx]
-        cloned["url"] = decoded_url
+        cloned["url"] = updates[idx]
         if normalize_domain(str(cloned.get("source", ""))) in {"", "news.google.com"}:
-            cloned["source"] = normalize_domain(decoded_url) or cloned.get("source", "")
+            cloned["source"] = normalize_domain(updates[idx]) or cloned.get("source", "")
         resolved.append(cloned)
     return resolved
 
@@ -709,42 +646,35 @@ def parse_feed(feed_name: str, xml_bytes: bytes) -> list[dict]:
         root = ET.fromstring(xml_bytes)
     except ET.ParseError:
         return items
-
     channel = root.find("channel")
     if channel is None:
         return items
-
     for item in channel.findall("item"):
-        title = (item.findtext("title") or "").strip()
-        link = (item.findtext("link") or "").strip()
-        direct_url = extract_direct_url(link)
-        source = ""
-
-        source_el = item.find("source")
-        if source_el is not None and source_el.text:
-            source = source_el.text.strip()
-
-        if not source:
-            source = normalize_domain(direct_url) or feed_name
-
-        pub_date = (item.findtext("pubDate") or "").strip()
-        published_at = parse_time_to_iso(pub_date)
-
+        title = normalize_whitespace(item.findtext("title") or "")
+        link = normalize_whitespace(item.findtext("link") or "")
         if not title or not link:
             continue
-
+        source = ""
+        source_el = item.find("source")
+        if source_el is not None and source_el.text:
+            source = normalize_whitespace(source_el.text)
+        direct_url = extract_direct_url(link)
+        if not source:
+            source = normalize_domain(direct_url) or feed_name
+        pub_date = normalize_whitespace(item.findtext("pubDate") or "")
+        description = strip_html_tags(item.findtext("description") or "")
         items.append(
             {
                 "title": title,
                 "url": direct_url,
                 "source": source,
-                "published_at": published_at,
+                "published_at": parse_time_to_iso(pub_date),
                 "feed": feed_name,
+                "rss_description": description[:1200],
             }
         )
         if len(items) >= MAX_PER_FEED:
             break
-
     return items
 
 
@@ -752,145 +682,603 @@ def load_existing_items() -> list[dict]:
     if not os.path.exists(DATA_PATH):
         return []
     try:
-        with open(DATA_PATH, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        with open(DATA_PATH, "r", encoding="utf-8") as handle:
+            data = json.load(handle)
     except Exception:
         return []
     items = data.get("items")
-    return items if isinstance(items, list) else []
+    if not isinstance(items, list):
+        return []
+    loaded = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        cloned = dict(item)
+        cloned["_existing"] = True
+        loaded.append(cloned)
+    return loaded
+
+
+def combine_candidate_text(item: dict) -> str:
+    return " ".join(
+        [
+            str(item.get("title", "")),
+            str(item.get("source", "")),
+            str(item.get("rss_description", "")),
+            str(item.get("content_text", "")),
+            str(item.get("url", "")),
+        ]
+    )
+
+
+def contains_ai_token(text: str) -> bool:
+    lowered = (text or "").lower()
+    if re.search(r"(?<![a-z0-9])ai(?![a-z0-9])", lowered):
+        return True
+    return False
+
+
+def detect_regions(text: str) -> list[str]:
+    lowered = (text or "").lower()
+    hits = []
+    for region, config in PRIMARY_REGIONS.items():
+        for alias in config["aliases"]:
+            if alias.lower() in lowered:
+                hits.append(region)
+                break
+    return hits
+
+
+def region_score(text: str) -> tuple[int, list[str]]:
+    score = 0
+    reasons = []
+    lowered = (text or "").lower()
+    for region, config in PRIMARY_REGIONS.items():
+        hit = False
+        for alias in config["aliases"]:
+            if alias.lower() in lowered:
+                hit = True
+                break
+        if hit:
+            score += config["weight"]
+            reasons.append(f"区域:{region}")
+    return score, reasons
+
+
+def ai_topic_score(text: str) -> tuple[int, list[str]]:
+    score = 0
+    reasons = []
+    lowered = (text or "").lower()
+    for keyword, weight in AI_CORE_KEYWORDS.items():
+        if keyword.lower() == "ai":
+            continue
+        if keyword.lower() in lowered:
+            score += weight
+            reasons.append(f"主题:{keyword}")
+    if contains_ai_token(lowered) and "主题:ai" not in reasons:
+        score += 3
+        reasons.append("主题:AI")
+    for keyword, weight in AI_CONTEXT_KEYWORDS.items():
+        if keyword.lower() in lowered:
+            score += weight
+    return score, reasons
+
+
+def has_core_ai_topic(text: str) -> bool:
+    lowered = (text or "").lower()
+    if contains_ai_token(lowered):
+        return True
+    for keyword in AI_CORE_KEYWORDS:
+        if keyword.lower() == "ai":
+            continue
+        if keyword.lower() in lowered:
+            return True
+    return False
+
+
+def is_obviously_non_ai_title(title: str) -> bool:
+    lowered = (title or "").lower()
+    if has_core_ai_topic(lowered):
+        return False
+    return any(keyword in lowered for keyword in NON_AI_TITLE_KEYWORDS)
+
+
+def extracted_content_length(item: dict) -> int:
+    return len(normalize_whitespace(str(item.get("content_text", ""))))
+
+
+def relevance_score(item: dict) -> tuple[int, list[str]]:
+    title = str(item.get("title", ""))
+    body = combine_candidate_text(item)
+    score = 0
+    reasons = []
+
+    region_points, region_reasons = region_score(body)
+    score += region_points
+    reasons.extend(region_reasons)
+
+    topic_points, topic_reasons = ai_topic_score(body)
+    score += topic_points
+    reasons.extend(topic_reasons)
+
+    title_points, title_region_reasons = region_score(title)
+    score += min(title_points, 10)
+    reasons.extend([f"标题命中:{reason}" for reason in title_region_reasons])
+    title_topic_points, title_topic_reasons = ai_topic_score(title)
+    score += min(title_topic_points, 8)
+    reasons.extend([f"标题命中:{reason}" for reason in title_topic_reasons[:2]])
+
+    if is_trusted_domain(str(item.get("domain", ""))):
+        score += 2
+        reasons.append("来源:可信媒体")
+    if str(item.get("domain", "")).endswith(AUTHORITATIVE_DOMAIN_SUFFIXES):
+        score += 2
+        reasons.append("来源:官方/高校")
+    if extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH:
+        score += 1
+        reasons.append("正文:信息较完整")
+
+    lowered = body.lower()
+    for pattern in WEAK_RELATED_PATTERNS:
+        if pattern.lower() in lowered:
+            score -= 3
+            reasons.append(f"弱相关:{pattern}")
+
+    return score, reasons
+
+
+def is_target_story(item: dict) -> tuple[bool, str, list[str], int]:
+    title = str(item.get("title", ""))
+    if is_obviously_non_ai_title(title):
+        return False, "标题明显偏离AI主题", [], 0
+    combined = combine_candidate_text(item)
+    regions = detect_regions(combined)
+    if not regions:
+        return False, "未命中无锡/苏州/长三角区域", [], 0
+    if not has_core_ai_topic(combined):
+        return False, "未命中人工智能/机器人核心主题", regions, 0
+    score, reasons = relevance_score(item)
+    if score < MIN_RELEVANCE_SCORE:
+        return False, f"相关性分数过低({score}<{MIN_RELEVANCE_SCORE})", regions, score
+    return True, "", reasons, score
+
+
+def needs_article_review(item: dict) -> bool:
+    combined = " ".join(
+        [
+            str(item.get("title", "")),
+            str(item.get("rss_description", "")),
+            str(item.get("url", "")),
+        ]
+    )
+    regions = detect_regions(combined)
+    return bool(regions) and not has_core_ai_topic(combined)
+
+
+def should_fetch_context(item: dict) -> bool:
+    if item.get("_existing"):
+        return False
+    combined = combine_candidate_text(item)
+    if detect_regions(combined):
+        return True
+    return has_core_ai_topic(combined)
+
+
+def enrich_items_with_article_context(items: list[dict]) -> list[dict]:
+    candidates = []
+    for idx, item in enumerate(items):
+        if not should_fetch_context(item):
+            continue
+        if item.get("content_text"):
+            continue
+        candidates.append((idx, str(item.get("published_at", ""))))
+    if not candidates:
+        return items
+    candidates.sort(key=lambda pair: pair[1], reverse=True)
+    candidates = candidates[:MAX_CONTENT_REVIEW_ITEMS]
+    with ThreadPoolExecutor(max_workers=ARTICLE_REVIEW_WORKERS) as executor:
+        future_map = {
+            executor.submit(fetch_article_context, str(items[idx].get("url", ""))): idx
+            for idx, _ in candidates
+        }
+        for future in as_completed(future_map):
+            idx = future_map[future]
+            try:
+                context_text = future.result()
+            except Exception:
+                context_text = ""
+            if context_text:
+                items[idx]["content_text"] = context_text
+    return items
+
+
+def build_content_digest(item: dict) -> str:
+    content = normalize_content_for_similarity(str(item.get("content_text", "")))
+    if not content:
+        return ""
+    return hashlib.sha1(content[:1800].encode("utf-8")).hexdigest()
+
+
+def item_fingerprint(title: str) -> str:
+    return hashlib.sha1(normalize_title(title).encode("utf-8")).hexdigest()
+
+
+def titles_are_near_duplicate(a: str, b: str) -> bool:
+    ta = normalize_title(a)
+    tb = normalize_title(b)
+    if not ta or not tb:
+        return False
+    if ta == tb:
+        return True
+    if ta in tb or tb in ta:
+        shorter = min(len(ta), len(tb))
+        longer = max(len(ta), len(tb))
+        if shorter >= 10 and shorter / max(longer, 1) >= 0.74:
+            return True
+    ratio = SequenceMatcher(None, ta, tb).ratio()
+    return ratio >= TITLE_SIMILARITY_THRESHOLD
+
+
+def richer_item_score(item: dict) -> tuple:
+    return (
+        int(item.get("relevance_score", 0)),
+        int(item.get("source_tier", 0)),
+        1 if item.get("trusted") else 0,
+        1 if str(item.get("domain", "")).endswith(AUTHORITATIVE_DOMAIN_SUFFIXES) else 0,
+        extracted_content_length(item),
+        len(str(item.get("summary", ""))),
+        str(item.get("published_at", "")),
+    )
+
+
+def choose_better_item(current: dict, challenger: dict, reason: str) -> dict:
+    current_score = richer_item_score(current)
+    challenger_score = richer_item_score(challenger)
+    if challenger_score > current_score:
+        log_event(
+            "dedupe",
+            f"{reason}: 保留更优版本 | {challenger.get('title', '')} | {challenger.get('domain', '')}",
+        )
+        return challenger
+    log_event(
+        "dedupe",
+        f"{reason}: 保留当前版本 | {current.get('title', '')} | {current.get('domain', '')}",
+    )
+    return current
+
+
+def tag_story(item: dict) -> list[str]:
+    text = combine_candidate_text(item).lower()
+    tags = []
+    if "无锡" in text or "wuxi" in text:
+        tags.extend(["无锡", "无锡AI"])
+    if "苏州" in text or "suzhou" in text:
+        tags.extend(["苏州", "苏州AI"])
+    if "长三角" in text or "江浙沪" in text:
+        tags.append("长三角")
+    if "机器人" in text:
+        tags.append("机器人")
+    if "具身智能" in text:
+        tags.append("具身智能")
+    if "大模型" in text:
+        tags.append("大模型")
+    if "智能制造" in text or "制造业" in text:
+        tags.append("智能制造")
+    if "产业基金" in text or "基金" in text:
+        tags.append("产业基金")
+    if "政策" in text or "方案" in text:
+        tags.append("政策")
+    if "实验室" in text or "研究院" in text or "创新中心" in text:
+        tags.append("科研平台")
+    seen = set()
+    final_tags = []
+    for tag in tags:
+        if tag in seen:
+            continue
+        seen.add(tag)
+        final_tags.append(tag)
+        if len(final_tags) >= 5:
+            break
+    return final_tags
+
+
+def fallback_why_it_matters(item: dict) -> str:
+    tags = item.get("tags") or []
+    summary = str(item.get("summary", "")).strip()
+    title = str(item.get("title", "")).strip()
+    if "产业基金" in tags or "政策" in tags:
+        return "反映当地正在用政策和资金把AI与机器人项目推向产业化。"
+    if "机器人" in tags or "具身智能" in tags:
+        return "可用来观察区域机器人产业链和落地场景是否在继续升温。"
+    if "智能制造" in tags:
+        return "这类消息更能体现AI是否真正进入制造业的实际生产环节。"
+    if summary and len(summary) >= 30:
+        return "有助于快速判断这条新闻对区域AI产业、应用场景或项目落地的实际意义。"
+    if title:
+        return "适合继续跟踪其是否会带来本地项目、合作或产业扩张。"
+    return ""
+
+
+class SummaryProvider:
+    def summarize(self, item: dict) -> Optional[dict]:
+        raise NotImplementedError
+
+
+class NullSummaryProvider(SummaryProvider):
+    def summarize(self, item: dict) -> Optional[dict]:
+        return None
+
+
+class DeepSeekSummaryProvider(SummaryProvider):
+    def __init__(self, api_key: str, base_url: str, model: str) -> None:
+        self.api_key = api_key
+        self.base_url = base_url
+        self.model = model
+
+    def summarize(self, item: dict) -> Optional[dict]:
+        content = normalize_whitespace(str(item.get("content_text", "")))
+        if len(content) < SUMMARY_MIN_CONTENT_LENGTH:
+            log_event("summary", f"跳过摘要，正文过短: {item.get('title', '')}")
+            return None
+
+        prompt = (
+            "你是中文科技新闻编辑。请根据提供的文章内容生成严格 JSON，字段包含 "
+            "summary, why_it_matters, tags, confidence。"
+            "要求："
+            "1) summary 为 2-4 句自然中文，不能像机器翻译。"
+            "2) why_it_matters 为 1 句“为什么值得关注”。"
+            "3) tags 为 3-5 个中文短标签。"
+            "4) 如果正文信息不足、噪音过大、无法确认细节，请返回 confidence=\"low\"，"
+            "并把 summary 与 why_it_matters 设为空字符串，tags 设为空数组。"
+            "5) 不要凭标题脑补，不要输出 Markdown。"
+        )
+        article_payload = {
+            "title": str(item.get("title", "")),
+            "source": str(item.get("source", "")),
+            "published_at": str(item.get("published_at", "")),
+            "content": content[:SUMMARY_MAX_INPUT_CHARS],
+        }
+        body = {
+            "model": self.model,
+            "temperature": 0.2,
+            "response_format": {"type": "json_object"},
+            "messages": [
+                {"role": "system", "content": prompt},
+                {
+                    "role": "user",
+                    "content": json.dumps(article_payload, ensure_ascii=False),
+                },
+            ],
+        }
+        req = urllib.request.Request(
+            f"{self.base_url}/chat/completions",
+            data=json.dumps(body).encode("utf-8"),
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {self.api_key}",
+                "User-Agent": USER_AGENT,
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=25) as resp:
+                payload = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            raw = exc.read().decode("utf-8", errors="ignore")
+            log_event("summary", f"LLM 摘要失败: {item.get('title', '')} | HTTP {exc.code} | {raw[:300]}")
+            return None
+        except Exception as exc:
+            log_event("summary", f"LLM 摘要失败: {item.get('title', '')} | {exc}")
+            return None
+
+        try:
+            content_text = payload["choices"][0]["message"]["content"]
+            parsed = json.loads(content_text)
+        except Exception as exc:
+            log_event("summary", f"LLM 返回解析失败: {item.get('title', '')} | {exc}")
+            return None
+
+        summary = normalize_whitespace(str(parsed.get("summary", "")))
+        why_it_matters = normalize_whitespace(str(parsed.get("why_it_matters", "")))
+        tags = parsed.get("tags") if isinstance(parsed.get("tags"), list) else []
+        normalized_tags = []
+        for tag in tags:
+            cleaned = normalize_whitespace(str(tag))
+            if cleaned and cleaned not in normalized_tags:
+                normalized_tags.append(cleaned)
+        confidence = normalize_whitespace(str(parsed.get("confidence", ""))).lower() or "medium"
+        if confidence == "low":
+            log_event("summary", f"低置信度，存储但不写摘要: {item.get('title', '')}")
+            return {"summary": "", "why_it_matters": "", "tags": [], "summary_confidence": "low"}
+        return {
+            "summary": summary,
+            "why_it_matters": why_it_matters,
+            "tags": normalized_tags[:5],
+            "summary_confidence": confidence,
+        }
+
+
+def build_summary_provider() -> SummaryProvider:
+    if not SUMMARY_ENABLED:
+        return NullSummaryProvider()
+    if SUMMARY_PROVIDER == "deepseek" and LLM_API_KEY:
+        return DeepSeekSummaryProvider(LLM_API_KEY, LLM_BASE_URL, LLM_MODEL)
+    if SUMMARY_ENABLED and not LLM_API_KEY:
+        log_event("summary", "未配置 LLM API Key，摘要功能将跳过")
+    return NullSummaryProvider()
+
+
+def should_summarize(item: dict) -> bool:
+    if item.get("summary"):
+        return False
+    if item.get("summary_confidence") == "low":
+        return False
+    if SUMMARY_BULK_BACKFILL:
+        return extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH
+    if SUMMARY_NEW_ONLY and item.get("_existing"):
+        return False
+    return extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH
+
+
+def enrich_items_with_summaries(items: list[dict], provider: SummaryProvider) -> list[dict]:
+    for item in items:
+        if not should_summarize(item):
+            if extracted_content_length(item) < SUMMARY_MIN_CONTENT_LENGTH and not item.get("summary"):
+                item.setdefault("summary_confidence", "low")
+            continue
+        result = provider.summarize(item)
+        if not result:
+            item.setdefault("summary_confidence", "low")
+            continue
+        item["summary"] = result.get("summary", "")
+        item["why_it_matters"] = result.get("why_it_matters", "")
+        item["summary_confidence"] = result.get("summary_confidence", "medium")
+        if result.get("tags"):
+            item["tags"] = result["tags"][:5]
+    return items
 
 
 def dedupe_items(items: list[dict]) -> list[dict]:
-    by_fp = {}
-    seen_urls = set()
+    exact_url_map: dict[str, dict] = {}
+    normalized_title_map: dict[str, dict] = {}
+    accepted_items: list[dict] = []
+    content_seen: list[dict] = []
 
-    for item in items:
+    for raw_item in items:
+        item = dict(raw_item)
         title = str(item.get("title", "")).strip()
         url = clean_url(str(item.get("url", "")).strip())
-        domain = normalize_domain(url)
         source = str(item.get("source", "")).strip()
+        domain = normalize_domain(url)
         if not title or not (url.startswith("http://") or url.startswith("https://")):
+            log_event("skip", f"缺少有效标题或链接: {title or url}")
             continue
-        if not domain or is_blocked_domain(domain) or is_blocked_source(source):
+        if not domain or is_blocked_domain(domain):
+            log_event("skip", f"来源域名被过滤: {title} | {domain}")
+            continue
+        if is_blocked_source(source):
+            log_event("skip", f"来源名称被过滤: {title} | {source}")
+            continue
+        if any(keyword in title.lower() for keyword in AD_KEYWORDS):
+            log_event("skip", f"疑似广告标题: {title}")
             continue
         if not is_authoritative_channel(domain, source):
-            continue
-        if is_ad_title(title):
-            continue
-        if not is_relevant(item):
-            continue
-        if not is_wuxi_ai_topic(item):
+            log_event("skip", f"来源质量不足: {title} | {domain}")
             continue
 
-        fp = item_fingerprint(title, url)
-        item["fingerprint"] = fp
         item["url"] = url
         item["domain"] = domain
         item["trusted"] = is_trusted_domain(domain) or is_trusted_source(source)
         item["source_tier"] = source_tier(domain, source)
+        item["fingerprint"] = item_fingerprint(title)
+        item["content_digest"] = build_content_digest(item)
 
-        if url in seen_urls:
+        keep, reason, reasons, score = is_target_story(item)
+        item["relevance_score"] = score
+        item["ranking_reasons"] = reasons
+        if not keep:
+            log_event("skip", f"{reason}: {title}")
             continue
-        seen_urls.add(url)
 
-        prev = by_fp.get(fp)
-        if prev is None:
-            by_fp[fp] = item
+        normalized = normalize_title(title)
+        if url in exact_url_map:
+            exact_url_map[url] = choose_better_item(exact_url_map[url], item, "精确URL去重")
+            continue
+        exact_url_map[url] = item
+
+        existing = normalized_title_map.get(normalized)
+        if existing is not None:
+            normalized_title_map[normalized] = choose_better_item(existing, item, "标题标准化去重")
             continue
 
-        prev_time = str(prev.get("published_at", ""))
-        cur_time = str(item.get("published_at", ""))
-        prev_tier = int(prev.get("source_tier", 0))
-        cur_tier = int(item.get("source_tier", 0))
-        prev_trusted = 1 if prev.get("trusted") else 0
-        cur_trusted = 1 if item.get("trusted") else 0
-        prev_score = (prev_tier, prev_trusted, prev_time)
-        cur_score = (cur_tier, cur_trusted, cur_time)
-        if cur_score > prev_score:
-            by_fp[fp] = item
-
-    deduped = list(by_fp.values())
-
-    # Fuzzy pass: merge near-duplicate rewrites of the same story title.
-    merged = []
-    for item in deduped:
-        found_idx = None
-        for i, existing in enumerate(merged):
-            if titles_are_near_duplicate(
-                str(item.get("title", "")), str(existing.get("title", ""))
-            ):
-                found_idx = i
+        fuzzy_hit_idx = None
+        for idx, existing_item in enumerate(accepted_items):
+            if titles_are_near_duplicate(title, str(existing_item.get("title", ""))):
+                fuzzy_hit_idx = idx
                 break
-        if found_idx is None:
-            merged.append(item)
+        if fuzzy_hit_idx is not None:
+            accepted_items[fuzzy_hit_idx] = choose_better_item(
+                accepted_items[fuzzy_hit_idx], item, "标题模糊去重"
+            )
             continue
 
-        prev = merged[found_idx]
-        prev_time = str(prev.get("published_at", ""))
-        cur_time = str(item.get("published_at", ""))
-        prev_tier = int(prev.get("source_tier", 0))
-        cur_tier = int(item.get("source_tier", 0))
-        prev_trusted = 1 if prev.get("trusted") else 0
-        cur_trusted = 1 if item.get("trusted") else 0
-        prev_score = (prev_tier, prev_trusted, prev_time)
-        cur_score = (cur_tier, cur_trusted, cur_time)
-        if cur_score > prev_score:
-            merged[found_idx] = item
-
-    deduped = merged
-
-    # Event pass: collapse cross-source rewrites of the same news event
-    # when titles share the same location, AI topic, and key factual markers.
-    merged = []
-    for item in deduped:
-        found_idx = None
-        for i, existing in enumerate(merged):
-            if are_same_event(
-                str(item.get("title", "")), str(existing.get("title", ""))
-            ):
-                found_idx = i
-                break
-        if found_idx is None:
-            merged.append(item)
+        content_hit_idx = None
+        if extracted_content_length(item) >= MIN_EXTRACTED_CONTENT_LENGTH:
+            for idx, existing_item in enumerate(content_seen):
+                existing_regions = set(detect_regions(combine_candidate_text(existing_item)))
+                current_regions = set(detect_regions(combine_candidate_text(item)))
+                if not (existing_regions & current_regions):
+                    continue
+                similarity = content_similarity(
+                    str(item.get("content_text", "")),
+                    str(existing_item.get("content_text", "")),
+                )
+                if similarity >= CONTENT_SIMILARITY_THRESHOLD:
+                    content_hit_idx = idx
+                    log_event(
+                        "dedupe",
+                        f"正文相似去重({similarity:.2f}): {title} ~= {existing_item.get('title', '')}",
+                    )
+                    break
+        if content_hit_idx is not None:
+            content_seen[content_hit_idx] = choose_better_item(
+                content_seen[content_hit_idx], item, "正文相似去重"
+            )
+            accepted_items = content_seen[:]
+            normalized_title_map = {normalize_title(str(entry.get("title", ""))): entry for entry in accepted_items}
+            exact_url_map = {str(entry.get("url", "")): entry for entry in accepted_items}
             continue
 
-        prev = merged[found_idx]
-        prev_time = str(prev.get("published_at", ""))
-        cur_time = str(item.get("published_at", ""))
-        prev_tier = int(prev.get("source_tier", 0))
-        cur_tier = int(item.get("source_tier", 0))
-        prev_trusted = 1 if prev.get("trusted") else 0
-        cur_trusted = 1 if item.get("trusted") else 0
-        prev_score = (prev_tier, prev_trusted, prev_time)
-        cur_score = (cur_tier, cur_trusted, cur_time)
-        if cur_score > prev_score:
-            merged[found_idx] = item
+        accepted_items.append(item)
+        content_seen.append(item)
+        normalized_title_map[normalized] = item
+        log_event("rank", f"保留: score={score} | {title} | {'; '.join(reasons[:5])}")
 
-    deduped = merged
-    # Homepage should be strictly freshness-first: newest items at the top.
-    deduped.sort(
-        key=lambda x: (
-            x.get("published_at", ""),
-            int(x.get("source_tier", 0)),
-            1 if x.get("trusted") else 0,
+    accepted_items.sort(
+        key=lambda item: (
+            int(item.get("relevance_score", 0)),
+            int(item.get("source_tier", 0)),
+            1 if item.get("trusted") else 0,
+            extracted_content_length(item),
+            str(item.get("published_at", "")),
         ),
         reverse=True,
     )
-    return deduped
+    return accepted_items[:CACHE_LIMIT]
+
+
+def finalize_items(items: list[dict]) -> list[dict]:
+    for item in items:
+        tags = item.get("tags")
+        if not isinstance(tags, list) or not tags:
+            item["tags"] = tag_story(item)
+        else:
+            normalized_tags = []
+            for tag in tags:
+                cleaned = normalize_whitespace(str(tag))
+                if cleaned and cleaned not in normalized_tags:
+                    normalized_tags.append(cleaned)
+            item["tags"] = normalized_tags[:5]
+        if item.get("summary") and not item.get("why_it_matters"):
+            item["why_it_matters"] = fallback_why_it_matters(item)
+        if not item.get("summary") and extracted_content_length(item) < MIN_EXTRACTED_CONTENT_LENGTH:
+            item["summary_confidence"] = "low"
+    return items
 
 
 def write_data_json(items: list[dict]) -> None:
-    serializable_items = []
+    serializable = []
+    hidden_keys = {"content_text", "_existing", "content_digest"}
     for item in items:
-        cloned = {k: v for k, v in item.items() if k != "content_text"}
-        serializable_items.append(cloned)
+        cloned = {key: value for key, value in item.items() if key not in hidden_keys}
+        serializable.append(cloned)
     payload = {
         "updated_at": datetime.now(CST).isoformat(),
-        "item_count": len(serializable_items),
-        "items": serializable_items,
+        "item_count": len(serializable),
+        "items": serializable,
     }
-    with open(DATA_PATH, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+    with open(DATA_PATH, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, ensure_ascii=False, indent=2)
 
 
 def write_seo_files(updated_iso: str, items: list[dict]) -> None:
@@ -932,11 +1320,35 @@ def write_seo_files(updated_iso: str, items: list[dict]) -> None:
             ]
         )
     sitemap_lines.extend(["</urlset>", ""])
-    sitemap = "\n".join(sitemap_lines)
-    with open(ROBOTS_PATH, "w", encoding="utf-8") as f:
-        f.write(robots)
-    with open(SITEMAP_PATH, "w", encoding="utf-8") as f:
-        f.write(sitemap)
+    with open(ROBOTS_PATH, "w", encoding="utf-8") as handle:
+        handle.write(robots)
+    with open(SITEMAP_PATH, "w", encoding="utf-8") as handle:
+        handle.write("\n".join(sitemap_lines))
+
+
+def render_news_item(news: dict) -> str:
+    title = html.escape(str(news.get("title", "")))
+    source = html.escape(str(news.get("source", "未知来源")))
+    pub_date = html.escape(format_cst_time(str(news.get("published_at", ""))))
+    url = html.escape(str(news.get("url", "")), quote=True)
+    summary = html.escape(str(news.get("summary", "")).strip())
+    why_it_matters = html.escape(str(news.get("why_it_matters", "")).strip())
+    tags = news.get("tags") if isinstance(news.get("tags"), list) else []
+    tag_html = "".join(f'<span class="tag">{html.escape(str(tag))}</span>' for tag in tags[:5])
+
+    lines = [
+        '    <article class="news-item">',
+        f'      <h2 class="news-title"><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a></h2>',
+        f'      <div class="src">{source} | {pub_date}</div>',
+    ]
+    if summary:
+        lines.append(f'      <p class="summary">{summary}</p>')
+    if why_it_matters:
+        lines.append(f'      <p class="why"><strong>为什么值得关注：</strong>{why_it_matters}</p>')
+    if tag_html:
+        lines.append(f'      <div class="tags">{tag_html}</div>')
+    lines.append("    </article>")
+    return "\n".join(lines)
 
 
 def build_page_html(
@@ -962,29 +1374,31 @@ def build_page_html(
             "description": description,
             "isPartOf": {
                 "@type": "WebSite",
-                "name": "无锡人工智能",
+                "name": "无锡AI",
                 "url": "https://wuxiai.com/",
             },
         },
         ensure_ascii=False,
     )
-    # Render order is newest-first for better readability.
     sorted_items = sorted(
         items,
-        key=lambda x: (
-            x.get("published_at", ""),
-            int(x.get("source_tier", 0)),
-            1 if x.get("trusted") else 0,
+        key=lambda item: (
+            int(item.get("relevance_score", 0)),
+            int(item.get("source_tier", 0)),
+            1 if item.get("trusted") else 0,
+            extracted_content_length(item),
+            str(item.get("published_at", "")),
         ),
         reverse=True,
     )
+
     display_items = []
-    source_counts = {}
+    source_counts: dict[str, int] = {}
     for item in sorted_items:
-        src = str(item.get("source", "未知来源")).strip() or "未知来源"
-        if show_limit is not None and source_counts.get(src, 0) >= MAX_PER_SOURCE_ON_PAGE:
+        source = str(item.get("source", "未知来源")).strip() or "未知来源"
+        if show_limit is not None and source_counts.get(source, 0) >= MAX_PER_SOURCE_ON_PAGE:
             continue
-        source_counts[src] = source_counts.get(src, 0) + 1
+        source_counts[source] = source_counts.get(source, 0) + 1
         display_items.append(item)
         if show_limit is not None and len(display_items) >= show_limit:
             break
@@ -996,14 +1410,14 @@ def build_page_html(
         '  <meta charset="utf-8">',
         '  <meta name="viewport" content="width=device-width, initial-scale=1">',
         f'  <meta name="description" content="{html.escape(description, quote=True)}">',
-        '  <meta name="keywords" content="无锡人工智能新闻, 无锡人工智能, 无锡 人工智能, Wuxi AI">',
+        '  <meta name="keywords" content="无锡人工智能, 无锡AI, 无锡机器人, 苏州人工智能, 苏州AI, 苏州机器人, 长三角人工智能">',
         '  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
         '  <meta name="applicable-device" content="pc,mobile">',
         '  <meta name="renderer" content="webkit">',
         f'  <link rel="canonical" href="{html.escape(canonical_url, quote=True)}">',
         '  <meta property="og:type" content="website">',
         '  <meta property="og:locale" content="zh_CN">',
-        '  <meta property="og:site_name" content="无锡人工智能">',
+        '  <meta property="og:site_name" content="无锡AI">',
         f'  <meta property="og:title" content="{html.escape(page_title, quote=True)}">',
         f'  <meta property="og:description" content="{html.escape(description, quote=True)}">',
         f'  <meta property="og:url" content="{html.escape(canonical_url, quote=True)}">',
@@ -1014,7 +1428,7 @@ def build_page_html(
         f"  <title>{html.escape(page_title)}</title>",
         f'  <script type="application/ld+json">{seo_json_ld}</script>',
         "  <style>",
-        "    :root { --bg: #f5f7fb; --paper: #ffffff; --text: #1f2937; --muted: #6b7280; --line: #e5e7eb; --brand: #1d4ed8; }",
+        "    :root { --bg: #f5f7fb; --paper: #ffffff; --text: #1f2937; --muted: #6b7280; --line: #e5e7eb; --brand: #1d4ed8; --soft: #eff6ff; }",
         "    * { box-sizing: border-box; }",
         "    body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.7; }",
         "    main { max-width: 920px; margin: 28px auto; padding: 0 16px; }",
@@ -1022,17 +1436,23 @@ def build_page_html(
         "    h1 { margin: 0; font-size: 30px; letter-spacing: 0.2px; }",
         "    .meta { color: var(--muted); margin: 8px 0 16px; font-size: 14px; }",
         "    .intro { margin: 0 0 18px; color: #374151; font-size: 15px; }",
-        "    ul { margin: 0; padding-left: 18px; }",
-        "    li { margin: 11px 0; }",
         "    a { color: var(--brand); text-decoration: none; }",
         "    a:hover { text-decoration: underline; }",
+        "    .news-list { display: grid; gap: 14px; }",
+        "    .news-item { padding: 0 0 14px; border-bottom: 1px solid var(--line); }",
+        "    .news-item:last-child { border-bottom: 0; padding-bottom: 0; }",
+        "    .news-title { margin: 0 0 6px; font-size: 20px; line-height: 1.45; }",
         "    .src { color: var(--muted); font-size: 13px; }",
+        "    .summary { margin: 8px 0 0; color: #374151; font-size: 15px; }",
+        "    .why { margin: 8px 0 0; color: #111827; font-size: 14px; }",
+        "    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }",
+        "    .tag { display: inline-flex; align-items: center; padding: 2px 10px; border-radius: 999px; background: var(--soft); color: #1e40af; font-size: 12px; }",
         "    .more { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; }",
         "    .pager { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: center; }",
         "    .pager span { color: var(--muted); }",
         "    .contact { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); color: #4b5563; font-size: 14px; }",
         "    .footer-nav { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }",
-        "    .footer-label { color: #6b7280; margin-right: 6px; }",
+        "    @media (max-width: 640px) { .card { padding: 18px 16px 14px; } .news-title { font-size: 18px; } }",
         "  </style>",
         "</head>",
         "<body>",
@@ -1043,23 +1463,15 @@ def build_page_html(
     ]
     if page_meta:
         lines.append(f'  <p class="meta">{html.escape(page_meta)}</p>')
-
-    if not items:
+    if not display_items:
         lines.append("  <p>暂无可展示的新闻，请稍后再试。</p>")
     else:
-        lines.append("  <ul>")
+        lines.append('  <div class="news-list">')
         for news in display_items:
-            title = html.escape(str(news.get("title", "")))
-            source = html.escape(str(news.get("source", "未知来源")))
-            pub_date = html.escape(format_cst_time(str(news.get("published_at", ""))))
-            url = html.escape(str(news.get("url", "")), quote=True)
-            lines.append(
-                f'    <li><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a><br><span class="src">{source} | {pub_date}</span></li>'
-            )
-        lines.append("  </ul>")
+            lines.append(render_news_item(news))
+        lines.append("  </div>")
         if more_link_html:
             lines.append(f'  <div class="more">{more_link_html}</div>')
-
     lines.extend(
         [
             '  <div class="contact">',
@@ -1078,11 +1490,11 @@ def build_page_html(
 def build_home_html(items: list[dict]) -> str:
     return build_page_html(
         items=items,
-        page_title="无锡人工智能",
+        page_title="无锡AI | 无锡、苏州与长三角人工智能新闻",
         canonical_url="https://wuxiai.com/",
-        description="无锡人工智能新闻聚合，聚焦无锡与人工智能相关资讯。",
-        heading="无锡人工智能",
-        intro="聚合无锡人工智能新闻，重点关注无锡本地人工智能产业、技术与应用动态。",
+        description="聚合无锡人工智能、无锡机器人、苏州AI、苏州机器人与长三角人工智能新闻，提供中文摘要、为什么值得关注与标签。",
+        heading="无锡AI",
+        intro="聚合无锡、苏州与长三角人工智能和机器人新闻，优先保留更权威、更完整、与区域产业更相关的版本，并提供中文摘要与关注重点。",
         show_limit=MAX_ITEMS,
         more_link_html='想看更早的内容？<a href="/history.html">查看历史新闻</a>',
     )
@@ -1106,16 +1518,8 @@ def get_history_page_count(items: list[dict]) -> int:
 
 
 def build_history_navigation(page_number: int, total_pages: int) -> str:
-    prev_html = (
-        f'<a href="/{history_page_filename(page_number - 1)}">上一页</a>'
-        if page_number > 1
-        else "已经是第一页"
-    )
-    next_html = (
-        f'<a href="/{history_page_filename(page_number + 1)}">下一页</a>'
-        if page_number < total_pages
-        else "已经到底了"
-    )
+    prev_html = f'<a href="/{history_page_filename(page_number - 1)}">上一页</a>' if page_number > 1 else "已经是第一页"
+    next_html = f'<a href="/{history_page_filename(page_number + 1)}">下一页</a>' if page_number < total_pages else "已经到底了"
     return (
         '<div class="pager">'
         f"<span>第 {page_number} 页，共 {total_pages} 页</span>"
@@ -1131,15 +1535,11 @@ def build_history_html(items: list[dict], page_number: int, total_pages: int) ->
     page_items = history_items[start:end]
     return build_page_html(
         items=page_items,
-        page_title=(
-            "无锡人工智能历史新闻"
-            if page_number == 1
-            else f"无锡人工智能历史新闻 - 第 {page_number} 页"
-        ),
+        page_title="无锡AI历史新闻" if page_number == 1 else f"无锡AI历史新闻 - 第 {page_number} 页",
         canonical_url=history_page_url(page_number),
-        description="无锡人工智能历史新闻归档页，按时间倒序查看更早的无锡人工智能与机器人相关资讯。",
-        heading="无锡人工智能历史新闻",
-        intro="这里收录首页之外的更早新闻，按时间倒序分页展示。",
+        description="无锡AI历史新闻归档页，按相关性与时间倒序查看无锡、苏州与长三角人工智能及机器人新闻。",
+        heading="无锡AI历史新闻",
+        intro="这里收录首页之外的更早新闻，保留摘要、关注点与标签，方便继续追踪区域AI与机器人动态。",
         show_limit=None,
         more_link_html=build_history_navigation(page_number, total_pages),
         page_meta=f"归档分页：第 {page_number} 页 / 共 {total_pages} 页",
@@ -1156,9 +1556,8 @@ def write_history_pages(items: list[dict]) -> None:
         for page_number in range(1, total_pages + 1):
             path = os.path.join(ROOT_DIR, history_page_filename(page_number))
             expected_paths.add(path)
-            with open(path, "w", encoding="utf-8") as f:
-                f.write(build_history_html(items, page_number, total_pages))
-
+            with open(path, "w", encoding="utf-8") as handle:
+                handle.write(build_history_html(items, page_number, total_pages))
     for name in os.listdir(ROOT_DIR):
         if not name.startswith(HISTORY_PAGE_PREFIX) or not name.endswith(".html"):
             continue
@@ -1168,34 +1567,44 @@ def write_history_pages(items: list[dict]) -> None:
 
 
 def collect_items() -> list[dict]:
+    existing = load_existing_items()
+    existing_url_set = {clean_url(str(item.get("url", ""))) for item in existing}
+    existing_title_set = {normalize_title(str(item.get("title", ""))) for item in existing}
+
     raw_items = []
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {
-            executor.submit(fetch_url, url): (name, url)
-            for name, url in FEED_SOURCES
-        }
+        futures = {executor.submit(fetch_url, url): (name, url) for name, url in FEED_SOURCES}
         for future in as_completed(futures):
             name, _ = futures[future]
             try:
                 xml_bytes = future.result()
-            except Exception:
+            except Exception as exc:
+                log_event("feed", f"抓取 RSS 失败: {name} | {exc}")
                 continue
             raw_items.extend(parse_feed(name, xml_bytes))
 
-    existing = load_existing_items()
-    merged = resolve_google_links(raw_items + existing)
+    raw_items = resolve_google_links(raw_items)
+    for item in raw_items:
+        item["_existing"] = False
+        normalized = normalize_title(str(item.get("title", "")))
+        item["_is_new_candidate"] = clean_url(str(item.get("url", ""))) not in existing_url_set and normalized not in existing_title_set
+
+    merged = raw_items + existing
     merged = enrich_items_with_article_context(merged)
     merged = dedupe_items(merged)
+    provider = build_summary_provider()
+    merged = enrich_items_with_summaries(merged, provider)
+    merged = finalize_items(merged)
     return merged[:CACHE_LIMIT]
 
 
-def main():
+def main() -> None:
     items = collect_items()
     updated_iso = datetime.now(CST).isoformat()
     write_data_json(items)
     write_seo_files(updated_iso, items)
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        f.write(build_home_html(items))
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as handle:
+        handle.write(build_home_html(items))
     write_history_pages(items)
 
 
