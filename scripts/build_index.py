@@ -334,6 +334,12 @@ WEAK_RELATED_PATTERNS = [
     "国际传播",
 ]
 
+HARD_EXCLUDE_TITLE_PATTERNS = [
+    "春假",
+    "研学",
+    "招募",
+]
+
 STRONG_RELEVANCE_KEYWORDS = {
     "政策": 3,
     "项目": 3,
@@ -582,6 +588,12 @@ def decode_html_bytes(html_bytes: bytes, charset_hint: str = "") -> str:
 
 def normalize_whitespace(text: str) -> str:
     return re.sub(r"\s+", " ", html.unescape(text or "")).strip()
+
+
+def strip_why_prefix(text: str) -> str:
+    cleaned = normalize_whitespace(text)
+    cleaned = re.sub(r"^(为什么值得关注[:：]\s*)+", "", cleaned)
+    return cleaned.strip()
 
 
 def now_cst() -> datetime:
@@ -1037,6 +1049,8 @@ def relevance_score(item: dict) -> tuple[int, list[str]]:
 def is_target_story(item: dict) -> tuple[bool, str, list[str], int]:
     title = str(item.get("title", ""))
     content_text = str(item.get("content_text", ""))
+    if any(pattern in title for pattern in HARD_EXCLUDE_TITLE_PATTERNS):
+        return False, "标题属于招募/研学类弱相关内容", [], 0
     if is_obviously_non_ai_title(title):
         return False, "标题明显偏离AI主题", [], 0
     combined = combine_candidate_text(item)
@@ -1326,7 +1340,7 @@ class DeepSeekSummaryProvider(SummaryProvider):
             return None
 
         summary = normalize_whitespace(str(parsed.get("summary", "")))
-        why_it_matters = normalize_whitespace(str(parsed.get("why_it_matters", "")))
+        why_it_matters = strip_why_prefix(str(parsed.get("why_it_matters", "")))
         tags = parsed.get("tags") if isinstance(parsed.get("tags"), list) else []
         normalized_tags = []
         for tag in tags:
@@ -1523,6 +1537,8 @@ def dedupe_items(items: list[dict]) -> list[dict]:
 
 def finalize_items(items: list[dict]) -> list[dict]:
     for item in items:
+        if item.get("why_it_matters"):
+            item["why_it_matters"] = strip_why_prefix(str(item.get("why_it_matters", "")))
         tags = item.get("tags")
         if not isinstance(tags, list) or not tags:
             item["tags"] = tag_story(item)
