@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-03-28T15:13:52.765152+08:00",
-  "item_count": 102,
+  "updated_at": "2026-03-28T16:57:40.751217+08:00",
+  "item_count": 103,
   "items": [
+    {
+      "title": "宁波银行牵头无锡市首笔 民营企业科技创新债券成功落地 - chinanews.com.cn",
+      "url": "https://www.chinanews.com.cn/cj/2026/03-28/10594430.shtml",
+      "source": "chinanews.com.cn",
+      "published_at": "2026-03-28T16:48:15+08:00",
+      "feed": "google:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "51b117cae705939ae10b86358403db157e6696d3",
+      "domain": "chinanews.com.cn",
+      "trusted": true,
+      "source_tier": 2
+    },
     {
       "title": "新水岛“智能体”加持，无锡生产企业用水实现“双清零” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/jiangsu/wuxi/202603/t20260328_336310.html",
@@ -10,6 +21,17 @@
       "feed": "google:无锡 人工智能:yzwb.net",
       "fingerprint": "126a9064a25c8da9d93325ddf25d3ed7b57d7964",
       "domain": "yzwb.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
+      "title": "第二十五届全国大学生机器人大赛机甲大师高校联盟赛（江苏站）在江阴开幕 - 人民网－江苏频道",
+      "url": "http://js.people.com.cn/n2/2026/0327/c360307-41536343.html",
+      "source": "js.people.com.cn",
+      "published_at": "2026-03-27T20:39:00+08:00",
+      "feed": "google:无锡 人工智能:people.com.cn",
+      "fingerprint": "c191019f905cf1fc6cf391c8b5c41298eb444824",
+      "domain": "js.people.com.cn",
       "trusted": true,
       "source_tier": 2
     },
@@ -67,17 +89,6 @@
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1
-    },
-    {
-      "title": "无锡惠山\"桃花约\"擦亮开放合作名片 智聚产业新动能 - js.chinanews.com.cn",
-      "url": "https://www.js.chinanews.com.cn/news/2026/0321/232829.html",
-      "source": "js.chinanews.com.cn",
-      "published_at": "2026-03-21T10:21:26+08:00",
-      "feed": "google:无锡 人工智能:chinanews.com.cn",
-      "fingerprint": "6ae425f19f53558a36403c4e1740723d9a3025bb",
-      "domain": "js.chinanews.com.cn",
-      "trusted": true,
-      "source_tier": 2
     },
     {
       "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
@@ -443,12 +454,12 @@
       "source_tier": 2
     },
     {
-      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级 - chinanews.com.cn",
+      "title": "江苏无锡打造算力装备产业园 助力AI产业生态升级",
       "url": "https://www.chinanews.com.cn/cj/2026/01-05/10546112.shtml",
       "source": "chinanews.com.cn",
-      "published_at": "2026-01-05T16:00:00+08:00",
-      "feed": "google:无锡 人工智能",
-      "fingerprint": "ac6f25d54de8abe80a64a33d11c8d964fc4644ed",
+      "published_at": "2026-01-05T11:47:00+08:00",
+      "feed": "bing:无锡 人工智能:chinanews.com.cn",
+      "fingerprint": "65a1770b04b995ca158d3a4033499bc95ac29157",
       "domain": "chinanews.com.cn",
       "trusted": true,
       "source_tier": 2
@@ -1063,7 +1074,7 @@
       "url": "http://www.js.xinhuanet.com/20240119/a88c43d13caf40bca1fa5554773b5058/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2024-01-19T00:00:00+08:00",
-      "feed": "bing:无锡 大模型:xinhuanet.com",
+      "feed": "bing:无锡 人工智能:xinhuanet.com",
       "fingerprint": "4de4f641b8191e0666fabd19048c6bf011285f11",
       "domain": "js.xinhuanet.com",
       "trusted": true,
