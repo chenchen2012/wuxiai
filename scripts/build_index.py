@@ -1156,15 +1156,15 @@ def titles_are_near_duplicate(a: str, b: str) -> bool:
 
 def richer_item_score(item: dict) -> tuple:
     return (
-        int(item.get("relevance_score", 0)),
+        str(item.get("published_at", "")),
         freshness_score(str(item.get("published_at", "")))[0],
+        int(item.get("relevance_score", 0)),
         int(item.get("source_tier", 0)),
         1 if item.get("trusted") else 0,
         1 if str(item.get("domain", "")).endswith(AUTHORITATIVE_DOMAIN_SUFFIXES) else 0,
         extracted_content_length(item),
         1 if item.get("summary_confidence") not in {"", "low", None} else 0,
         len(str(item.get("summary", ""))),
-        str(item.get("published_at", "")),
     )
 
 
@@ -1523,12 +1523,12 @@ def dedupe_items(items: list[dict]) -> list[dict]:
 
     accepted_items.sort(
         key=lambda item: (
-            int(item.get("relevance_score", 0)),
+            str(item.get("published_at", "")),
             freshness_score(str(item.get("published_at", "")))[0],
+            int(item.get("relevance_score", 0)),
             int(item.get("source_tier", 0)),
             1 if item.get("trusted") else 0,
             extracted_content_length(item),
-            str(item.get("published_at", "")),
         ),
         reverse=True,
     )
@@ -1673,12 +1673,12 @@ def build_page_html(
     sorted_items = sorted(
         items,
         key=lambda item: (
-            int(item.get("relevance_score", 0)),
+            str(item.get("published_at", "")),
             freshness_score(str(item.get("published_at", "")))[0],
+            int(item.get("relevance_score", 0)),
             int(item.get("source_tier", 0)),
             1 if item.get("trusted") else 0,
             extracted_content_length(item),
-            str(item.get("published_at", "")),
         ),
         reverse=True,
     )
