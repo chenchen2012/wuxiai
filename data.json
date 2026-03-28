@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-28T06:52:14.728855+08:00",
-  "item_count": 99,
+  "updated_at": "2026-03-28T11:15:52.458757+08:00",
+  "item_count": 100,
   "items": [
     {
       "title": "智云无锡、电信有AI——云端共赴锡城春日之约 - 新华网江苏频道",
@@ -608,6 +608,17 @@
       "source_tier": 2
     },
     {
+      "title": "“AI+IC”，无锡滨湖开启芯片设计“下一场变革”",
+      "url": "https://xh.xhby.net/pc/con/202509/15/content_1485404.html",
+      "source": "xh.xhby.net",
+      "published_at": "2025-09-15T01:00:00+08:00",
+      "feed": "bing:无锡AI:xhby.net",
+      "fingerprint": "60047f80cb45f5279b44eb27f4296f7a25c69a4d",
+      "domain": "xh.xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "江苏无锡：抢占“AI+”赛道 绘就智造新图景，以“人工智能之解”答好“新型工业化之问” - 紫牛新闻",
       "url": "https://www.yzwb.net/news/yw/202509/t20250911_262496.html",
       "source": "yzwb.net",
@@ -832,7 +843,7 @@
       "url": "https://www.xhby.net/content/s6801a968e4b0b8e94c5002af.html",
       "source": "xhby.net",
       "published_at": "2025-04-18T10:22:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
+      "feed": "bing:无锡AI:xhby.net",
       "fingerprint": "a19af7e8c0df40faa697b5cf53dce6bcebc96884",
       "domain": "xhby.net",
       "trusted": true,
@@ -872,17 +883,6 @@
       "source_tier": 2
     },
     {
-      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城” - 新华报业网",
-      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
-      "source": "xhby.net",
-      "published_at": "2025-03-23T15:00:00+08:00",
-      "feed": "google:无锡 人工智能:xhby.net",
-      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
-      "domain": "xhby.net",
-      "trusted": true,
-      "source_tier": 2
-    },
-    {
       "title": "敢当弄潮儿 奋力挑大梁｜深度求索，无锡打造“AI治之城”",
       "url": "https://finance.sina.com.cn/roll/2025-03-23/doc-ineqqwqw9193890.shtml",
       "source": "finance.sina.com.cn",
@@ -894,11 +894,22 @@
       "source_tier": 1
     },
     {
+      "title": "DeepSeek驱动城市治理范式重构 深度求索，无锡打造“AI治之城”",
+      "url": "https://www.xhby.net/content/s67df44e6e4b0fec08799feb2.html",
+      "source": "xhby.net",
+      "published_at": "2025-03-23T08:16:00+08:00",
+      "feed": "bing:无锡AI:xhby.net",
+      "fingerprint": "7ff6541c752cda9c6550c8ec23e8af5e59c1226a",
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2
+    },
+    {
       "title": "深度求索，无锡打造“AI治之城”",
       "url": "https://xh.xhby.net/pc/con/202503/23/content_1432102.html",
       "source": "xh.xhby.net",
       "published_at": "2025-03-23T01:00:00+08:00",
-      "feed": "bing:无锡 AI:xhby.net",
+      "feed": "bing:无锡AI:xhby.net",
       "fingerprint": "61315c3929c6e24f8cb4db940d6ad3ef870b0e5c",
       "domain": "xh.xhby.net",
       "trusted": true,
@@ -1008,7 +1019,7 @@
       "url": "https://www.thepaper.cn/newsDetail_forward_27356502?commTag=true",
       "source": "thepaper.cn",
       "published_at": "2024-05-13T15:57:00+08:00",
-      "feed": "bing:无锡AI:thepaper.cn",
+      "feed": "bing:无锡 AI:thepaper.cn",
       "fingerprint": "48360428fd5f85ef6cb445e841f800d663212622",
       "domain": "thepaper.cn",
       "trusted": true,
