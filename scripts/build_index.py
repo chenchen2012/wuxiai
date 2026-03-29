@@ -432,7 +432,6 @@ ORG_SUFFIXES = [
     "学院",
     "银行",
     "电信",
-    "机器人",
 ]
 
 INSTITUTION_SUFFIXES = [
@@ -510,6 +509,16 @@ ORG_BAD_FRAGMENTS = [
     "本次融资",
     "进一步",
 ]
+
+ORG_HARD_BLOCKLIST = {
+    "江苏省常熟职业教育中心校",
+}
+
+ORG_GENERIC_SUFFIX_BLOCKLIST = (
+    "中心校",
+    "开发区",
+    "职业教育中心校",
+)
 
 ORG_REFERENCE_PREFIXES = ("这家", "该", "某", "一家", "这家苏州", "这家无锡")
 
@@ -1353,6 +1362,10 @@ def looks_like_placeholder_company(name: str) -> bool:
         return True
     if any(fragment in candidate for fragment in ORG_BAD_FRAGMENTS):
         return True
+    if candidate in ORG_HARD_BLOCKLIST:
+        return True
+    if candidate.endswith(ORG_GENERIC_SUFFIX_BLOCKLIST):
+        return True
     return False
 
 
@@ -1364,13 +1377,44 @@ def normalize_entity_name(name: str) -> str:
     return normalize_whitespace(cleaned).strip("，。；：:、 “”—-()（）[]【】")
 
 
+def entity_aliases(name: str) -> list[str]:
+    aliases = [normalize_whitespace(name)]
+    for suffix in ["股份有限公司", "有限公司", "集团", "公司", "研究院", "研究所", "实验室", "创新中心", "银行", "电信"]:
+        if aliases[0].endswith(suffix) and len(aliases[0]) > len(suffix) + 1:
+            aliases.append(aliases[0][: -len(suffix)])
+    deduped = []
+    for alias in aliases:
+        if alias and alias not in deduped:
+            deduped.append(alias)
+    return deduped
+
+
+def is_supported_entity_name(name: str, org_type: str = "") -> bool:
+    candidate = normalize_entity_name(name)
+    if not candidate or looks_like_placeholder_company(candidate):
+        return False
+    if candidate in ORG_HARD_BLOCKLIST:
+        return False
+    if candidate.endswith(ORG_GENERIC_SUFFIX_BLOCKLIST):
+        return False
+    if org_type == "company":
+        bare = candidate
+        for suffix in ["股份有限公司", "有限公司", "集团", "公司", "银行", "电信"]:
+            if bare.endswith(suffix) and len(bare) > len(suffix):
+                bare = bare[: -len(suffix)]
+                break
+        if re.fullmatch(r"[\u4e00-\u9fff]{1,2}", bare):
+            return False
+    return True
+
+
 def normalize_entity_list(values: object, limit: int = 6) -> list[str]:
     if not isinstance(values, list):
         return []
     normalized = []
     for value in values:
         cleaned = normalize_entity_name(str(value))
-        if not cleaned or looks_like_placeholder_company(cleaned) or cleaned in normalized:
+        if not cleaned or not is_supported_entity_name(cleaned) or cleaned in normalized:
             continue
         normalized.append(cleaned)
         if len(normalized) >= limit:
@@ -1421,6 +1465,55 @@ def classify_organization(name: str) -> str:
     return "company"
 
 
+def entity_support_score(name: str, item: dict, org_type: str) -> int:
+    score = 0
+    title = normalize_whitespace(str(item.get("title", "")))
+    text = combine_candidate_text(item)
+    aliases = entity_aliases(name)
+    for alias in aliases:
+        if alias and alias in title:
+            score += 8
+            break
+    for alias in aliases:
+        if alias:
+            count = text.count(alias)
+            if count:
+                score += min(count, 3)
+                break
+    if org_type == "company":
+        score += 6
+    elif org_type == "institute":
+        score += 4
+    elif org_type == "university":
+        score += 3
+    else:
+        score += 1
+    if any(name.endswith(suffix) for suffix in ["股份有限公司", "有限公司", "集团", "公司", "银行", "电信"]):
+        score += 2
+    bare = aliases[-1] if aliases else name
+    if re.fullmatch(r"[\u4e00-\u9fff]{1,2}", bare):
+        score -= 6
+    if name.endswith(("高新区", "产业园", "管委会", "人民政府", "工信局", "开发区", "中心校")):
+        score -= 4
+    if name.endswith("基金"):
+        score -= 5
+    return score
+
+
+def prioritize_entities(orgs: list[str], org_types: dict[str, str], item: dict) -> tuple[list[str], list[str]]:
+    scored = []
+    for name in orgs:
+        org_type = org_types.get(name, classify_organization(name))
+        if not is_supported_entity_name(name, org_type):
+            continue
+        score = entity_support_score(name, item, org_type)
+        scored.append((score, name, org_type))
+    scored.sort(key=lambda row: (row[0], 1 if row[2] == "company" else 0, len(row[1])), reverse=True)
+    ordered = [name for score, name, _org_type in scored if score >= 2]
+    companies = [name for score, name, org_type in scored if org_type == "company" and score >= 8]
+    return ordered[:8], companies[:4]
+
+
 def extract_topics(item: dict) -> list[dict]:
     text = combine_candidate_text(item).lower()
     found = []
@@ -1435,6 +1528,10 @@ def enrich_network_metadata(items: list[dict], provider: Optional["SummaryProvid
     for item in items:
         combined = combine_candidate_text(item)
         rule_orgs = extract_organizations(combined, str(item.get("title", "")))
+        seeded_orgs = normalize_entity_list(item.get("organizations") or item.get("companies"), limit=8)
+        for name in seeded_orgs:
+            if name not in rule_orgs:
+                rule_orgs.append(name)
         llm_payload = None
         if provider is not None and entity_calls < MAX_ENTITY_EXTRACTION_ITEMS_PER_RUN and should_extract_entities(item, rule_orgs):
             llm_payload = provider.extract_entities(item)
@@ -1442,13 +1539,15 @@ def enrich_network_metadata(items: list[dict], provider: Optional["SummaryProvid
             if llm_payload:
                 log_event("entity", f"LLM 实体抽取: {item.get('title', '')} | confidence={llm_payload.get('entity_confidence', 'medium')}")
         orgs, company_types, llm_regions, entity_confidence = merge_llm_entities(rule_orgs, llm_payload)
+        organizations, companies = prioritize_entities(orgs, company_types, item)
         regions = llm_regions or detect_regions(combined)
         topics = extract_topics(item)
-        item["companies"] = orgs[:6]
+        item["organizations"] = organizations
+        item["companies"] = companies
         item["company_types"] = company_types
         item["regions"] = regions[:3]
         item["topics"] = topics[:5]
-        item["network_density"] = len(item["companies"]) + len(item["regions"]) + len(item["topics"])
+        item["network_density"] = len(item["organizations"]) + len(item["regions"]) + len(item["topics"])
         item["region_labels"] = [region for region in item["regions"]]
         item["entity_confidence"] = entity_confidence
     return items
@@ -2243,7 +2342,7 @@ def render_news_item(news: dict) -> str:
     if why_it_matters:
         lines.append(f'      <p class="why"><strong>为什么值得关注：</strong>{why_it_matters}</p>')
     if company_html:
-        lines.append(f'      <p class="why"><strong>涉及机构：</strong>{company_html}</p>')
+        lines.append(f'      <p class="why"><strong>涉及公司：</strong>{company_html}</p>')
     if tag_html:
         lines.append(f'      <div class="tags">{tag_html}</div>')
     lines.append("    </article>")

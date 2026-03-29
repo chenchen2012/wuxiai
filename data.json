@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-03-29T09:13:03.024282+08:00",
-  "item_count": 31,
+  "updated_at": "2026-03-29T09:25:20.302314+08:00",
+  "item_count": 30,
   "items": [
     {
       "title": "健康吴中新场景:从“心肺联筛”到“早筛早管”，人工智能筑起生命 ...",
@@ -44,7 +44,8 @@
       "region_labels": [
         "苏州"
       ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": []
     },
     {
       "title": "新水岛“智能体”加持，无锡生产企业用水实现“双清零”",
@@ -94,7 +95,8 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": []
     },
     {
       "title": "第二十五届全国大学生机器人大赛机甲大师高校联盟赛（江苏站）在江阴开幕 - 人民网－江苏频道",
@@ -141,7 +143,8 @@
       ],
       "entity_confidence": "rule",
       "summary": "第二十五届全国大学生机器人大赛机甲大师高校联盟赛（江苏站）在江阴开幕，赛事为期三天，吸引了来自全国31所高校的近千名师生参与。比赛包括3V3对抗赛、步兵对抗赛和工程挑战赛等核心项目，融合了机器视觉、嵌入式系统等前沿技术。本届赛事由全国大学生机器人大赛组委会主办，南京理工大学和江阴市政府承办，大疆创新协办，首次在江阴举办。",
-      "why_it_matters": "作为国内规模最大、影响力最强的机器人竞赛之一，该赛事集中展现了青年工程师的创新能力与技术实力，并有助于推动地方科技创新和产业发展。"
+      "why_it_matters": "作为国内规模最大、影响力最强的机器人竞赛之一，该赛事集中展现了青年工程师的创新能力与技术实力，并有助于推动地方科技创新和产业发展。",
+      "organizations": []
     },
     {
       "title": "智云无锡、电信有AI——云端共赴锡城春日之约 - 新华网江苏频道",
@@ -178,10 +181,8 @@
         "无锡电信"
       ],
       "companies": [
-        "无锡地铁集团",
         "中国电信无锡分公司",
-        "中国电信",
-        "无锡电信"
+        "无锡地铁集团"
       ],
       "company_types": {
         "无锡地铁集团": "company",
@@ -193,11 +194,15 @@
         "无锡"
       ],
       "topics": [],
-      "network_density": 5,
+      "network_density": 3,
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": [
+        "中国电信无锡分公司",
+        "无锡地铁集团"
+      ]
     },
     {
       "title": "具身智能落地提速 优理奇机器人解锁真实居家服务新场景 - sipac.gov.cn",
@@ -238,12 +243,7 @@
         "技术落地"
       ],
       "companies": [
-        "优理奇机器人",
-        "家中的机器人",
-        "研发的家庭服务机器人",
-        "家庭服务机器人始终是机器人",
-        "而是考验机器人",
-        "优理奇专注通用人形机器人"
+        "优理奇机器人"
       ],
       "company_types": {
         "优理奇机器人": "company",
@@ -253,9 +253,7 @@
         "而是考验机器人": "company",
         "优理奇专注通用人形机器人": "company"
       },
-      "regions": [
-        "苏州"
-      ],
+      "regions": [],
       "topics": [
         {
           "slug": "robotics",
@@ -264,17 +262,19 @@
         {
           "slug": "embodied-ai",
           "label": "具身智能"
-        },
-        {
-          "slug": "llm",
-          "label": "大模型"
         }
       ],
-      "network_density": 10,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
+      "network_density": 8,
+      "region_labels": [],
+      "entity_confidence": "rule",
+      "organizations": [
+        "优理奇机器人",
+        "家庭服务机器人始终是机器人",
+        "优理奇专注通用人形机器人",
+        "研发的家庭服务机器人",
+        "而是考验机器人",
+        "家中的机器人"
+      ]
     },
     {
       "title": "OpenClaw、OPC与具身智能技术分享及龙虾装机活动完美收官 - 新浪财经",
@@ -314,33 +314,27 @@
         "苏州"
       ],
       "companies": [
-        "苏州云巴巴数字科技有限公司",
-        "如何让技术突破实验室",
-        "活动由苏州太湖国家旅游度假区管委会"
+        "苏州云巴巴数字科技有限公司"
       ],
       "company_types": {
         "苏州云巴巴数字科技有限公司": "company",
         "如何让技术突破实验室": "institute",
         "活动由苏州太湖国家旅游度假区管委会": "government"
       },
-      "regions": [
-        "苏州"
-      ],
+      "regions": [],
       "topics": [
         {
           "slug": "embodied-ai",
           "label": "具身智能"
-        },
-        {
-          "slug": "llm",
-          "label": "大模型"
         }
       ],
-      "network_density": 6,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
+      "network_density": 3,
+      "region_labels": [],
+      "entity_confidence": "rule",
+      "organizations": [
+        "苏州云巴巴数字科技有限公司",
+        "如何让技术突破实验室"
+      ]
     },
     {
       "title": "AI时代“单人成军”，常熟探索OPC发展新路径",
@@ -376,12 +370,8 @@
         "常熟",
         "新质生产力"
       ],
-      "companies": [
-        "江苏省常熟职业教育中心校"
-      ],
-      "company_types": {
-        "江苏省常熟职业教育中心校": "institute"
-      },
+      "companies": [],
+      "company_types": {},
       "regions": [
         "苏州"
       ],
@@ -391,13 +381,14 @@
           "label": "大模型"
         }
       ],
-      "network_density": 3,
+      "network_density": 2,
       "region_labels": [
         "苏州"
       ],
       "entity_confidence": "high",
       "summary": "在AI时代，常熟正探索OPC（一人公司）作为推动创新创业的新路径。借助大模型和智能工具，个人创业门槛降低，OPC以轻组织形态切入市场，成为激发创新活力的新型单元。常熟通过举办沙龙等活动，汇聚多方力量，讨论OPC与产业的双向发展机遇。",
-      "why_it_matters": "这反映了AI技术如何赋能个人创业，降低门槛并培育新质生产力，对区域经济和创新生态有重要影响。"
+      "why_it_matters": "这反映了AI技术如何赋能个人创业，降低门槛并培育新质生产力，对区域经济和创新生态有重要影响。",
+      "organizations": []
     },
     {
       "title": "创投观察站｜北航博士创立，这家苏州机器人公司完成6亿元D+轮融资 - 新华报业网",
@@ -429,24 +420,52 @@
         "AI产业链",
         "高端制造"
       ],
-      "companies": [],
-      "company_types": {},
+      "companies": [
+        "苏州艾利特机器人有限公司",
+        "北京艾利特科技有限公司"
+      ],
+      "company_types": {
+        "苏州艾利特机器人有限公司": "company",
+        "北京艾利特科技有限公司": "company",
+        "广州数控": "company",
+        "埃夫特": "company",
+        "达晨财智": "company",
+        "元禾控股": "company"
+      },
       "regions": [
-        "苏州"
+        "苏州",
+        "长三角"
       ],
       "topics": [
         {
           "slug": "robotics",
           "label": "机器人"
+        },
+        {
+          "slug": "embodied-ai",
+          "label": "具身智能"
+        },
+        {
+          "slug": "llm",
+          "label": "大模型"
         }
       ],
-      "network_density": 2,
+      "network_density": 11,
       "region_labels": [
-        "苏州"
+        "苏州",
+        "长三角"
       ],
-      "entity_confidence": "rule",
+      "entity_confidence": "high",
       "summary": "苏州艾利特机器人有限公司近日完成6亿元人民币D+轮融资，由多家产业链基金联合投资。公司依托'一脑多形'战略，构建了协作机器人、复合机器人等多元产品矩阵，创始人曹宇男博士师承中国机器人界知名学者王田苗教授。资金将用于深化智能操作技术，以驱动不同机器人形态在工业与消费场景中灵活适配。",
-      "why_it_matters": "这标志着中国机器人企业在高端制造和AI融合领域取得重要进展，可能推动产业创新和场景应用扩展。"
+      "why_it_matters": "这标志着中国机器人企业在高端制造和AI融合领域取得重要进展，可能推动产业创新和场景应用扩展。",
+      "organizations": [
+        "苏州艾利特机器人有限公司",
+        "北京艾利特科技有限公司",
+        "广州数控",
+        "达晨财智",
+        "元禾控股",
+        "埃夫特"
+      ]
     },
     {
       "title": "苏州协作机器人，拿下近1亿美元融资 - QQ News",
@@ -477,8 +496,19 @@
         "苏州",
         "法奥机器人"
       ],
-      "companies": [],
-      "company_types": {},
+      "companies": [
+        "法奥（苏州）机器人技术股份有限公司",
+        "国寿资本公司",
+        "国寿投资"
+      ],
+      "company_types": {
+        "法奥（苏州）机器人技术股份有限公司": "company",
+        "国寿投资": "company",
+        "国寿资本公司": "company",
+        "国寿双碳基金": "company",
+        "顺为": "company",
+        "源码": "company"
+      },
       "regions": [
         "苏州"
       ],
@@ -486,15 +516,25 @@
         {
           "slug": "robotics",
           "label": "机器人"
+        },
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
         }
       ],
-      "network_density": 2,
+      "network_density": 7,
       "region_labels": [
         "苏州"
       ],
-      "entity_confidence": "rule",
+      "entity_confidence": "high",
       "summary": "法奥（苏州）机器人技术股份有限公司近日宣布完成近1亿美元C轮融资，由国寿双碳基金领投，老股东跟投。公司同步完成股份制改革，进入更规范化发展阶段。作为协作机器人及智能制造解决方案提供商，法奥机器人实现核心零部件自研自产，为行业提供高柔性产品。",
-      "why_it_matters": "这标志着协作机器人领域获得重要资本支持，可能推动智能制造技术发展和产业升级。"
+      "why_it_matters": "这标志着协作机器人领域获得重要资本支持，可能推动智能制造技术发展和产业升级。",
+      "organizations": [
+        "法奥（苏州）机器人技术股份有限公司",
+        "国寿资本公司",
+        "国寿投资",
+        "国寿双碳基金"
+      ]
     },
     {
       "title": "AI穿戴万亿级新蓝海，无锡已入局！",
@@ -531,7 +571,8 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": []
     },
     {
       "title": "靖江人工智能OPC项目取得新突破 星凝互动AI漫剧产业项目签约",
@@ -564,19 +605,33 @@
         "靖江发展",
         "产创融合"
       ],
-      "companies": [],
-      "company_types": {},
-      "regions": [
-        "无锡"
+      "companies": [
+        "无锡星凝互动有限公司"
       ],
-      "topics": [],
-      "network_density": 1,
+      "company_types": {
+        "无锡星凝互动有限公司": "company"
+      },
+      "regions": [
+        "无锡",
+        "长三角"
+      ],
+      "topics": [
+        {
+          "slug": "ai-chip",
+          "label": "AI芯片"
+        }
+      ],
+      "network_density": 4,
       "region_labels": [
-        "无锡"
+        "无锡",
+        "长三角"
       ],
       "entity_confidence": "rule",
       "summary": "3月18日，星凝互动AI漫剧产业项目签约落户靖江，该项目由无锡星凝互动有限公司投资建设，旨在打造集AI工具自研、剧本创作和创作者培育于一体的产业基地。靖江市通过推出项目专班服务机制和完善基础设施，加速人工智能与动漫产业的融合，助力打造长三角AI漫剧创作优选地。",
-      "why_it_matters": "这标志着靖江市在人工智能时代积极布局新赛道，推动产创融合和国有企业转型，对区域经济发展和产业升级具有示范意义。"
+      "why_it_matters": "这标志着靖江市在人工智能时代积极布局新赛道，推动产创融合和国有企业转型，对区域经济发展和产业升级具有示范意义。",
+      "organizations": [
+        "无锡星凝互动有限公司"
+      ]
     },
     {
       "title": "打造长三角北翼AI赋能标杆 AI应用赋能中心项目签约落户苏锡通园区",
@@ -609,19 +664,28 @@
         "AI赋能",
         "项目签约"
       ],
-      "companies": [],
-      "company_types": {},
+      "companies": [
+        "江苏智慧保业科技有限公司"
+      ],
+      "company_types": {
+        "江苏智慧保业科技有限公司": "company",
+        "苏锡通科技产业园区": "park"
+      },
       "regions": [
         "长三角"
       ],
       "topics": [],
-      "network_density": 1,
+      "network_density": 3,
       "region_labels": [
         "长三角"
       ],
-      "entity_confidence": "rule",
+      "entity_confidence": "high",
       "summary": "总投资5000万元的南通AI应用赋能中心项目于3月20日签约落户苏锡通科技产业园区，由江苏智慧保业科技有限公司投资建设。项目聚焦AI应用、培训和实训，将搭建产业对接平台、运营数字人直播基地等核心载体，旨在为南通人工智能产业注入动能。建成后，它将成为长三角北翼AI应用赋能与人才培育的标杆平台。",
-      "why_it_matters": "该项目有望推动南通主导产业的AI技术应用，助力区域人工智能创新发展。"
+      "why_it_matters": "该项目有望推动南通主导产业的AI技术应用，助力区域人工智能创新发展。",
+      "organizations": [
+        "江苏智慧保业科技有限公司",
+        "苏锡通科技产业园区"
+      ]
     },
     {
       "title": "无锡锡商银行稳步推进“人工智能+”应用，科技助力金融服务提质增效 - 新浪财经",
@@ -665,7 +729,10 @@
       ],
       "entity_confidence": "rule",
       "summary": "无锡锡商银行积极响应国家人工智能战略，在金融场景中审慎推进人工智能技术应用，以提升服务效率和风险管控能力。截至2025年末，银行科技投入占营收15%，研发人员占比超32%，并拥有多项人工智能相关专利。自研大模型平台XS-Chat已完成技术升级，在合同质检等场景中实际应用，为智能化服务提供支撑。",
-      "why_it_matters": "这展示了银行如何通过人工智能技术优化金融服务，推动行业数字化转型，具有示范意义。"
+      "why_it_matters": "这展示了银行如何通过人工智能技术优化金融服务，推动行业数字化转型，具有示范意义。",
+      "organizations": [
+        "无锡锡商银行"
+      ]
     },
     {
       "title": "盛业“AI未来之城”以“养龙虾”为锚点激活无锡AI产业集聚新动能-腾讯新闻 - news.qq.com",
@@ -702,7 +769,8 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": []
     },
     {
       "title": "苏州机器人又进化了！竟然都会自己做AI眼镜了 - finance.sina.com.cn",
@@ -751,7 +819,8 @@
       ],
       "entity_confidence": "rule",
       "summary": "苏州亚平电子有限公司在吴江开发区建立了全球首条智能眼镜内核全自动产线。这条产线使用近20台六轴机器人协作，以毫米级精度组装铅笔头大小的精密部件，将不良率降低30%以上，效率比人工组装高出4倍。智能眼镜集成了柔性电路板和传感器，能实现翻译、支付等功能。",
-      "why_it_matters": "这标志着智能眼镜生产技术的重大突破，有望推动穿戴设备行业向更高精度和效率发展。"
+      "why_it_matters": "这标志着智能眼镜生产技术的重大突破，有望推动穿戴设备行业向更高精度和效率发展。",
+      "organizations": []
     },
     {
       "title": "江苏：系统布局 机器人产业“加速跑”",
@@ -786,8 +855,15 @@
         "江苏省",
         "产业创新"
       ],
-      "companies": [],
-      "company_types": {},
+      "companies": [
+        "汇川技术",
+        "埃斯顿"
+      ],
+      "company_types": {
+        "汇川技术": "company",
+        "埃斯顿": "company",
+        "江苏省具身智能机器人产业联盟": "institute"
+      },
       "regions": [
         "无锡",
         "苏州"
@@ -798,18 +874,31 @@
           "label": "机器人"
         },
         {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        },
+        {
           "slug": "embodied-ai",
           "label": "具身智能"
+        },
+        {
+          "slug": "automation",
+          "label": "自动化"
         }
       ],
-      "network_density": 4,
+      "network_density": 9,
       "region_labels": [
         "无锡",
         "苏州"
       ],
-      "entity_confidence": "rule",
+      "entity_confidence": "high",
       "summary": "江苏省将具身智能机器人作为未来产业重点布局，在南京、苏州、无锡等地建设创新中心和数据采集训练中心，并成立产业联盟，成员近300家。在工业机器人领域，该省集聚龙头企业，形成整机与核心零部件协同配套格局，出口保持高速增长。未来，江苏计划依托政策与平台，加快打造全国机器人产业创新高地，为制造业高质量发展注入动能。",
-      "why_it_matters": "这体现了江苏省在机器人产业上的系统布局和加速发展，对推动制造业转型升级和区域经济竞争力提升具有重要意义。"
+      "why_it_matters": "这体现了江苏省在机器人产业上的系统布局和加速发展，对推动制造业转型升级和区域经济竞争力提升具有重要意义。",
+      "organizations": [
+        "汇川技术",
+        "埃斯顿",
+        "江苏省具身智能机器人产业联盟"
+      ]
     },
     {
       "title": "无锡东璟人工智能创新港揭牌 “智创方舟”同步启航 - js.chinanews.com.cn",
@@ -847,7 +936,8 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": []
     },
     {
       "title": "苏州市相城区再添AI硬核认证！两大算法通过国家级备案",
@@ -881,24 +971,46 @@
         "技术创新",
         "苏州相城"
       ],
-      "companies": [],
-      "company_types": {},
+      "companies": [
+        "苏州知行元科技有限公司",
+        "江苏西顿科技有限公司"
+      ],
+      "company_types": {
+        "江苏西顿科技有限公司": "company",
+        "苏州知行元科技有限公司": "company"
+      },
       "regions": [
         "苏州"
       ],
       "topics": [
         {
+          "slug": "industrial-ai",
+          "label": "工业AI"
+        },
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        },
+        {
+          "slug": "automation",
+          "label": "自动化"
+        },
+        {
           "slug": "llm",
           "label": "大模型"
         }
       ],
-      "network_density": 2,
+      "network_density": 7,
       "region_labels": [
         "苏州"
       ],
       "entity_confidence": "rule",
       "summary": "苏州市相城区两家企业——江苏西顿科技有限公司和苏州知行元科技有限公司的算法通过国家级备案。西顿科技的工业大模型算法融合Transformer架构与微调技术，为制造业提供智能化解决方案；知行元科技则专注于AI驱动的商业视觉内容生成。",
-      "why_it_matters": "这标志着相城区在AI领域获得国家级认可，有助于推动产业升级和技术创新。"
+      "why_it_matters": "这标志着相城区在AI领域获得国家级认可，有助于推动产业升级和技术创新。",
+      "organizations": [
+        "苏州知行元科技有限公司",
+        "江苏西顿科技有限公司"
+      ]
     },
     {
       "title": "崇川抢占人工智能产业发展制高点",
@@ -941,7 +1053,8 @@
       ],
       "entity_confidence": "rule",
       "summary": "崇川区正式发布人工智能产业发展专项规划及三年行动方案，旨在抢占产业发展制高点。规划提出打造智脑核和智造核两大核心，并实施'百数、百模、百景'工程，目标到2030年产业集群产值达500亿元。崇川凭借扎实的产业基础和区位优势，已在人工智能领域形成梯次发展格局。",
-      "why_it_matters": "这标志着崇川区在人工智能产业布局上迈出关键一步，可能推动区域经济转型和技术创新。"
+      "why_it_matters": "这标志着崇川区在人工智能产业布局上迈出关键一步，可能推动区域经济转型和技术创新。",
+      "organizations": []
     },
     {
       "title": "南通“货通全球”，AI已在路上",
@@ -972,11 +1085,7 @@
         "产业融合",
         "跨境出海"
       ],
-      "companies": [
-        "京东集团",
-        "淘天集团",
-        "抖音集团"
-      ],
+      "companies": [],
       "company_types": {
         "京东集团": "company",
         "淘天集团": "company",
@@ -986,13 +1095,14 @@
         "长三角"
       ],
       "topics": [],
-      "network_density": 4,
+      "network_density": 1,
       "region_labels": [
         "长三角"
       ],
       "entity_confidence": "rule",
       "summary": "南通将于3月20日举办第二届新电商发展会议，聚焦AI技术在新电商领域的应用，如AI新家纺等话题。会议汇聚京东、快手等顶级资源，旨在推动数字经济与实体经济深度融合。活动将围绕AI重构电商全链路价值展开深度研讨，帮助企业解决品牌升级、跨境出海等实际问题。",
-      "why_it_matters": "因为它展示了AI如何从可选技术变为电商产业发展的必选项，推动区域经济转型和全球资源链接。"
+      "why_it_matters": "因为它展示了AI如何从可选技术变为电商产业发展的必选项，推动区域经济转型和全球资源链接。",
+      "organizations": []
     },
     {
       "title": "无锡锡山东璟人工智能创新港揭牌 - 人民网－江苏频道",
@@ -1033,7 +1143,8 @@
       ],
       "entity_confidence": "rule",
       "summary": "3月17日，东璟人工智能创新港在无锡市锡山区东亭街道揭牌，12家优质企业与机构完成入驻签约，涵盖工业软件、农业大数据、AI物联网等多个前沿领域。活动现场发布了人工智能应用场景，聚焦政务服务、医疗健康等六大领域，推动技术落地转化为百姓服务体验。作为锡山AI产业发展的核心，东亭街道将以创新港为支点，持续优化产业生态，壮大长三角AI产业生态圈。",
-      "why_it_matters": "这标志着无锡锡山在人工智能产业布局上迈出重要一步，有望推动区域经济转型和技术创新。"
+      "why_it_matters": "这标志着无锡锡山在人工智能产业布局上迈出重要一步，有望推动区域经济转型和技术创新。",
+      "organizations": []
     },
     {
       "title": "AI训练有了绿电后盾 平湖绿电追着算力跑",
@@ -1083,7 +1194,8 @@
       ],
       "entity_confidence": "rule",
       "summary": "在杭州湾平湖海域，海上风电场提供绿色电力，支撑平湖长三角智算中心的AI训练和数据处理任务。平湖创新布局算电协同，推动算力与绿电融合，并采用智能制冷系统降低能耗。",
-      "why_it_matters": "这展示了绿色能源与算力基础设施的协同发展，有助于促进AI产业的低碳转型。"
+      "why_it_matters": "这展示了绿色能源与算力基础设施的协同发展，有助于促进AI产业的低碳转型。",
+      "organizations": []
     },
     {
       "title": "AI+制造 无锡“+”出了什么？",
@@ -1123,7 +1235,8 @@
       ],
       "entity_confidence": "rule",
       "summary": "2025年，无锡工业经济表现强劲，规上工业总产值达2.71万亿元，工业对GDP增长贡献率超过50%。面对科技变革，无锡将'人工智能+制造'作为关键战略，推动传统产业如机械、化工、纺织升级焕新。",
-      "why_it_matters": "这展示了传统工业城市如何通过AI融合实现产业转型，为其他地区提供借鉴。"
+      "why_it_matters": "这展示了传统工业城市如何通过AI融合实现产业转型，为其他地区提供借鉴。",
+      "organizations": []
     },
     {
       "title": "均普智能在无锡成立机器人公司 - 新浪财经",
@@ -1152,10 +1265,14 @@
       ],
       "summary_confidence": "high",
       "companies": [
-        "均普智能"
+        "均普智能",
+        "普智机器人（无锡）有限公司",
+        "宁波普智未来机器人有限公司"
       ],
       "company_types": {
-        "均普智能": "company"
+        "均普智能": "company",
+        "普智机器人（无锡）有限公司": "company",
+        "宁波普智未来机器人有限公司": "company"
       },
       "regions": [
         "无锡"
@@ -1166,13 +1283,18 @@
           "label": "机器人"
         }
       ],
-      "network_density": 3,
+      "network_density": 5,
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule",
+      "entity_confidence": "high",
       "summary": "均普智能在无锡成立了全资子公司普智机器人（无锡）有限公司，法定代表人为周兴宥。该公司的经营范围涵盖智能机器人销售、工业机器人制造和人工智能硬件销售等多个领域。",
-      "why_it_matters": "这标志着均普智能在机器人领域的业务扩张，可能推动相关产业发展。"
+      "why_it_matters": "这标志着均普智能在机器人领域的业务扩张，可能推动相关产业发展。",
+      "organizations": [
+        "均普智能",
+        "普智机器人（无锡）有限公司",
+        "宁波普智未来机器人有限公司"
+      ]
     },
     {
       "title": "工业经济这块压舱石，无锡要用AI好好打磨",
@@ -1216,7 +1338,8 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": []
     },
     {
       "title": "无锡“AI未来之城”：免费领“龙虾”Agent，最高补贴500万-腾讯新闻 - QQ News",
@@ -1258,7 +1381,8 @@
       ],
       "entity_confidence": "rule",
       "summary": "无锡高新区推出'AI未来之城'项目，盛业与RollingAI合作举办免费活动，教市民安装和使用'龙虾'Agent，并提供一站式技术支持。活动背后有'养龙虾12条'专项政策支持，包括算力补贴、场景奖励和人才安居措施，最高补贴可达500万元。",
-      "why_it_matters": "这展示了地方政府如何通过具体政策和活动推动AI技术普及和产业发展，为市民和企业提供实际支持。"
+      "why_it_matters": "这展示了地方政府如何通过具体政策和活动推动AI技术普及和产业发展，为市民和企业提供实际支持。",
+      "organizations": []
     },
     {
       "title": "无锡电信手把手教你“养龙虾”，解锁AI新体验！",
@@ -1290,9 +1414,7 @@
         "数字素养",
         "OpenClaw"
       ],
-      "companies": [
-        "无锡电信"
-      ],
+      "companies": [],
       "company_types": {
         "无锡电信": "company"
       },
@@ -1305,13 +1427,14 @@
           "label": "大模型"
         }
       ],
-      "network_density": 3,
+      "network_density": 2,
       "region_labels": [
         "无锡"
       ],
       "entity_confidence": "rule",
       "summary": "无锡电信在人民路营业厅举办了一场AI智能体“小龙虾”（OpenClaw）的实操公益培训活动，旨在帮助市民解决安装和使用中的困难。活动通过面对面教学，让零基础用户轻松掌握AI技术，感受科技带来的便捷与乐趣。培训内容包括基本概念讲解和安全操作指导，强调实名操作的重要性。",
-      "why_it_matters": "这体现了电信企业推动AI技术普及、降低应用门槛的社会责任，有助于提升公众数字素养。"
+      "why_it_matters": "这体现了电信企业推动AI技术普及、降低应用门槛的社会责任，有助于提升公众数字素养。",
+      "organizations": []
     },
     {
       "title": "江苏无锡：具身智能“春意浓”，一场展会透视产业链的“双向奔赴” - 新浪财经",
@@ -1353,7 +1476,8 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": []
     },
     {
       "title": "无锡高新区的“养虾”12条，瞄准了“AI+工业”和个人创业",
@@ -1385,9 +1509,7 @@
         "个人创业",
         "政策支持"
       ],
-      "companies": [
-        "无锡高新区"
-      ],
+      "companies": [],
       "company_types": {
         "无锡高新区": "park"
       },
@@ -1401,7 +1523,10 @@
       ],
       "entity_confidence": "rule",
       "summary": "无锡高新区发布《关于支持OpenClaw等开源社区项目与OPC社区融合发展的若干措施（征求意见稿）》，包含12条措施，从基础支持、产业融合、人才服务、安全与合规四个方面支持OpenClaw开源社区建设。措施鼓励本地云平台提供免费部署与开发工具包，并给予补贴，同时注重OpenClaw与OPC（一人公司）的融合发展，支持个人创业项目基于OpenClaw框架开展创新。此外，政策聚焦“AI+制造”场景，推动OpenClaw与工业制造结合，提供资金支持以促进技术落地。",
-      "why_it_matters": "该政策结合AI技术与工业应用，支持开源社区和个人创业，可能推动区域创新和产业升级。"
+      "why_it_matters": "该政策结合AI技术与工业应用，支持开源社区和个人创业，可能推动区域创新和产业升级。",
+      "organizations": [
+        "无锡高新区"
+      ]
     },
     {
       "title": "无锡高新区设30亿元AI产业基金 深耕“AI+制造” - js.chinanews.com.cn",
@@ -1431,9 +1556,7 @@
         "人工智能",
         "融资"
       ],
-      "companies": [
-        "无锡高新区"
-      ],
+      "companies": [],
       "company_types": {
         "无锡高新区": "park"
       },
@@ -1445,108 +1568,13 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "rule"
-    },
-    {
-      "title": "具身智能成两会高频词“最强地级市”苏州崛起新千亿级产业-腾讯新闻 - news.qq.com",
-      "url": "https://news.qq.com/rain/a/20260307A01AB500",
-      "source": "news.qq.com",
-      "published_at": "2026-03-07T16:00:00+08:00",
-      "feed": "google:苏州 具身智能",
-      "rss_description": "具身智能成两会高频词“最强地级市”苏州崛起新千亿级产业-腾讯新闻 news.qq.com",
-      "_is_new_candidate": true,
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "ead9418443fb51761cf45d96da20090e3a1807a1",
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:具身智能",
-        "新鲜度:偏旧(21.7天)",
-        "标题命中:区域:苏州",
-        "标题命中:主题:具身智能"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "具身智能"
-      ],
-      "companies": [],
-      "company_types": {},
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        }
-      ],
-      "network_density": 2,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
+      "entity_confidence": "rule",
+      "organizations": [
+        "无锡高新区"
+      ]
     }
   ],
   "companies": [
-    {
-      "slug": "无锡电信",
-      "name": "无锡电信",
-      "type": "company",
-      "mention_count": 2,
-      "tags": [
-        "5G-A技术",
-        "AI培训",
-        "AI应用",
-        "OpenClaw",
-        "公益科普",
-        "数字素养"
-      ],
-      "cities": [
-        "无锡"
-      ],
-      "first_appearance": "2026-03-14T14:21:00+08:00",
-      "last_appearance": "2026-03-27T18:33:36+08:00"
-    },
-    {
-      "slug": "无锡高新区",
-      "name": "无锡高新区",
-      "type": "park",
-      "mention_count": 2,
-      "tags": [
-        "AI+工业",
-        "个人创业",
-        "人工智能",
-        "开源社区",
-        "政策支持",
-        "无锡"
-      ],
-      "cities": [
-        "无锡"
-      ],
-      "first_appearance": "2026-03-09T18:15:21+08:00",
-      "last_appearance": "2026-03-09T21:42:00+08:00"
-    },
-    {
-      "slug": "无锡地铁集团",
-      "name": "无锡地铁集团",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "5G-A技术",
-        "AI应用",
-        "文旅融合",
-        "无锡电信",
-        "智慧城市"
-      ],
-      "cities": [
-        "无锡"
-      ],
-      "first_appearance": "2026-03-27T18:33:36+08:00",
-      "last_appearance": "2026-03-27T18:33:36+08:00"
-    },
     {
       "slug": "中国电信无锡分公司",
       "name": "中国电信无锡分公司",
@@ -1566,8 +1594,8 @@
       "last_appearance": "2026-03-27T18:33:36+08:00"
     },
     {
-      "slug": "中国电信",
-      "name": "中国电信",
+      "slug": "无锡地铁集团",
+      "name": "无锡地铁集团",
       "type": "company",
       "mention_count": 1,
       "tags": [
@@ -1595,99 +1623,7 @@
         "家庭服务机器人",
         "技术落地"
       ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-03-27T16:18:00+08:00",
-      "last_appearance": "2026-03-27T16:18:00+08:00"
-    },
-    {
-      "slug": "家中的机器人",
-      "name": "家中的机器人",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "人形机器人",
-        "优理奇",
-        "具身智能",
-        "家庭服务机器人",
-        "技术落地"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-03-27T16:18:00+08:00",
-      "last_appearance": "2026-03-27T16:18:00+08:00"
-    },
-    {
-      "slug": "研发的家庭服务机器人",
-      "name": "研发的家庭服务机器人",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "人形机器人",
-        "优理奇",
-        "具身智能",
-        "家庭服务机器人",
-        "技术落地"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-03-27T16:18:00+08:00",
-      "last_appearance": "2026-03-27T16:18:00+08:00"
-    },
-    {
-      "slug": "家庭服务机器人始终是机器人",
-      "name": "家庭服务机器人始终是机器人",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "人形机器人",
-        "优理奇",
-        "具身智能",
-        "家庭服务机器人",
-        "技术落地"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-03-27T16:18:00+08:00",
-      "last_appearance": "2026-03-27T16:18:00+08:00"
-    },
-    {
-      "slug": "而是考验机器人",
-      "name": "而是考验机器人",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "人形机器人",
-        "优理奇",
-        "具身智能",
-        "家庭服务机器人",
-        "技术落地"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-03-27T16:18:00+08:00",
-      "last_appearance": "2026-03-27T16:18:00+08:00"
-    },
-    {
-      "slug": "优理奇专注通用人形机器人",
-      "name": "优理奇专注通用人形机器人",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "人形机器人",
-        "优理奇",
-        "具身智能",
-        "家庭服务机器人",
-        "技术落地"
-      ],
-      "cities": [
-        "苏州"
-      ],
+      "cities": [],
       "first_appearance": "2026-03-27T16:18:00+08:00",
       "last_appearance": "2026-03-27T16:18:00+08:00"
     },
@@ -1703,65 +1639,138 @@
         "腾讯云",
         "苏州"
       ],
-      "cities": [
-        "苏州"
-      ],
+      "cities": [],
       "first_appearance": "2026-03-27T15:52:00+08:00",
       "last_appearance": "2026-03-27T15:52:00+08:00"
     },
     {
-      "slug": "如何让技术突破实验室",
-      "name": "如何让技术突破实验室",
-      "type": "institute",
+      "slug": "苏州艾利特机器人有限公司",
+      "name": "苏州艾利特机器人有限公司",
+      "type": "company",
       "mention_count": 1,
       "tags": [
-        "AI技术",
-        "企业数字化转型",
-        "具身智能",
-        "腾讯云",
-        "苏州"
+        "AI产业链",
+        "一脑多形战略",
+        "协作机器人",
+        "机器人融资",
+        "高端制造"
+      ],
+      "cities": [
+        "苏州",
+        "长三角"
+      ],
+      "first_appearance": "2026-03-26T15:53:00+08:00",
+      "last_appearance": "2026-03-26T15:53:00+08:00"
+    },
+    {
+      "slug": "北京艾利特科技有限公司",
+      "name": "北京艾利特科技有限公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "AI产业链",
+        "一脑多形战略",
+        "协作机器人",
+        "机器人融资",
+        "高端制造"
+      ],
+      "cities": [
+        "苏州",
+        "长三角"
+      ],
+      "first_appearance": "2026-03-26T15:53:00+08:00",
+      "last_appearance": "2026-03-26T15:53:00+08:00"
+    },
+    {
+      "slug": "法奥-苏州-机器人技术股份有限公司",
+      "name": "法奥（苏州）机器人技术股份有限公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "协作机器人",
+        "智能制造",
+        "法奥机器人",
+        "苏州",
+        "融资"
       ],
       "cities": [
         "苏州"
       ],
-      "first_appearance": "2026-03-27T15:52:00+08:00",
-      "last_appearance": "2026-03-27T15:52:00+08:00"
+      "first_appearance": "2026-03-25T09:03:00+08:00",
+      "last_appearance": "2026-03-25T09:03:00+08:00"
     },
     {
-      "slug": "活动由苏州太湖国家旅游度假区管委会",
-      "name": "活动由苏州太湖国家旅游度假区管委会",
-      "type": "government",
+      "slug": "国寿资本公司",
+      "name": "国寿资本公司",
+      "type": "company",
       "mention_count": 1,
       "tags": [
-        "AI技术",
-        "企业数字化转型",
-        "具身智能",
-        "腾讯云",
-        "苏州"
+        "协作机器人",
+        "智能制造",
+        "法奥机器人",
+        "苏州",
+        "融资"
       ],
       "cities": [
         "苏州"
       ],
-      "first_appearance": "2026-03-27T15:52:00+08:00",
-      "last_appearance": "2026-03-27T15:52:00+08:00"
+      "first_appearance": "2026-03-25T09:03:00+08:00",
+      "last_appearance": "2026-03-25T09:03:00+08:00"
     },
     {
-      "slug": "江苏省常熟职业教育中心校",
-      "name": "江苏省常熟职业教育中心校",
-      "type": "institute",
+      "slug": "国寿投资",
+      "name": "国寿投资",
+      "type": "company",
       "mention_count": 1,
       "tags": [
-        "一人公司",
+        "协作机器人",
+        "智能制造",
+        "法奥机器人",
+        "苏州",
+        "融资"
+      ],
+      "cities": [
+        "苏州"
+      ],
+      "first_appearance": "2026-03-25T09:03:00+08:00",
+      "last_appearance": "2026-03-25T09:03:00+08:00"
+    },
+    {
+      "slug": "无锡星凝互动有限公司",
+      "name": "无锡星凝互动有限公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "产创融合",
         "人工智能",
-        "创新创业",
-        "常熟",
-        "新质生产力"
+        "动漫产业",
+        "靖江发展",
+        "项目签约"
       ],
       "cities": [
-        "苏州"
+        "无锡",
+        "长三角"
       ],
-      "first_appearance": "2026-03-27T10:11:00+08:00",
-      "last_appearance": "2026-03-27T10:11:00+08:00"
+      "first_appearance": "2026-03-21T13:28:00+08:00",
+      "last_appearance": "2026-03-21T13:28:00+08:00"
+    },
+    {
+      "slug": "江苏智慧保业科技有限公司",
+      "name": "江苏智慧保业科技有限公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "AI赋能",
+        "产业园区",
+        "人工智能",
+        "长三角",
+        "项目签约"
+      ],
+      "cities": [
+        "长三角"
+      ],
+      "first_appearance": "2026-03-21T12:44:00+08:00",
+      "last_appearance": "2026-03-21T12:44:00+08:00"
     },
     {
       "slug": "无锡锡商银行",
@@ -1782,62 +1791,118 @@
       "last_appearance": "2026-03-20T17:49:00+08:00"
     },
     {
-      "slug": "京东集团",
-      "name": "京东集团",
+      "slug": "汇川技术",
+      "name": "汇川技术",
       "type": "company",
       "mention_count": 1,
       "tags": [
-        "AI电商",
-        "产业融合",
-        "南通发展",
-        "数字经济",
-        "跨境出海"
+        "产业创新",
+        "具身智能",
+        "工业机器人",
+        "机器人产业",
+        "江苏省"
       ],
       "cities": [
-        "长三角"
+        "无锡",
+        "苏州"
       ],
-      "first_appearance": "2026-03-18T03:15:00+08:00",
-      "last_appearance": "2026-03-18T03:15:00+08:00"
+      "first_appearance": "2026-03-20T03:41:00+08:00",
+      "last_appearance": "2026-03-20T03:41:00+08:00"
     },
     {
-      "slug": "淘天集团",
-      "name": "淘天集团",
+      "slug": "埃斯顿",
+      "name": "埃斯顿",
       "type": "company",
       "mention_count": 1,
       "tags": [
-        "AI电商",
-        "产业融合",
-        "南通发展",
-        "数字经济",
-        "跨境出海"
+        "产业创新",
+        "具身智能",
+        "工业机器人",
+        "机器人产业",
+        "江苏省"
       ],
       "cities": [
-        "长三角"
+        "无锡",
+        "苏州"
       ],
-      "first_appearance": "2026-03-18T03:15:00+08:00",
-      "last_appearance": "2026-03-18T03:15:00+08:00"
+      "first_appearance": "2026-03-20T03:41:00+08:00",
+      "last_appearance": "2026-03-20T03:41:00+08:00"
     },
     {
-      "slug": "抖音集团",
-      "name": "抖音集团",
+      "slug": "苏州知行元科技有限公司",
+      "name": "苏州知行元科技有限公司",
       "type": "company",
       "mention_count": 1,
       "tags": [
-        "AI电商",
-        "产业融合",
-        "南通发展",
-        "数字经济",
-        "跨境出海"
+        "人工智能",
+        "制造业",
+        "技术创新",
+        "算法备案",
+        "苏州相城"
       ],
       "cities": [
-        "长三角"
+        "苏州"
       ],
-      "first_appearance": "2026-03-18T03:15:00+08:00",
-      "last_appearance": "2026-03-18T03:15:00+08:00"
+      "first_appearance": "2026-03-18T11:00:00+08:00",
+      "last_appearance": "2026-03-18T11:00:00+08:00"
+    },
+    {
+      "slug": "江苏西顿科技有限公司",
+      "name": "江苏西顿科技有限公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "人工智能",
+        "制造业",
+        "技术创新",
+        "算法备案",
+        "苏州相城"
+      ],
+      "cities": [
+        "苏州"
+      ],
+      "first_appearance": "2026-03-18T11:00:00+08:00",
+      "last_appearance": "2026-03-18T11:00:00+08:00"
     },
     {
       "slug": "均普智能",
       "name": "均普智能",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "人工智能硬件",
+        "均普智能",
+        "工业机器人",
+        "无锡",
+        "机器人公司"
+      ],
+      "cities": [
+        "无锡"
+      ],
+      "first_appearance": "2026-03-16T11:02:00+08:00",
+      "last_appearance": "2026-03-16T11:02:00+08:00"
+    },
+    {
+      "slug": "普智机器人-无锡-有限公司",
+      "name": "普智机器人（无锡）有限公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "人工智能硬件",
+        "均普智能",
+        "工业机器人",
+        "无锡",
+        "机器人公司"
+      ],
+      "cities": [
+        "无锡"
+      ],
+      "first_appearance": "2026-03-16T11:02:00+08:00",
+      "last_appearance": "2026-03-16T11:02:00+08:00"
+    },
+    {
+      "slug": "宁波普智未来机器人有限公司",
+      "name": "宁波普智未来机器人有限公司",
       "type": "company",
       "mention_count": 1,
       "tags": [
@@ -1860,31 +1925,28 @@
       "label": "机器人",
       "count": 7,
       "companies": [
-        "优理奇专注通用人形机器人",
         "优理奇机器人",
+        "北京艾利特科技有限公司",
+        "国寿投资",
+        "国寿资本公司",
         "均普智能",
-        "家中的机器人",
-        "家庭服务机器人始终是机器人",
-        "研发的家庭服务机器人",
-        "而是考验机器人"
+        "埃斯顿",
+        "宁波普智未来机器人有限公司",
+        "普智机器人（无锡）有限公司",
+        "汇川技术",
+        "法奥（苏州）机器人技术股份有限公司",
+        "苏州艾利特机器人有限公司"
       ]
     },
     {
       "slug": "llm",
       "label": "大模型",
-      "count": 6,
+      "count": 5,
       "companies": [
-        "优理奇专注通用人形机器人",
-        "优理奇机器人",
-        "如何让技术突破实验室",
-        "家中的机器人",
-        "家庭服务机器人始终是机器人",
-        "无锡电信",
-        "江苏省常熟职业教育中心校",
-        "活动由苏州太湖国家旅游度假区管委会",
-        "研发的家庭服务机器人",
-        "而是考验机器人",
-        "苏州云巴巴数字科技有限公司"
+        "北京艾利特科技有限公司",
+        "江苏西顿科技有限公司",
+        "苏州知行元科技有限公司",
+        "苏州艾利特机器人有限公司"
       ]
     },
     {
@@ -1892,48 +1954,75 @@
       "label": "具身智能",
       "count": 5,
       "companies": [
-        "优理奇专注通用人形机器人",
         "优理奇机器人",
-        "如何让技术突破实验室",
-        "家中的机器人",
-        "家庭服务机器人始终是机器人",
-        "活动由苏州太湖国家旅游度假区管委会",
-        "研发的家庭服务机器人",
-        "而是考验机器人",
-        "苏州云巴巴数字科技有限公司"
+        "北京艾利特科技有限公司",
+        "埃斯顿",
+        "汇川技术",
+        "苏州云巴巴数字科技有限公司",
+        "苏州艾利特机器人有限公司"
+      ]
+    },
+    {
+      "slug": "smart-manufacturing",
+      "label": "智能制造",
+      "count": 4,
+      "companies": [
+        "国寿投资",
+        "国寿资本公司",
+        "埃斯顿",
+        "汇川技术",
+        "江苏西顿科技有限公司",
+        "法奥（苏州）机器人技术股份有限公司",
+        "苏州知行元科技有限公司"
       ]
     },
     {
       "slug": "ai-chip",
       "label": "AI芯片",
-      "count": 1,
-      "companies": []
+      "count": 2,
+      "companies": [
+        "无锡星凝互动有限公司"
+      ]
     },
     {
-      "slug": "smart-manufacturing",
-      "label": "智能制造",
+      "slug": "automation",
+      "label": "自动化",
+      "count": 2,
+      "companies": [
+        "埃斯顿",
+        "汇川技术",
+        "江苏西顿科技有限公司",
+        "苏州知行元科技有限公司"
+      ]
+    },
+    {
+      "slug": "industrial-ai",
+      "label": "工业AI",
       "count": 1,
-      "companies": []
+      "companies": [
+        "江苏西顿科技有限公司",
+        "苏州知行元科技有限公司"
+      ]
     }
   ],
   "regions": [
     {
       "slug": "suzhou",
       "label": "苏州",
-      "company_count": 10,
-      "topic_count": 3
+      "company_count": 9,
+      "topic_count": 6
     },
     {
       "slug": "wuxi",
       "label": "无锡",
-      "company_count": 7,
-      "topic_count": 4
+      "company_count": 9,
+      "topic_count": 6
     },
     {
       "slug": "yangtze-delta",
       "label": "长三角",
-      "company_count": 3,
-      "topic_count": 1
+      "company_count": 4,
+      "topic_count": 4
     }
   ]
 }
