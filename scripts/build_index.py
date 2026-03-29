@@ -103,6 +103,10 @@ LLM_MODEL = (
     or os.getenv("DEEPSEEK_MODEL")
     or "deepseek-chat"
 ).strip()
+ENTITY_EXTRACTION_ENABLED = (os.getenv("WUXIAI_ENABLE_ENTITY_EXTRACTION", "true") or "true").strip().lower() not in {"0", "false", "no", "off"}
+MAX_ENTITY_EXTRACTION_ITEMS_PER_RUN = int(os.getenv("WUXIAI_MAX_ENTITY_EXTRACTION_ITEMS_PER_RUN", "6") or 6)
+ENTITY_EXTRACTION_MIN_CONTENT_LENGTH = int(os.getenv("WUXIAI_ENTITY_EXTRACTION_MIN_CONTENT_LENGTH", "220") or 220)
+ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS = int(os.getenv("WUXIAI_ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS", "30") or 30)
 GITHUB_REPO = (os.getenv("WUXIAI_GITHUB_REPO") or "chenchen2012/wuxiai").strip()
 GITHUB_TOKEN = os.getenv("WUXIAI_GITHUB_TOKEN") or os.getenv("GITHUB_TOKEN") or ""
 
@@ -462,6 +466,12 @@ ORG_STOPWORDS = {
     "制造业",
     "高校联盟赛",
     "工业机器人",
+    "协作机器人",
+    "人形机器人",
+    "中国机器人",
+    "服务消费机器人",
+    "影视公司",
+    "有限公司",
 }
 
 ORG_BAD_FRAGMENTS = [
@@ -496,7 +506,12 @@ ORG_BAD_FRAGMENTS = [
     "机甲大师",
     "一人公司",
     "等多地",
+    "本轮融资",
+    "本次融资",
+    "进一步",
 ]
+
+ORG_REFERENCE_PREFIXES = ("这家", "该", "某", "一家", "这家苏州", "这家无锡")
 
 TOPIC_DEFINITIONS = {
     "robotics": {"label": "机器人", "keywords": ["机器人", "工业机器人", "人形机器人"]},
@@ -1223,9 +1238,13 @@ def needs_article_review(item: dict) -> bool:
 
 
 def should_fetch_context(item: dict) -> bool:
-    if item.get("_existing"):
-        return False
     combined = combine_candidate_text(item)
+    if item.get("_existing"):
+        if ENTITY_EXTRACTION_ENABLED and age_in_days(str(item.get("published_at", ""))) <= ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS:
+            title = str(item.get("title", ""))
+            if any(keyword in combined for keyword in ["融资", "成立", "公司", "集团", "研究院", "实验室", "创新中心"]) or any(prefix in title for prefix in ORG_REFERENCE_PREFIXES):
+                return True
+        return False
     if detect_regions(combined):
         return True
     return has_core_ai_topic(combined)
@@ -1280,6 +1299,8 @@ def clean_organization_candidate(candidate: str, suffix: str) -> str:
 def is_valid_organization_candidate(candidate: str, suffix: str) -> bool:
     if not candidate:
         return False
+    if candidate.startswith(ORG_REFERENCE_PREFIXES):
+        return False
     if candidate in ORG_STOPWORDS:
         return False
     if len(candidate) <= len(suffix):
@@ -1294,6 +1315,10 @@ def is_valid_organization_candidate(candidate: str, suffix: str) -> bool:
         return False
     if candidate.startswith(("是", "将", "成立", "建设", "围绕")):
         return False
+    if candidate in {"苏州机器人", "无锡机器人", "苏州ai公司", "无锡ai公司"}:
+        return False
+    if re.fullmatch(r"(苏州|无锡|长三角)(机器人|AI|人工智能)(公司)?", candidate, flags=re.IGNORECASE):
+        return False
     if candidate.startswith(("江苏省", "无锡等", "苏州等")) and candidate.endswith("机器人"):
         return False
     if any(fragment in candidate for fragment in ["全国大学", "大学生", "联盟赛", "一人公司", "机甲大师"]):
@@ -1306,6 +1331,49 @@ def is_valid_organization_candidate(candidate: str, suffix: str) -> bool:
     if suffix in {"公司", "集团", "银行", "电信", "机器人"} and len(candidate) < 4:
         return False
     return True
+
+
+def looks_like_placeholder_company(name: str) -> bool:
+    candidate = normalize_whitespace(name)
+    if not candidate:
+        return True
+    if candidate.startswith(ORG_REFERENCE_PREFIXES):
+        return True
+    if candidate in ORG_STOPWORDS:
+        return True
+    if candidate in {"苏州机器人", "无锡机器人", "苏州ai公司", "无锡ai公司"}:
+        return True
+    if re.fullmatch(r"(苏州|无锡|长三角)(机器人|AI|人工智能)(公司)?", candidate, flags=re.IGNORECASE):
+        return True
+    if candidate.startswith(("观众在", "工作人员", "高可靠性", "全省", "旗下")):
+        return True
+    if candidate.endswith("机器人") and candidate.startswith(("苏州", "无锡", "中国")):
+        return True
+    if any(fragment in candidate for fragment in ORG_BAD_FRAGMENTS):
+        return True
+    return False
+
+
+def normalize_entity_name(name: str) -> str:
+    cleaned = clean_organization_candidate(str(name), "")
+    cleaned = re.sub(r"^.*旗下", "", cleaned)
+    cleaned = re.sub(r"^(本轮融资(?:由)?|本次融资(?:由)?|由|其中|以及|包括|来自|作为|围绕|推动|面向|项目由)", "", cleaned)
+    cleaned = re.sub(r"(将进一步.*|进一步.*)$", "", cleaned)
+    return normalize_whitespace(cleaned).strip("，。；：:、 “”—-()（）[]【】")
+
+
+def normalize_entity_list(values: object, limit: int = 6) -> list[str]:
+    if not isinstance(values, list):
+        return []
+    normalized = []
+    for value in values:
+        cleaned = normalize_entity_name(str(value))
+        if not cleaned or looks_like_placeholder_company(cleaned) or cleaned in normalized:
+            continue
+        normalized.append(cleaned)
+        if len(normalized) >= limit:
+            break
+    return normalized
 
 
 def extract_organizations(text: str, title: str = "") -> list[str]:
@@ -1360,18 +1428,27 @@ def extract_topics(item: dict) -> list[dict]:
     return found[:5]
 
 
-def enrich_network_metadata(items: list[dict]) -> list[dict]:
+def enrich_network_metadata(items: list[dict], provider: Optional["SummaryProvider"] = None) -> list[dict]:
+    entity_calls = 0
     for item in items:
         combined = combine_candidate_text(item)
-        orgs = extract_organizations(combined, str(item.get("title", "")))
-        regions = detect_regions(combined)
+        rule_orgs = extract_organizations(combined, str(item.get("title", "")))
+        llm_payload = None
+        if provider is not None and entity_calls < MAX_ENTITY_EXTRACTION_ITEMS_PER_RUN and should_extract_entities(item, rule_orgs):
+            llm_payload = provider.extract_entities(item)
+            entity_calls += 1
+            if llm_payload:
+                log_event("entity", f"LLM 实体抽取: {item.get('title', '')} | confidence={llm_payload.get('entity_confidence', 'medium')}")
+        orgs, company_types, llm_regions, entity_confidence = merge_llm_entities(rule_orgs, llm_payload)
+        regions = llm_regions or detect_regions(combined)
         topics = extract_topics(item)
         item["companies"] = orgs[:6]
-        item["company_types"] = {name: classify_organization(name) for name in orgs[:6]}
+        item["company_types"] = company_types
         item["regions"] = regions[:3]
         item["topics"] = topics[:5]
         item["network_density"] = len(item["companies"]) + len(item["regions"]) + len(item["topics"])
         item["region_labels"] = [region for region in item["regions"]]
+        item["entity_confidence"] = entity_confidence
     return items
 
 
@@ -1594,6 +1671,9 @@ class SummaryProvider:
     def summarize(self, item: dict) -> Optional[dict]:
         raise NotImplementedError
 
+    def extract_entities(self, item: dict) -> Optional[dict]:
+        return None
+
 
 class NullSummaryProvider(SummaryProvider):
     def summarize(self, item: dict) -> Optional[dict]:
@@ -1605,6 +1685,44 @@ class DeepSeekSummaryProvider(SummaryProvider):
         self.api_key = api_key
         self.base_url = base_url
         self.model = model
+
+    def _request_json(self, *, prompt: str, article_payload: dict, timeout: int, log_label: str, item_title: str) -> Optional[dict]:
+        body = {
+            "model": self.model,
+            "temperature": 0.2,
+            "response_format": {"type": "json_object"},
+            "messages": [
+                {"role": "system", "content": prompt},
+                {"role": "user", "content": json.dumps(article_payload, ensure_ascii=False)},
+            ],
+        }
+        req = urllib.request.Request(
+            f"{self.base_url}/chat/completions",
+            data=json.dumps(body).encode("utf-8"),
+            headers={
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {self.api_key}",
+                "User-Agent": USER_AGENT,
+            },
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                payload = json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            raw = exc.read().decode("utf-8", errors="ignore")
+            log_event(log_label, f"LLM 请求失败: {item_title} | HTTP {exc.code} | {raw[:300]}")
+            return None
+        except Exception as exc:
+            log_event(log_label, f"LLM 请求失败: {item_title} | {exc}")
+            return None
+
+        try:
+            content_text = payload["choices"][0]["message"]["content"]
+            return json.loads(content_text)
+        except Exception as exc:
+            log_event(log_label, f"LLM 返回解析失败: {item_title} | {exc}")
+            return None
 
     def summarize(self, item: dict) -> Optional[dict]:
         content = normalize_whitespace(str(item.get("content_text", "")))
@@ -1629,44 +1747,14 @@ class DeepSeekSummaryProvider(SummaryProvider):
             "published_at": str(item.get("published_at", "")),
             "content": content[:SUMMARY_MAX_INPUT_CHARS],
         }
-        body = {
-            "model": self.model,
-            "temperature": 0.2,
-            "response_format": {"type": "json_object"},
-            "messages": [
-                {"role": "system", "content": prompt},
-                {
-                    "role": "user",
-                    "content": json.dumps(article_payload, ensure_ascii=False),
-                },
-            ],
-        }
-        req = urllib.request.Request(
-            f"{self.base_url}/chat/completions",
-            data=json.dumps(body).encode("utf-8"),
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {self.api_key}",
-                "User-Agent": USER_AGENT,
-            },
-            method="POST",
+        parsed = self._request_json(
+            prompt=prompt,
+            article_payload=article_payload,
+            timeout=25,
+            log_label="summary",
+            item_title=str(item.get("title", "")),
         )
-        try:
-            with urllib.request.urlopen(req, timeout=25) as resp:
-                payload = json.loads(resp.read().decode("utf-8"))
-        except urllib.error.HTTPError as exc:
-            raw = exc.read().decode("utf-8", errors="ignore")
-            log_event("summary", f"LLM 摘要失败: {item.get('title', '')} | HTTP {exc.code} | {raw[:300]}")
-            return None
-        except Exception as exc:
-            log_event("summary", f"LLM 摘要失败: {item.get('title', '')} | {exc}")
-            return None
-
-        try:
-            content_text = payload["choices"][0]["message"]["content"]
-            parsed = json.loads(content_text)
-        except Exception as exc:
-            log_event("summary", f"LLM 返回解析失败: {item.get('title', '')} | {exc}")
+        if not parsed:
             return None
 
         summary = normalize_whitespace(str(parsed.get("summary", "")))
@@ -1688,14 +1776,54 @@ class DeepSeekSummaryProvider(SummaryProvider):
             "summary_confidence": confidence,
         }
 
+    def extract_entities(self, item: dict) -> Optional[dict]:
+        content = normalize_whitespace(str(item.get("content_text", "")))
+        if len(content) < ENTITY_EXTRACTION_MIN_CONTENT_LENGTH:
+            return None
+        prompt = (
+            "你是中文区域产业情报编辑。请从文章内容中提取明确出现且可命名的机构实体，"
+            "严格返回 JSON，字段包含 companies, institutes, universities, government, parks, regions, confidence。"
+            "要求："
+            "1) 只保留明确命名实体，不要输出“这家公司”“这家苏州机器人公司”“某企业”这类指代词或泛称。"
+            "2) 如果只能判断出行业或地区，不能确认真实机构名，就返回空数组。"
+            "3) regions 仅限无锡、苏州、长三角。"
+            "4) confidence 仅返回 high、medium、low。"
+            "5) 不要输出 Markdown，不要补充解释。"
+        )
+        parsed = self._request_json(
+            prompt=prompt,
+            article_payload={
+                "title": str(item.get("title", "")),
+                "source": str(item.get("source", "")),
+                "published_at": str(item.get("published_at", "")),
+                "content": content[:SUMMARY_MAX_INPUT_CHARS],
+            },
+            timeout=25,
+            log_label="entity",
+            item_title=str(item.get("title", "")),
+        )
+        if not parsed:
+            return None
+        confidence = normalize_whitespace(str(parsed.get("confidence", ""))).lower() or "medium"
+        payload = {
+            "companies": normalize_entity_list(parsed.get("companies")),
+            "institutes": normalize_entity_list(parsed.get("institutes")),
+            "universities": normalize_entity_list(parsed.get("universities")),
+            "government": normalize_entity_list(parsed.get("government")),
+            "parks": normalize_entity_list(parsed.get("parks")),
+            "regions": [region for region in normalize_entity_list(parsed.get("regions"), limit=3) if region in REGION_SLUGS],
+            "entity_confidence": confidence,
+        }
+        return payload
+
 
 def build_summary_provider() -> SummaryProvider:
-    if not SUMMARY_ENABLED:
+    if not SUMMARY_ENABLED and not ENTITY_EXTRACTION_ENABLED:
         return NullSummaryProvider()
     if SUMMARY_PROVIDER == "deepseek" and LLM_API_KEY:
         return DeepSeekSummaryProvider(LLM_API_KEY, LLM_BASE_URL, LLM_MODEL)
-    if SUMMARY_ENABLED and not LLM_API_KEY:
-        log_event("summary", "未配置 LLM API Key，摘要功能将跳过")
+    if (SUMMARY_ENABLED or ENTITY_EXTRACTION_ENABLED) and not LLM_API_KEY:
+        log_event("summary", "未配置 LLM API Key，LLM 摘要与实体抽取功能将跳过")
     return NullSummaryProvider()
 
 
@@ -1751,6 +1879,73 @@ def enrich_items_with_summaries(items: list[dict], provider: SummaryProvider) ->
             if result.get("tags"):
                 item["tags"] = result["tags"][:5]
     return items
+
+
+def item_has_entity_cue(item: dict) -> bool:
+    text = combine_candidate_text(item)
+    return any(
+        keyword in text
+        for keyword in [
+            "融资",
+            "成立",
+            "公司",
+            "集团",
+            "研究院",
+            "实验室",
+            "创新中心",
+            "大学",
+            "学院",
+            "银行",
+            "电信",
+            "高新区",
+            "管委会",
+        ]
+    )
+
+
+def should_extract_entities(item: dict, orgs: list[str]) -> bool:
+    if not ENTITY_EXTRACTION_ENABLED or not LLM_API_KEY:
+        return False
+    if extracted_content_length(item) < ENTITY_EXTRACTION_MIN_CONTENT_LENGTH:
+        return False
+    if item.get("_existing") and age_in_days(str(item.get("published_at", ""))) > ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS:
+        return False
+    if any(looks_like_placeholder_company(org) for org in orgs):
+        return True
+    if item_has_entity_cue(item) and not orgs:
+        return True
+    title = str(item.get("title", ""))
+    if any(prefix in title for prefix in ORG_REFERENCE_PREFIXES):
+        return True
+    return False
+
+
+def merge_llm_entities(rule_orgs: list[str], llm_payload: Optional[dict]) -> tuple[list[str], dict[str, str], list[str], str]:
+    filtered_rule_orgs = [org for org in rule_orgs if not looks_like_placeholder_company(org)]
+    if not llm_payload:
+        return filtered_rule_orgs[:6], {name: classify_organization(name) for name in filtered_rule_orgs[:6]}, [], "rule"
+    confidence = normalize_whitespace(str(llm_payload.get("entity_confidence", ""))).lower() or "medium"
+    llm_typed = []
+    for field, org_type in [
+        ("companies", "company"),
+        ("institutes", "institute"),
+        ("universities", "university"),
+        ("government", "government"),
+        ("parks", "park"),
+    ]:
+        for name in normalize_entity_list(llm_payload.get(field), limit=6):
+            if looks_like_placeholder_company(name):
+                continue
+            if name not in [entry[0] for entry in llm_typed]:
+                llm_typed.append((name, org_type))
+    if confidence == "low":
+        return filtered_rule_orgs[:6], {name: classify_organization(name) for name in filtered_rule_orgs[:6]}, [], "low"
+    if llm_typed:
+        orgs = [name for name, _ in llm_typed][:6]
+        types = {name: org_type for name, org_type in llm_typed[:6]}
+        regions = [region for region in normalize_entity_list(llm_payload.get("regions"), limit=3) if region in REGION_SLUGS]
+        return orgs, types, regions, confidence
+    return filtered_rule_orgs[:6], {name: classify_organization(name) for name in filtered_rule_orgs[:6]}, [], confidence
 
 
 def dedupe_items(items: list[dict]) -> list[dict]:
@@ -1865,7 +2060,7 @@ def dedupe_items(items: list[dict]) -> list[dict]:
     return accepted_items[:CACHE_LIMIT]
 
 
-def finalize_items(items: list[dict]) -> list[dict]:
+def finalize_items(items: list[dict], provider: Optional["SummaryProvider"] = None) -> list[dict]:
     for item in items:
         if item.get("why_it_matters"):
             item["why_it_matters"] = strip_why_prefix(str(item.get("why_it_matters", "")))
@@ -1883,7 +2078,7 @@ def finalize_items(items: list[dict]) -> list[dict]:
             item["why_it_matters"] = fallback_why_it_matters(item)
         if not item.get("summary") and extracted_content_length(item) < MIN_EXTRACTED_CONTENT_LENGTH:
             item["summary_confidence"] = "low"
-    return enrich_network_metadata(items)
+    return enrich_network_metadata(items, provider)
 
 
 def write_data_json(items: list[dict]) -> None:
@@ -2046,7 +2241,7 @@ def render_news_item(news: dict) -> str:
     if why_it_matters:
         lines.append(f'      <p class="why"><strong>为什么值得关注：</strong>{why_it_matters}</p>')
     if company_html:
-        lines.append(f'      <p class="why"><strong>涉及公司：</strong>{company_html}</p>')
+        lines.append(f'      <p class="why"><strong>涉及机构：</strong>{company_html}</p>')
     if tag_html:
         lines.append(f'      <div class="tags">{tag_html}</div>')
     lines.append("    </article>")
@@ -2558,7 +2753,7 @@ def collect_items() -> list[dict]:
     merged = dedupe_items(merged)
     provider = build_summary_provider()
     merged = enrich_items_with_summaries(merged, provider)
-    merged = finalize_items(merged)
+    merged = finalize_items(merged, provider)
     return merged[:CACHE_LIMIT]
 
 
