@@ -1240,6 +1240,8 @@ def needs_article_review(item: dict) -> bool:
 def should_fetch_context(item: dict) -> bool:
     combined = combine_candidate_text(item)
     if item.get("_existing"):
+        if SUMMARY_BULK_BACKFILL and not item.get("summary"):
+            return True
         if ENTITY_EXTRACTION_ENABLED and age_in_days(str(item.get("published_at", ""))) <= ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS:
             title = str(item.get("title", ""))
             if any(keyword in combined for keyword in ["融资", "成立", "公司", "集团", "研究院", "实验室", "创新中心"]) or any(prefix in title for prefix in ORG_REFERENCE_PREFIXES):
@@ -1830,10 +1832,10 @@ def build_summary_provider() -> SummaryProvider:
 def should_summarize(item: dict) -> bool:
     if item.get("summary"):
         return False
-    if item.get("summary_confidence") == "low":
-        return False
     if SUMMARY_BULK_BACKFILL:
         return extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH
+    if item.get("summary_confidence") == "low":
+        return False
     if SUMMARY_NEW_ONLY and item.get("_existing"):
         return age_in_days(str(item.get("published_at", ""))) <= SUMMARY_RECENT_BACKFILL_DAYS and extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH
     return extracted_content_length(item) >= SUMMARY_MIN_CONTENT_LENGTH
