@@ -4,6 +4,7 @@ import html
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import urllib.error
@@ -23,6 +24,11 @@ DATA_PATH = os.path.join(ROOT_DIR, "data.json")
 ROBOTS_PATH = os.path.join(ROOT_DIR, "robots.txt")
 SITEMAP_PATH = os.path.join(ROOT_DIR, "sitemap.xml")
 HISTORY_PAGE_PREFIX = "history-page-"
+COMPANY_DIR = os.path.join(ROOT_DIR, "company")
+TOPIC_DIR = os.path.join(ROOT_DIR, "topic")
+REGION_DIR = os.path.join(ROOT_DIR, "region")
+WEEKLY_DIR = os.path.join(ROOT_DIR, "weekly")
+SUBMIT_DIR = os.path.join(ROOT_DIR, "submit")
 
 CST = timezone(timedelta(hours=8))
 USER_AGENT = "Mozilla/5.0 (compatible; WuxiAINewsBot/3.0; +https://wuxiai.com/)"
@@ -97,6 +103,8 @@ LLM_MODEL = (
     or os.getenv("DEEPSEEK_MODEL")
     or "deepseek-chat"
 ).strip()
+GITHUB_REPO = (os.getenv("WUXIAI_GITHUB_REPO") or "chenchen2012/wuxiai").strip()
+GITHUB_TOKEN = os.getenv("WUXIAI_GITHUB_TOKEN") or os.getenv("GITHUB_TOKEN") or ""
 
 CHINA_NEWS_SITE_FILTERS = [
     "news.cn",
@@ -402,6 +410,111 @@ SOFT_EVENT_TITLE_PATTERNS = [
     "国际传播",
 ]
 
+ORG_SUFFIXES = [
+    "股份有限公司",
+    "有限公司",
+    "集团",
+    "公司",
+    "研究院",
+    "研究所",
+    "实验室",
+    "创新中心",
+    "产业园",
+    "高新区",
+    "工信局",
+    "人民政府",
+    "管委会",
+    "大学",
+    "学院",
+    "银行",
+    "电信",
+    "机器人",
+]
+
+INSTITUTION_SUFFIXES = [
+    "研究院",
+    "研究所",
+    "实验室",
+    "创新中心",
+    "产业园",
+    "高新区",
+    "工信局",
+    "人民政府",
+    "管委会",
+    "大学",
+    "学院",
+]
+
+ORG_STOPWORDS = {
+    "人工智能",
+    "机器人",
+    "智能制造",
+    "工业ai",
+    "大模型",
+    "智能体",
+    "算法",
+    "模型",
+    "项目",
+    "产业",
+    "应用",
+    "场景",
+    "发展",
+    "制造业",
+    "高校联盟赛",
+    "工业机器人",
+}
+
+ORG_BAD_FRAGMENTS = [
+    "推动",
+    "推进",
+    "打造",
+    "依托",
+    "支持",
+    "探索",
+    "实现",
+    "显示",
+    "观察",
+    "落户",
+    "签约",
+    "项目",
+    "应用",
+    "场景",
+    "作为",
+    "通过",
+    "联合",
+    "更是",
+    "成立",
+    "建设",
+    "企业",
+    "手把手",
+    "春日之约",
+    "单人成军",
+    "加持",
+    "大学生",
+    "全国大学",
+    "联盟赛",
+    "机甲大师",
+    "一人公司",
+    "等多地",
+]
+
+TOPIC_DEFINITIONS = {
+    "robotics": {"label": "机器人", "keywords": ["机器人", "工业机器人", "人形机器人"]},
+    "industrial-ai": {"label": "工业AI", "keywords": ["工业ai", "工业智能", "工业互联网ai"]},
+    "machine-vision": {"label": "机器视觉", "keywords": ["机器视觉", "视觉检测"]},
+    "smart-manufacturing": {"label": "智能制造", "keywords": ["智能制造", "制造业", "工厂", "产线"]},
+    "embodied-ai": {"label": "具身智能", "keywords": ["具身智能"]},
+    "automation": {"label": "自动化", "keywords": ["自动化"]},
+    "llm": {"label": "大模型", "keywords": ["大模型", "模型", "智能体"]},
+    "ai-chip": {"label": "AI芯片", "keywords": ["ai芯片", "芯片", "算力"]},
+}
+
+REGION_SLUGS = {
+    "无锡": "wuxi",
+    "苏州": "suzhou",
+    "长三角": "yangtze-delta",
+}
+
 NON_AI_TITLE_KEYWORDS = [
     "铁路",
     "元宵",
@@ -594,6 +707,26 @@ def strip_why_prefix(text: str) -> str:
     cleaned = normalize_whitespace(text)
     cleaned = re.sub(r"^(为什么值得关注[:：]\s*)+", "", cleaned)
     return cleaned.strip()
+
+
+def slugify(text: str) -> str:
+    lowered = normalize_whitespace(text).lower()
+    lowered = lowered.replace("&", " and ")
+    parts = re.findall(r"[a-z0-9]+|[\u4e00-\u9fff]+", lowered)
+    slug = "-".join(parts).strip("-")
+    return slug[:72] or "item"
+
+
+def path_join_url(*parts: str) -> str:
+    cleaned = [part.strip("/") for part in parts if part]
+    return "/" + "/".join(cleaned) + "/"
+
+
+def topic_slug_from_label(label: str) -> str:
+    for slug, config in TOPIC_DEFINITIONS.items():
+        if config["label"] == label:
+            return slug
+    return ""
 
 
 def now_cst() -> datetime:
@@ -1133,6 +1266,203 @@ def build_content_digest(item: dict) -> str:
     return hashlib.sha1(content[:1800].encode("utf-8")).hexdigest()
 
 
+def clean_organization_candidate(candidate: str, suffix: str) -> str:
+    cleaned = normalize_whitespace(candidate).strip("，。；：:、 “”—-()（）[]【】")
+    cleaned = re.sub(r"(在(?:无锡|苏州|江阴|常熟|相城|长三角).{0,12}(?:成立|签约|落地|投用|启用).*)$", "", cleaned)
+    cleaned = re.sub(r"^(由|与|和|在|对|将|把|被|让|为|向|从|以|及|并|该|本次|此次|联合|更是|围绕)", "", cleaned)
+    cleaned = re.sub(r"(项目|场景|应用|平台|方案|生态|赛事|活动|发布会|论坛)$", "", cleaned)
+    cleaned = cleaned.strip("，。；：:、 “”—-()（）[]【】")
+    if suffix and cleaned and not cleaned.endswith(suffix) and suffix not in {"公司", "机器人"}:
+        cleaned = f"{cleaned}{suffix}".strip()
+    return cleaned
+
+
+def is_valid_organization_candidate(candidate: str, suffix: str) -> bool:
+    if not candidate:
+        return False
+    if candidate in ORG_STOPWORDS:
+        return False
+    if len(candidate) <= len(suffix):
+        return False
+    if len(candidate) > 20:
+        return False
+    if candidate.count(" ") > 1:
+        return False
+    if re.search(r"[，。；：、“”‘’!?！？]", candidate):
+        return False
+    if candidate.startswith(("人工智能", "机器人", "智能制造", "工业AI", "AI")):
+        return False
+    if candidate.startswith(("是", "将", "成立", "建设", "围绕")):
+        return False
+    if candidate.startswith(("江苏省", "无锡等", "苏州等")) and candidate.endswith("机器人"):
+        return False
+    if any(fragment in candidate for fragment in ["全国大学", "大学生", "联盟赛", "一人公司", "机甲大师"]):
+        return False
+    lowered = candidate.lower()
+    if any(fragment in candidate for fragment in ORG_BAD_FRAGMENTS):
+        return False
+    if any(fragment in lowered for fragment in ["http", ".com", "www."]):
+        return False
+    if suffix in {"公司", "集团", "银行", "电信", "机器人"} and len(candidate) < 4:
+        return False
+    return True
+
+
+def extract_organizations(text: str, title: str = "") -> list[str]:
+    cleaned = normalize_whitespace(" ".join(part for part in [title, text] if part))
+    candidates = []
+    for suffix in ORG_SUFFIXES:
+        pattern = rf"(?<![\u4e00-\u9fffA-Za-z0-9])([\u4e00-\u9fffA-Za-z0-9·\-]{{2,18}}{re.escape(suffix)})"
+        for match in re.findall(pattern, cleaned):
+            candidate = clean_organization_candidate(match, suffix)
+            if is_valid_organization_candidate(candidate, suffix) and candidate not in candidates:
+                candidates.append(candidate)
+
+    title_patterns = [
+        r"([\u4e00-\u9fffA-Za-z0-9·\-]{2,12})(?=在(?:无锡|苏州|江阴|常熟|相城|长三角).{0,8}(?:成立|签约|落地|投用|启用|发布))",
+        r"([\u4e00-\u9fffA-Za-z0-9·\-]{2,12})(?=稳步推进)",
+    ]
+    for pattern in title_patterns:
+        for match in re.findall(pattern, title or ""):
+            candidate = clean_organization_candidate(match, "")
+            if candidate in ORG_STOPWORDS:
+                continue
+            if len(candidate) < 3 or len(candidate) > 12:
+                continue
+            if any(fragment in candidate for fragment in ORG_BAD_FRAGMENTS):
+                continue
+            if candidate.endswith(("大学", "学院")):
+                continue
+            if candidate not in candidates:
+                candidates.append(candidate)
+    return candidates[:8]
+
+
+def classify_organization(name: str) -> str:
+    for suffix in INSTITUTION_SUFFIXES:
+        if name.endswith(suffix):
+            if suffix in {"产业园", "高新区"}:
+                return "park"
+            if suffix in {"工信局", "人民政府", "管委会"}:
+                return "government"
+            if suffix in {"大学", "学院"}:
+                return "university"
+            return "institute"
+    return "company"
+
+
+def extract_topics(item: dict) -> list[dict]:
+    text = combine_candidate_text(item).lower()
+    found = []
+    for slug, config in TOPIC_DEFINITIONS.items():
+        if any(keyword in text for keyword in config["keywords"]):
+            found.append({"slug": slug, "label": config["label"]})
+    return found[:5]
+
+
+def enrich_network_metadata(items: list[dict]) -> list[dict]:
+    for item in items:
+        combined = combine_candidate_text(item)
+        orgs = extract_organizations(combined, str(item.get("title", "")))
+        regions = detect_regions(combined)
+        topics = extract_topics(item)
+        item["companies"] = orgs[:6]
+        item["company_types"] = {name: classify_organization(name) for name in orgs[:6]}
+        item["regions"] = regions[:3]
+        item["topics"] = topics[:5]
+        item["network_density"] = len(item["companies"]) + len(item["regions"]) + len(item["topics"])
+        item["region_labels"] = [region for region in item["regions"]]
+    return items
+
+
+def build_company_index(items: list[dict]) -> dict[str, dict]:
+    index = {}
+    for item in items:
+        for company in item.get("companies", []):
+            slug = slugify(company)
+            entry = index.setdefault(
+                slug,
+                {
+                    "slug": slug,
+                    "name": company,
+                    "type": item.get("company_types", {}).get(company, "company"),
+                    "mention_count": 0,
+                    "tags": set(),
+                    "cities": set(),
+                    "first_appearance": "",
+                    "last_appearance": "",
+                    "news": [],
+                },
+            )
+            entry["mention_count"] += 1
+            entry["news"].append(item)
+            for tag in item.get("tags", []):
+                entry["tags"].add(tag)
+            for region in item.get("regions", []):
+                entry["cities"].add(region)
+            published = str(item.get("published_at", ""))
+            if not entry["first_appearance"] or published < entry["first_appearance"]:
+                entry["first_appearance"] = published
+            if not entry["last_appearance"] or published > entry["last_appearance"]:
+                entry["last_appearance"] = published
+    for entry in index.values():
+        entry["tags"] = sorted(entry["tags"])[:6]
+        entry["cities"] = sorted(entry["cities"])[:3]
+        entry["news"] = sorted(entry["news"], key=lambda item: str(item.get("published_at", "")), reverse=True)
+    return dict(sorted(index.items(), key=lambda pair: (pair[1]["mention_count"], pair[1]["last_appearance"]), reverse=True))
+
+
+def build_topic_index(items: list[dict]) -> dict[str, dict]:
+    index = {}
+    for item in items:
+        for topic in item.get("topics", []):
+            entry = index.setdefault(
+                topic["slug"],
+                {
+                    "slug": topic["slug"],
+                    "label": topic["label"],
+                    "count": 0,
+                    "news": [],
+                    "companies": set(),
+                },
+            )
+            entry["count"] += 1
+            entry["news"].append(item)
+            for company in item.get("companies", []):
+                entry["companies"].add(company)
+    for entry in index.values():
+        entry["companies"] = sorted(entry["companies"])[:12]
+        entry["news"] = sorted(entry["news"], key=lambda item: str(item.get("published_at", "")), reverse=True)
+    return dict(sorted(index.items(), key=lambda pair: pair[1]["count"], reverse=True))
+
+
+def build_region_index(items: list[dict]) -> dict[str, dict]:
+    index = {}
+    for item in items:
+        for region in item.get("regions", []):
+            slug = REGION_SLUGS.get(region, slugify(region))
+            entry = index.setdefault(
+                slug,
+                {
+                    "slug": slug,
+                    "label": region,
+                    "news": [],
+                    "companies": set(),
+                    "topics": set(),
+                },
+            )
+            entry["news"].append(item)
+            for company in item.get("companies", []):
+                entry["companies"].add(company)
+            for topic in item.get("topics", []):
+                entry["topics"].add(topic["label"])
+    for entry in index.values():
+        entry["news"] = sorted(entry["news"], key=lambda item: str(item.get("published_at", "")), reverse=True)
+        entry["companies"] = sorted(entry["companies"])[:12]
+        entry["topics"] = sorted(entry["topics"])[:12]
+    return index
+
+
 def item_fingerprint(title: str) -> str:
     return hashlib.sha1(normalize_title(title).encode("utf-8")).hexdigest()
 
@@ -1553,10 +1883,13 @@ def finalize_items(items: list[dict]) -> list[dict]:
             item["why_it_matters"] = fallback_why_it_matters(item)
         if not item.get("summary") and extracted_content_length(item) < MIN_EXTRACTED_CONTENT_LENGTH:
             item["summary_confidence"] = "low"
-    return items
+    return enrich_network_metadata(items)
 
 
 def write_data_json(items: list[dict]) -> None:
+    companies = build_company_index(items)
+    topics = build_topic_index(items)
+    regions = build_region_index(items)
     serializable = []
     hidden_keys = {"content_text", "_existing", "content_digest"}
     for item in items:
@@ -1566,6 +1899,37 @@ def write_data_json(items: list[dict]) -> None:
         "updated_at": datetime.now(CST).isoformat(),
         "item_count": len(serializable),
         "items": serializable,
+        "companies": [
+            {
+                "slug": entry["slug"],
+                "name": entry["name"],
+                "type": entry["type"],
+                "mention_count": entry["mention_count"],
+                "tags": entry["tags"],
+                "cities": entry["cities"],
+                "first_appearance": entry["first_appearance"],
+                "last_appearance": entry["last_appearance"],
+            }
+            for entry in companies.values()
+        ],
+        "topics": [
+            {
+                "slug": entry["slug"],
+                "label": entry["label"],
+                "count": entry["count"],
+                "companies": entry["companies"],
+            }
+            for entry in topics.values()
+        ],
+        "regions": [
+            {
+                "slug": entry["slug"],
+                "label": entry["label"],
+                "company_count": len(entry["companies"]),
+                "topic_count": len(entry["topics"]),
+            }
+            for entry in regions.values()
+        ],
     }
     with open(DATA_PATH, "w", encoding="utf-8") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
@@ -1573,6 +1937,9 @@ def write_data_json(items: list[dict]) -> None:
 
 def write_seo_files(updated_iso: str, items: list[dict]) -> None:
     updated_date = updated_iso[:10] if updated_iso else datetime.now(CST).strftime("%Y-%m-%d")
+    company_index = build_company_index(items)
+    topic_index = build_topic_index(items)
+    region_index = build_region_index(items)
     robots = "\n".join(
         [
             "User-agent: *",
@@ -1597,6 +1964,18 @@ def write_seo_files(updated_iso: str, items: list[dict]) -> None:
         "    <changefreq>monthly</changefreq>",
         "    <priority>0.6</priority>",
         "  </url>",
+        "  <url>",
+        "    <loc>https://wuxiai.com/weekly/</loc>",
+        f"    <lastmod>{updated_date}</lastmod>",
+        "    <changefreq>daily</changefreq>",
+        "    <priority>0.8</priority>",
+        "  </url>",
+        "  <url>",
+        "    <loc>https://wuxiai.com/submit/</loc>",
+        f"    <lastmod>{updated_date}</lastmod>",
+        "    <changefreq>weekly</changefreq>",
+        "    <priority>0.5</priority>",
+        "  </url>",
     ]
     for page_number in range(1, get_history_page_count(items) + 1):
         sitemap_lines.extend(
@@ -1609,6 +1988,12 @@ def write_seo_files(updated_iso: str, items: list[dict]) -> None:
                 "  </url>",
             ]
         )
+    for entry in company_index.values():
+        sitemap_lines.extend(["  <url>", f"    <loc>https://wuxiai.com/company/{entry['slug']}/</loc>", f"    <lastmod>{updated_date}</lastmod>", "    <changefreq>daily</changefreq>", "    <priority>0.7</priority>", "  </url>"])
+    for entry in topic_index.values():
+        sitemap_lines.extend(["  <url>", f"    <loc>https://wuxiai.com/topic/{entry['slug']}/</loc>", f"    <lastmod>{updated_date}</lastmod>", "    <changefreq>daily</changefreq>", "    <priority>0.7</priority>", "  </url>"])
+    for entry in region_index.values():
+        sitemap_lines.extend(["  <url>", f"    <loc>https://wuxiai.com/region/{entry['slug']}/</loc>", f"    <lastmod>{updated_date}</lastmod>", "    <changefreq>daily</changefreq>", "    <priority>0.7</priority>", "  </url>"])
     sitemap_lines.extend(["</urlset>", ""])
     with open(ROBOTS_PATH, "w", encoding="utf-8") as handle:
         handle.write(robots)
@@ -1624,17 +2009,44 @@ def render_news_item(news: dict) -> str:
     summary = html.escape(str(news.get("summary", "")).strip())
     why_it_matters = html.escape(str(news.get("why_it_matters", "")).strip())
     tags = news.get("tags") if isinstance(news.get("tags"), list) else []
-    tag_html = "".join(f'<span class="tag">{html.escape(str(tag))}</span>' for tag in tags[:3])
+    companies = news.get("companies") if isinstance(news.get("companies"), list) else []
+    regions = news.get("regions") if isinstance(news.get("regions"), list) else []
+    tag_parts = []
+    for tag in tags[:3]:
+        topic_slug = topic_slug_from_label(str(tag))
+        if topic_slug:
+            tag_parts.append(
+                f'<a class="tag" href="{html.escape(path_join_url("topic", topic_slug), quote=True)}">{html.escape(str(tag))}</a>'
+            )
+        elif str(tag) in REGION_SLUGS:
+            tag_parts.append(
+                f'<a class="tag" href="{html.escape(path_join_url("region", REGION_SLUGS[str(tag)]), quote=True)}">{html.escape(str(tag))}</a>'
+            )
+        else:
+            tag_parts.append(f'<span class="tag">{html.escape(str(tag))}</span>')
+    tag_html = "".join(tag_parts)
+    company_html = "，".join(
+        f'<a href="{html.escape(path_join_url("company", slugify(company)), quote=True)}">{html.escape(str(company))}</a>'
+        for company in companies[:3]
+    )
+    region_html = "".join(
+        f'<a class="tag" href="{html.escape(path_join_url("region", REGION_SLUGS.get(region, slugify(region))), quote=True)}">{html.escape(region)}</a>'
+        for region in regions[:2]
+    )
 
     lines = [
         '    <article class="news-item">',
         f'      <h2 class="news-title"><a href="{url}" target="_blank" rel="noopener noreferrer">{title}</a></h2>',
         f'      <div class="src">{source} | {pub_date}</div>',
     ]
+    if region_html:
+        lines.append(f'      <div class="tags">{region_html}</div>')
     if summary:
         lines.append(f'      <p class="summary">{summary}</p>')
     if why_it_matters:
         lines.append(f'      <p class="why"><strong>为什么值得关注：</strong>{why_it_matters}</p>')
+    if company_html:
+        lines.append(f'      <p class="why"><strong>涉及公司：</strong>{company_html}</p>')
     if tag_html:
         lines.append(f'      <div class="tags">{tag_html}</div>')
     lines.append("    </article>")
@@ -1676,6 +2088,7 @@ def build_page_html(
             str(item.get("published_at", "")),
             freshness_score(str(item.get("published_at", "")))[0],
             int(item.get("relevance_score", 0)),
+            int(item.get("network_density", 0)),
             int(item.get("source_tier", 0)),
             1 if item.get("trusted") else 0,
             extracted_content_length(item),
@@ -1766,7 +2179,7 @@ def build_page_html(
     lines.extend(
         [
             '  <div class="contact">',
-            '    <div class="footer-nav"><span><a href="/contact.html">联系方式</a></span><span><a href="https://aild.org/zh/" target="_blank" rel="noopener noreferrer">版权所有：人工智能领导力与发展研究院（AILD）</a></span></div>',
+            '    <div class="footer-nav"><span><a href="/weekly/">每周观察</a></span><span><a href="/submit/">提交线索</a></span><span><a href="/contact.html">联系方式</a></span><span><a href="https://aild.org/zh/" target="_blank" rel="noopener noreferrer">版权所有：人工智能领导力与发展研究院（AILD）</a></span></div>',
             "  </div>",
             "  </section>",
             "  </main>",
@@ -1857,12 +2270,272 @@ def write_history_pages(items: list[dict]) -> None:
             os.remove(path)
 
 
+def ensure_dir(path: str) -> None:
+    os.makedirs(path, exist_ok=True)
+
+
+def reset_output_dir(path: str) -> None:
+    if os.path.isdir(path):
+        shutil.rmtree(path)
+    os.makedirs(path, exist_ok=True)
+
+
+def build_network_page_html(*, page_title: str, canonical_url: str, description: str, heading: str, intro: str, stats: list[str], news_items: list[dict], extra_sections: list[str]) -> str:
+    base = build_page_html(
+        items=news_items,
+        page_title=page_title,
+        canonical_url=canonical_url,
+        description=description,
+        heading=heading,
+        intro=intro,
+        show_limit=None,
+    )
+    insertion = []
+    if stats:
+        insertion.append('<div class="meta">' + " · ".join(html.escape(stat) for stat in stats) + "</div>")
+    insertion.extend(extra_sections)
+    snippet = "\n".join(insertion)
+    if '<div class="news-list">' in base:
+        return base.replace('<div class="news-list">', snippet + '\n  <div class="news-list">', 1)
+    return base.replace("</section>", snippet + "\n  </section>", 1)
+
+
+def write_company_pages(items: list[dict]) -> None:
+    reset_output_dir(COMPANY_DIR)
+    for entry in build_company_index(items).values():
+        path = os.path.join(COMPANY_DIR, entry["slug"], "index.html")
+        ensure_dir(os.path.dirname(path))
+        extras = []
+        if entry["cities"]:
+            extras.append("<p class=\"intro\">涉及城市：" + "、".join(html.escape(city) for city in entry["cities"]) + "</p>")
+        if entry["tags"]:
+            extras.append("<p class=\"intro\">相关标签：" + "、".join(html.escape(tag) for tag in entry["tags"][:6]) + "</p>")
+        html_text = build_network_page_html(
+            page_title=f"{entry['name']} | 无锡AI 公司情报",
+            canonical_url=f"https://wuxiai.com/company/{entry['slug']}/",
+            description=f"{entry['name']} 在无锡AI新闻中的相关动态、提及次数与关联城市。",
+            heading=entry["name"],
+            intro="自动聚合该机构在无锡 / 苏州 / 长三角 AI 生态中的相关报道。",
+            stats=[
+                f"提及次数：{entry['mention_count']}",
+                f"首次出现：{format_cst_time(entry['first_appearance'])}",
+                f"最近出现：{format_cst_time(entry['last_appearance'])}",
+            ],
+            news_items=entry["news"][:24],
+            extra_sections=extras,
+        )
+        with open(path, "w", encoding="utf-8") as handle:
+            handle.write(html_text)
+
+
+def write_topic_pages(items: list[dict]) -> None:
+    reset_output_dir(TOPIC_DIR)
+    for entry in build_topic_index(items).values():
+        path = os.path.join(TOPIC_DIR, entry["slug"], "index.html")
+        ensure_dir(os.path.dirname(path))
+        extras = []
+        if entry["companies"]:
+            extras.append("<p class=\"intro\">相关机构：" + "、".join(html.escape(name) for name in entry["companies"][:10]) + "</p>")
+        html_text = build_network_page_html(
+            page_title=f"{entry['label']} | 无锡AI 主题情报",
+            canonical_url=f"https://wuxiai.com/topic/{entry['slug']}/",
+            description=f"{entry['label']} 在无锡、苏州与长三角 AI 生态中的相关新闻与相关机构。",
+            heading=entry["label"],
+            intro="从新闻中自动聚合的技术主题页，用于追踪该技术在区域生态中的出现频率与相关主体。",
+            stats=[f"提及次数：{entry['count']}", f"相关机构：{len(entry['companies'])}"],
+            news_items=entry["news"][:24],
+            extra_sections=extras,
+        )
+        with open(path, "w", encoding="utf-8") as handle:
+            handle.write(html_text)
+
+
+def write_region_pages(items: list[dict]) -> None:
+    reset_output_dir(REGION_DIR)
+    for entry in build_region_index(items).values():
+        path = os.path.join(REGION_DIR, entry["slug"], "index.html")
+        ensure_dir(os.path.dirname(path))
+        extras = []
+        if entry["companies"]:
+            extras.append("<p class=\"intro\">重点机构：" + "、".join(html.escape(name) for name in entry["companies"][:10]) + "</p>")
+        if entry["topics"]:
+            extras.append("<p class=\"intro\">高频主题：" + "、".join(html.escape(topic) for topic in entry["topics"][:10]) + "</p>")
+        html_text = build_network_page_html(
+            page_title=f"{entry['label']} | 无锡AI 区域情报",
+            canonical_url=f"https://wuxiai.com/region/{entry['slug']}/",
+            description=f"{entry['label']} 区域的 AI / 机器人相关新闻、重点机构与技术主题。",
+            heading=entry["label"],
+            intro="区域情报页会自动聚合该地区的最新动态、重点机构和高频技术主题。",
+            stats=[f"新闻数：{len(entry['news'])}", f"机构数：{len(entry['companies'])}", f"主题数：{len(entry['topics'])}"],
+            news_items=entry["news"][:24],
+            extra_sections=extras,
+        )
+        with open(path, "w", encoding="utf-8") as handle:
+            handle.write(html_text)
+
+
+def generate_weekly_trend_summary(items: list[dict]) -> str:
+    if not LLM_API_KEY:
+        return ""
+    weekly_items = [item for item in items if age_in_days(str(item.get("published_at", ""))) <= 7][:10]
+    if not weekly_items:
+        return ""
+    prompt = (
+        "你是区域 AI 产业分析编辑。请用中文写一小段 3 句以内的周观察，"
+        "聚焦无锡、苏州、长三角的公司、技术和产业动向，不要使用空话。"
+    )
+    content = json.dumps(
+        [
+            {
+                "title": item.get("title", ""),
+                "regions": item.get("regions", []),
+                "companies": item.get("companies", []),
+                "topics": [topic.get("label", "") for topic in item.get("topics", [])],
+            }
+            for item in weekly_items
+        ],
+        ensure_ascii=False,
+    )
+    req = urllib.request.Request(
+        f"{LLM_BASE_URL}/chat/completions",
+        data=json.dumps(
+            {
+                "model": LLM_MODEL,
+                "temperature": 0.2,
+                "messages": [
+                    {"role": "system", "content": prompt},
+                    {"role": "user", "content": content},
+                ],
+            }
+        ).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {LLM_API_KEY}",
+            "User-Agent": USER_AGENT,
+        },
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=25) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+        return normalize_whitespace(payload["choices"][0]["message"]["content"])
+    except Exception as exc:
+        log_event("weekly", f"周观察生成失败: {exc}")
+        return ""
+
+
+def write_weekly_page(items: list[dict]) -> None:
+    ensure_dir(WEEKLY_DIR)
+    weekly_items = [item for item in items if age_in_days(str(item.get("published_at", ""))) <= 7]
+    company_index = build_company_index(weekly_items)
+    topic_index = build_topic_index(weekly_items)
+    trend_summary = generate_weekly_trend_summary(weekly_items)
+    extras = []
+    if company_index:
+        extras.append("<p class=\"intro\">本周高频机构：" + "、".join(html.escape(entry["name"]) for entry in list(company_index.values())[:8]) + "</p>")
+    if topic_index:
+        extras.append("<p class=\"intro\">本周高频技术：" + "、".join(html.escape(entry["label"]) for entry in list(topic_index.values())[:8]) + "</p>")
+    if trend_summary:
+        extras.append("<p class=\"why\"><strong>本周观察：</strong>" + html.escape(trend_summary) + "</p>")
+    html_text = build_network_page_html(
+        page_title="本周AI观察 | 无锡AI",
+        canonical_url="https://wuxiai.com/weekly/",
+        description="自动生成的无锡 / 苏州 / 长三角 AI 周度观察，汇总本周重点新闻、机构和技术主题。",
+        heading="本周无锡AI观察",
+        intro="自动汇总最近 7 天区域 AI 生态中的重点新闻、机构与技术主题。",
+        stats=[f"本周新闻：{len(weekly_items)}", f"本周机构：{len(company_index)}", f"本周主题：{len(topic_index)}"],
+        news_items=weekly_items[:18],
+        extra_sections=extras,
+    )
+    with open(os.path.join(WEEKLY_DIR, "index.html"), "w", encoding="utf-8") as handle:
+        handle.write(html_text)
+
+
+def build_submit_page() -> str:
+    template = """<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>提交新闻线索 | 无锡AI</title><style>body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f7fb;color:#1f2937;margin:0}main{max-width:760px;margin:28px auto;padding:0 16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:22px}label{display:block;margin:12px 0 6px;font-weight:600}input,textarea{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;font:inherit}button{margin-top:16px;background:#1d4ed8;color:#fff;border:0;border-radius:10px;padding:10px 16px;font:inherit;cursor:pointer}.muted{color:#6b7280;font-size:14px}</style></head>
+<body><main><section class="card"><h1>提交新闻线索</h1><p class="muted">你提交的内容会进入自动抓取与评分流程；若链接和内容足够相关，系统会自动纳入发布。</p>
+<form id="submit-form"><label>Title</label><input name="title" required><label>URL</label><input name="url" required><label>Company (optional)</label><input name="company"><label>City (optional)</label><input name="city"><label>Description (optional)</label><textarea name="description" rows="5"></textarea><button type="submit">提交到线索入口</button></form></section></main>
+<script>
+document.getElementById('submit-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const title = `[submit] ${data.get('title')}`;
+  const body = [
+    `Title: ${data.get('title') || ''}`,
+    `URL: ${data.get('url') || ''}`,
+    `Company: ${data.get('company') || ''}`,
+    `City: ${data.get('city') || ''}`,
+    `Description: ${data.get('description') || ''}`
+  ].join('\\n');
+  const url = `https://github.com/__GITHUB_REPO__/issues/new?labels=submission&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  window.location.href = url;
+});
+</script></body></html>"""
+    return template.replace("__GITHUB_REPO__", html.escape(GITHUB_REPO, quote=True))
+
+
+def write_submit_page() -> None:
+    ensure_dir(SUBMIT_DIR)
+    with open(os.path.join(SUBMIT_DIR, "index.html"), "w", encoding="utf-8") as handle:
+        handle.write(build_submit_page())
+
+
+def parse_submission_body(body: str) -> dict[str, str]:
+    parsed = {}
+    for line in (body or "").splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        parsed[key.strip().lower()] = value.strip()
+    return parsed
+
+
+def fetch_submission_items() -> list[dict]:
+    if not GITHUB_REPO:
+        return []
+    url = f"https://api.github.com/repos/{GITHUB_REPO}/issues?state=open&labels=submission&per_page=50"
+    headers = {"User-Agent": USER_AGENT, "Accept": "application/vnd.github+json"}
+    if GITHUB_TOKEN:
+        headers["Authorization"] = f"Bearer {GITHUB_TOKEN}"
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=FETCH_TIMEOUT_SECONDS) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+    except Exception as exc:
+        log_event("submission", f"拉取提交线索失败: {exc}")
+        return []
+    submissions = []
+    for issue in payload:
+        body = parse_submission_body(str(issue.get("body", "")))
+        title = body.get("title") or str(issue.get("title", "")).replace("[submit]", "").strip()
+        link = body.get("url", "").strip()
+        if not title or not link:
+            continue
+        description = body.get("description", "")
+        company = body.get("company", "")
+        city = body.get("city", "")
+        submissions.append(
+            {
+                "title": title,
+                "url": link,
+                "source": "社区提交",
+                "published_at": parse_iso_datetime(str(issue.get("created_at", "")).replace("Z", "+00:00")).astimezone(CST).isoformat() if issue.get("created_at") else "",
+                "feed": "submission",
+                "rss_description": normalize_whitespace(" ".join(part for part in [description, company, city] if part)),
+            }
+        )
+    return submissions
+
+
 def collect_items() -> list[dict]:
     existing = load_existing_items()
     existing_url_set = {clean_url(str(item.get("url", ""))) for item in existing}
     existing_title_set = {normalize_title(str(item.get("title", ""))) for item in existing}
 
     raw_items = []
+    raw_items.extend(fetch_submission_items())
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = {executor.submit(fetch_url, url): (name, url) for name, url in FEED_SOURCES}
         for future in as_completed(futures):
@@ -1897,6 +2570,11 @@ def main() -> None:
     with open(OUTPUT_PATH, "w", encoding="utf-8") as handle:
         handle.write(build_home_html(items))
     write_history_pages(items)
+    write_company_pages(items)
+    write_topic_pages(items)
+    write_region_pages(items)
+    write_weekly_page(items)
+    write_submit_page()
 
 
 if __name__ == "__main__":

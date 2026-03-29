@@ -5,7 +5,8 @@
 - 数据来源：多源 RSS（Google News + Bing News，多关键词并行抓取）
 - 聚焦主题：无锡人工智能 / 无锡AI / 无锡机器人 / 苏州人工智能 / 苏州AI / 苏州机器人 / 长三角人工智能
 - 质量控制：精确 URL、标题标准化、标题模糊相似、正文相似去重，可信媒体与原始/更丰富版本优先
-- 展示内容：标题 + 来源 + 时间 + 中文摘要 + 为什么值得关注 + 标签 + 原文链接
+- 展示内容：标题 + 来源 + 时间 + 中文摘要 + 为什么值得关注 + 标签 + 涉及机构 + 原文链接
+- 网络化输出：自动生成 `company/`、`topic/`、`region/`、`weekly/`、`submit/` 静态页面
 - 更新方式：GitHub Actions 每 2 小时自动更新 `index.html` 与 `data.json`
 
 ## 本地运行
@@ -45,7 +46,19 @@ export WUXIAI_CONTENT_SIMILARITY_THRESHOLD=0.82
 export WUXIAI_MIN_RELEVANCE_SCORE=8
 export WUXIAI_MIN_EXTRACTED_CONTENT_LENGTH=180
 export WUXIAI_SUMMARY_MIN_CONTENT_LENGTH=260
+export WUXIAI_MAX_FEED_SOURCES=96
+export WUXIAI_MAX_SUMMARY_ITEMS_PER_RUN=8
 ```
+
+### 提交入口 / GitHub 线索源
+
+```bash
+export WUXIAI_GITHUB_REPO=chenchen2012/wuxiai
+# 可选，用于提升 GitHub API 额度
+export WUXIAI_GITHUB_TOKEN=...
+```
+
+`/submit/` 页面会将线索写入 GitHub Issues（`submission` 标签），构建脚本会自动拉取这些线索并进入同一套评分/发布流程。
 
 ## GitHub Pages 发布
 

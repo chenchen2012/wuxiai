@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>提交新闻线索 | 无锡AI</title><style>body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f7fb;color:#1f2937;margin:0}main{max-width:760px;margin:28px auto;padding:0 16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:22px}label{display:block;margin:12px 0 6px;font-weight:600}input,textarea{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;font:inherit}button{margin-top:16px;background:#1d4ed8;color:#fff;border:0;border-radius:10px;padding:10px 16px;font:inherit;cursor:pointer}.muted{color:#6b7280;font-size:14px}</style></head>
+<body><main><section class="card"><h1>提交新闻线索</h1><p class="muted">你提交的内容会进入自动抓取与评分流程；若链接和内容足够相关，系统会自动纳入发布。</p>
+<form id="submit-form"><label>Title</label><input name="title" required><label>URL</label><input name="url" required><label>Company (optional)</label><input name="company"><label>City (optional)</label><input name="city"><label>Description (optional)</label><textarea name="description" rows="5"></textarea><button type="submit">提交到线索入口</button></form></section></main>
+<script>
+document.getElementById('submit-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const title = `[submit] ${data.get('title')}`;
+  const body = [
+    `Title: ${data.get('title') || ''}`,
+    `URL: ${data.get('url') || ''}`,
+    `Company: ${data.get('company') || ''}`,
+    `City: ${data.get('city') || ''}`,
+    `Description: ${data.get('description') || ''}`
+  ].join('\n');
+  const url = `https://github.com/chenchen2012/wuxiai/issues/new?labels=submission&title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}`;
+  window.location.href = url;
+});
+</script></body></html>
