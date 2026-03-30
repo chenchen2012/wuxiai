@@ -521,6 +521,10 @@ ORG_GENERIC_SUFFIX_BLOCKLIST = (
 )
 
 ORG_REFERENCE_PREFIXES = ("这家", "该", "某", "一家", "这家苏州", "这家无锡")
+ORG_ACTION_PREFIX_PATTERN = (
+    r"^(?:他|她|其|并|并且|后|随后|曾|曾经|已|已经|正|正在|还|也|又|再|就|现|现已|目前|目前已)?"
+    r"(?:入职|加入|加盟|任职于|就职于|供职于|创办|创立|成立|创设|组建)"
+)
 
 TOPIC_DEFINITIONS = {
     "robotics": {"label": "机器人", "keywords": ["机器人", "工业机器人", "人形机器人"]},
@@ -1300,6 +1304,7 @@ def clean_organization_candidate(candidate: str, suffix: str) -> str:
     cleaned = normalize_whitespace(candidate).strip("，。；：:、 “”—-()（）[]【】")
     cleaned = re.sub(r"(在(?:无锡|苏州|江阴|常熟|相城|长三角).{0,12}(?:成立|签约|落地|投用|启用).*)$", "", cleaned)
     cleaned = re.sub(r"^(由|与|和|在|对|将|把|被|让|为|向|从|以|及|并|该|本次|此次|联合|更是|围绕)", "", cleaned)
+    cleaned = re.sub(ORG_ACTION_PREFIX_PATTERN, "", cleaned)
     cleaned = re.sub(r"(项目|场景|应用|平台|方案|生态|赛事|活动|发布会|论坛)$", "", cleaned)
     cleaned = cleaned.strip("，。；：:、 “”—-()（）[]【】")
     if suffix and cleaned and not cleaned.endswith(suffix) and suffix not in {"公司", "机器人"}:
@@ -1358,6 +1363,8 @@ def looks_like_placeholder_company(name: str) -> bool:
         return True
     if candidate.startswith(("观众在", "工作人员", "高可靠性", "全省", "旗下")):
         return True
+    if re.match(ORG_ACTION_PREFIX_PATTERN, candidate):
+        return True
     if candidate.endswith("机器人") and candidate.startswith(("苏州", "无锡", "中国")):
         return True
     if any(fragment in candidate for fragment in ORG_BAD_FRAGMENTS):
@@ -1373,6 +1380,7 @@ def normalize_entity_name(name: str) -> str:
     cleaned = clean_organization_candidate(str(name), "")
     cleaned = re.sub(r"^.*旗下", "", cleaned)
     cleaned = re.sub(r"^(本轮融资(?:由)?|本次融资(?:由)?|由|其中|以及|包括|来自|作为|围绕|推动|面向|项目由)", "", cleaned)
+    cleaned = re.sub(ORG_ACTION_PREFIX_PATTERN, "", cleaned)
     cleaned = re.sub(r"(将进一步.*|进一步.*)$", "", cleaned)
     return normalize_whitespace(cleaned).strip("，。；：:、 “”—-()（）[]【】")
 
