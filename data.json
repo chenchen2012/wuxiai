@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-30T11:41:38.010928+08:00",
+  "updated_at": "2026-03-30T13:47:00.242577+08:00",
   "item_count": 32,
   "items": [
     {
@@ -45,27 +45,17 @@
       "companies": [],
       "company_types": {},
       "regions": [
-        "无锡",
-        "长三角"
+        "无锡"
       ],
       "topics": [
         {
-          "slug": "robotics",
-          "label": "机器人"
-        },
-        {
           "slug": "smart-manufacturing",
           "label": "智能制造"
-        },
-        {
-          "slug": "automation",
-          "label": "自动化"
         }
       ],
-      "network_density": 5,
+      "network_density": 2,
       "region_labels": [
-        "无锡",
-        "长三角"
+        "无锡"
       ],
       "entity_confidence": "rule"
     },
@@ -104,15 +94,12 @@
       ],
       "organizations": [
         "无锡次元映画文化科技有限公司",
-        "他入职无锡次元映画文化科技有限公司",
         "无锡学院"
       ],
       "companies": [
-        "无锡次元映画文化科技有限公司",
-        "他入职无锡次元映画文化科技有限公司"
+        "无锡次元映画文化科技有限公司"
       ],
       "company_types": {
-        "他入职无锡次元映画文化科技有限公司": "company",
         "无锡次元映画文化科技有限公司": "company",
         "无锡学院": "university"
       },
@@ -120,7 +107,7 @@
         "无锡"
       ],
       "topics": [],
-      "network_density": 4,
+      "network_density": 3,
       "region_labels": [
         "无锡"
       ],
@@ -313,10 +300,8 @@
         "无锡地铁集团"
       ],
       "company_types": {
-        "无锡地铁集团": "company",
         "中国电信无锡分公司": "company",
-        "中国电信": "company",
-        "无锡电信": "company"
+        "无锡地铁集团": "company"
       },
       "regions": [
         "无锡"
@@ -1589,24 +1574,6 @@
       "last_appearance": "2026-03-28T23:28:00+08:00"
     },
     {
-      "slug": "他入职无锡次元映画文化科技有限公司",
-      "name": "他入职无锡次元映画文化科技有限公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "AI新职业",
-        "人工智能产业",
-        "复合型人才",
-        "就业市场",
-        "技术应用"
-      ],
-      "cities": [
-        "无锡"
-      ],
-      "first_appearance": "2026-03-28T23:28:00+08:00",
-      "last_appearance": "2026-03-28T23:28:00+08:00"
-    },
-    {
       "slug": "中国电信无锡分公司",
       "name": "中国电信无锡分公司",
       "type": "company",
@@ -1810,7 +1777,7 @@
     {
       "slug": "robotics",
       "label": "机器人",
-      "count": 9,
+      "count": 8,
       "companies": [
         "均普智能",
         "宁波普智未来机器人有限公司",
@@ -1842,12 +1809,6 @@
       "companies": []
     },
     {
-      "slug": "automation",
-      "label": "自动化",
-      "count": 1,
-      "companies": []
-    },
-    {
       "slug": "ai-chip",
       "label": "AI芯片",
       "count": 1,
@@ -1858,13 +1819,7 @@
     {
       "slug": "wuxi",
       "label": "无锡",
-      "company_count": 10,
-      "topic_count": 5
-    },
-    {
-      "slug": "yangtze-delta",
-      "label": "长三角",
-      "company_count": 1,
+      "company_count": 9,
       "topic_count": 4
     },
     {
@@ -1872,6 +1827,12 @@
       "label": "苏州",
       "company_count": 3,
       "topic_count": 3
+    },
+    {
+      "slug": "yangtze-delta",
+      "label": "长三角",
+      "company_count": 1,
+      "topic_count": 1
     }
   ]
 }
