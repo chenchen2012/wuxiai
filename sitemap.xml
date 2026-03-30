@@ -43,6 +43,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/无锡能达热电有限公司/</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/中国电信无锡分公司/</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>daily</changefreq>
@@ -121,13 +127,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/topic/embodied-ai/</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
+    <loc>https://wuxiai.com/topic/automation/</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -145,13 +157,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/suzhou/</loc>
+    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
+    <loc>https://wuxiai.com/region/suzhou/</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
