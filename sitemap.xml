@@ -55,12 +55,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/国寿投资公司/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/company/无锡次元映画文化科技有限公司/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
@@ -133,13 +127,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
+    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/llm/</loc>
+    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -151,13 +145,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <loc>https://wuxiai.com/topic/automation/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/automation/</loc>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
