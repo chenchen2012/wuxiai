@@ -37,6 +37,24 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/科沃斯集团/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/苏州智能机器人科技发展有限公司/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/参访团来到科沃斯集团/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/国寿投资公司/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
@@ -115,13 +133,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/llm/</loc>
+    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
+    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -145,6 +163,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/region/suzhou/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/region/wuxi/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
@@ -152,12 +176,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/region/yangtze-delta/</loc>
-    <lastmod>2026-03-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/region/suzhou/</loc>
     <lastmod>2026-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
