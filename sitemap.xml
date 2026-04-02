@@ -43,13 +43,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/苏州工业园区人工智能发展公司/</loc>
+    <loc>https://wuxiai.com/company/江苏意优机器人科技有限公司/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/自从去年公司/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wuxiai.com/company/苏州工业园区人工智能发展有限公司/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/苏州工业园区人工智能发展公司/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -80,18 +92,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/无锡次元映画文化科技有限公司/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/中国电信无锡分公司/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/无锡地铁集团/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -193,13 +193,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/suzhou/</loc>
+    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
+    <loc>https://wuxiai.com/region/suzhou/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
