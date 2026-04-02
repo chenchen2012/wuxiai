@@ -55,6 +55,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/灵泛智能/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/苏州工业园区人工智能发展有限公司/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
@@ -92,6 +98,18 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/无锡次元映画文化科技有限公司/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/中国电信无锡分公司/</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/无锡地铁集团/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -151,13 +169,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
+    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/llm/</loc>
+    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -175,13 +193,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/industrial-ai/</loc>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <loc>https://wuxiai.com/topic/industrial-ai/</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
