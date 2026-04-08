@@ -103,10 +103,6 @@ LLM_MODEL = (
     or os.getenv("DEEPSEEK_MODEL")
     or "deepseek-chat"
 ).strip()
-ENTITY_EXTRACTION_ENABLED = (os.getenv("WUXIAI_ENABLE_ENTITY_EXTRACTION", "true") or "true").strip().lower() not in {"0", "false", "no", "off"}
-MAX_ENTITY_EXTRACTION_ITEMS_PER_RUN = int(os.getenv("WUXIAI_MAX_ENTITY_EXTRACTION_ITEMS_PER_RUN", "6") or 6)
-ENTITY_EXTRACTION_MIN_CONTENT_LENGTH = int(os.getenv("WUXIAI_ENTITY_EXTRACTION_MIN_CONTENT_LENGTH", "220") or 220)
-ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS = int(os.getenv("WUXIAI_ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS", "30") or 30)
 GITHUB_REPO = (os.getenv("WUXIAI_GITHUB_REPO") or "chenchen2012/wuxiai").strip()
 GITHUB_TOKEN = os.getenv("WUXIAI_GITHUB_TOKEN") or os.getenv("GITHUB_TOKEN") or ""
 
@@ -1255,10 +1251,6 @@ def should_fetch_context(item: dict) -> bool:
     if item.get("_existing"):
         if SUMMARY_BULK_BACKFILL and not item.get("summary"):
             return True
-        if ENTITY_EXTRACTION_ENABLED and age_in_days(str(item.get("published_at", ""))) <= ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS:
-            title = str(item.get("title", ""))
-            if any(keyword in combined for keyword in ["融资", "成立", "公司", "集团", "研究院", "实验室", "创新中心"]) or any(prefix in title for prefix in ORG_REFERENCE_PREFIXES):
-                return True
         return False
     if detect_regions(combined):
         return True
@@ -1532,7 +1524,6 @@ def extract_topics(item: dict) -> list[dict]:
 
 
 def enrich_network_metadata(items: list[dict], provider: Optional["SummaryProvider"] = None) -> list[dict]:
-    entity_calls = 0
     for item in items:
         combined = combine_candidate_text(item)
         rule_orgs = extract_organizations(combined, str(item.get("title", "")))
@@ -1540,15 +1531,9 @@ def enrich_network_metadata(items: list[dict], provider: Optional["SummaryProvid
         for name in seeded_orgs:
             if name not in rule_orgs:
                 rule_orgs.append(name)
-        llm_payload = None
-        if provider is not None and entity_calls < MAX_ENTITY_EXTRACTION_ITEMS_PER_RUN and should_extract_entities(item, rule_orgs):
-            llm_payload = provider.extract_entities(item)
-            entity_calls += 1
-            if llm_payload:
-                log_event("entity", f"LLM 实体抽取: {item.get('title', '')} | confidence={llm_payload.get('entity_confidence', 'medium')}")
-        orgs, company_types, llm_regions, entity_confidence = merge_llm_entities(rule_orgs, llm_payload)
+        orgs, company_types, rule_regions, entity_confidence = merge_rule_entities(rule_orgs)
         organizations, companies = prioritize_entities(orgs, company_types, item)
-        regions = llm_regions or detect_regions(combined)
+        regions = rule_regions or detect_regions(combined)
         topics = extract_topics(item)
         item["organizations"] = organizations
         item["companies"] = companies
@@ -1753,35 +1738,9 @@ def tag_story(item: dict) -> list[str]:
     return final_tags
 
 
-def fallback_why_it_matters(item: dict) -> str:
-    tags = item.get("tags") or []
-    summary = str(item.get("summary", "")).strip()
-    title = str(item.get("title", "")).strip()
-    if "政策" in tags:
-        return "能直接反映地方政府是否在继续加码 AI 与机器人产业支持。"
-    if "融资" in tags:
-        return "这类资金与基金动态通常最能提前反映区域产业布局方向。"
-    if "项目" in tags or "落地" in tags:
-        return "说明区域 AI/机器人项目正在从口号走向真实落地。"
-    if "机器人" in tags or "具身智能" in tags:
-        return "可用来观察区域机器人产业链和实际应用场景是否继续升温。"
-    if "智能制造" in tags:
-        return "更能体现 AI 是否真正进入制造业的一线生产和工厂流程。"
-    if "科研" in tags:
-        return "有助于判断本地高校和研究机构是否正在向产业侧持续输送能力。"
-    if summary and len(summary) >= 30:
-        return "有助于快速判断这条消息会不会转化成区域产业合作、项目或场景机会。"
-    if title:
-        return "值得继续跟踪它是否会带来后续的本地合作、项目或产业扩张。"
-    return ""
-
-
 class SummaryProvider:
     def summarize(self, item: dict) -> Optional[dict]:
         raise NotImplementedError
-
-    def extract_entities(self, item: dict) -> Optional[dict]:
-        return None
 
 
 class NullSummaryProvider(SummaryProvider):
@@ -1841,14 +1800,12 @@ class DeepSeekSummaryProvider(SummaryProvider):
 
         prompt = (
             "你是中文科技新闻编辑。请根据提供的文章内容生成严格 JSON，字段包含 "
-            "summary, why_it_matters, tags, confidence。"
+            "summary, confidence。"
             "要求："
             "1) summary 为 2-4 句自然中文，不能像机器翻译。"
-            "2) why_it_matters 为 1 句“为什么值得关注”。"
-            "3) tags 为 3-5 个中文短标签。"
-            "4) 如果正文信息不足、噪音过大、无法确认细节，请返回 confidence=\"low\"，"
-            "并把 summary 与 why_it_matters 设为空字符串，tags 设为空数组。"
-            "5) 不要凭标题脑补，不要输出 Markdown。"
+            "2) 如果正文信息不足、噪音过大、无法确认细节，请返回 confidence=\"low\"，"
+            "并把 summary 设为空字符串。"
+            "3) 不要凭标题脑补，不要输出 Markdown。"
         )
         article_payload = {
             "title": str(item.get("title", "")),
@@ -1867,72 +1824,22 @@ class DeepSeekSummaryProvider(SummaryProvider):
             return None
 
         summary = normalize_whitespace(str(parsed.get("summary", "")))
-        why_it_matters = strip_why_prefix(str(parsed.get("why_it_matters", "")))
-        tags = parsed.get("tags") if isinstance(parsed.get("tags"), list) else []
-        normalized_tags = []
-        for tag in tags:
-            cleaned = normalize_whitespace(str(tag))
-            if cleaned and cleaned not in normalized_tags:
-                normalized_tags.append(cleaned)
         confidence = normalize_whitespace(str(parsed.get("confidence", ""))).lower() or "medium"
         if confidence == "low":
             log_event("summary", f"低置信度，存储但不写摘要: {item.get('title', '')}")
-            return {"summary": "", "why_it_matters": "", "tags": [], "summary_confidence": "low"}
+            return {"summary": "", "summary_confidence": "low"}
         return {
             "summary": summary,
-            "why_it_matters": why_it_matters,
-            "tags": normalized_tags[:5],
             "summary_confidence": confidence,
         }
 
-    def extract_entities(self, item: dict) -> Optional[dict]:
-        content = normalize_whitespace(str(item.get("content_text", "")))
-        if len(content) < ENTITY_EXTRACTION_MIN_CONTENT_LENGTH:
-            return None
-        prompt = (
-            "你是中文区域产业情报编辑。请从文章内容中提取明确出现且可命名的机构实体，"
-            "严格返回 JSON，字段包含 companies, institutes, universities, government, parks, regions, confidence。"
-            "要求："
-            "1) 只保留明确命名实体，不要输出“这家公司”“这家苏州机器人公司”“某企业”这类指代词或泛称。"
-            "2) 如果只能判断出行业或地区，不能确认真实机构名，就返回空数组。"
-            "3) regions 仅限无锡、苏州、长三角。"
-            "4) confidence 仅返回 high、medium、low。"
-            "5) 不要输出 Markdown，不要补充解释。"
-        )
-        parsed = self._request_json(
-            prompt=prompt,
-            article_payload={
-                "title": str(item.get("title", "")),
-                "source": str(item.get("source", "")),
-                "published_at": str(item.get("published_at", "")),
-                "content": content[:SUMMARY_MAX_INPUT_CHARS],
-            },
-            timeout=25,
-            log_label="entity",
-            item_title=str(item.get("title", "")),
-        )
-        if not parsed:
-            return None
-        confidence = normalize_whitespace(str(parsed.get("confidence", ""))).lower() or "medium"
-        payload = {
-            "companies": normalize_entity_list(parsed.get("companies")),
-            "institutes": normalize_entity_list(parsed.get("institutes")),
-            "universities": normalize_entity_list(parsed.get("universities")),
-            "government": normalize_entity_list(parsed.get("government")),
-            "parks": normalize_entity_list(parsed.get("parks")),
-            "regions": [region for region in normalize_entity_list(parsed.get("regions"), limit=3) if region in REGION_SLUGS],
-            "entity_confidence": confidence,
-        }
-        return payload
-
-
 def build_summary_provider() -> SummaryProvider:
-    if not SUMMARY_ENABLED and not ENTITY_EXTRACTION_ENABLED:
+    if not SUMMARY_ENABLED:
         return NullSummaryProvider()
     if SUMMARY_PROVIDER == "deepseek" and LLM_API_KEY:
         return DeepSeekSummaryProvider(LLM_API_KEY, LLM_BASE_URL, LLM_MODEL)
-    if (SUMMARY_ENABLED or ENTITY_EXTRACTION_ENABLED) and not LLM_API_KEY:
-        log_event("summary", "未配置 LLM API Key，LLM 摘要与实体抽取功能将跳过")
+    if SUMMARY_ENABLED and not LLM_API_KEY:
+        log_event("summary", "未配置 LLM API Key，LLM 摘要功能将跳过")
     return NullSummaryProvider()
 
 
@@ -1983,78 +1890,13 @@ def enrich_items_with_summaries(items: list[dict], provider: SummaryProvider) ->
                 item.setdefault("summary_confidence", "low")
                 continue
             item["summary"] = result.get("summary", "")
-            item["why_it_matters"] = result.get("why_it_matters", "")
             item["summary_confidence"] = result.get("summary_confidence", "medium")
-            if result.get("tags"):
-                item["tags"] = result["tags"][:5]
     return items
 
 
-def item_has_entity_cue(item: dict) -> bool:
-    text = combine_candidate_text(item)
-    return any(
-        keyword in text
-        for keyword in [
-            "融资",
-            "成立",
-            "公司",
-            "集团",
-            "研究院",
-            "实验室",
-            "创新中心",
-            "大学",
-            "学院",
-            "银行",
-            "电信",
-            "高新区",
-            "管委会",
-        ]
-    )
-
-
-def should_extract_entities(item: dict, orgs: list[str]) -> bool:
-    if not ENTITY_EXTRACTION_ENABLED or not LLM_API_KEY:
-        return False
-    if extracted_content_length(item) < ENTITY_EXTRACTION_MIN_CONTENT_LENGTH:
-        return False
-    if item.get("_existing") and age_in_days(str(item.get("published_at", ""))) > ENTITY_EXTRACTION_RECENT_BACKFILL_DAYS:
-        return False
-    if any(looks_like_placeholder_company(org) for org in orgs):
-        return True
-    if item_has_entity_cue(item) and not orgs:
-        return True
-    title = str(item.get("title", ""))
-    if any(prefix in title for prefix in ORG_REFERENCE_PREFIXES):
-        return True
-    return False
-
-
-def merge_llm_entities(rule_orgs: list[str], llm_payload: Optional[dict]) -> tuple[list[str], dict[str, str], list[str], str]:
+def merge_rule_entities(rule_orgs: list[str]) -> tuple[list[str], dict[str, str], list[str], str]:
     filtered_rule_orgs = [org for org in rule_orgs if not looks_like_placeholder_company(org)]
-    if not llm_payload:
-        return filtered_rule_orgs[:6], {name: classify_organization(name) for name in filtered_rule_orgs[:6]}, [], "rule"
-    confidence = normalize_whitespace(str(llm_payload.get("entity_confidence", ""))).lower() or "medium"
-    llm_typed = []
-    for field, org_type in [
-        ("companies", "company"),
-        ("institutes", "institute"),
-        ("universities", "university"),
-        ("government", "government"),
-        ("parks", "park"),
-    ]:
-        for name in normalize_entity_list(llm_payload.get(field), limit=6):
-            if looks_like_placeholder_company(name):
-                continue
-            if name not in [entry[0] for entry in llm_typed]:
-                llm_typed.append((name, org_type))
-    if confidence == "low":
-        return filtered_rule_orgs[:6], {name: classify_organization(name) for name in filtered_rule_orgs[:6]}, [], "low"
-    if llm_typed:
-        orgs = [name for name, _ in llm_typed][:6]
-        types = {name: org_type for name, org_type in llm_typed[:6]}
-        regions = [region for region in normalize_entity_list(llm_payload.get("regions"), limit=3) if region in REGION_SLUGS]
-        return orgs, types, regions, confidence
-    return filtered_rule_orgs[:6], {name: classify_organization(name) for name in filtered_rule_orgs[:6]}, [], confidence
+    return filtered_rule_orgs[:6], {name: classify_organization(name) for name in filtered_rule_orgs[:6]}, [], "rule"
 
 
 def dedupe_items(items: list[dict]) -> list[dict]:
@@ -2171,8 +2013,7 @@ def dedupe_items(items: list[dict]) -> list[dict]:
 
 def finalize_items(items: list[dict], provider: Optional["SummaryProvider"] = None) -> list[dict]:
     for item in items:
-        if item.get("why_it_matters"):
-            item["why_it_matters"] = strip_why_prefix(str(item.get("why_it_matters", "")))
+        item.pop("why_it_matters", None)
         tags = item.get("tags")
         if not isinstance(tags, list) or not tags:
             item["tags"] = tag_story(item)
@@ -2183,8 +2024,6 @@ def finalize_items(items: list[dict], provider: Optional["SummaryProvider"] = No
                 if cleaned and cleaned not in normalized_tags:
                     normalized_tags.append(cleaned)
             item["tags"] = normalized_tags[:5]
-        if item.get("summary") and not item.get("why_it_matters"):
-            item["why_it_matters"] = fallback_why_it_matters(item)
         if not item.get("summary") and extracted_content_length(item) < MIN_EXTRACTED_CONTENT_LENGTH:
             item["summary_confidence"] = "low"
     return enrich_network_metadata(items, provider)
@@ -2311,9 +2150,7 @@ def render_news_item(news: dict) -> str:
     pub_date = html.escape(format_cst_time(str(news.get("published_at", ""))))
     url = html.escape(str(news.get("url", "")), quote=True)
     summary = html.escape(str(news.get("summary", "")).strip())
-    why_it_matters = html.escape(str(news.get("why_it_matters", "")).strip())
     tags = news.get("tags") if isinstance(news.get("tags"), list) else []
-    companies = news.get("companies") if isinstance(news.get("companies"), list) else []
     regions = news.get("regions") if isinstance(news.get("regions"), list) else []
     tag_parts = []
     for tag in tags[:3]:
@@ -2329,10 +2166,6 @@ def render_news_item(news: dict) -> str:
         else:
             tag_parts.append(f'<span class="tag">{html.escape(str(tag))}</span>')
     tag_html = "".join(tag_parts)
-    company_html = "，".join(
-        f'<a href="{html.escape(path_join_url("company", slugify(company)), quote=True)}">{html.escape(str(company))}</a>'
-        for company in companies[:3]
-    )
     region_html = "".join(
         f'<a class="tag" href="{html.escape(path_join_url("region", REGION_SLUGS.get(region, slugify(region))), quote=True)}">{html.escape(region)}</a>'
         for region in regions[:2]
@@ -2347,10 +2180,6 @@ def render_news_item(news: dict) -> str:
         lines.append(f'      <div class="tags">{region_html}</div>')
     if summary:
         lines.append(f'      <p class="summary">{summary}</p>')
-    if why_it_matters:
-        lines.append(f'      <p class="why"><strong>为什么值得关注：</strong>{why_it_matters}</p>')
-    if company_html:
-        lines.append(f'      <p class="why"><strong>涉及公司：</strong>{company_html}</p>')
     if tag_html:
         lines.append(f'      <div class="tags">{tag_html}</div>')
     lines.append("    </article>")
@@ -2452,7 +2281,6 @@ def build_page_html(
         "    .news-title { margin: 0 0 6px; font-size: 20px; line-height: 1.45; }",
         "    .src { color: var(--muted); font-size: 13px; }",
         "    .summary { margin: 8px 0 0; color: #374151; font-size: 15px; }",
-        "    .why { margin: 8px 0 0; color: #111827; font-size: 14px; }",
         "    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }",
         "    .tag { display: inline-flex; align-items: center; padding: 2px 10px; border-radius: 999px; background: var(--soft); color: #1e40af; font-size: 12px; }",
         "    .more { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; }",
@@ -2500,9 +2328,9 @@ def build_home_html(items: list[dict]) -> str:
         items=items,
         page_title="无锡AI | 无锡、苏州与长三角人工智能新闻",
         canonical_url="https://wuxiai.com/",
-        description="聚合无锡人工智能、无锡机器人、苏州AI、苏州机器人与长三角人工智能新闻，提供中文摘要、为什么值得关注与标签。",
+        description="聚合无锡人工智能、无锡机器人、苏州AI、苏州机器人与长三角人工智能新闻，提供中文摘要、标签与机构线索。",
         heading="无锡AI",
-        intro="聚合无锡、苏州与长三角人工智能和机器人新闻，优先保留更权威、更完整、与区域产业更相关的版本，并提供中文摘要与关注重点。",
+        intro="聚合无锡、苏州与长三角人工智能和机器人新闻，优先保留更权威、更完整、与区域产业更相关的版本，并提供中文摘要与结构化标签。",
         show_limit=MAX_ITEMS,
         more_link_html='想看更早的内容？<a href="/history.html">查看历史新闻</a>',
     )
@@ -2547,7 +2375,7 @@ def build_history_html(items: list[dict], page_number: int, total_pages: int) ->
         canonical_url=history_page_url(page_number),
         description="无锡AI历史新闻归档页，按相关性与时间倒序查看无锡、苏州与长三角人工智能及机器人新闻。",
         heading="无锡AI历史新闻",
-        intro="这里收录首页之外的更早新闻，保留摘要、关注点与标签，方便继续追踪区域AI与机器人动态。",
+        intro="这里收录首页之外的更早新闻，保留摘要与标签，方便继续追踪区域AI与机器人动态。",
         show_limit=None,
         more_link_html=build_history_navigation(page_number, total_pages),
         page_meta=f"归档分页：第 {page_number} 页 / 共 {total_pages} 页",
@@ -2740,7 +2568,7 @@ def write_weekly_page(items: list[dict]) -> None:
     if topic_index:
         extras.append("<p class=\"intro\">本周高频技术：" + "、".join(html.escape(entry["label"]) for entry in list(topic_index.values())[:8]) + "</p>")
     if trend_summary:
-        extras.append("<p class=\"why\"><strong>本周观察：</strong>" + html.escape(trend_summary) + "</p>")
+        extras.append("<p class=\"summary\"><strong>本周观察：</strong>" + html.escape(trend_summary) + "</p>")
     html_text = build_network_page_html(
         page_title="本周AI观察 | 无锡AI",
         canonical_url="https://wuxiai.com/weekly/",
