@@ -43,12 +43,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/汇聚上市公司/</loc>
-    <lastmod>2026-04-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/company/苏州立妙达智能科技有限公司/</loc>
     <lastmod>2026-04-12</lastmod>
     <changefreq>daily</changefreq>
@@ -169,13 +163,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/automation/</loc>
+    <loc>https://wuxiai.com/topic/industrial-ai/</loc>
     <lastmod>2026-04-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/industrial-ai/</loc>
+    <loc>https://wuxiai.com/topic/automation/</loc>
     <lastmod>2026-04-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
