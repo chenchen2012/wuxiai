@@ -43,6 +43,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/央国企能源集团/</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/苏州鼎级数字技术有限公司/</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>daily</changefreq>
@@ -62,12 +68,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/易博思智智能科技有限公司/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/江苏现代快报传媒有限公司/</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -163,7 +163,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/llm/</loc>
+    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -175,13 +175,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/ai-chip/</loc>
-    <lastmod>2026-04-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
+    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -199,19 +193,25 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <lastmod>2026-04-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/region/suzhou/</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/wuxi/</loc>
+    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
+    <loc>https://wuxiai.com/region/wuxi/</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
