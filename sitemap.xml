@@ -85,6 +85,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/云工场科技控股子公司/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/5-亿元估值现金收购亏损中的-ai-医疗公司/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>daily</changefreq>
@@ -169,19 +175,31 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/中国电信无锡分公司/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/无锡地铁集团/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/topic/robotics/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
+    <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
+    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -194,6 +212,12 @@
   </url>
   <url>
     <loc>https://wuxiai.com/topic/llm/</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
