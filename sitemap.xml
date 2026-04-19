@@ -169,25 +169,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/中国电信无锡分公司/</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/无锡地铁集团/</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/topic/robotics/</loc>
-    <lastmod>2026-04-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -199,13 +181,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/llm/</loc>
+    <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wuxiai.com/topic/automation/</loc>
+    <lastmod>2026-04-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-04-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
