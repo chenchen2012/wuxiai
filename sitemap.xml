@@ -181,13 +181,19 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -200,12 +206,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/topic/automation/</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
