@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-04-20T19:43:22.676900+08:00",
-  "item_count": 42,
+  "updated_at": "2026-04-20T22:11:13.127854+08:00",
+  "item_count": 41,
   "items": [
     {
       "title": "魔法原子与无锡市公安局达成战略合作 开创具身智能警务落地新标杆 - 中国网海丝频道",
@@ -9,24 +9,28 @@
       "published_at": "2026-04-20T16:46:00+08:00",
       "feed": "google:无锡 具身智能",
       "rss_description": "魔法原子与无锡市公安局达成战略合作 开创具身智能警务落地新标杆 中国网海丝频道",
-      "_is_new_candidate": true,
+      "_is_new_candidate": false,
       "domain": "hs.china.com.cn",
       "trusted": true,
       "source_tier": 2,
       "fingerprint": "4cea9540328de6ce5e81e95256dc1eae7d7283c3",
-      "relevance_score": 48,
+      "relevance_score": 66,
       "ranking_reasons": [
         "区域:无锡",
+        "主题:人工智能",
+        "主题:机器人",
         "主题:具身智能",
-        "新鲜度:24h内(0.1天)",
+        "主题:人形机器人",
+        "新鲜度:24h内(0.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "来源:可信媒体",
+        "正文:信息较完整",
         "强相关:合作",
         "强相关:落地"
       ],
       "summary": "魔法原子机器人科技有限公司与无锡市公安局签署战略合作协议，双方将基于人形机器人、四足机器狗等产品及具身智能技术，在警务核心场景开展联合研发与应用。此次合作标志着具身智能行业从单一设备供应转向警务全场景定制化协同，为智慧警务建设提供了可复制的示范样板。",
-      "why_it_matters": "因为它开创了具身智能企业与执法机关深度合作的先例，有望提升警务效率并推动智慧警务的全国推广。",
+      "why_it_matters": "它开创了具身智能企业与执法机关深度战略合作的先例，有望提升警务效率并推动智慧警务发展。",
       "summary_confidence": "high",
       "tags": [
         "具身智能",
@@ -34,149 +38,6 @@
         "警企合作",
         "机器人技术",
         "无锡公安"
-      ],
-      "organizations": [
-        "魔法原子机器人科技有限公司"
-      ],
-      "companies": [
-        "魔法原子机器人科技有限公司"
-      ],
-      "company_types": {
-        "魔法原子机器人科技有限公司": "company"
-      },
-      "regions": [
-        "无锡"
-      ],
-      "topics": [
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        }
-      ],
-      "network_density": 3,
-      "region_labels": [
-        "无锡"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
-      "title": "首发 | 从“指尖”到“大脑”：钧舵机器人联手苏大，打通工业具身智能落地的最后一厘米 - 新浪财经",
-      "url": "https://finance.sina.com.cn/wm/2026-04-20/doc-inhvcewe3892604.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-04-20T09:47:00+08:00",
-      "feed": "google:苏州 具身智能",
-      "rss_description": "首发 | 从“指尖”到“大脑”：钧舵机器人联手苏大，打通工业具身智能落地的最后一厘米 新浪财经",
-      "_is_new_candidate": false,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "4f73d199b0dde1b331c88daa1dc1309ea250acf3",
-      "relevance_score": 66,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:机器人",
-        "主题:具身智能",
-        "主题:大模型",
-        "主题:算法",
-        "主题:智能制造",
-        "主题:人形机器人",
-        "新鲜度:24h内(0.4天)",
-        "标题命中:主题:机器人",
-        "标题命中:主题:具身智能",
-        "正文:信息较完整",
-        "强相关:落地",
-        "强相关:研究院"
-      ],
-      "summary": "钧舵机器人联手苏州大学成立具身智能研究院，旨在从手和触觉出发，构建覆盖芯片、视觉、算法到执行器的生态网络，以推动工业具身智能的落地应用。",
-      "why_it_matters": "这标志着工业机器人领域从概念转向实际场景应用的关键一步，可能定义手与脑协作的新标准。",
-      "summary_confidence": "high",
-      "tags": [
-        "具身智能",
-        "工业机器人",
-        "产学研合作",
-        "技术创新"
-      ],
-      "organizations": [
-        "做咖啡的创业公司",
-        "苏州大学",
-        "苏州大学-钧舵具身智能研究院",
-        "钧舵机器人CEO-介党阳与苏州大学",
-        "介党阳与苏州大学机电学院"
-      ],
-      "companies": [
-        "做咖啡的创业公司"
-      ],
-      "company_types": {
-        "做咖啡的创业公司": "company",
-        "苏州大学-钧舵具身智能研究院": "institute",
-        "苏州大学": "university",
-        "钧舵机器人CEO-介党阳与苏州大学": "university",
-        "介党阳与苏州大学机电学院": "university"
-      },
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "robotics",
-          "label": "机器人"
-        },
-        {
-          "slug": "smart-manufacturing",
-          "label": "智能制造"
-        },
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        },
-        {
-          "slug": "llm",
-          "label": "大模型"
-        },
-        {
-          "slug": "ai-chip",
-          "label": "AI芯片"
-        }
-      ],
-      "network_density": 11,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
-      "title": "刚刚，外交部发言人毛宁点赞无锡的“它”！ - 新浪财经",
-      "url": "https://finance.sina.com.cn/wm/2026-04-19/doc-inhuzsuu0427143.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-04-19T18:21:00+08:00",
-      "feed": "google:无锡 机器人",
-      "rss_description": "刚刚，外交部发言人毛宁点赞无锡的“它”！ 新浪财经",
-      "_is_new_candidate": true,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "b8c8072448418a03bfcc2d65f9cda9893dd877cc",
-      "relevance_score": 48,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "主题:具身智能",
-        "主题:人形机器人",
-        "新鲜度:3天内(1.1天)",
-        "标题命中:区域:无锡",
-        "正文:信息较完整",
-        "强相关:合作",
-        "强相关:落地"
-      ],
-      "summary": "外交部发言人毛宁点赞无锡试点的机器人交警，这款由魔法原子机器人科技有限公司与无锡市公安局合作研发的机器人具备交通指挥、违法劝导和便民服务等功能。它身高1.75米，体重70公斤，续航约5小时，以科技手段提升警务效率和市民出行体验。此次合作标志着具身智能行业从设备供应向警务全场景协同的跃升。",
-      "why_it_matters": "因为它开创了具身智能企业与执法机关深度合作的先例，为智慧警务建设提供了可复制的示范样板。",
-      "summary_confidence": "high",
-      "tags": [
-        "机器人交警",
-        "具身智能",
-        "智慧警务",
-        "无锡",
-        "毛宁"
       ],
       "organizations": [
         "魔法原子机器人科技有限公司"
@@ -207,77 +68,6 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "首次突破2000亿元！一季度，无锡外贸硬核开局！ - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_32998928",
-      "source": "m.thepaper.cn",
-      "published_at": "2026-04-18T18:59:00+08:00",
-      "feed": "google:无锡 机器人",
-      "rss_description": "首次突破2000亿元！一季度，无锡外贸硬核开局！ thepaper.cn",
-      "_is_new_candidate": false,
-      "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "437fd32941ccf787e00f97a87ea722915b9f2afd",
-      "relevance_score": 58,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:人工智能",
-        "主题:机器人",
-        "主题:具身智能",
-        "主题:算力",
-        "主题:工业机器人",
-        "主题:AI",
-        "新鲜度:3天内(2.0天)",
-        "标题命中:区域:无锡",
-        "来源:可信媒体",
-        "正文:信息较完整",
-        "强相关:研究院"
-      ],
-      "summary": "无锡海关数据显示，今年一季度全市外贸进出口额首次突破2000亿元，达到2307.2亿元，同比增长26.9%，增速创近五年新高。机电产品出口占主导，其中集成电路、计算机零部件和工业机器人等智能装备出口增长强劲，拉动整体外贸表现。",
-      "why_it_matters": "这反映了无锡在人工智能和绿色低碳产业推动下，外贸结构优化和全球竞争力提升，对区域经济发展具有积极示范意义。",
-      "summary_confidence": "high",
-      "tags": [
-        "无锡外贸",
-        "智能装备出口",
-        "季度数据",
-        "经济增长",
-        "机器人产业"
-      ],
-      "organizations": [
-        "求之科技",
-        "清华大学智能产业研究院",
-        "无锡海关"
-      ],
-      "companies": [],
-      "company_types": {
-        "求之科技": "company",
-        "清华大学智能产业研究院": "institute",
-        "无锡海关": "government"
-      },
-      "regions": [
-        "无锡"
-      ],
-      "topics": [
-        {
-          "slug": "robotics",
-          "label": "机器人"
-        },
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        },
-        {
-          "slug": "ai-chip",
-          "label": "AI芯片"
-        }
-      ],
-      "network_density": 7,
-      "region_labels": [
-        "无锡"
-      ],
-      "entity_confidence": "high"
-    },
-    {
       "title": "机器人交警亮相江苏无锡街头 科技赋能城市交通管理 - 新浪财经",
       "url": "https://finance.sina.com.cn/roll/2026-04-18/doc-inhuxcfy1457234.shtml",
       "source": "finance.sina.com.cn",
@@ -289,16 +79,13 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "bd4b9df8078e35d512263b85bd1578d356274d5f",
-      "relevance_score": 43,
+      "relevance_score": 32,
       "ranking_reasons": [
         "区域:无锡",
-        "主题:人工智能",
         "主题:机器人",
-        "新鲜度:3天内(2.2天)",
+        "新鲜度:3天内(2.3天)",
         "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "正文:信息较完整",
-        "强相关:实验室"
+        "标题命中:主题:机器人"
       ],
       "summary": "江苏无锡近日启动机器人交警路面试点应用，将人工智能和物联网技术融入交通管理。这款机器人具备路口指挥、违法劝导和便民服务等功能，能有效减轻基层警务负担。无锡还计划将机器人技术拓展至更多警务领域，以提升城市交通管理效率。",
       "why_it_matters": "这标志着人工智能在公共安全领域的实际应用迈出新步伐，有望优化警力资源配置并提高城市治理水平。",
@@ -315,7 +102,7 @@
       ],
       "companies": [],
       "company_types": {
-        "无锡市公安局": "government"
+        "无锡市公安局": "company"
       },
       "regions": [
         "无锡"
@@ -330,7 +117,7 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "high"
+      "entity_confidence": "rule"
     },
     {
       "title": "无锡街头惊现机器人交警 会指挥还会比耶合影 - 新浪财经",
@@ -344,14 +131,13 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "42a817c654215237c9d1134f5b9e838e3fb3fd5f",
-      "relevance_score": 31,
+      "relevance_score": 30,
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:7天内(3.1天)",
+        "新鲜度:7天内(3.2天)",
         "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "正文:信息较完整"
+        "标题命中:主题:机器人"
       ],
       "summary": "江苏无锡街头出现了机器人交警，在路口正式上岗执勤，相关视频在网上引发关注。这款机器人交警并非摆设，已能真正参与交通管理工作，最早在2026无锡马拉松活动中亮相，经过功能升级后投入路面执勤。目前无锡共投放两台进行试点运行，机器人身高1.75米，体重70公斤，造型与真人交警相近，充满电可连续工作约5小时，能自动做出标准的交通指挥手势。",
       "why_it_matters": "这标志着人工智能技术在交通管理领域的实际应用迈出新步伐，可能提升执法效率和公众互动体验。",
@@ -397,7 +183,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:7天内(3.1天)",
+        "新鲜度:7天内(3.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "强相关:合作"
@@ -452,7 +238,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(3.1天)",
+        "新鲜度:7天内(3.2天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -510,7 +296,7 @@
         "主题:人形机器人",
         "主题:自动化",
         "主题:AI",
-        "新鲜度:7天内(3.2天)",
+        "新鲜度:7天内(3.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "正文:信息较完整",
@@ -570,59 +356,6 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "起猛了！街头看到机器人交警在指挥交通 多方回应 - 新浪财经",
-      "url": "https://finance.sina.com.cn/tech/roll/2026-04-17/doc-inhuuptn1120032.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-04-17T12:21:00+08:00",
-      "feed": "google:无锡 机器人",
-      "rss_description": "起猛了！街头看到机器人交警在指挥交通 多方回应 新浪财经",
-      "_is_new_candidate": false,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "840f0989617feda810d0773141d87840495c7c15",
-      "relevance_score": 30,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:机器人",
-        "主题:人形机器人",
-        "新鲜度:7天内(3.3天)",
-        "标题命中:主题:机器人",
-        "正文:信息较完整"
-      ],
-      "summary": "近日，有网友拍到身穿无锡交警反光衣的双足人形机器人在路口执勤，视频迅速引发全网热议。无锡交警部门表示暂不清楚相关情况，当地媒体和机器人开发公司均称机器人目前处于调试阶段，并非正式执勤。",
-      "why_it_matters": "这反映了人工智能和机器人技术在公共服务领域的应用探索，可能预示着未来交通管理的智能化趋势。",
-      "summary_confidence": "high",
-      "tags": [
-        "机器人交警",
-        "人工智能",
-        "交通管理",
-        "无锡",
-        "科技应用"
-      ],
-      "organizations": [
-        "无锡交警部门"
-      ],
-      "companies": [],
-      "company_types": {
-        "无锡交警部门": "government"
-      },
-      "regions": [
-        "无锡"
-      ],
-      "topics": [
-        {
-          "slug": "robotics",
-          "label": "机器人"
-        }
-      ],
-      "network_density": 3,
-      "region_labels": [
-        "无锡"
-      ],
-      "entity_confidence": "high"
-    },
-    {
       "title": "无锡街头现“机器人交警”？当地：是厂家在调试 - 凤凰网",
       "url": "https://news.ifeng.com/c/8sNYqCqSR5H",
       "source": "news.ifeng.com",
@@ -634,14 +367,13 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "b6dbebb870ce5a2d61d175d4a6a64dbef7b3e5e7",
-      "relevance_score": 31,
+      "relevance_score": 30,
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:7天内(3.6天)",
+        "新鲜度:7天内(3.7天)",
         "标题命中:区域:无锡",
-        "标题命中:主题:机器人",
-        "正文:信息较完整"
+        "标题命中:主题:机器人"
       ],
       "summary": "近日，有网友拍到身穿“无锡交警”反光衣的机器人在街头出现，引发网络热议。当地媒体澄清，这并非执勤，而是厂家在路口进行调试。这款机器人是无锡公安依托本土产业打造的首款双足人形交管机器人，曾亮相马拉松，旨在参与交通指挥和咨询服务。",
       "why_it_matters": "这反映了人工智能和机器人技术在公共安全领域的应用探索，可能预示着未来交通管理的智能化趋势。",
@@ -655,8 +387,8 @@
       ],
       "organizations": [
         "凤凰网",
-        "极目新闻",
         "无锡交警部门",
+        "极目新闻",
         "无锡公安"
       ],
       "companies": [
@@ -665,8 +397,8 @@
       "company_types": {
         "凤凰网": "company",
         "极目新闻": "company",
-        "无锡交警部门": "government",
-        "无锡公安": "government"
+        "无锡交警部门": "company",
+        "无锡公安": "company"
       },
       "regions": [
         "无锡"
@@ -681,7 +413,7 @@
       "region_labels": [
         "无锡"
       ],
-      "entity_confidence": "high"
+      "entity_confidence": "rule"
     },
     {
       "title": "苏州吴中机器人“潮品”亮相消博会 彰显场景创新活力 - 新浪财经",
@@ -699,7 +431,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(4.0天)",
+        "新鲜度:7天内(4.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -748,7 +480,7 @@
       "url": "https://www.cls.cn/detail/2346158",
       "source": "cls.cn",
       "published_at": "2026-04-16T16:17:53+08:00",
-      "feed": "google:无锡 机器人",
+      "feed": "google:无锡 具身智能",
       "rss_description": "江苏又一省级具身智能中心落地无锡 构建具身生态雨林锚定20万元级工业场景 财联社",
       "_is_new_candidate": false,
       "domain": "cls.cn",
@@ -759,7 +491,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:7天内(4.1天)",
+        "新鲜度:7天内(4.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "强相关:落地"
@@ -805,7 +537,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:7天内(5.2天)",
+        "新鲜度:7天内(5.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "标题命中:主题:具身智能",
@@ -862,7 +594,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:7天内(5.3天)",
+        "新鲜度:7天内(5.4天)",
         "标题命中:主题:AI"
       ],
       "summary_confidence": "low",
@@ -915,7 +647,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:14天内(7.5天)",
+        "新鲜度:14天内(7.6天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "强相关:项目"
@@ -960,7 +692,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:AI",
-        "新鲜度:14天内(8.4天)",
+        "新鲜度:14天内(8.5天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI"
       ],
@@ -1009,7 +741,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:14天内(9.7天)",
+        "新鲜度:14天内(9.8天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -1054,7 +786,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(11.0天)",
+        "新鲜度:14天内(11.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1088,7 +820,7 @@
       "published_at": "2026-04-09T19:24:00+08:00",
       "feed": "google:苏州 机器人",
       "rss_description": "创投观察站｜瞄准AI+机器人，这家苏州企业首轮融资超亿元 新华报业网",
-      "_is_new_candidate": true,
+      "_is_new_candidate": false,
       "domain": "xhby.net",
       "trusted": true,
       "source_tier": 2,
@@ -1098,7 +830,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:AI",
-        "新鲜度:14天内(11.0天)",
+        "新鲜度:14天内(11.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "标题命中:主题:AI",
@@ -1145,7 +877,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(12.1天)",
+        "新鲜度:14天内(12.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1188,7 +920,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:AI",
-        "新鲜度:14天内(12.3天)",
+        "新鲜度:14天内(12.4天)",
         "标题命中:主题:AI",
         "强相关:合作"
       ],
@@ -1234,7 +966,7 @@
         "区域:无锡",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:14天内(13.2天)",
+        "新鲜度:14天内(13.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:落地"
@@ -1274,7 +1006,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:具身智能",
-        "新鲜度:14天内(13.5天)",
+        "新鲜度:14天内(13.6天)",
         "标题命中:区域:苏州",
         "标题命中:主题:具身智能"
       ],
@@ -1318,7 +1050,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:人形机器人",
-        "新鲜度:偏旧(14.2天)",
+        "新鲜度:偏旧(14.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "标题命中:主题:人形机器人",
@@ -1363,7 +1095,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:偏旧(14.2天)",
+        "新鲜度:偏旧(14.3天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -1406,7 +1138,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:偏旧(17.2天)",
+        "新鲜度:偏旧(17.3天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -1449,7 +1181,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(17.2天)",
+        "新鲜度:偏旧(17.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -1494,7 +1226,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(18.2天)",
+        "新鲜度:偏旧(18.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1539,7 +1271,7 @@
         "区域:长三角",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:偏旧(18.4天)",
+        "新鲜度:偏旧(18.5天)",
         "标题命中:区域:无锡",
         "标题命中:区域:长三角",
         "标题命中:主题:AI",
@@ -1590,7 +1322,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(18.5天)",
+        "新鲜度:偏旧(18.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -1617,7 +1349,7 @@
       "url": "https://finance.sina.com.cn/tjhz/2026-04-02/doc-inhtaviy1063480.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-04-02T06:55:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "rss_description": "这一发展愿景，正是无锡科技职业学院深化产教融合、服务区域发展的行动方向。此次签约是学校坚持“立足高新区、融入高新区、服务高新区”，主动对接区域产业发展需求、深化产教融合、推动专业建设与人工智能前沿技术深度融合的生动实践。以创建职业本科为战略牵引，学校将依托“双O”社区AI漫剧空间这一重要平台，进一步探索“AI技术+数字创意”深度融合的人才培养与创新孵化新模式，为无锡高新区打造数字创意产业AI漫剧发 ...",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
@@ -1629,7 +1361,7 @@
         "区域:无锡",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:偏旧(18.5天)",
+        "新鲜度:偏旧(18.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -1677,7 +1409,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:人工智能",
-        "新鲜度:偏旧(19.3天)",
+        "新鲜度:偏旧(19.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能"
       ],
@@ -1715,7 +1447,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:人工智能",
-        "新鲜度:偏旧(19.5天)",
+        "新鲜度:偏旧(19.6天)",
         "标题命中:区域:苏州",
         "标题命中:主题:人工智能",
         "强相关:项目",
@@ -1773,7 +1505,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:偏旧(19.7天)",
+        "新鲜度:偏旧(19.8天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -1818,7 +1550,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(19.9天)",
+        "新鲜度:偏旧(20.0天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:合作"
@@ -1879,11 +1611,103 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:偏旧(20.7天)",
+        "新鲜度:偏旧(20.8天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "来源:可信媒体",
         "来源:官方/高校"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "机器人"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "工业母机与人工智能协同创新发展大会举行",
+      "url": "http://www.js.xinhuanet.com/20260331/9b948c95a9d84c27a4c01b70b0995f4e/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2026-03-30T17:00:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "工业母机作为制造业核心装备，其与人工智能、精密制造的深度融合，已成为推动产业转型升级的关键路径。3月30日，“智赋精工链聚未来——工业母机与人工智能协同创新发展大会”在无锡举行，会上正式启动“AI+高端装备产业赋能中心”专家智库。 本次大会作为第47届无锡（太湖）国际机床及智能工业装备产业博览会配套活动，聚焦技术创新、场景落地与生态共建，推动产业链企业协同攻关、资源共享，助力无锡工业母机产业高 ...",
+      "_is_new_candidate": true,
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "fb40fe1d9ba097719d97f498d53f9b61c49bf894",
+      "relevance_score": 31,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:人工智能",
+        "主题:AI",
+        "新鲜度:偏旧(21.2天)",
+        "标题命中:主题:人工智能",
+        "来源:可信媒体",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "智能制造",
+        "落地",
+        "论坛"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "智元持股，苏州机器人创企融资数亿元，红杉投了 - 腾讯新闻",
+      "url": "https://news.qq.com/rain/a/20260330A08HFO00",
+      "source": "news.qq.com",
+      "published_at": "2026-03-30T15:00:00+08:00",
+      "feed": "google:苏州 机器人",
+      "rss_description": "智元持股，苏州机器人创企融资数亿元，红杉投了 腾讯新闻",
+      "_is_new_candidate": true,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "2e2621c6253838ec1791a88551f9749fd04705bb",
+      "relevance_score": 31,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "新鲜度:偏旧(21.3天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:机器人",
+        "强相关:融资"
       ],
       "summary_confidence": "low",
       "tags": [
@@ -1924,7 +1748,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:智能制造",
-        "新鲜度:偏旧(22.2天)",
+        "新鲜度:偏旧(22.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:智能制造",
         "来源:可信媒体"
@@ -1968,7 +1792,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(24.4天)",
+        "新鲜度:偏旧(24.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "来源:可信媒体",
@@ -2004,52 +1828,95 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "艾利特机器人完成6亿元D+轮融资 布局AI产业链，加速全球战略落地",
-      "url": "https://finance.sina.com.cn/tech/roll/2026-03-26/doc-inhshtfc9128352.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-03-26T12:31:00+08:00",
+      "title": "苏州市相城区再添AI硬核认证！两大算法通过国家级备案",
+      "url": "https://www.yangtse.com/news/jiangsu/suzhou/202603/t20260318_332754.html",
+      "source": "yangtse.com",
+      "published_at": "2026-03-18T19:01:00+08:00",
       "feed": "bing:苏州 工业AI",
-      "rss_description": "苏州，2026年3月25日——当机器人的“身体”日益同质化，真正的战场已悄然转移至“大脑”。今日，艾利特机器人正式宣布完成6亿元人民币D+轮融资。本轮融资获得了多家AIDC产业链CVC基金、Lavender Hill Capital Partners（LHCP）、达晨财智、元禾控股、园丰资本、郑州 ...",
+      "rss_description": "近日，国家互联网信息办公室公告第十六批深度合成服务算法备案信息，相城区企业江苏西顿科技有限公司的西顿精益制造工业大模型算法和苏州知行元科技有限公司的元极生成式多模态算法通过备案。 江苏西顿科技公司将传统行业与人工智能融合 江苏西顿 ...",
       "_is_new_candidate": true,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "0825e361d5ee001e44f7b8d223e290ba2304d03b",
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "c5c50a8df300ddb0a7ca63ad43302883a814b06a",
       "relevance_score": 38,
       "ranking_reasons": [
         "区域:苏州",
-        "主题:机器人",
+        "主题:人工智能",
+        "主题:大模型",
+        "主题:算法",
         "主题:AI",
-        "新鲜度:偏旧(25.3天)",
-        "标题命中:主题:机器人",
+        "新鲜度:偏旧(33.1天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:算法",
         "标题命中:主题:AI",
-        "强相关:融资",
-        "强相关:基金",
-        "强相关:落地"
+        "来源:可信媒体"
       ],
       "summary_confidence": "low",
       "tags": [
         "苏州",
         "人工智能",
-        "机器人",
-        "融资",
-        "落地"
+        "大模型"
       ],
-      "organizations": [],
-      "companies": [],
-      "company_types": {},
+      "organizations": [
+        "江苏西顿科技公司"
+      ],
+      "companies": [
+        "江苏西顿科技公司"
+      ],
+      "company_types": {
+        "江苏西顿科技公司": "company"
+      },
       "regions": [
         "苏州"
       ],
       "topics": [
         {
-          "slug": "robotics",
-          "label": "机器人"
+          "slug": "llm",
+          "label": "大模型"
         }
       ],
-      "network_density": 2,
+      "network_density": 3,
       "region_labels": [
         "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "AI+制造 无锡“+”出了什么？",
+      "url": "https://finance.sina.com.cn/wm/2026-03-17/doc-inhrhavx8208480.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-03-17T09:50:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "无锡因工业而兴，也必将因工业而强。这句镌刻在百年工商名城血脉里的话，背后是一份逐年增厚的家底。 2025年，无锡的工业经济交出了一份沉甸甸的成绩单：规上工业总产值跃升至2.71万亿元，较“十三五”末净增约1万亿元；全部工业对全市GDP增长的贡献率 ...",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "cde12ac8428464d8b3f69e07583e9974bebcaa6d",
+      "relevance_score": 21,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:AI",
+        "新鲜度:偏旧(34.5天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "无锡"
+      ],
+      "topics": [],
+      "network_density": 1,
+      "region_labels": [
+        "无锡"
       ],
       "entity_confidence": "rule"
     },
@@ -2069,7 +1936,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(35.2天)",
+        "新鲜度:偏旧(35.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:工厂"
@@ -2115,7 +1982,7 @@
         "区域:无锡",
         "主题:算力",
         "主题:AI",
-        "新鲜度:偏旧(36.2天)",
+        "新鲜度:偏旧(36.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:政策"
@@ -2154,37 +2021,20 @@
       "slug": "魔法原子机器人科技有限公司",
       "name": "魔法原子机器人科技有限公司",
       "type": "company",
-      "mention_count": 3,
+      "mention_count": 2,
       "tags": [
         "人形机器人",
         "具身智能",
         "战略合作",
-        "无锡",
         "无锡公安",
-        "智慧警务"
+        "智慧警务",
+        "机器人交警"
       ],
       "cities": [
         "无锡"
       ],
       "first_appearance": "2026-04-17T16:50:51+08:00",
       "last_appearance": "2026-04-20T16:46:00+08:00"
-    },
-    {
-      "slug": "做咖啡的创业公司",
-      "name": "做咖啡的创业公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "产学研合作",
-        "具身智能",
-        "工业机器人",
-        "技术创新"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-04-20T09:47:00+08:00",
-      "last_appearance": "2026-04-20T09:47:00+08:00"
     },
     {
       "slug": "心动网络股份有限公司",
@@ -2543,15 +2393,30 @@
       ],
       "first_appearance": "2026-03-27T09:47:00+08:00",
       "last_appearance": "2026-03-27T09:47:00+08:00"
+    },
+    {
+      "slug": "江苏西顿科技公司",
+      "name": "江苏西顿科技公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "人工智能",
+        "大模型",
+        "苏州"
+      ],
+      "cities": [
+        "苏州"
+      ],
+      "first_appearance": "2026-03-18T19:01:00+08:00",
+      "last_appearance": "2026-03-18T19:01:00+08:00"
     }
   ],
   "topics": [
     {
       "slug": "robotics",
       "label": "机器人",
-      "count": 24,
+      "count": 21,
       "companies": [
-        "做咖啡的创业公司",
         "具身智能公司",
         "凤凰网",
         "心动网络股份有限公司",
@@ -2564,9 +2429,8 @@
     {
       "slug": "embodied-ai",
       "label": "具身智能",
-      "count": 8,
+      "count": 5,
       "companies": [
-        "做咖啡的创业公司",
         "具身智能公司",
         "魔法原子机器人科技有限公司"
       ]
@@ -2576,7 +2440,6 @@
       "label": "智能制造",
       "count": 4,
       "companies": [
-        "做咖啡的创业公司",
         "具身智能公司"
       ]
     },
@@ -2585,16 +2448,8 @@
       "label": "大模型",
       "count": 3,
       "companies": [
-        "做咖啡的创业公司",
-        "具身智能公司"
-      ]
-    },
-    {
-      "slug": "ai-chip",
-      "label": "AI芯片",
-      "count": 3,
-      "companies": [
-        "做咖啡的创业公司"
+        "具身智能公司",
+        "江苏西顿科技公司"
       ]
     },
     {
@@ -2604,6 +2459,12 @@
       "companies": [
         "具身智能公司"
       ]
+    },
+    {
+      "slug": "ai-chip",
+      "label": "AI芯片",
+      "count": 1,
+      "companies": []
     }
   ],
   "regions": [
@@ -2617,7 +2478,7 @@
       "slug": "suzhou",
       "label": "苏州",
       "company_count": 10,
-      "topic_count": 5
+      "topic_count": 3
     },
     {
       "slug": "yangtze-delta",
