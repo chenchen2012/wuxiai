@@ -55,6 +55,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/爱奇艺/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/指数是以苏州工业园区上市公司/</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>daily</changefreq>
@@ -74,12 +80,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/等热门上市公司/</loc>
-    <lastmod>2026-04-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/苏州交投集团/</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
