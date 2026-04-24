@@ -1,7 +1,248 @@
 {
-  "updated_at": "2026-04-24T22:06:22.171901+08:00",
-  "item_count": 42,
+  "updated_at": "2026-04-24T23:38:13.500743+08:00",
+  "item_count": 48,
   "items": [
+    {
+      "title": "开局之年看中国·遇见不一样的江苏｜上得实验室，下得咖啡馆：苏州这家智能饮品机器人日均出品数百万杯 - 新浪新闻_手机新浪网",
+      "url": "https://news.sina.com.cn/zx/gj/2026-04-24/doc-inhvrhty3122707.shtml",
+      "source": "news.sina.com.cn",
+      "published_at": "2026-04-24T21:28:38+08:00",
+      "feed": "google:苏州 机器人",
+      "rss_description": "开局之年看中国·遇见不一样的江苏｜上得实验室，下得咖啡馆：苏州这家智能饮品机器人日均出品数百万杯 新浪新闻_手机新浪网",
+      "_is_new_candidate": true,
+      "domain": "news.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "c26ba0d89cc79b299eefb8e4369e47eb4fe5b874",
+      "relevance_score": 52,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "主题:智能体",
+        "主题:自动化",
+        "主题:AI",
+        "新鲜度:24h内(0.1天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:机器人",
+        "正文:信息较完整",
+        "强相关:实验室"
+      ],
+      "summary": "苏州镁伽科技将生命科学实验室的高精度液体处理技术应用于咖啡机器人，实现美式、拿铁、拉花等饮品的自动化制作。其智能设备已服务瑞幸、蜜雪冰城等数万家门店，日均出品达百万杯，解决了饮品行业标准化和效率难题。",
+      "why_it_matters": "这项技术展示了实验室技术向消费场景的成功转化，有望推动现制饮品行业的自动化和标准化升级。",
+      "summary_confidence": "high",
+      "tags": [
+        "智能饮品机器人",
+        "苏州镁伽科技",
+        "实验室技术转化",
+        "饮品自动化",
+        "瑞幸蜜雪冰城"
+      ],
+      "organizations": [
+        "镁伽科技",
+        "蜜雪冰城",
+        "苏州工业园区"
+      ],
+      "companies": [
+        "镁伽科技"
+      ],
+      "company_types": {
+        "镁伽科技": "company",
+        "瑞幸": "company",
+        "蜜雪冰城": "company",
+        "苏州工业园区": "park"
+      },
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "automation",
+          "label": "自动化"
+        },
+        {
+          "slug": "llm",
+          "label": "大模型"
+        }
+      ],
+      "network_density": 7,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "high"
+    },
+    {
+      "title": "苏州吴中机器人企业亮相马拉松赛事 展示硬核“智造”实力 - 新浪财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-24/doc-inhvrhtu7795356.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-04-24T20:29:00+08:00",
+      "feed": "google:苏州 机器人",
+      "rss_description": "苏州吴中机器人企业亮相马拉松赛事 展示硬核“智造”实力 新浪财经",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "2fb4257be7e0e635a9faa462fc8bc458a01759ea",
+      "relevance_score": 67,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "主题:具身智能",
+        "主题:大模型",
+        "主题:算法",
+        "主题:人形机器人",
+        "新鲜度:24h内(0.1天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:机器人",
+        "正文:信息较完整",
+        "强相关:落地",
+        "强相关:实验室"
+      ],
+      "summary": "苏州吴中具身智能企业智身科技携人形机器人“破风者RX”和四足机器人“铜锤M1 Pro”等产品亮相北京亦庄机器人马拉松赛事，展示了“吴中智造”的实力。其中，“破风者RX”以全程零故障、零摔倒、零换机的表现完赛，成绩超过上届冠军配速；“铜锤M1 Pro”则以自主跟随方式完成21公里护航任务。智身科技成立于2023年底，具备全栈能力，产品已在消防、电力、安防等领域商业落地。",
+      "why_it_matters": "该事件展示了中国具身智能机器人在复杂长距离赛事中的技术突破和商业化潜力，体现了苏州吴中在机器人产业中的创新实力。",
+      "summary_confidence": "high",
+      "tags": [
+        "机器人",
+        "马拉松",
+        "苏州吴中",
+        "具身智能",
+        "智身科技"
+      ],
+      "organizations": [
+        "智身科技"
+      ],
+      "companies": [
+        "智身科技"
+      ],
+      "company_types": {
+        "智身科技": "company"
+      },
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "embodied-ai",
+          "label": "具身智能"
+        },
+        {
+          "slug": "llm",
+          "label": "大模型"
+        }
+      ],
+      "network_density": 5,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "high"
+    },
+    {
+      "title": "【开局之年看中国·遇见不一样的江苏】苏州智造出圈，机器人化身咖啡师“手冲”拉花 - 新华报业网",
+      "url": "https://www.xhby.net/content/s69eb7553e4b05172eb1e9a3f.html",
+      "source": "xhby.net",
+      "published_at": "2026-04-24T12:26:00+08:00",
+      "feed": "google:苏州 机器人",
+      "rss_description": "【开局之年看中国·遇见不一样的江苏】苏州智造出圈，机器人化身咖啡师“手冲”拉花 新华报业网",
+      "_is_new_candidate": true,
+      "domain": "xhby.net",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "1e2c60e3d7e2f1b161a3834cd7380e4a9d092311",
+      "relevance_score": 36,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "新鲜度:24h内(0.5天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:机器人",
+        "来源:可信媒体"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "机器人"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "探AI前沿 聚履职合力 - sipac.gov.cn",
+      "url": "http://www.sipac.gov.cn/szgyyq/jsdt/202604/82d08447d3bd4b6bbba92d5046e835b3.shtml",
+      "source": "sipac.gov.cn",
+      "published_at": "2026-04-24T10:41:00+08:00",
+      "feed": "google:苏州 具身智能",
+      "rss_description": "探AI前沿 聚履职合力 sipac.gov.cn",
+      "_is_new_candidate": true,
+      "domain": "sipac.gov.cn",
+      "trusted": false,
+      "source_tier": 3,
+      "fingerprint": "306aac5a409972f4b3f8bef0ced5d9fa6e92f648",
+      "relevance_score": 43,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:人工智能",
+        "主题:机器人",
+        "主题:具身智能",
+        "主题:AI",
+        "新鲜度:24h内(0.5天)",
+        "标题命中:主题:AI",
+        "来源:官方/高校",
+        "正文:信息较完整"
+      ],
+      "summary": "苏州工业园区政协工作联络委联合民建园区基层委员会，组织政协委员及民建会员开展人工智能主题读书分享活动，现场考察具身智能创新应用孵化中心，并围绕《我看见的世界》一书交流AI发展趋势与履职建言。",
+      "why_it_matters": "该活动展示了地方政府如何通过读书学习促进委员对AI前沿的认知，为培育新质生产力、推动高质量发展提供履职参考。",
+      "summary_confidence": "high",
+      "tags": [
+        "人工智能",
+        "苏州工业园区",
+        "政协履职",
+        "具身智能",
+        "读书分享"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "embodied-ai",
+          "label": "具身智能"
+        }
+      ],
+      "network_density": 3,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
     {
       "title": "【开局之年看中国·遇见不一样的江苏】AI产业链上，江苏苏州何以 ...",
       "url": "https://www.xhby.net/content/s69eaba15e4b0d4f453640e32.html",
@@ -27,13 +268,13 @@
         "来源:可信媒体",
         "正文:信息较完整"
       ],
-      "summary": "江苏苏州在AI产业链上表现突出，多家上市公司一季度财报亮眼，股价普遍上涨50%以上，部分涨幅超150%。这些企业集中在算力关键环节，背后有光通信、连接器等底座型制造企业支撑，展现了江苏完整的制造体系在AI基础设施阶段的竞争力。",
-      "why_it_matters": "这揭示了AI产业竞争正从算法转向制造体系，江苏的案例为其他地区提供了可借鉴的产业升级路径。",
+      "summary": "江苏苏州AI产业链上市公司一季度财报亮眼，股价普遍上涨50%以上，部分企业涨幅超150%。业绩突出的企业集中在算力关键环节，背后是江苏在光通信、连接器等领域的制造体系支撑。这显示出AI基础设施阶段，扎实的制造能力成为核心竞争力。",
+      "why_it_matters": "该报道揭示了AI产业竞争正从算法转向制造体系，江苏苏州的产业链表现可能成为区域经济转型的标杆。",
       "summary_confidence": "high",
       "tags": [
-        "人工智能",
-        "产业链",
+        "AI产业链",
         "苏州",
+        "上市公司",
         "算力",
         "制造业"
       ],
@@ -69,7 +310,7 @@
       "url": "https://finance.sina.com.cn/wm/2026-04-24/doc-inhvpyyk8129065.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-04-24T01:32:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "rss_description": "章剑华，笔名立早，江苏宜兴人，文学博士。曾任江苏省文学艺术界联合会主席。先后出版《想法》《文化时空》《墨语》《微思录》《故宫三部曲》等个人专著10部，其中长篇纪实文学《故宫三部曲》在海内外广受好评，获得徐迟报告文学奖和江苏省紫山文学奖。",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
@@ -88,7 +329,7 @@
         "强相关:合作",
         "强相关:实验室"
       ],
-      "summary": "由无锡人章剑华执导的全省首部AI电影《东坡买田》将于4月25日在爱奇艺上线。影片利用AI技术从3000余帧中精选合成，融合东方美学，历时近三个月完成。",
+      "summary": "由无锡人章剑华执导的全省首部AI电影《东坡买田》将于4月25日在爱奇艺上线。影片利用AI技术从3000余帧素材中精选合成，融合东方美学，历时近三个月完成。",
       "why_it_matters": "这是AI影像首次登陆全国主流网络平台，标志着AI文艺创作的重要突破。",
       "summary_confidence": "high",
       "tags": [
@@ -112,16 +353,12 @@
         "立早AI艺创实验室": "institute"
       },
       "regions": [
-        "无锡",
-        "苏州",
-        "长三角"
+        "无锡"
       ],
       "topics": [],
-      "network_density": 6,
+      "network_density": 4,
       "region_labels": [
-        "无锡",
-        "苏州",
-        "长三角"
+        "无锡"
       ],
       "entity_confidence": "high"
     },
@@ -137,65 +374,33 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "b4f1dcee4c0e185809bd8bb1f3272e3f52f4d1d6",
-      "relevance_score": 39,
+      "relevance_score": 31,
       "ranking_reasons": [
         "区域:苏州",
         "主题:算力",
-        "主题:智能制造",
-        "主题:自动化",
         "主题:AI",
-        "新鲜度:3天内(1.0天)",
+        "新鲜度:3天内(1.1天)",
         "标题命中:区域:苏州",
-        "标题命中:主题:AI",
-        "正文:信息较完整"
+        "标题命中:主题:AI"
       ],
-      "summary": "近期，“中证苏州工业园区指数”月度涨幅超20%，近一年涨幅超120%，成分股总市值突破1.6万亿元。AI算力龙头中际旭创以超12%权重位居第一，一季度净利润同比增长262%。高端智能制造装备企业罗博特科也表现抢眼，近一个多月累计签署近9亿元硅光设备订单。",
-      "why_it_matters": "该指数反映了苏州工业园区上市公司的整体表现，其强劲涨幅和龙头企业的高增长凸显了区域经济和科技产业的活力。",
-      "summary_confidence": "high",
+      "summary_confidence": "low",
       "tags": [
-        "苏州园区指数",
-        "中际旭创",
-        "AI算力",
-        "罗博特科",
-        "资本市场"
+        "苏州",
+        "人工智能"
       ],
-      "organizations": [
-        "指数是以苏州工业园区上市公司",
-        "中证指数有限公司",
-        "反映园区上市公司",
-        "等热门上市公司"
-      ],
-      "companies": [
-        "指数是以苏州工业园区上市公司",
-        "中证指数有限公司",
-        "反映园区上市公司",
-        "等热门上市公司"
-      ],
-      "company_types": {
-        "中证指数有限公司": "company",
-        "指数是以苏州工业园区上市公司": "company",
-        "反映园区上市公司": "company",
-        "等热门上市公司": "company",
-        "苏州银行": "company"
-      },
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
       "regions": [
         "苏州"
       ],
       "topics": [
         {
-          "slug": "smart-manufacturing",
-          "label": "智能制造"
-        },
-        {
-          "slug": "automation",
-          "label": "自动化"
-        },
-        {
           "slug": "ai-chip",
           "label": "AI芯片"
         }
       ],
-      "network_density": 8,
+      "network_density": 2,
       "region_labels": [
         "苏州"
       ],
@@ -217,7 +422,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:3天内(1.0天)",
+        "新鲜度:3天内(1.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "来源:可信媒体"
@@ -256,7 +461,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:3天内(1.1天)",
+        "新鲜度:3天内(1.2天)",
         "标题命中:主题:机器人",
         "来源:可信媒体"
       ],
@@ -343,7 +548,7 @@
         "主题:人工智能",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:3天内(1.3天)",
+        "新鲜度:3天内(1.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能",
         "标题命中:主题:机器人",
@@ -476,7 +681,7 @@
       "url": "https://js.ifeng.com/c/8sV67Q7AD0p",
       "source": "js.ifeng.com",
       "published_at": "2026-04-21T15:24:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "rss_description": "4月20日，阿里无锡AI赋能中心项目签约落地锡山区。市长蒋锋与阿里巴巴集团、阿里云智能集团战略发展总裁李嘉平一行工作会谈并见证签约。阿里云智能集团战略发展副总裁明星、副市长周文栋，市政府秘书长陈寿彬参加活动。 蒋锋对阿里巴巴集团给予无锡发展的大力支持表示感谢。他说，按照省委省政府有关部署，加速建设“人工智能+”标杆城市，全面布局智能算力、大模型、具身智能、智能制造等重点赛道，在此过程中离不开阿里云 ...",
       "_is_new_candidate": false,
       "domain": "js.ifeng.com",
@@ -550,23 +755,22 @@
     },
     {
       "title": "阿里无锡AI赋能中心落子锡东新城 科技圈“扛把子”赋能OPC、AI企业发展",
-      "url": "https://news.qq.com/rain/a/20260421A05ASD00",
-      "source": "news.qq.com",
-      "published_at": "2026-04-21T10:27:00+08:00",
-      "feed": "bing:无锡AI",
-      "rss_description": "中经记者 杨让晨 上海报道有科技圈“扛把子”之称的阿里云，在江苏省无锡市锡山区锡东新城正式落子。相关资料显示，阿里无锡AI赋能中心位于锡东新城映月湖科技园内。作为锡东新城集聚全球科技创新资源要素的承载地，这里聚集着包括长三角（无锡）国际人才港在内的创新载体。《中国经营报》记者注意到，今年3月，锡东新城对外发布《关于进一步支持OPC发展 加快建设人工智能创新高地的若干措施》，并启动OPC伙伴计划。映 ...",
+      "url": "https://finance.sina.com.cn/jjxw/2026-04-21/doc-inhvfytk5030676.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-04-21T09:11:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "相关资料显示，阿里无锡AI赋能中心位于锡东新城映月湖科技园内。作为锡东新城集聚全球科技创新资源要素的承载地，这里聚集着包括长三角（无锡）国际人才港在内的创新载体。",
       "_is_new_candidate": false,
-      "domain": "news.qq.com",
+      "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "44e31a55225df3a719eab7af1ed8d6131017c71f",
-      "relevance_score": 35,
+      "relevance_score": 30,
       "ranking_reasons": [
         "区域:无锡",
         "区域:长三角",
-        "主题:人工智能",
         "主题:AI",
-        "新鲜度:7天内(3.5天)",
+        "新鲜度:7天内(3.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -574,8 +778,7 @@
       "tags": [
         "无锡",
         "长三角",
-        "人工智能",
-        "政策"
+        "人工智能"
       ],
       "organizations": [],
       "companies": [],
@@ -609,7 +812,7 @@
         "区域:无锡",
         "主题:智能体",
         "主题:AI",
-        "新鲜度:7天内(3.6天)",
+        "新鲜度:7天内(3.7天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:项目"
@@ -643,7 +846,7 @@
       "url": "https://www.yangtse.com/news/jiangsu/wuxi/202604/t20260421_344452.html",
       "source": "yangtse.com",
       "published_at": "2026-04-21T04:57:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "rss_description": "数字化转型的浪潮中，每一家科技巨头的布局都绝非偶然。三年前，无锡锡山区与阿里巴巴签约启动全面战略合作，并共同打造长三角电动车跨境电商产业园。4月20日，阿里无锡AI赋能中心正式签约落户锡山，双方的缘分迎来了又一次升华。",
       "_is_new_candidate": false,
       "domain": "yangtse.com",
@@ -655,7 +858,7 @@
         "区域:无锡",
         "区域:长三角",
         "主题:AI",
-        "新鲜度:7天内(3.7天)",
+        "新鲜度:7天内(3.8天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "来源:可信媒体",
@@ -703,7 +906,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:7天内(4.2天)",
+        "新鲜度:7天内(4.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "来源:可信媒体",
@@ -751,7 +954,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:7天内(6.3天)",
+        "新鲜度:7天内(6.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -803,7 +1006,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:7天内(6.3天)",
+        "新鲜度:7天内(6.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "来源:可信媒体"
@@ -890,7 +1093,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(7.2天)",
+        "新鲜度:14天内(7.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "强相关:合作"
@@ -945,7 +1148,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:14天内(7.2天)",
+        "新鲜度:14天内(7.3天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -991,7 +1194,7 @@
         "主题:具身智能",
         "主题:人形机器人",
         "主题:AI",
-        "新鲜度:14天内(7.3天)",
+        "新鲜度:14天内(7.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:融资",
@@ -1057,7 +1260,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(7.5天)",
+        "新鲜度:14天内(7.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1175,7 +1378,7 @@
       "url": "https://www.cls.cn/detail/2346158",
       "source": "cls.cn",
       "published_at": "2026-04-16T15:00:00+08:00",
-      "feed": "google:无锡 具身智能",
+      "feed": "google:苏州 具身智能",
       "rss_description": "江苏又一省级具身智能中心落地无锡 构建具身生态雨林锚定20万元级工业场景 财联社",
       "_is_new_candidate": false,
       "domain": "cls.cn",
@@ -1186,7 +1389,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:14天内(8.3天)",
+        "新鲜度:14天内(8.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "强相关:落地"
@@ -1289,7 +1492,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:14天内(9.4天)",
+        "新鲜度:14天内(9.5天)",
         "标题命中:主题:AI"
       ],
       "summary_confidence": "low",
@@ -1342,7 +1545,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:人工智能",
-        "新鲜度:14天内(9.7天)",
+        "新鲜度:14天内(9.8天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能",
         "来源:可信媒体"
@@ -1381,7 +1584,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:AI",
-        "新鲜度:14天内(12.5天)",
+        "新鲜度:14天内(12.6天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI"
       ],
@@ -1430,7 +1633,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(14.9天)",
+        "新鲜度:偏旧(15.0天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "来源:可信媒体"
@@ -1515,7 +1718,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:AI",
-        "新鲜度:偏旧(15.3天)",
+        "新鲜度:偏旧(15.4天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "标题命中:主题:AI",
@@ -1605,7 +1808,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:AI",
-        "新鲜度:偏旧(16.4天)",
+        "新鲜度:偏旧(16.5天)",
         "标题命中:主题:AI",
         "强相关:合作"
       ],
@@ -1651,7 +1854,7 @@
         "区域:无锡",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:偏旧(17.3天)",
+        "新鲜度:偏旧(17.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:落地"
@@ -1735,7 +1938,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:人形机器人",
-        "新鲜度:偏旧(18.3天)",
+        "新鲜度:偏旧(18.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "标题命中:主题:人形机器人",
@@ -1780,7 +1983,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:偏旧(18.3天)",
+        "新鲜度:偏旧(18.4天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -1788,6 +1991,51 @@
       "tags": [
         "苏州",
         "机器人"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "【国内动态】银河通用机器人博银合创项目签约落户苏州 - 新浪财经",
+      "url": "https://finance.sina.com.cn/wm/2026-04-03/doc-inhteptm8908524.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-04-03T15:00:00+08:00",
+      "feed": "google:苏州 具身智能",
+      "rss_description": "【国内动态】银河通用机器人博银合创项目签约落户苏州 新浪财经",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "544a3e5fac40101e4ec3588950b6d4429a82d7df",
+      "relevance_score": 31,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "新鲜度:偏旧(21.4天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:机器人",
+        "强相关:项目"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "机器人",
+        "项目"
       ],
       "organizations": [],
       "companies": [],
@@ -1823,7 +2071,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(21.3天)",
+        "新鲜度:偏旧(21.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -1868,7 +2116,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(22.3天)",
+        "新鲜度:偏旧(22.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1896,11 +2144,56 @@
       "entity_confidence": "rule"
     },
     {
+      "title": "苏企机器人实力圈粉 - suzhou.gov.cn",
+      "url": "https://www.suzhou.gov.cn/szsrmzf/tpxw/202604/a68924902a2640f39a4b2f0f44bd8982.shtml",
+      "source": "suzhou.gov.cn",
+      "published_at": "2026-04-01T02:41:00+08:00",
+      "feed": "google:苏州 机器人",
+      "rss_description": "苏企机器人实力圈粉 suzhou.gov.cn",
+      "_is_new_candidate": true,
+      "domain": "suzhou.gov.cn",
+      "trusted": true,
+      "source_tier": 3,
+      "fingerprint": "3998e16cd218bcb9c6d1b89a45b5d4b9719c26df",
+      "relevance_score": 28,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "新鲜度:偏旧(23.9天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:机器人",
+        "来源:可信媒体",
+        "来源:官方/高校"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "机器人"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
       "title": "智云无锡、电信有AI——云端共赴锡城春日之约",
       "url": "http://www.js.xinhuanet.com/20260327/b5aee971cb174d67bbf344fac6e2116b/c.html",
       "source": "js.xinhuanet.com",
       "published_at": "2026-03-27T09:47:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 AI",
       "rss_description": "春风拂太湖，樱开满锡城。近日，中国电信无锡分公司（以下称“无锡电信”）联合无锡地铁集团，正式启动“智云无锡、电信有AI”云赏樱系列活动！此次活动不仅是对春日美景的礼赞，更是无锡电信践行“云改数转智惠”战略、落实“智云无锡”建设的 ...",
       "_is_new_candidate": true,
       "domain": "js.xinhuanet.com",
@@ -1911,7 +2204,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(28.5天)",
+        "新鲜度:偏旧(28.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "来源:可信媒体",
@@ -1947,49 +2240,11 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "苏州工业园区发布首款双目全彩AI+AR智能眼镜",
-      "url": "https://news.qq.com/rain/a/20260319A075HK00",
-      "source": "news.qq.com",
-      "published_at": "2026-03-19T18:29:00+08:00",
-      "feed": "bing:苏州 工业AI",
-      "rss_description": "3月18日晚，在苏州工业园区，朱庇特智能以“视界无界，智汇合一”为主题召开产品发布会，正式发布旗下首款双目全彩AI+AR智能眼镜JOVE Glasses S1。同时，整机仅重25克的JOVE Glasses Air也作为彩蛋惊喜亮相！ 发布会现场（苏州工业园区融媒体中心供图） 直击痛点 ...",
-      "_is_new_candidate": true,
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "b0795b6518b4bef1a852fb324497f630a3eaa94d",
-      "relevance_score": 22,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:AI",
-        "新鲜度:偏旧(36.2天)",
-        "标题命中:区域:苏州",
-        "标题命中:主题:AI"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "人工智能"
-      ],
-      "organizations": [],
-      "companies": [],
-      "company_types": {},
-      "regions": [
-        "苏州"
-      ],
-      "topics": [],
-      "network_density": 1,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
       "title": "工业经济这块压舱石，无锡要用AI好好打磨",
       "url": "https://view.inews.qq.com/a/20260316A05GQR00",
       "source": "view.inews.qq.com",
       "published_at": "2026-03-16T15:35:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 工业AI",
       "rss_description": "规模超2000亿的产业集群达到了8个，新增国家级绿色工厂48家、超过了历年总和； 新增国家专精特新“小巨人”117家、省级 ...",
       "_is_new_candidate": true,
       "domain": "view.inews.qq.com",
@@ -2028,6 +2283,56 @@
         "无锡"
       ],
       "entity_confidence": "rule"
+    },
+    {
+      "title": "无锡“AI未来之城”：免费领“龙虾”Agent，最高补贴500万",
+      "url": "https://view.inews.qq.com/a/20260315A04RUR00",
+      "source": "view.inews.qq.com",
+      "published_at": "2026-03-15T14:58:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "3月14日上午9点，无锡金融八街1号“AI未来之城”18楼人声鼎沸。这里没有海鲜大餐，却上演了一场科技圈的“养虾”宴席——盛业联手RollingAI免费教市民“养龙虾”，从安装部署、模型配置、政策解读、算力支持，提供一站式从“装”到“玩”的服务全流程。",
+      "_is_new_candidate": true,
+      "domain": "view.inews.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "bdb3da7d2f41e90ecf07336c8bfceecc6c7b44a8",
+      "relevance_score": 29,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:算力",
+        "主题:AI",
+        "新鲜度:偏旧(40.4天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "强相关:政策"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "政策"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "llm",
+          "label": "大模型"
+        },
+        {
+          "slug": "ai-chip",
+          "label": "AI芯片"
+        }
+      ],
+      "network_density": 3,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
     }
   ],
   "companies": [
@@ -2037,7 +2342,8 @@
       "type": "company",
       "mention_count": 2,
       "tags": [
-        "产业链",
+        "AI产业链",
+        "上市公司",
         "人工智能",
         "制造业",
         "算力",
@@ -2055,7 +2361,8 @@
       "type": "company",
       "mention_count": 2,
       "tags": [
-        "产业链",
+        "AI产业链",
+        "上市公司",
         "人工智能",
         "制造业",
         "算力",
@@ -2066,6 +2373,42 @@
       ],
       "first_appearance": "2026-04-22T01:37:00+08:00",
       "last_appearance": "2026-04-24T01:33:00+08:00"
+    },
+    {
+      "slug": "镁伽科技",
+      "name": "镁伽科技",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "实验室技术转化",
+        "智能饮品机器人",
+        "瑞幸蜜雪冰城",
+        "苏州镁伽科技",
+        "饮品自动化"
+      ],
+      "cities": [
+        "苏州"
+      ],
+      "first_appearance": "2026-04-24T21:28:38+08:00",
+      "last_appearance": "2026-04-24T21:28:38+08:00"
+    },
+    {
+      "slug": "智身科技",
+      "name": "智身科技",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "具身智能",
+        "智身科技",
+        "机器人",
+        "苏州吴中",
+        "马拉松"
+      ],
+      "cities": [
+        "苏州"
+      ],
+      "first_appearance": "2026-04-24T20:29:00+08:00",
+      "last_appearance": "2026-04-24T20:29:00+08:00"
     },
     {
       "slug": "爱奇艺",
@@ -2080,84 +2423,10 @@
         "爱奇艺"
       ],
       "cities": [
-        "无锡",
-        "苏州",
-        "长三角"
+        "无锡"
       ],
       "first_appearance": "2026-04-24T01:32:00+08:00",
       "last_appearance": "2026-04-24T01:32:00+08:00"
-    },
-    {
-      "slug": "指数是以苏州工业园区上市公司",
-      "name": "指数是以苏州工业园区上市公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "AI算力",
-        "中际旭创",
-        "罗博特科",
-        "苏州园区指数",
-        "资本市场"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-04-23T22:00:00+08:00",
-      "last_appearance": "2026-04-23T22:00:00+08:00"
-    },
-    {
-      "slug": "中证指数有限公司",
-      "name": "中证指数有限公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "AI算力",
-        "中际旭创",
-        "罗博特科",
-        "苏州园区指数",
-        "资本市场"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-04-23T22:00:00+08:00",
-      "last_appearance": "2026-04-23T22:00:00+08:00"
-    },
-    {
-      "slug": "反映园区上市公司",
-      "name": "反映园区上市公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "AI算力",
-        "中际旭创",
-        "罗博特科",
-        "苏州园区指数",
-        "资本市场"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-04-23T22:00:00+08:00",
-      "last_appearance": "2026-04-23T22:00:00+08:00"
-    },
-    {
-      "slug": "等热门上市公司",
-      "name": "等热门上市公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "AI算力",
-        "中际旭创",
-        "罗博特科",
-        "苏州园区指数",
-        "资本市场"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-04-23T22:00:00+08:00",
-      "last_appearance": "2026-04-23T22:00:00+08:00"
     },
     {
       "slug": "阿里云智能集团",
@@ -2378,59 +2647,56 @@
     {
       "slug": "robotics",
       "label": "机器人",
-      "count": 20,
+      "count": 26,
       "companies": [
         "具身智能公司",
+        "智身科技",
+        "镁伽科技",
         "魔法原子机器人科技有限公司"
       ]
     },
     {
       "slug": "embodied-ai",
       "label": "具身智能",
-      "count": 7,
+      "count": 9,
       "companies": [
         "具身智能公司",
         "市长蒋锋与阿里巴巴集团",
+        "智身科技",
         "蒋锋对阿里巴巴集团",
-        "阿里云智能集团"
-      ]
-    },
-    {
-      "slug": "smart-manufacturing",
-      "label": "智能制造",
-      "count": 4,
-      "companies": [
-        "中证指数有限公司",
-        "具身智能公司",
-        "反映园区上市公司",
-        "市长蒋锋与阿里巴巴集团",
-        "指数是以苏州工业园区上市公司",
-        "等热门上市公司",
-        "蒋锋对阿里巴巴集团",
-        "阿里云智能集团"
-      ]
-    },
-    {
-      "slug": "ai-chip",
-      "label": "AI芯片",
-      "count": 3,
-      "companies": [
-        "一批上市公司",
-        "中证指数有限公司",
-        "反映园区上市公司",
-        "市长蒋锋与阿里巴巴集团",
-        "指数是以苏州工业园区上市公司",
-        "等热门上市公司",
-        "蒋锋对阿里巴巴集团",
-        "这些业绩突出的AI产业链公司",
         "阿里云智能集团"
       ]
     },
     {
       "slug": "llm",
       "label": "大模型",
-      "count": 2,
+      "count": 5,
       "companies": [
+        "市长蒋锋与阿里巴巴集团",
+        "智身科技",
+        "蒋锋对阿里巴巴集团",
+        "镁伽科技",
+        "阿里云智能集团"
+      ]
+    },
+    {
+      "slug": "ai-chip",
+      "label": "AI芯片",
+      "count": 4,
+      "companies": [
+        "一批上市公司",
+        "市长蒋锋与阿里巴巴集团",
+        "蒋锋对阿里巴巴集团",
+        "这些业绩突出的AI产业链公司",
+        "阿里云智能集团"
+      ]
+    },
+    {
+      "slug": "smart-manufacturing",
+      "label": "智能制造",
+      "count": 3,
+      "companies": [
+        "具身智能公司",
         "市长蒋锋与阿里巴巴集团",
         "蒋锋对阿里巴巴集团",
         "阿里云智能集团"
@@ -2441,10 +2707,7 @@
       "label": "自动化",
       "count": 1,
       "companies": [
-        "中证指数有限公司",
-        "反映园区上市公司",
-        "指数是以苏州工业园区上市公司",
-        "等热门上市公司"
+        "镁伽科技"
       ]
     }
   ],
@@ -2452,7 +2715,7 @@
     {
       "slug": "suzhou",
       "label": "苏州",
-      "company_count": 9,
+      "company_count": 6,
       "topic_count": 5
     },
     {
@@ -2464,7 +2727,7 @@
     {
       "slug": "yangtze-delta",
       "label": "长三角",
-      "company_count": 1,
+      "company_count": 0,
       "topic_count": 0
     }
   ]
