@@ -61,13 +61,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/腾讯志愿者是腾讯公司内部员工为响应公司/</loc>
+    <loc>https://wuxiai.com/company/上海旗新携励数字文化有限公司/</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/上海旗新携励数字文化有限公司/</loc>
+    <loc>https://wuxiai.com/company/腾讯志愿者是腾讯公司内部员工为响应公司/</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -163,6 +163,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/中国电信无锡分公司/</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/无锡地铁集团/</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/topic/robotics/</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>daily</changefreq>
@@ -170,12 +182,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/topic/embodied-ai/</loc>
-    <lastmod>2026-04-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -193,13 +199,19 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/suzhou/</loc>
+    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wuxiai.com/region/wuxi/</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/region/suzhou/</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>

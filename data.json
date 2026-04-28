@@ -1,7 +1,63 @@
 {
-  "updated_at": "2026-04-28T14:43:39.787351+08:00",
-  "item_count": 50,
+  "updated_at": "2026-04-28T18:25:46.413961+08:00",
+  "item_count": 55,
   "items": [
+    {
+      "title": "无锡，瞄准“人工智能+制造”最佳试验场",
+      "url": "https://news.qq.com/rain/a/20260428A04A4400",
+      "source": "news.qq.com",
+      "published_at": "2026-04-28T05:36:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "不得不承认一件事，目前全球正进入AI重塑制造业的深水区，机遇与挑战并存。回看几年来的起起伏伏，一个现象已经十分清晰：中国在这场全球AI竞赛里，手握一张别人难以复制的王牌——制造业，我们拥有全世界最完整的工业门类，最庞大的制造数据，以及最丰富的应用需求。但牌好和打好是两码事。今天我们制造业面临一个很现实的 ...",
+      "_is_new_candidate": true,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "0beeec99ada998aa4624c7cc0433ddf54a722050",
+      "relevance_score": 55,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:人工智能",
+        "主题:机器人",
+        "主题:智能制造",
+        "主题:工业机器人",
+        "主题:AI",
+        "新鲜度:24h内(0.5天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:人工智能",
+        "正文:信息较完整"
+      ],
+      "summary": "无锡正通过召开“人工智能+制造”路演推进会，探索AI与制造业深度融合的最佳路径。作为制造强市，无锡利用其完整的工业门类和丰富数据，试图解决AI技术冲击与产能稳定之间的矛盾。",
+      "why_it_matters": "无锡的实践为全国制造业如何有效应用AI提供了可参考的试验场和策略。",
+      "summary_confidence": "high",
+      "tags": [
+        "人工智能",
+        "制造业",
+        "无锡",
+        "智能制造"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        }
+      ],
+      "network_density": 3,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
     {
       "title": "苏州吴中：企业加码增资扩产 “机器人+人工智能”产业发展动力足 - 新浪财经",
       "url": "https://finance.sina.com.cn/jjxw/2026-04-27/doc-inhvxxwz2298557.shtml",
@@ -19,7 +75,7 @@
         "区域:苏州",
         "主题:人工智能",
         "主题:机器人",
-        "新鲜度:24h内(0.7天)",
+        "新鲜度:24h内(0.9天)",
         "标题命中:区域:苏州",
         "标题命中:主题:人工智能",
         "标题命中:主题:机器人"
@@ -78,7 +134,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:24h内(0.8天)",
+        "新鲜度:24h内(0.9天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "标题命中:主题:具身智能"
@@ -127,11 +183,11 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "1204ea6fe8c0c366c08a57db84e25bb6056e04c7",
-      "relevance_score": 34,
+      "relevance_score": 32,
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:24h内(0.9天)",
+        "新鲜度:3天内(1.0天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -175,12 +231,12 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "0de4c2b6d882e9821465e720aef652e041d841b8",
-      "relevance_score": 43,
+      "relevance_score": 41,
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:24h内(1.0天)",
+        "新鲜度:3天内(1.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "标题命中:主题:具身智能"
@@ -229,16 +285,14 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "f95ddfbdfc1aeccebbeb8403e06d5153cb7ddc43",
-      "relevance_score": 41,
+      "relevance_score": 33,
       "ranking_reasons": [
         "区域:无锡",
         "主题:人工智能",
-        "主题:具身智能",
         "主题:AI",
-        "新鲜度:3天内(1.0天)",
+        "新鲜度:3天内(1.2天)",
         "标题命中:区域:无锡",
-        "标题命中:主题:AI",
-        "正文:信息较完整"
+        "标题命中:主题:AI"
       ],
       "summary": "2025-2026学年全国青少年人工智能大赛江苏选拔赛在无锡开幕，来自全省13个地市的2140名中小学生参与。大赛设置五大赛道，覆盖全学段，旨在提升青少年AI素养。优秀选手将代表江苏参加7月的全国总决赛。",
       "why_it_matters": "该赛事是教育部批准的全国性竞赛，反映了青少年人工智能教育的普及趋势，为培养未来AI人才提供重要平台。",
@@ -256,17 +310,8 @@
       "regions": [
         "无锡"
       ],
-      "topics": [
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        },
-        {
-          "slug": "llm",
-          "label": "大模型"
-        }
-      ],
-      "network_density": 3,
+      "topics": [],
+      "network_density": 1,
       "region_labels": [
         "无锡"
       ],
@@ -288,7 +333,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:3天内(1.5天)",
+        "新鲜度:3天内(1.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -298,19 +343,19 @@
         "人工智能"
       ],
       "organizations": [
-        "腾讯志愿者是腾讯公司内部员工为响应公司",
         "上海旗新携励数字文化有限公司",
+        "腾讯志愿者是腾讯公司内部员工为响应公司",
         "公益404页面是由腾讯公司"
       ],
       "companies": [
-        "腾讯志愿者是腾讯公司内部员工为响应公司",
         "上海旗新携励数字文化有限公司",
+        "腾讯志愿者是腾讯公司内部员工为响应公司",
         "公益404页面是由腾讯公司"
       ],
       "company_types": {
         "上海旗新携励数字文化有限公司": "company",
-        "公益404页面是由腾讯公司": "company",
-        "腾讯志愿者是腾讯公司内部员工为响应公司": "company"
+        "腾讯志愿者是腾讯公司内部员工为响应公司": "company",
+        "公益404页面是由腾讯公司": "company"
       },
       "regions": [
         "无锡"
@@ -338,7 +383,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:人工智能",
-        "新鲜度:3天内(2.1天)",
+        "新鲜度:3天内(2.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能"
       ],
@@ -381,7 +426,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(3.1天)",
+        "新鲜度:7天内(3.2天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "来源:可信媒体"
@@ -427,7 +472,7 @@
         "区域:无锡",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:7天内(3.2天)",
+        "新鲜度:7天内(3.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -465,7 +510,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(3.6天)",
+        "新鲜度:7天内(3.8天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -521,7 +566,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(3.7天)",
+        "新鲜度:7天内(3.9天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "强相关:实验室"
@@ -580,7 +625,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(3.8天)",
+        "新鲜度:7天内(3.9天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -632,7 +677,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(3.9天)",
+        "新鲜度:7天内(4.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -682,7 +727,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:AI",
-        "新鲜度:7天内(4.5天)",
+        "新鲜度:7天内(4.7天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI",
         "来源:可信媒体"
@@ -721,7 +766,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:7天内(4.5天)",
+        "新鲜度:7天内(4.7天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -760,7 +805,7 @@
         "区域:苏州",
         "主题:算力",
         "主题:AI",
-        "新鲜度:7天内(4.7天)",
+        "新鲜度:7天内(4.9天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI"
       ],
@@ -803,7 +848,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:7天内(4.7天)",
+        "新鲜度:7天内(4.9天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "来源:可信媒体"
@@ -842,7 +887,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(4.8天)",
+        "新鲜度:7天内(4.9天)",
         "标题命中:主题:机器人",
         "来源:可信媒体"
       ],
@@ -870,12 +915,12 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "阿里无锡AI赋能中心项目签约落地 - 新浪网",
+      "title": "阿里无锡AI赋能中心项目签约落地 - 新浪财经",
       "url": "https://finance.sina.com.cn/jjxw/2026-04-23/doc-inhvnnxe5440708.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-04-23T15:20:00+08:00",
       "feed": "google:无锡 智能制造 AI",
-      "rss_description": "阿里无锡AI赋能中心项目签约落地 新浪网",
+      "rss_description": "阿里无锡AI赋能中心项目签约落地 新浪财经",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -885,7 +930,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:7天内(5.0天)",
+        "新鲜度:7天内(5.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:项目",
@@ -916,7 +961,7 @@
       "url": "https://www.js.chinanews.com.cn/news/2026/0423/233293.html",
       "source": "js.chinanews.com.cn",
       "published_at": "2026-04-23T14:17:19+08:00",
-      "feed": "google:无锡 具身智能",
+      "feed": "google:无锡 机器人",
       "rss_description": "无锡首个人工智能与具身智能机器人产业专利池落地 js.chinanews.com.cn",
       "_is_new_candidate": false,
       "domain": "js.chinanews.com.cn",
@@ -929,7 +974,7 @@
         "主题:人工智能",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:7天内(5.0天)",
+        "新鲜度:7天内(5.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能",
         "标题命中:主题:机器人",
@@ -967,12 +1012,12 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "1.5亿元！破纪录！无锡机器人卖爆了 - 新浪网",
+      "title": "1.5亿元！破纪录！无锡机器人卖爆了 - 新浪财经",
       "url": "https://finance.sina.com.cn/wm/2026-04-22/doc-inhvkcsa5649186.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-04-22T15:47:00+08:00",
-      "feed": "google:无锡 具身智能",
-      "rss_description": "1.5亿元！破纪录！无锡机器人卖爆了 新浪网",
+      "feed": "google:无锡 机器人",
+      "rss_description": "1.5亿元！破纪录！无锡机器人卖爆了 新浪财经",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -982,7 +1027,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:7天内(6.0天)",
+        "新鲜度:7天内(6.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1026,7 +1071,7 @@
         "区域:苏州",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:7天内(6.5天)",
+        "新鲜度:7天内(6.7天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI"
       ],
@@ -1069,7 +1114,7 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "b832b3aeb4dab7e460771f0abefa3f313b1c1c65",
-      "relevance_score": 64,
+      "relevance_score": 61,
       "ranking_reasons": [
         "区域:无锡",
         "主题:人工智能",
@@ -1078,7 +1123,7 @@
         "主题:算力",
         "主题:智能制造",
         "主题:AI",
-        "新鲜度:7天内(7.0天)",
+        "新鲜度:14天内(7.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:项目",
@@ -1150,7 +1195,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:14天内(7.1天)",
+        "新鲜度:14天内(7.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "来源:可信媒体",
@@ -1182,7 +1227,7 @@
       "url": "https://news.qq.com/rain/a/20260421A05ASD00",
       "source": "news.qq.com",
       "published_at": "2026-04-21T10:27:00+08:00",
-      "feed": "bing:无锡AI",
+      "feed": "bing:无锡 工业AI",
       "rss_description": "中经记者 杨让晨 上海报道有科技圈“扛把子”之称的阿里云，在江苏省无锡市锡山区锡东新城正式落子。相关资料显示，阿里无锡AI赋能中心位于锡东新城映月湖科技园内。作为锡东新城集聚全球科技创新资源要素的承载地，这里聚集着包括长三角（无锡）国际人才港在内的创新载体。《中国经营报》记者注意到，今年3月，锡东新城对外发布《关于进一步支持OPC发展 加快建设人工智能创新高地的若干措施》，并启动OPC伙伴计划。映 ...",
       "_is_new_candidate": false,
       "domain": "news.qq.com",
@@ -1195,7 +1240,7 @@
         "区域:长三角",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:14天内(7.2天)",
+        "新鲜度:14天内(7.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -1238,7 +1283,7 @@
         "区域:无锡",
         "主题:智能体",
         "主题:AI",
-        "新鲜度:14天内(7.3天)",
+        "新鲜度:14天内(7.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:项目"
@@ -1283,7 +1328,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:14天内(7.9天)",
+        "新鲜度:14天内(8.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "来源:可信媒体",
@@ -1331,7 +1376,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(10.0天)",
+        "新鲜度:14天内(10.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1374,7 +1419,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(10.0天)",
+        "新鲜度:14天内(10.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "来源:可信媒体"
@@ -1403,12 +1448,12 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "“无锡造”工业清洗机器人落地全国50多个应用场景 清洁安防一机搞定 - 新浪网",
+      "title": "“无锡造”工业清洗机器人落地全国50多个应用场景 清洁安防一机搞定 - 新浪财经",
       "url": "https://finance.sina.com.cn/roll/2026-04-18/doc-inhuwnkh1721819.shtml?froms=ggmp",
       "source": "finance.sina.com.cn",
       "published_at": "2026-04-18T09:21:00+08:00",
       "feed": "google:无锡 工业AI",
-      "rss_description": "“无锡造”工业清洗机器人落地全国50多个应用场景 清洁安防一机搞定 新浪网",
+      "rss_description": "“无锡造”工业清洗机器人落地全国50多个应用场景 清洁安防一机搞定 新浪财经",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -1418,7 +1463,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(10.2天)",
+        "新鲜度:14天内(10.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "强相关:落地"
@@ -1463,7 +1508,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(10.9天)",
+        "新鲜度:14天内(11.0天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1506,7 +1551,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(10.9天)",
+        "新鲜度:14天内(11.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "强相关:合作"
@@ -1561,7 +1606,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:14天内(10.9天)",
+        "新鲜度:14天内(11.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -1607,7 +1652,7 @@
         "主题:具身智能",
         "主题:人形机器人",
         "主题:AI",
-        "新鲜度:14天内(11.0天)",
+        "新鲜度:14天内(11.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:融资",
@@ -1673,7 +1718,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(11.2天)",
+        "新鲜度:14天内(11.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1716,7 +1761,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(11.4天)",
+        "新鲜度:14天内(11.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1759,7 +1804,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:14天内(11.8天)",
+        "新鲜度:14天内(11.9天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -1791,7 +1836,7 @@
       "url": "https://www.cls.cn/detail/2346158",
       "source": "cls.cn",
       "published_at": "2026-04-16T16:18:05+08:00",
-      "feed": "google:无锡 具身智能",
+      "feed": "google:无锡 机器人",
       "rss_description": "江苏又一省级具身智能中心落地无锡 构建具身生态雨林锚定20万元级工业场景 财联社",
       "_is_new_candidate": false,
       "domain": "cls.cn",
@@ -1802,7 +1847,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:14天内(11.9天)",
+        "新鲜度:14天内(12.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "强相关:落地"
@@ -1836,7 +1881,7 @@
       "url": "https://m.thepaper.cn/newsDetail_forward_32983691",
       "source": "m.thepaper.cn",
       "published_at": "2026-04-15T15:00:00+08:00",
-      "feed": "google:无锡 具身智能",
+      "feed": "google:无锡 机器人",
       "rss_description": "全省首批、无锡唯一！江苏省具身智能机器人创新中心在滨湖启用 thepaper.cn",
       "_is_new_candidate": false,
       "domain": "m.thepaper.cn",
@@ -1848,7 +1893,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:14天内(13.0天)",
+        "新鲜度:14天内(13.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "标题命中:主题:具身智能",
@@ -1905,7 +1950,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:14天内(13.1天)",
+        "新鲜度:14天内(13.2天)",
         "标题命中:主题:AI"
       ],
       "summary_confidence": "low",
@@ -1958,7 +2003,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:AI",
-        "新鲜度:偏旧(16.2天)",
+        "新鲜度:偏旧(16.4天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI"
       ],
@@ -2007,7 +2052,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(18.3天)",
+        "新鲜度:偏旧(18.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -2045,7 +2090,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(18.8天)",
+        "新鲜度:偏旧(18.9天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -2089,7 +2134,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:AI",
-        "新鲜度:偏旧(19.0天)",
+        "新鲜度:偏旧(19.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "标题命中:主题:AI",
@@ -2136,7 +2181,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(19.8天)",
+        "新鲜度:偏旧(20.0天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -2179,7 +2224,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:AI",
-        "新鲜度:偏旧(20.1天)",
+        "新鲜度:偏旧(20.2天)",
         "标题命中:主题:AI",
         "强相关:合作"
       ],
@@ -2209,49 +2254,6 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "诚邀参会丨开源证券具身智能主题交流会（4月9日 苏州） - 新浪财经",
-      "url": "https://finance.sina.com.cn/wm/2026-04-07/doc-inhtrqcm7309495.shtml?froms=ggmp",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-04-07T15:00:00+08:00",
-      "feed": "google:苏州 具身智能",
-      "rss_description": "诚邀参会丨开源证券具身智能主题交流会（4月9日 苏州） 新浪财经",
-      "_is_new_candidate": false,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "696bf5b540024b0db8034cf4d45f6f2a57004556",
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:具身智能",
-        "新鲜度:偏旧(21.0天)",
-        "标题命中:区域:苏州",
-        "标题命中:主题:具身智能"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "具身智能"
-      ],
-      "organizations": [],
-      "companies": [],
-      "company_types": {},
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        }
-      ],
-      "network_density": 2,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
       "title": "总投资10亿元！全国最大人形机器人关节生产基地落户无锡 - thepaper.cn",
       "url": "https://m.thepaper.cn/newsDetail_forward_32911184",
       "source": "m.thepaper.cn",
@@ -2268,7 +2270,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:人形机器人",
-        "新鲜度:偏旧(22.0天)",
+        "新鲜度:偏旧(22.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "标题命中:主题:人形机器人",
@@ -2298,14 +2300,59 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "国内最大机器人关节智造基地，落户无锡！ - QQ News",
-      "url": "https://news.qq.com/rain/a/20260404A039BZ00",
-      "source": "news.qq.com",
-      "published_at": "2026-04-04T15:00:00+08:00",
+      "title": "无锡泉智博机器人精密关节生产基地投产给行业按下“加速键” - 中国网",
+      "url": "http://business.china.com.cn/2026-04/03/content_43390766.shtml",
+      "source": "business.china.com.cn",
+      "published_at": "2026-04-03T14:12:54+08:00",
       "feed": "google:无锡 人形机器人",
-      "rss_description": "国内最大机器人关节智造基地，落户无锡！ QQ News",
+      "rss_description": "无锡泉智博机器人精密关节生产基地投产给行业按下“加速键” 中国网",
       "_is_new_candidate": true,
-      "domain": "news.qq.com",
+      "domain": "business.china.com.cn",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "80bf183c82d3921e6703a55c101f1283a144b858",
+      "relevance_score": 29,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:机器人",
+        "新鲜度:偏旧(25.2天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:机器人",
+        "来源:可信媒体",
+        "强相关:投产"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "机器人"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "国内最大机器人关节智造基地，落户无锡！ - 新浪财经",
+      "url": "https://finance.sina.com.cn/wm/2026-04-02/doc-inhtavkf9538012.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-04-02T15:00:00+08:00",
+      "feed": "google:无锡 人形机器人",
+      "rss_description": "国内最大机器人关节智造基地，落户无锡！ 新浪财经",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "64399ce6a8a5075340a359d478f9cd7438e4650b",
@@ -2313,7 +2360,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(24.0天)",
+        "新鲜度:偏旧(26.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -2356,7 +2403,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:智能制造",
-        "新鲜度:偏旧(30.0天)",
+        "新鲜度:偏旧(30.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:智能制造",
         "来源:可信媒体"
@@ -2379,6 +2426,190 @@
         }
       ],
       "network_density": 2,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "智云无锡、电信有AI——云端共赴锡城春日之约",
+      "url": "http://www.js.xinhuanet.com/20260327/b5aee971cb174d67bbf344fac6e2116b/c.html",
+      "source": "js.xinhuanet.com",
+      "published_at": "2026-03-27T09:47:00+08:00",
+      "feed": "bing:无锡AI",
+      "rss_description": "春风拂太湖，樱开满锡城。近日，中国电信无锡分公司（以下称“无锡电信”）联合无锡地铁集团，正式启动“智云无锡、电信有AI”云赏樱系列活动！此次活动不仅是对春日美景的礼赞，更是无锡电信践行“云改数转智惠”战略、落实“智云无锡”建设的 ...",
+      "_is_new_candidate": true,
+      "domain": "js.xinhuanet.com",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "9fe8da07480ceddd9d37e82074c25fb53765fa69",
+      "relevance_score": 17,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:AI",
+        "新鲜度:偏旧(32.4天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "弱相关:春日之约"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能"
+      ],
+      "organizations": [
+        "中国电信无锡分公司",
+        "无锡地铁集团"
+      ],
+      "companies": [
+        "中国电信无锡分公司",
+        "无锡地铁集团"
+      ],
+      "company_types": {
+        "无锡地铁集团": "company",
+        "中国电信无锡分公司": "company",
+        "中国电信": "company",
+        "无锡电信": "company"
+      },
+      "regions": [
+        "无锡"
+      ],
+      "topics": [],
+      "network_density": 3,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "苏州工业园区发布首款双目全彩AI+AR智能眼镜",
+      "url": "https://news.qq.com/rain/a/20260319A075HK00",
+      "source": "news.qq.com",
+      "published_at": "2026-03-19T18:29:00+08:00",
+      "feed": "bing:苏州 工业AI",
+      "rss_description": "3月18日晚，在苏州工业园区，朱庇特智能以“视界无界，智汇合一”为主题召开产品发布会，正式发布旗下首款双目全彩AI+AR智能眼镜JOVE Glasses S1。同时，整机仅重25克的JOVE Glasses Air也作为彩蛋惊喜亮相！ 发布会现场（苏州工业园区融媒体中心供图） 直击痛点 ...",
+      "_is_new_candidate": true,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "b0795b6518b4bef1a852fb324497f630a3eaa94d",
+      "relevance_score": 22,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:AI",
+        "新鲜度:偏旧(40.0天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:AI"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "人工智能"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "苏州"
+      ],
+      "topics": [],
+      "network_density": 1,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "工业经济这块压舱石，无锡要用AI好好打磨",
+      "url": "https://view.inews.qq.com/a/20260316A05GQR00",
+      "source": "view.inews.qq.com",
+      "published_at": "2026-03-16T15:35:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "规模超2000亿的产业集群达到了8个，新增国家级绿色工厂48家、超过了历年总和； 新增国家专精特新“小巨人”117家、省级 ...",
+      "_is_new_candidate": true,
+      "domain": "view.inews.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "3096c2df2e1db042e82f91dda3febb2b0521dbee",
+      "relevance_score": 27,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:AI",
+        "新鲜度:偏旧(43.1天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "强相关:工厂"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "工厂"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "无锡“AI未来之城”：免费领“龙虾”Agent，最高补贴500万",
+      "url": "https://view.inews.qq.com/a/20260315A04RUR00",
+      "source": "view.inews.qq.com",
+      "published_at": "2026-03-15T14:58:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "3月14日上午9点，无锡金融八街1号“AI未来之城”18楼人声鼎沸。这里没有海鲜大餐，却上演了一场科技圈的“养虾”宴席——盛业联手RollingAI免费教市民“养龙虾”，从安装部署、模型配置、政策解读、算力支持，提供一站式从“装”到“玩”的服务全流程。",
+      "_is_new_candidate": true,
+      "domain": "view.inews.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "bdb3da7d2f41e90ecf07336c8bfceecc6c7b44a8",
+      "relevance_score": 29,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:算力",
+        "主题:AI",
+        "新鲜度:偏旧(44.1天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "强相关:政策"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "政策"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "llm",
+          "label": "大模型"
+        },
+        {
+          "slug": "ai-chip",
+          "label": "AI芯片"
+        }
+      ],
+      "network_density": 3,
       "region_labels": [
         "无锡"
       ],
@@ -2423,8 +2654,8 @@
       "last_appearance": "2026-04-27T20:54:00+08:00"
     },
     {
-      "slug": "腾讯志愿者是腾讯公司内部员工为响应公司",
-      "name": "腾讯志愿者是腾讯公司内部员工为响应公司",
+      "slug": "上海旗新携励数字文化有限公司",
+      "name": "上海旗新携励数字文化有限公司",
       "type": "company",
       "mention_count": 1,
       "tags": [
@@ -2438,8 +2669,8 @@
       "last_appearance": "2026-04-27T03:22:00+08:00"
     },
     {
-      "slug": "上海旗新携励数字文化有限公司",
-      "name": "上海旗新携励数字文化有限公司",
+      "slug": "腾讯志愿者是腾讯公司内部员工为响应公司",
+      "name": "腾讯志愿者是腾讯公司内部员工为响应公司",
       "type": "company",
       "mention_count": 1,
       "tags": [
@@ -2698,13 +2929,43 @@
       ],
       "first_appearance": "2026-04-08T12:50:00+08:00",
       "last_appearance": "2026-04-08T12:50:00+08:00"
+    },
+    {
+      "slug": "中国电信无锡分公司",
+      "name": "中国电信无锡分公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "人工智能",
+        "无锡"
+      ],
+      "cities": [
+        "无锡"
+      ],
+      "first_appearance": "2026-03-27T09:47:00+08:00",
+      "last_appearance": "2026-03-27T09:47:00+08:00"
+    },
+    {
+      "slug": "无锡地铁集团",
+      "name": "无锡地铁集团",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "人工智能",
+        "无锡"
+      ],
+      "cities": [
+        "无锡"
+      ],
+      "first_appearance": "2026-03-27T09:47:00+08:00",
+      "last_appearance": "2026-03-27T09:47:00+08:00"
     }
   ],
   "topics": [
     {
       "slug": "robotics",
       "label": "机器人",
-      "count": 28,
+      "count": 30,
       "companies": [
         "具身智能公司",
         "目前该公司",
@@ -2716,9 +2977,30 @@
     {
       "slug": "embodied-ai",
       "label": "具身智能",
-      "count": 10,
+      "count": 8,
       "companies": [
         "具身智能公司",
+        "市长蒋锋与阿里巴巴集团",
+        "蒋锋对阿里巴巴集团",
+        "阿里云智能集团"
+      ]
+    },
+    {
+      "slug": "smart-manufacturing",
+      "label": "智能制造",
+      "count": 5,
+      "companies": [
+        "具身智能公司",
+        "市长蒋锋与阿里巴巴集团",
+        "蒋锋对阿里巴巴集团",
+        "阿里云智能集团"
+      ]
+    },
+    {
+      "slug": "ai-chip",
+      "label": "AI芯片",
+      "count": 3,
+      "companies": [
         "市长蒋锋与阿里巴巴集团",
         "蒋锋对阿里巴巴集团",
         "阿里云智能集团"
@@ -2733,41 +3015,20 @@
         "蒋锋对阿里巴巴集团",
         "阿里云智能集团"
       ]
-    },
-    {
-      "slug": "smart-manufacturing",
-      "label": "智能制造",
-      "count": 3,
-      "companies": [
-        "具身智能公司",
-        "市长蒋锋与阿里巴巴集团",
-        "蒋锋对阿里巴巴集团",
-        "阿里云智能集团"
-      ]
-    },
-    {
-      "slug": "ai-chip",
-      "label": "AI芯片",
-      "count": 2,
-      "companies": [
-        "市长蒋锋与阿里巴巴集团",
-        "蒋锋对阿里巴巴集团",
-        "阿里云智能集团"
-      ]
     }
   ],
   "regions": [
-    {
-      "slug": "suzhou",
-      "label": "苏州",
-      "company_count": 7,
-      "topic_count": 3
-    },
     {
       "slug": "wuxi",
       "label": "无锡",
       "company_count": 12,
       "topic_count": 5
+    },
+    {
+      "slug": "suzhou",
+      "label": "苏州",
+      "company_count": 7,
+      "topic_count": 3
     },
     {
       "slug": "yangtze-delta",
