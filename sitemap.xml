@@ -49,6 +49,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/中国农业银行/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/智元机器人/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>daily</changefreq>
@@ -56,12 +62,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/江苏现代快报传媒有限公司/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/家千亿市值公司/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -91,6 +91,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/阿里云智能集团/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/无锡市长蒋锋与阿里巴巴集团/</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/这些业绩突出的-ai-产业链公司/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>daily</changefreq>
@@ -98,24 +110,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/一批上市公司/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/阿里云智能集团/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/市长蒋锋与阿里巴巴集团/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/蒋锋对阿里巴巴集团/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -139,13 +133,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/中国电信无锡分公司/</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/无锡地铁集团/</loc>
+    <loc>https://wuxiai.com/company/登上春晚舞台的人形机器人公司/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -181,13 +169,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/machine-vision/</loc>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <loc>https://wuxiai.com/topic/machine-vision/</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
