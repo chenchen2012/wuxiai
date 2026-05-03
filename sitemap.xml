@@ -49,7 +49,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/中国农业银行/</loc>
+    <loc>https://wuxiai.com/history-page-5.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/走进纳福瑞斯装备科技有限公司/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -115,12 +121,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/易博思智智能科技有限公司/</loc>
-    <lastmod>2026-05-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/company/登上春晚舞台的人形机器人公司/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>daily</changefreq>
@@ -145,6 +145,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>daily</changefreq>
@@ -158,12 +164,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/topic/machine-vision/</loc>
-    <lastmod>2026-05-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-05-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
