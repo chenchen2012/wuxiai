@@ -79,6 +79,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/古玉资本/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/金鼎资本/</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/苏州已有-8-家-ai-相关公司/</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>daily</changefreq>
@@ -169,18 +181,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/中国电信无锡分公司/</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/无锡地铁集团/</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/topic/robotics/</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>daily</changefreq>
@@ -212,12 +212,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/topic/industrial-ai/</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/topic/machine-vision/</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
