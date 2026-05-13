@@ -55,18 +55,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/这些业绩突出的-ai-产业链公司/</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/一批上市公司/</loc>
-    <lastmod>2026-05-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/company/无锡泉智博科技有限公司/</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>daily</changefreq>
@@ -146,6 +134,18 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/目前该公司/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/这些业绩突出的-ai-产业链公司/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/一批上市公司/</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
