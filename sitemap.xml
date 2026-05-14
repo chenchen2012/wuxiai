@@ -79,18 +79,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/有限责任公司变更为股份有限公司/</loc>
-    <lastmod>2026-05-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/香港投资管理有限公司/</loc>
-    <lastmod>2026-05-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/company/走进凯龙高科技股份有限公司/</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>daily</changefreq>
@@ -128,6 +116,18 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/目前该公司/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/这些业绩突出的-ai-产业链公司/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/一批上市公司/</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -176,12 +176,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/region/suzhou/</loc>
-    <lastmod>2026-05-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
     <lastmod>2026-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
