@@ -49,12 +49,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/company/无锡中车时代智能装备研究院有限公司/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/company/天奇自动化工程股份有限公司/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
@@ -68,6 +62,24 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/无锡雪浪数制科技有限公司/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/阿里云智能集团/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/市长蒋锋与阿里巴巴集团/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/蒋锋对阿里巴巴集团/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -98,6 +110,36 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/联动母公司/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/苏州指尖智擎科技有限公司/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/苏州恒泰集团/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/知名科技公司/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/无锡中车时代智能装备研究院有限公司/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/company/凯龙高科技股份有限公司/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -175,13 +217,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/llm/</loc>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -200,6 +242,12 @@
   </url>
   <url>
     <loc>https://wuxiai.com/region/suzhou/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
