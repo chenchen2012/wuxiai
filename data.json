@@ -1,7 +1,90 @@
 {
-  "updated_at": "2026-05-19T02:10:13.352082+08:00",
-  "item_count": 44,
+  "updated_at": "2026-05-19T04:01:02.084321+08:00",
+  "item_count": 45,
   "items": [
+    {
+      "title": "无锡“大明星”，在戛纳夯爆了",
+      "url": "https://finance.sina.com.cn/wm/2026-05-18/doc-inhyirni8022987.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-05-18T14:18:00+08:00",
+      "feed": "bing:无锡 具身智能",
+      "rss_description": "与常见的舞台展示不同，此次魔法原子全系列机器人实际介入了盛典的多项流程：MagicBot Z1与四足熊猫MagicPanda驻守红毯入口，承担迎宾与引导工作；MagicBot Gen1担任现场主持，配合活动流程完成串场与互动；另一台Gen1则在海滩吧台完成调酒、递物等精细化服务动作。身着定制马面裙的Z1还为中外嘉宾讲解中国非遗技艺。 这被业内认为是一次高难度的实景验证。戛纳“中国之夜”活动现场人流 ...",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "bf3b29d2902a3969996c5282b046766fe0013c85",
+      "relevance_score": 62,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:机器人",
+        "主题:具身智能",
+        "主题:算法",
+        "主题:算力",
+        "新鲜度:24h内(0.6天)",
+        "标题命中:区域:无锡",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:融资",
+        "强相关:基金",
+        "强相关:合作"
+      ],
+      "summary": "无锡企业魔法原子的机器人在第79届戛纳国际电影节“中国之夜”上首次规模化亮相，承担迎宾、主持、调酒等多项任务，实现了异构机器人集群协同作业。该公司总部位于无锡梁溪科技城，近期完成5亿元融资，并与当地政府联合发起百亿级产业基金。无锡正通过政策支持推动具身智能产业发展，目标到2027年产业规模突破300亿元。",
+      "why_it_matters": "这标志着中国具身智能机器人从实验室走向国际顶级文化场景，展示了复杂环境下的集群协作能力，并体现了地方产业政策对新兴科技企业的孵化成效。",
+      "summary_confidence": "high",
+      "tags": [
+        "具身智能",
+        "机器人",
+        "戛纳电影节",
+        "无锡",
+        "产业政策"
+      ],
+      "organizations": [
+        "魔法原子",
+        "无锡梁溪科技城",
+        "无锡公安",
+        "梁溪区"
+      ],
+      "companies": [
+        "魔法原子"
+      ],
+      "company_types": {
+        "魔法原子": "company",
+        "无锡梁溪科技城": "government",
+        "梁溪区": "government",
+        "无锡公安": "government"
+      },
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        },
+        {
+          "slug": "embodied-ai",
+          "label": "具身智能"
+        },
+        {
+          "slug": "llm",
+          "label": "大模型"
+        },
+        {
+          "slug": "ai-chip",
+          "label": "AI芯片"
+        }
+      ],
+      "network_density": 10,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "high"
+    },
     {
       "title": "上海市首套，上实集团下属上药中西3D视觉+机器人柔性供料系统启用_国企动态 - gzw.sh.gov.cn",
       "url": "https://www.gzw.sh.gov.cn/shgzw_zxzx_gqdt/20260518/33961f68280c4570ad70e4f3ef45a0b1.html",
@@ -22,7 +105,7 @@
         "主题:工业机器人",
         "主题:自动化",
         "主题:AI",
-        "新鲜度:24h内(0.6天)",
+        "新鲜度:24h内(0.7天)",
         "标题命中:主题:机器人",
         "来源:官方/高校",
         "正文:信息较完整",
@@ -83,41 +166,44 @@
     },
     {
       "title": "算力网来了！运营商已推词元套餐，无锡抢先建“Token工厂”",
-      "url": "https://news.qq.com/rain/a/20260518A05A7E00?adChannelId=tech",
-      "source": "news.qq.com",
-      "published_at": "2026-05-18T11:03:00+08:00",
-      "feed": "bing:无锡 工业AI",
-      "rss_description": "21世纪经济报道记者 邓浩 AI智能体正在成为人工智能发展新范式，Token调用量暴增，拉动算力产业链资本开支迅猛加速。 据央视新闻，今年3月，我国日均Token调用量超140万亿，相比2024年初增长1000多倍。AI模型使用成本水涨船高，不少从业者直呼负担加重。 （图片来源：央视新闻） ...",
-      "_is_new_candidate": true,
-      "domain": "news.qq.com",
+      "url": "https://finance.sina.com.cn/roll/2026-05-18/doc-inhyhuhr2950142.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-05-18T05:36:00+08:00",
+      "feed": "bing:无锡AI",
+      "rss_description": "AI智能体正在成为人工智能发展新范式，Token调用量暴增，拉动算力产业链资本开支迅猛加速。 据央视新闻，今年3月，我国日均Token调用量超140万亿，相比2024年初增长1000多倍。AI模型使用成本水涨船高，不少从业者直呼负担加重。 为此，国家选择出手。本月，国务院常务会议就提到，要“加强水网、新型电网、算力网、新一代通信网、城市地下管网、物流网等规划建设”。国家发展改革委称，今年在“六张网 ...",
+      "_is_new_candidate": false,
+      "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "69ece4d3162e4a32d35ce73202be80a52389c433",
-      "relevance_score": 50,
+      "relevance_score": 51,
       "ranking_reasons": [
         "区域:无锡",
         "主题:人工智能",
         "主题:智能体",
         "主题:算力",
         "主题:AI",
-        "新鲜度:24h内(0.6天)",
+        "新鲜度:24h内(0.9天)",
         "标题命中:区域:无锡",
         "标题命中:主题:算力",
+        "正文:信息较完整",
         "强相关:工厂"
       ],
-      "summary": "随着AI智能体发展，Token调用量激增，今年3月我国日均Token调用量超140万亿，较2024年初增长超千倍。国家已明确将算力网纳入新型基础设施规划，运营商中国电信、中国移动推出Token套餐，计费模式从流量转向Token。无锡等地抢先建设“Token工厂”，算力产业链投资加速。",
-      "why_it_matters": "这标志着算力网成为国家新基建重点，运营商计费模式变革将深刻影响AI产业成本和商业模式。",
+      "summary": "随着AI智能体成为发展新范式，我国日均Token调用量激增，算力需求爆发。运营商中国电信、中国移动已推出“Token套餐”，计费模式从流量转向Token。无锡抢先建设“Token工厂”，算力网基建加速，国家计划今年在相关领域投资超7万亿元。",
+      "why_it_matters": "这标志着算力网正式进入商业化阶段，运营商计费模式变革将深刻影响AI产业链成本结构。",
       "summary_confidence": "high",
       "tags": [
         "算力网",
         "Token套餐",
         "运营商",
-        "AI智能体",
-        "新基建"
+        "AI基础设施",
+        "无锡"
       ],
       "organizations": [],
       "companies": [],
-      "company_types": {},
+      "company_types": {
+        "中国电信": "company"
+      },
       "regions": [
         "无锡"
       ],
@@ -146,7 +232,7 @@
       "url": "https://news.sina.com.cn/zx/gj/2026-05-17/doc-inhyevri1769427.shtml",
       "source": "news.sina.com.cn",
       "published_at": "2026-05-17T16:40:02+08:00",
-      "feed": "google:苏州 具身智能",
+      "feed": "google:苏州 机器人",
       "rss_description": "【长三角遇上大湾区】具身智能 加速走来 新浪新闻_手机新浪网",
       "_is_new_candidate": false,
       "domain": "news.sina.com.cn",
@@ -163,7 +249,7 @@
         "主题:算力",
         "主题:人形机器人",
         "主题:AI",
-        "新鲜度:3天内(1.4天)",
+        "新鲜度:3天内(1.5天)",
         "标题命中:区域:长三角",
         "标题命中:主题:具身智能",
         "正文:信息较完整",
@@ -173,8 +259,8 @@
         "强相关:产线",
         "强相关:创新中心"
       ],
-      "summary": "苏州将机器人产业作为重点方向，已集聚700余家企业，2025年产业规模达1595.5亿元。近日采访团探访苏州具身智能机器人综合创新中心，该中心已吸引18家企业入驻，采集超140万条数据。入驻企业如魔法原子、鹿明机器人等，通过长三角与大湾区协同，加速产品迭代和海外布局。",
-      "why_it_matters": "苏州具身智能产业的快速发展，展示了中国在机器人领域的创新能力和区域协同优势，为全球智能机器人产业提供了重要参考。",
+      "summary": "苏州将机器人产业作为重点方向，已集聚相关企业700余家，2025年产业规模达1595.5亿元。近日，采访团探访苏州具身智能机器人综合创新中心，该中心已吸引18家企业入驻，累计采集高质量数据超140万条。入驻企业如魔法原子和鹿明机器人，通过长三角与大湾区协同，加速产品迭代和全球化布局。",
+      "why_it_matters": "苏州具身智能产业的快速发展，展示了中国在机器人领域的创新能力和区域协同效应，为全球智能机器人产业提供了重要参考。",
       "summary_confidence": "high",
       "tags": [
         "具身智能",
@@ -229,36 +315,36 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "A股算力龙头，将在无锡建大规模“Token工厂”",
-      "url": "https://news.qq.com/rain/a/20260517A05G3A00",
-      "source": "news.qq.com",
-      "published_at": "2026-05-17T11:04:00+08:00",
-      "feed": "bing:无锡 工业AI",
-      "rss_description": "无锡，将建立一座大规模“Token工厂”。据无锡日报报道，5月15日，国内AI算力龙头企业弘信电子联手无锡高新区打造的省内首个华为昇腾384超节点算力集群，签约落户无锡。与此同时，以华为超节点算力集群为首期基础设施，弘信电子将在锡建立一座大规模“Token工厂”。这将成为规模化、高性能“国芯国模”算力集群新样板。报道 ...",
-      "_is_new_candidate": false,
-      "domain": "news.qq.com",
+      "title": "无锡两连击: 一手加深与SK海力士合作，一手打造大规模“Token工厂”",
+      "url": "https://finance.sina.com.cn/wm/2026-05-17/doc-inhyfhfm8720432.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-05-17T13:47:00+08:00",
+      "feed": "bing:无锡 AI",
+      "rss_description": "这个周末，有一件事在AI圈备受关注，那就是——算力网要来了！ 简单说，算力网就是一张“算力版的国家电网”。算力网把全国各地的数据中心、超算中心连成一张网，统一调度。 乘势而上、抢抓机遇。聚焦AI与算力两大赛道，无锡接连出招——一边深化与全球半导体巨头SK海力士战略合作；一边携手国产算力龙头打造大规模“Token工厂”。这也成了这个周末媒体报道的焦点。 作为无锡集成电路产业的“黄金搭档”，SK海力士 ...",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
-      "fingerprint": "6e67beb8ec083ed9e9bbbe5a71a251f77014f40c",
-      "relevance_score": 38,
+      "fingerprint": "3a0e0bb5da02d58b950e1ddbff6fe77fe5ff7a5e",
+      "relevance_score": 40,
       "ranking_reasons": [
         "区域:无锡",
         "主题:算力",
         "主题:AI",
         "新鲜度:3天内(1.6天)",
         "标题命中:区域:无锡",
-        "标题命中:主题:算力",
+        "正文:信息较完整",
+        "强相关:合作",
         "强相关:工厂"
       ],
-      "summary": "A股算力龙头弘信电子联合无锡高新区，打造省内首个华为昇腾384超节点算力集群，并以此为基础建设大规模“Token工厂”。该工厂首批部署4台超节点服务器，拥有384卡算力规模，旨在成为“国芯国模”算力集群新样板，推动国产算力生态发展。",
-      "why_it_matters": "该项目标志着国产AI算力集群规模化落地，对推动“东数西算”战略和国产算力生态建设具有示范意义。",
-      "summary_confidence": "high",
+      "summary": "",
+      "why_it_matters": "",
+      "summary_confidence": "low",
       "tags": [
-        "弘信电子",
-        "华为昇腾",
-        "算力集群",
-        "Token工厂",
-        "无锡"
+        "无锡",
+        "人工智能",
+        "合作",
+        "工厂"
       ],
       "organizations": [],
       "companies": [],
@@ -283,37 +369,102 @@
       "entity_confidence": "rule"
     },
     {
+      "title": "A股算力龙头，将在无锡建大规模“Token工厂”",
+      "url": "https://news.qq.com/rain/a/20260517A05G3A00",
+      "source": "news.qq.com",
+      "published_at": "2026-05-17T11:04:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "无锡，将建立一座大规模“Token工厂”。据无锡日报报道，5月15日，国内AI算力龙头企业弘信电子联手无锡高新区打造的省内首个华为昇腾384超节点算力集群，签约落户无锡。与此同时，以华为超节点算力集群为首期基础设施，弘信电子将在锡建立一座大规模“Token工厂”。这将成为规模化、高性能“国芯国模”算力集群新样板。报道 ...",
+      "_is_new_candidate": false,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "6e67beb8ec083ed9e9bbbe5a71a251f77014f40c",
+      "relevance_score": 53,
+      "ranking_reasons": [
+        "区域:无锡",
+        "区域:长三角",
+        "主题:算力",
+        "主题:AI",
+        "新鲜度:3天内(1.7天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:算力",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:落地",
+        "强相关:工厂"
+      ],
+      "summary": "A股算力龙头弘信电子联合无锡高新区，打造省内首个华为昇腾384超节点算力集群，并以此为基础建设大规模“Token工厂”。首批部署4台超节点服务器，总算力规模达1536卡，成为国内面向市场端的领先算力集群。该项目标志着国产算力生态构建的重要突破，将为长三角AI产业注入新动能。",
+      "why_it_matters": "该项目是国产算力规模化应用的关键一步，有望推动“国芯国模”战略落地，提升我国AI基础设施自主可控能力。",
+      "summary_confidence": "high",
+      "tags": [
+        "弘信电子",
+        "华为昇腾",
+        "算力集群",
+        "Token工厂",
+        "无锡"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {
+        "无锡高新区": "park",
+        "落地无锡高新区": "park"
+      },
+      "regions": [
+        "无锡",
+        "长三角"
+      ],
+      "topics": [
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        },
+        {
+          "slug": "ai-chip",
+          "label": "AI芯片"
+        }
+      ],
+      "network_density": 4,
+      "region_labels": [
+        "无锡",
+        "长三角"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
       "title": "Token工厂落地无锡 依托华为昇腾384集群 算力进入“智能单元计费”时代",
       "url": "https://finance.sina.com.cn/jjxw/2026-05-17/doc-inhyezxf1664510.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-05-17T10:15:00+08:00",
-      "feed": "bing:无锡 AI",
+      "feed": "bing:无锡AI",
       "rss_description": "《科创板日报》5月17日讯（编辑 宋子乔） 无锡日报今日发文称，5月15日，AI算力企业弘信电子联手无锡高新区打造的江苏省内首个华为昇腾384超节点算力集群，签约落户无锡。与此同时，以华为超节点算力集群为首期基础设施，弘信电子将在无锡建立一座大规模Token工厂。这将成为规模化、高性能“国芯国模”算力集群新样板。 据介绍，此次落地无锡高新区的Token工厂，首批将部署4台华为昇腾384超节点服务器 ...",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "82fd6102afed3f238d37aff4431e4abc733cf5b7",
-      "relevance_score": 45,
+      "relevance_score": 53,
       "ranking_reasons": [
         "区域:无锡",
+        "主题:大模型",
         "主题:算力",
         "主题:AI",
         "新鲜度:3天内(1.7天)",
         "标题命中:区域:无锡",
         "标题命中:主题:算力",
+        "正文:信息较完整",
         "强相关:落地",
         "强相关:工厂"
       ],
-      "summary": "5月15日，弘信电子与无锡高新区合作，在无锡落地江苏省首个华为昇腾384超节点算力集群，并以此为基础建设大规模Token工厂。该工厂首批部署4台超节点服务器，总算力规模达1536卡，是国内面向市场端的领先Token工厂。同时，无锡启动了“Tokens价值焕新行动计划”，推动Token作为AI服务计费单位的标准应用。",
-      "why_it_matters": "这标志着算力进入以Token为单位的智能计费时代，为AI服务提供了可计量、可定价的标准化基础设施，有望推动AI产业规模化发展。",
+      "summary": "5月15日，弘信电子与无锡高新区合作，在无锡落地江苏省首个华为昇腾384超节点算力集群，并以此为基础建设大规模Token工厂。该工厂首批部署4台超节点服务器，总算力规模达1536卡，旨在打造“国芯国模”算力集群新样板。同时，无锡启动了“Tokens价值焕新行动计划”，推动Token作为AI服务计费单位进入“智能单元计费”时代。",
+      "why_it_matters": "这一事件标志着算力服务从传统计费模式向基于Token的智能单元计费转型，为AI服务的标准化和商业化提供了新基础设施。",
       "summary_confidence": "high",
       "tags": [
         "华为昇腾",
         "算力集群",
         "Token工厂",
-        "无锡",
-        "AI基础设施"
+        "智能计费",
+        "无锡"
       ],
       "organizations": [
         "主题的2026年无锡市世界电信",
@@ -326,10 +477,12 @@
         "无锡分公司"
       ],
       "company_types": {
-        "落地无锡高新区": "park",
-        "主题的2026年无锡市世界电信": "company",
         "无锡数据集团": "company",
-        "无锡分公司": "company"
+        "无锡分公司": "company",
+        "落地无锡高新区": "park",
+        "联手无锡高新区": "park",
+        "无锡数据集团及无锡高新区": "park",
+        "主题的2026年无锡市世界电信": "company"
       },
       "regions": [
         "无锡"
@@ -340,11 +493,15 @@
           "label": "智能制造"
         },
         {
+          "slug": "llm",
+          "label": "大模型"
+        },
+        {
           "slug": "ai-chip",
           "label": "AI芯片"
         }
       ],
-      "network_density": 6,
+      "network_density": 7,
       "region_labels": [
         "无锡"
       ],
@@ -367,7 +524,7 @@
         "区域:无锡",
         "主题:算力",
         "主题:AI",
-        "新鲜度:3天内(1.7天)",
+        "新鲜度:3天内(1.8天)",
         "标题命中:区域:无锡",
         "正文:信息较完整",
         "强相关:项目",
@@ -416,6 +573,69 @@
         }
       ],
       "network_density": 6,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "无锡，将建立一座大规模“Token工厂”",
+      "url": "https://finance.sina.com.cn/wm/2026-05-17/doc-inhyekzp1920674.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-05-17T02:06:00+08:00",
+      "feed": "bing:无锡 工业AI",
+      "rss_description": "5月15日，国内AI算力龙头企业弘信电子联手无锡高新区打造的省内首个华为昇腾384超节点算力集群，签约落户无锡。 与此同时，以华为超节点算力集群为首期基础设施，弘信电子将在锡建立一座大规模“Token工厂”。这将成为规模化、高性能“国芯国模”算力集群新样板。 什么是“Token工厂”？ “Token是AI的计量单位，可以理解成‘词元’，Token工厂，就是专门生产AI生成基本单位——Token的工 ...",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "c8aeb685929c67bb53e0ca6976a7c61ce3a845a9",
+      "relevance_score": 45,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:算法",
+        "主题:算力",
+        "主题:AI",
+        "新鲜度:3天内(2.1天)",
+        "标题命中:区域:无锡",
+        "正文:信息较完整",
+        "强相关:落地",
+        "强相关:工厂"
+      ],
+      "summary": "弘信电子与无锡高新区合作，将建设省内首个华为昇腾384超节点算力集群，并以此为基础打造大规模“Token工厂”。该工厂旨在高效生产AI的基本单位“Token”，首批部署4台超节点服务器，算力规模在国内市场领先。",
+      "why_it_matters": "这标志着国内在AI算力基础设施和国产芯片应用上迈出重要一步，有望推动“国芯国模”生态发展。",
+      "summary_confidence": "high",
+      "tags": [
+        "AI算力",
+        "Token工厂",
+        "华为昇腾",
+        "弘信电子",
+        "无锡高新区"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {
+        "无锡高新区": "park",
+        "落地无锡高新区": "park"
+      },
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        },
+        {
+          "slug": "llm",
+          "label": "大模型"
+        },
+        {
+          "slug": "ai-chip",
+          "label": "AI芯片"
+        }
+      ],
+      "network_density": 4,
       "region_labels": [
         "无锡"
       ],
@@ -489,147 +709,6 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "无锡打造全国首个工业级高质量数据集 - thepaper.cn",
-      "url": "https://m.thepaper.cn/newsDetail_forward_33182407",
-      "source": "m.thepaper.cn",
-      "published_at": "2026-05-15T16:05:00+08:00",
-      "feed": "google:无锡 具身智能",
-      "rss_description": "无锡打造全国首个工业级高质量数据集 thepaper.cn",
-      "_is_new_candidate": true,
-      "domain": "m.thepaper.cn",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "4a03565b74ed166b9d249689b09c7cfbe202e56d",
-      "relevance_score": 53,
-      "ranking_reasons": [
-        "区域:无锡",
-        "主题:具身智能",
-        "主题:大模型",
-        "新鲜度:7天内(3.4天)",
-        "标题命中:区域:无锡",
-        "来源:可信媒体",
-        "正文:信息较完整",
-        "强相关:落地",
-        "强相关:产线",
-        "强相关:研究院"
-      ],
-      "summary": "无锡启动“千企百万小时”工业数据采集行动，计划于2026年实现累计超万小时有效数据突破，打造全国首个工业级高质量具身智能数据集。此举旨在解决工业领域长期面临的高质量数据稀缺问题，推动工业具身智能的迭代升级。",
-      "why_it_matters": "该行动填补了工业具身智能领域高质量数据集的空白，有望加速工业智能化转型。",
-      "summary_confidence": "high",
-      "tags": [
-        "无锡",
-        "工业数据",
-        "具身智能",
-        "数据集",
-        "数据采集"
-      ],
-      "organizations": [
-        "无锡数据集团",
-        "国家数据发展研究院"
-      ],
-      "companies": [
-        "无锡数据集团"
-      ],
-      "company_types": {
-        "无锡数据集团": "company",
-        "国家数据发展研究院": "institute"
-      },
-      "regions": [
-        "无锡"
-      ],
-      "topics": [
-        {
-          "slug": "smart-manufacturing",
-          "label": "智能制造"
-        },
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        },
-        {
-          "slug": "llm",
-          "label": "大模型"
-        }
-      ],
-      "network_density": 6,
-      "region_labels": [
-        "无锡"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
-      "title": "拿下2000台订单、近3亿融资到账，博银合创抢跑工业具身智能“量产窗口” - 财联社",
-      "url": "https://www.cls.cn/detail/2372375",
-      "source": "cls.cn",
-      "published_at": "2026-05-15T15:06:00+08:00",
-      "feed": "google:苏州 具身智能",
-      "rss_description": "拿下2000台订单、近3亿融资到账，博银合创抢跑工业具身智能“量产窗口” 财联社",
-      "_is_new_candidate": true,
-      "domain": "cls.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "43cc45a023bb7fc3e2842ac3bad029b75c9e42e0",
-      "relevance_score": 55,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:机器人",
-        "主题:具身智能",
-        "主题:人形机器人",
-        "新鲜度:7天内(3.5天)",
-        "标题命中:主题:具身智能",
-        "正文:信息较完整",
-        "强相关:融资",
-        "强相关:基金",
-        "强相关:落地"
-      ],
-      "summary": "博银合创完成近3亿元Pre-A轮融资，由元禾辰坤领投，博世旗下投资平台追加投资。该公司是博世与银河通用合资成立的企业，专注于工业具身智能领域，已获得2000台订单。本轮融资将用于量产和业务拓展。",
-      "why_it_matters": "这标志着工业具身智能从研发走向量产的关键转折，且博世等产业资本的深度参与验证了技术落地的商业可行性。",
-      "summary_confidence": "high",
-      "tags": [
-        "博银合创",
-        "具身智能",
-        "融资",
-        "工业机器人",
-        "量产"
-      ],
-      "organizations": [
-        "这是一家身份相当特殊的公司",
-        "博银合创科技有限公司",
-        "也不是大公司",
-        "联动母公司"
-      ],
-      "companies": [
-        "这是一家身份相当特殊的公司",
-        "博银合创科技有限公司",
-        "也不是大公司",
-        "联动母公司"
-      ],
-      "company_types": {
-        "博银合创科技有限公司": "company",
-        "这是一家身份相当特殊的公司": "company",
-        "也不是大公司": "company",
-        "联动母公司": "company"
-      },
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "robotics",
-          "label": "机器人"
-        },
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        }
-      ],
-      "network_density": 7,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
       "title": "摩尔线程（无锡）工业具身智能创新中心启动",
       "url": "https://finance.sina.com.cn/jjxw/2026-05-14/doc-inhxvtwn8785069.shtml",
       "source": "finance.sina.com.cn",
@@ -646,7 +725,7 @@
         "区域:无锡",
         "主题:具身智能",
         "主题:自动化",
-        "新鲜度:7天内(4.8天)",
+        "新鲜度:7天内(4.9天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "强相关:合作",
@@ -722,7 +801,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(5.0天)",
+        "新鲜度:7天内(5.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -806,12 +885,12 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "797dc821407f1701e3d5ad8cca71f6e4e2033cb7",
-      "relevance_score": 42,
+      "relevance_score": 39,
       "ranking_reasons": [
         "区域:无锡",
         "主题:大模型",
         "主题:AI",
-        "新鲜度:7天内(7.0天)",
+        "新鲜度:14天内(7.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:融资",
@@ -858,7 +937,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:具身智能",
-        "新鲜度:14天内(9.3天)",
+        "新鲜度:14天内(9.4天)",
         "标题命中:区域:苏州",
         "标题命中:主题:具身智能"
       ],
@@ -909,7 +988,7 @@
         "区域:无锡",
         "主题:智能制造",
         "主题:AI",
-        "新鲜度:14天内(9.5天)",
+        "新鲜度:14天内(9.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:工厂",
@@ -962,7 +1041,7 @@
         "区域:苏州",
         "主题:人工智能",
         "主题:算力",
-        "新鲜度:14天内(10.0天)",
+        "新鲜度:14天内(10.1天)",
         "标题命中:主题:算力",
         "来源:可信媒体",
         "强相关:落地"
@@ -1060,7 +1139,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:AI",
-        "新鲜度:14天内(10.6天)",
+        "新鲜度:14天内(10.7天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "标题命中:主题:AI",
@@ -1168,7 +1247,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:智能制造",
-        "新鲜度:14天内(12.4天)",
+        "新鲜度:14天内(12.5天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "标题命中:主题:智能制造",
@@ -1224,7 +1303,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:AI",
-        "新鲜度:14天内(12.5天)",
+        "新鲜度:14天内(12.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "标题命中:主题:AI",
@@ -1290,7 +1369,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(12.6天)",
+        "新鲜度:14天内(12.7天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1333,7 +1412,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:偏旧(14.0天)",
+        "新鲜度:偏旧(14.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -1429,7 +1508,7 @@
         "区域:无锡",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:偏旧(16.1天)",
+        "新鲜度:偏旧(16.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能",
         "标题命中:主题:AI"
@@ -1470,7 +1549,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:偏旧(17.0天)",
+        "新鲜度:偏旧(17.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -1721,7 +1800,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:偏旧(18.7天)",
+        "新鲜度:偏旧(18.8天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -1932,57 +2011,6 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "机器人加速“组团上新”！苏州年内力争推出200个以上具身智能新场景 - 紫牛新闻",
-      "url": "https://www.yzwb.net/news/jiangsu/suzhou/202604/t20260427_346965.html",
-      "source": "yzwb.net",
-      "published_at": "2026-04-27T15:00:00+08:00",
-      "feed": "google:苏州 具身智能",
-      "rss_description": "机器人加速“组团上新”！苏州年内力争推出200个以上具身智能新场景 紫牛新闻",
-      "_is_new_candidate": true,
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "ac199423ab2acedbc84fdde21bc5655afed32b91",
-      "relevance_score": 35,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:机器人",
-        "主题:具身智能",
-        "新鲜度:偏旧(21.5天)",
-        "标题命中:区域:苏州",
-        "标题命中:主题:机器人",
-        "标题命中:主题:具身智能",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "机器人",
-        "具身智能"
-      ],
-      "organizations": [],
-      "companies": [],
-      "company_types": {},
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "robotics",
-          "label": "机器人"
-        },
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        }
-      ],
-      "network_density": 3,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
       "title": "民革无锡市委会来杭调研“具身智能产业发展与生态构建” - thepaper.cn",
       "url": "https://m.thepaper.cn/newsDetail_forward_33039950",
       "source": "m.thepaper.cn",
@@ -2027,51 +2055,45 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "【开局之年看中国·遇见不一样的江苏】AI产业链上，江苏苏州何以 ...",
-      "url": "https://jsnews.jschina.com.cn/jsyw/202604/t20260422_s69e87677e4b006a815e12be4.shtml",
-      "source": "jsnews.jschina.com.cn",
-      "published_at": "2026-04-22T16:19:00+08:00",
-      "feed": "bing:苏州 工业AI",
-      "rss_description": "近日，一批上市公司陆续披露2026年一季度财报。尤其是在涉及人工智能产业链的相关企业，交出了亮眼“成绩单”，展现出AI产业从概念走向现实后的强劲拉动力。 有细心的市场观察者发现，这些业绩突出的AI产业链公司中，相当一部分指向同一座城市——苏州。",
+      "title": "阿里无锡AI赋能中心项目签约落地 - 紫牛新闻",
+      "url": "https://www.yangtse.com/news/jiangsu/wuxi/202604/t20260423_345207.html",
+      "source": "yangtse.com",
+      "published_at": "2026-04-23T14:58:00+08:00",
+      "feed": "google:无锡 智能制造 AI",
+      "rss_description": "阿里无锡AI赋能中心项目签约落地 紫牛新闻",
       "_is_new_candidate": true,
-      "domain": "jsnews.jschina.com.cn",
+      "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2,
-      "fingerprint": "68845629f0c09793d171adc44dcc804cc15f4440",
-      "relevance_score": 27,
+      "fingerprint": "5834ab9896a853c9a386c06ec95b7faaa0555130",
+      "relevance_score": 36,
       "ranking_reasons": [
-        "区域:苏州",
-        "主题:人工智能",
+        "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(26.4天)",
-        "标题命中:区域:苏州",
+        "新鲜度:偏旧(25.5天)",
+        "标题命中:区域:无锡",
         "标题命中:主题:AI",
-        "来源:可信媒体"
+        "来源:可信媒体",
+        "强相关:项目",
+        "强相关:落地"
       ],
       "summary_confidence": "low",
       "tags": [
-        "苏州",
-        "人工智能"
+        "无锡",
+        "人工智能",
+        "项目",
+        "落地"
       ],
-      "organizations": [
-        "这些业绩突出的AI产业链公司",
-        "一批上市公司"
-      ],
-      "companies": [
-        "这些业绩突出的AI产业链公司",
-        "一批上市公司"
-      ],
-      "company_types": {
-        "一批上市公司": "company",
-        "这些业绩突出的AI产业链公司": "company"
-      },
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
       "regions": [
-        "苏州"
+        "无锡"
       ],
       "topics": [],
-      "network_density": 3,
+      "network_density": 1,
       "region_labels": [
-        "苏州"
+        "无锡"
       ],
       "entity_confidence": "rule"
     },
@@ -2092,7 +2114,7 @@
         "区域:苏州",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:偏旧(26.6天)",
+        "新鲜度:偏旧(26.7天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI"
       ],
@@ -2140,7 +2162,7 @@
         "区域:苏州",
         "主题:算力",
         "主题:AI",
-        "新鲜度:偏旧(27.2天)",
+        "新鲜度:偏旧(27.3天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI",
         "强相关:合作"
@@ -2166,6 +2188,49 @@
       "network_density": 2,
       "region_labels": [
         "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "牵手阿里云！AI赋能中心项目落地无锡锡山 - 中国江苏网",
+      "url": "https://jsnews.jschina.com.cn/kjwt/202604/t20260421_s69e6d92be4b082b4d607e3a8.shtml",
+      "source": "jsnews.jschina.com.cn",
+      "published_at": "2026-04-21T15:00:00+08:00",
+      "feed": "google:无锡 智能制造 AI",
+      "rss_description": "牵手阿里云！AI赋能中心项目落地无锡锡山 中国江苏网",
+      "_is_new_candidate": true,
+      "domain": "jsnews.jschina.com.cn",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "fcdbbcf2027a918c8229370d2f02d19ff48c270f",
+      "relevance_score": 36,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:AI",
+        "新鲜度:偏旧(27.5天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "强相关:项目",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "项目",
+        "落地"
+      ],
+      "organizations": [],
+      "companies": [],
+      "company_types": {},
+      "regions": [
+        "无锡"
+      ],
+      "topics": [],
+      "network_density": 1,
+      "region_labels": [
+        "无锡"
       ],
       "entity_confidence": "rule"
     },
@@ -2324,53 +2389,22 @@
   ],
   "companies": [
     {
-      "slug": "无锡数据集团",
-      "name": "无锡数据集团",
+      "slug": "魔法原子",
+      "name": "魔法原子",
       "type": "company",
-      "mention_count": 2,
+      "mention_count": 1,
       "tags": [
-        "AI基础设施",
-        "Token工厂",
+        "产业政策",
         "具身智能",
-        "华为昇腾",
-        "工业数据",
-        "数据采集"
+        "戛纳电影节",
+        "无锡",
+        "机器人"
       ],
       "cities": [
         "无锡"
       ],
-      "first_appearance": "2026-05-15T16:05:00+08:00",
-      "last_appearance": "2026-05-17T10:15:00+08:00"
-    },
-    {
-      "slug": "这些业绩突出的-ai-产业链公司",
-      "name": "这些业绩突出的AI产业链公司",
-      "type": "company",
-      "mention_count": 2,
-      "tags": [
-        "人工智能",
-        "苏州"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-04-22T12:10:00+08:00",
-      "last_appearance": "2026-04-22T16:19:00+08:00"
-    },
-    {
-      "slug": "一批上市公司",
-      "name": "一批上市公司",
-      "type": "company",
-      "mention_count": 2,
-      "tags": [
-        "人工智能",
-        "苏州"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-04-22T12:10:00+08:00",
-      "last_appearance": "2026-04-22T16:19:00+08:00"
+      "first_appearance": "2026-05-18T14:18:00+08:00",
+      "last_appearance": "2026-05-18T14:18:00+08:00"
     },
     {
       "slug": "包材提供方外贸无锡印刷股份有限公司",
@@ -2470,10 +2504,28 @@
       "type": "company",
       "mention_count": 1,
       "tags": [
-        "AI基础设施",
         "Token工厂",
         "华为昇腾",
         "无锡",
+        "智能计费",
+        "算力集群"
+      ],
+      "cities": [
+        "无锡"
+      ],
+      "first_appearance": "2026-05-17T10:15:00+08:00",
+      "last_appearance": "2026-05-17T10:15:00+08:00"
+    },
+    {
+      "slug": "无锡数据集团",
+      "name": "无锡数据集团",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "Token工厂",
+        "华为昇腾",
+        "无锡",
+        "智能计费",
         "算力集群"
       ],
       "cities": [
@@ -2488,10 +2540,10 @@
       "type": "company",
       "mention_count": 1,
       "tags": [
-        "AI基础设施",
         "Token工厂",
         "华为昇腾",
         "无锡",
+        "智能计费",
         "算力集群"
       ],
       "cities": [
@@ -2573,78 +2625,6 @@
       ],
       "first_appearance": "2026-05-16T12:40:50+08:00",
       "last_appearance": "2026-05-16T12:40:50+08:00"
-    },
-    {
-      "slug": "这是一家身份相当特殊的公司",
-      "name": "这是一家身份相当特殊的公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "具身智能",
-        "博银合创",
-        "工业机器人",
-        "融资",
-        "量产"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-05-15T15:06:00+08:00",
-      "last_appearance": "2026-05-15T15:06:00+08:00"
-    },
-    {
-      "slug": "博银合创科技有限公司",
-      "name": "博银合创科技有限公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "具身智能",
-        "博银合创",
-        "工业机器人",
-        "融资",
-        "量产"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-05-15T15:06:00+08:00",
-      "last_appearance": "2026-05-15T15:06:00+08:00"
-    },
-    {
-      "slug": "也不是大公司",
-      "name": "也不是大公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "具身智能",
-        "博银合创",
-        "工业机器人",
-        "融资",
-        "量产"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-05-15T15:06:00+08:00",
-      "last_appearance": "2026-05-15T15:06:00+08:00"
-    },
-    {
-      "slug": "联动母公司",
-      "name": "联动母公司",
-      "type": "company",
-      "mention_count": 1,
-      "tags": [
-        "具身智能",
-        "博银合创",
-        "工业机器人",
-        "融资",
-        "量产"
-      ],
-      "cities": [
-        "苏州"
-      ],
-      "first_appearance": "2026-05-15T15:06:00+08:00",
-      "last_appearance": "2026-05-15T15:06:00+08:00"
     },
     {
       "slug": "天奇自动化工程股份有限公司",
@@ -2765,32 +2745,61 @@
       ],
       "first_appearance": "2026-04-29T15:00:00+08:00",
       "last_appearance": "2026-04-29T15:00:00+08:00"
+    },
+    {
+      "slug": "这些业绩突出的-ai-产业链公司",
+      "name": "这些业绩突出的AI产业链公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "人工智能",
+        "苏州"
+      ],
+      "cities": [
+        "苏州"
+      ],
+      "first_appearance": "2026-04-22T12:10:00+08:00",
+      "last_appearance": "2026-04-22T12:10:00+08:00"
+    },
+    {
+      "slug": "一批上市公司",
+      "name": "一批上市公司",
+      "type": "company",
+      "mention_count": 1,
+      "tags": [
+        "人工智能",
+        "苏州"
+      ],
+      "cities": [
+        "苏州"
+      ],
+      "first_appearance": "2026-04-22T12:10:00+08:00",
+      "last_appearance": "2026-04-22T12:10:00+08:00"
     }
   ],
   "topics": [
     {
       "slug": "robotics",
       "label": "机器人",
-      "count": 23,
+      "count": 22,
       "companies": [
-        "也不是大公司",
         "包材提供方外贸无锡印刷股份有限公司",
-        "博银合创科技有限公司",
         "大湾区是公司",
         "广东华沿机器人股份有限公司",
         "技术合作方上海班格智能科技有限公司",
         "无锡蓝启智能科技有限公司",
         "智元机器人",
         "深化上实集团",
-        "联动母公司",
         "苏州智能机器人科技发展有限公司",
-        "走进凯龙高科技股份有限公司"
+        "走进凯龙高科技股份有限公司",
+        "顺德区上市公司",
+        "魔法原子"
       ]
     },
     {
       "slug": "smart-manufacturing",
       "label": "智能制造",
-      "count": 12,
+      "count": 14,
       "companies": [
         "主题的2026年无锡市世界电信",
         "包材提供方外贸无锡印刷股份有限公司",
@@ -2807,27 +2816,9 @@
       ]
     },
     {
-      "slug": "embodied-ai",
-      "label": "具身智能",
-      "count": 10,
-      "companies": [
-        "也不是大公司",
-        "凯龙高科技股份有限公司",
-        "博银合创科技有限公司",
-        "大湾区是公司",
-        "天奇自动化工程股份有限公司",
-        "无锡优奇智能科技有限公司",
-        "无锡数据集团",
-        "无锡雪浪数制科技有限公司",
-        "联动母公司",
-        "苏州智能机器人科技发展有限公司",
-        "这是一家身份相当特殊的公司"
-      ]
-    },
-    {
       "slug": "ai-chip",
       "label": "AI芯片",
-      "count": 9,
+      "count": 12,
       "companies": [
         "主题的2026年无锡市世界电信",
         "凯龙高科技股份有限公司",
@@ -2839,19 +2830,37 @@
         "无锡分公司",
         "无锡数据集团",
         "无锡雪浪数制科技有限公司",
-        "苏州智能机器人科技发展有限公司"
+        "苏州智能机器人科技发展有限公司",
+        "魔法原子"
+      ]
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "具身智能",
+      "count": 8,
+      "companies": [
+        "凯龙高科技股份有限公司",
+        "大湾区是公司",
+        "天奇自动化工程股份有限公司",
+        "无锡优奇智能科技有限公司",
+        "无锡雪浪数制科技有限公司",
+        "苏州智能机器人科技发展有限公司",
+        "魔法原子"
       ]
     },
     {
       "slug": "llm",
       "label": "大模型",
-      "count": 5,
+      "count": 7,
       "companies": [
+        "主题的2026年无锡市世界电信",
         "厦门弘信电子科技集团",
         "厦门弘信电子科技集团股份有限公司",
         "大湾区是公司",
+        "无锡分公司",
         "无锡数据集团",
-        "苏州智能机器人科技发展有限公司"
+        "苏州智能机器人科技发展有限公司",
+        "魔法原子"
       ]
     },
     {
@@ -2879,7 +2888,7 @@
     {
       "slug": "suzhou",
       "label": "苏州",
-      "company_count": 10,
+      "company_count": 6,
       "topic_count": 6
     },
     {
