@@ -43,18 +43,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/history-page-4.html</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/无锡数据集团/</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/company/这些业绩突出的-ai-产业链公司/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>daily</changefreq>
@@ -91,6 +79,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/company/无锡数据集团/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/company/厦门弘信电子科技集团股份有限公司/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>daily</changefreq>
@@ -110,30 +104,6 @@
   </url>
   <url>
     <loc>https://wuxiai.com/company/顺德区上市公司/</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/这是一家身份相当特殊的公司/</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/博银合创科技有限公司/</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/也不是大公司/</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wuxiai.com/company/联动母公司/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -187,12 +157,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
-    <lastmod>2026-05-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>daily</changefreq>
@@ -200,6 +164,12 @@
   </url>
   <url>
     <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <lastmod>2026-05-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -217,7 +187,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/suzhou/</loc>
+    <loc>https://wuxiai.com/region/wuxi/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -229,7 +199,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/wuxi/</loc>
+    <loc>https://wuxiai.com/region/suzhou/</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
