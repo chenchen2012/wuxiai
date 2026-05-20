@@ -1510,8 +1510,7 @@ def prioritize_entities(orgs: list[str], org_types: dict[str, str], item: dict) 
         scored.append((score, name, org_type))
     scored.sort(key=lambda row: (row[0], 1 if row[2] == "company" else 0, len(row[1])), reverse=True)
     ordered = [name for score, name, _org_type in scored if score >= 2]
-    companies = [name for score, name, org_type in scored if org_type == "company" and score >= 8]
-    return ordered[:8], companies[:4]
+    return ordered[:8], []
 
 
 def extract_topics(item: dict) -> list[dict]:
@@ -1532,15 +1531,15 @@ def enrich_network_metadata(items: list[dict], provider: Optional["SummaryProvid
             if name not in rule_orgs:
                 rule_orgs.append(name)
         orgs, company_types, rule_regions, entity_confidence = merge_rule_entities(rule_orgs)
-        organizations, companies = prioritize_entities(orgs, company_types, item)
+        organizations, _companies = prioritize_entities(orgs, company_types, item)
         regions = rule_regions or detect_regions(combined)
         topics = extract_topics(item)
         item["organizations"] = organizations
-        item["companies"] = companies
-        item["company_types"] = company_types
+        item["companies"] = []
+        item["company_types"] = {}
         item["regions"] = regions[:3]
         item["topics"] = topics[:5]
-        item["network_density"] = len(item["organizations"]) + len(item["regions"]) + len(item["topics"])
+        item["network_density"] = len(item["regions"]) + len(item["topics"])
         item["region_labels"] = [region for region in item["regions"]]
         item["entity_confidence"] = entity_confidence
     return items
@@ -1594,15 +1593,11 @@ def build_topic_index(items: list[dict]) -> dict[str, dict]:
                     "label": topic["label"],
                     "count": 0,
                     "news": [],
-                    "companies": set(),
                 },
             )
             entry["count"] += 1
             entry["news"].append(item)
-            for company in item.get("companies", []):
-                entry["companies"].add(company)
     for entry in index.values():
-        entry["companies"] = sorted(entry["companies"])[:12]
         entry["news"] = sorted(entry["news"], key=lambda item: str(item.get("published_at", "")), reverse=True)
     return dict(sorted(index.items(), key=lambda pair: pair[1]["count"], reverse=True))
 
@@ -1618,18 +1613,14 @@ def build_region_index(items: list[dict]) -> dict[str, dict]:
                     "slug": slug,
                     "label": region,
                     "news": [],
-                    "companies": set(),
                     "topics": set(),
                 },
             )
             entry["news"].append(item)
-            for company in item.get("companies", []):
-                entry["companies"].add(company)
             for topic in item.get("topics", []):
                 entry["topics"].add(topic["label"])
     for entry in index.values():
         entry["news"] = sorted(entry["news"], key=lambda item: str(item.get("published_at", "")), reverse=True)
-        entry["companies"] = sorted(entry["companies"])[:12]
         entry["topics"] = sorted(entry["topics"])[:12]
     return index
 
@@ -2030,11 +2021,10 @@ def finalize_items(items: list[dict], provider: Optional["SummaryProvider"] = No
 
 
 def write_data_json(items: list[dict]) -> None:
-    companies = build_company_index(items)
     topics = build_topic_index(items)
     regions = build_region_index(items)
     serializable = []
-    hidden_keys = {"content_text", "_existing", "content_digest"}
+    hidden_keys = {"content_text", "_existing", "content_digest", "companies", "company_types"}
     for item in items:
         cloned = {key: value for key, value in item.items() if key not in hidden_keys}
         serializable.append(cloned)
@@ -2042,25 +2032,11 @@ def write_data_json(items: list[dict]) -> None:
         "updated_at": datetime.now(CST).isoformat(),
         "item_count": len(serializable),
         "items": serializable,
-        "companies": [
-            {
-                "slug": entry["slug"],
-                "name": entry["name"],
-                "type": entry["type"],
-                "mention_count": entry["mention_count"],
-                "tags": entry["tags"],
-                "cities": entry["cities"],
-                "first_appearance": entry["first_appearance"],
-                "last_appearance": entry["last_appearance"],
-            }
-            for entry in companies.values()
-        ],
         "topics": [
             {
                 "slug": entry["slug"],
                 "label": entry["label"],
                 "count": entry["count"],
-                "companies": entry["companies"],
             }
             for entry in topics.values()
         ],
@@ -2068,7 +2044,6 @@ def write_data_json(items: list[dict]) -> None:
             {
                 "slug": entry["slug"],
                 "label": entry["label"],
-                "company_count": len(entry["companies"]),
                 "topic_count": len(entry["topics"]),
             }
             for entry in regions.values()
@@ -2080,7 +2055,6 @@ def write_data_json(items: list[dict]) -> None:
 
 def write_seo_files(updated_iso: str, items: list[dict]) -> None:
     updated_date = updated_iso[:10] if updated_iso else datetime.now(CST).strftime("%Y-%m-%d")
-    company_index = build_company_index(items)
     topic_index = build_topic_index(items)
     region_index = build_region_index(items)
     robots = "\n".join(
@@ -2131,8 +2105,6 @@ def write_seo_files(updated_iso: str, items: list[dict]) -> None:
                 "  </url>",
             ]
         )
-    for entry in company_index.values():
-        sitemap_lines.extend(["  <url>", f"    <loc>https://wuxiai.com/company/{entry['slug']}/</loc>", f"    <lastmod>{updated_date}</lastmod>", "    <changefreq>daily</changefreq>", "    <priority>0.7</priority>", "  </url>"])
     for entry in topic_index.values():
         sitemap_lines.extend(["  <url>", f"    <loc>https://wuxiai.com/topic/{entry['slug']}/</loc>", f"    <lastmod>{updated_date}</lastmod>", "    <changefreq>daily</changefreq>", "    <priority>0.7</priority>", "  </url>"])
     for entry in region_index.values():
@@ -2328,7 +2300,7 @@ def build_home_html(items: list[dict]) -> str:
         items=items,
         page_title="无锡AI | 无锡、苏州与长三角人工智能新闻",
         canonical_url="https://wuxiai.com/",
-        description="聚合无锡人工智能、无锡机器人、苏州AI、苏州机器人与长三角人工智能新闻，提供中文摘要、标签与机构线索。",
+        description="聚合无锡人工智能、无锡机器人、苏州AI、苏州机器人与长三角人工智能新闻，提供中文摘要与结构化标签。",
         heading="无锡AI",
         intro="聚合无锡、苏州与长三角人工智能和机器人新闻，优先保留更权威、更完整、与区域产业更相关的版本，并提供中文摘要与结构化标签。",
         show_limit=MAX_ITEMS,
@@ -2412,6 +2384,11 @@ def reset_output_dir(path: str) -> None:
     os.makedirs(path, exist_ok=True)
 
 
+def remove_output_dir(path: str) -> None:
+    if os.path.isdir(path):
+        shutil.rmtree(path)
+
+
 def build_network_page_html(*, page_title: str, canonical_url: str, description: str, heading: str, intro: str, stats: list[str], news_items: list[dict], extra_sections: list[str]) -> str:
     base = build_page_html(
         items=news_items,
@@ -2433,31 +2410,7 @@ def build_network_page_html(*, page_title: str, canonical_url: str, description:
 
 
 def write_company_pages(items: list[dict]) -> None:
-    reset_output_dir(COMPANY_DIR)
-    for entry in build_company_index(items).values():
-        path = os.path.join(COMPANY_DIR, entry["slug"], "index.html")
-        ensure_dir(os.path.dirname(path))
-        extras = []
-        if entry["cities"]:
-            extras.append("<p class=\"intro\">涉及城市：" + "、".join(html.escape(city) for city in entry["cities"]) + "</p>")
-        if entry["tags"]:
-            extras.append("<p class=\"intro\">相关标签：" + "、".join(html.escape(tag) for tag in entry["tags"][:6]) + "</p>")
-        html_text = build_network_page_html(
-            page_title=f"{entry['name']} | 无锡AI 公司情报",
-            canonical_url=f"https://wuxiai.com/company/{entry['slug']}/",
-            description=f"{entry['name']} 在无锡AI新闻中的相关动态、提及次数与关联城市。",
-            heading=entry["name"],
-            intro="自动聚合该机构在无锡 / 苏州 / 长三角 AI 生态中的相关报道。",
-            stats=[
-                f"提及次数：{entry['mention_count']}",
-                f"首次出现：{format_cst_time(entry['first_appearance'])}",
-                f"最近出现：{format_cst_time(entry['last_appearance'])}",
-            ],
-            news_items=entry["news"][:24],
-            extra_sections=extras,
-        )
-        with open(path, "w", encoding="utf-8") as handle:
-            handle.write(html_text)
+    remove_output_dir(COMPANY_DIR)
 
 
 def write_topic_pages(items: list[dict]) -> None:
@@ -2466,15 +2419,13 @@ def write_topic_pages(items: list[dict]) -> None:
         path = os.path.join(TOPIC_DIR, entry["slug"], "index.html")
         ensure_dir(os.path.dirname(path))
         extras = []
-        if entry["companies"]:
-            extras.append("<p class=\"intro\">相关机构：" + "、".join(html.escape(name) for name in entry["companies"][:10]) + "</p>")
         html_text = build_network_page_html(
             page_title=f"{entry['label']} | 无锡AI 主题情报",
             canonical_url=f"https://wuxiai.com/topic/{entry['slug']}/",
-            description=f"{entry['label']} 在无锡、苏州与长三角 AI 生态中的相关新闻与相关机构。",
+            description=f"{entry['label']} 在无锡、苏州与长三角 AI 生态中的相关新闻。",
             heading=entry["label"],
-            intro="从新闻中自动聚合的技术主题页，用于追踪该技术在区域生态中的出现频率与相关主体。",
-            stats=[f"提及次数：{entry['count']}", f"相关机构：{len(entry['companies'])}"],
+            intro="从新闻中自动聚合的技术主题页，用于追踪该技术在区域生态中的出现频率。",
+            stats=[f"提及次数：{entry['count']}"],
             news_items=entry["news"][:24],
             extra_sections=extras,
         )
@@ -2488,17 +2439,15 @@ def write_region_pages(items: list[dict]) -> None:
         path = os.path.join(REGION_DIR, entry["slug"], "index.html")
         ensure_dir(os.path.dirname(path))
         extras = []
-        if entry["companies"]:
-            extras.append("<p class=\"intro\">重点机构：" + "、".join(html.escape(name) for name in entry["companies"][:10]) + "</p>")
         if entry["topics"]:
             extras.append("<p class=\"intro\">高频主题：" + "、".join(html.escape(topic) for topic in entry["topics"][:10]) + "</p>")
         html_text = build_network_page_html(
             page_title=f"{entry['label']} | 无锡AI 区域情报",
             canonical_url=f"https://wuxiai.com/region/{entry['slug']}/",
-            description=f"{entry['label']} 区域的 AI / 机器人相关新闻、重点机构与技术主题。",
+            description=f"{entry['label']} 区域的 AI / 机器人相关新闻与技术主题。",
             heading=entry["label"],
-            intro="区域情报页会自动聚合该地区的最新动态、重点机构和高频技术主题。",
-            stats=[f"新闻数：{len(entry['news'])}", f"机构数：{len(entry['companies'])}", f"主题数：{len(entry['topics'])}"],
+            intro="区域情报页会自动聚合该地区的最新动态和高频技术主题。",
+            stats=[f"新闻数：{len(entry['news'])}", f"主题数：{len(entry['topics'])}"],
             news_items=entry["news"][:24],
             extra_sections=extras,
         )
@@ -2514,14 +2463,13 @@ def generate_weekly_trend_summary(items: list[dict]) -> str:
         return ""
     prompt = (
         "你是区域 AI 产业分析编辑。请用中文写一小段 3 句以内的周观察，"
-        "聚焦无锡、苏州、长三角的公司、技术和产业动向，不要使用空话。"
+        "聚焦无锡、苏州、长三角的技术、场景和产业动向，不要使用空话。"
     )
     content = json.dumps(
         [
             {
                 "title": item.get("title", ""),
                 "regions": item.get("regions", []),
-                "companies": item.get("companies", []),
                 "topics": [topic.get("label", "") for topic in item.get("topics", [])],
             }
             for item in weekly_items
@@ -2559,12 +2507,9 @@ def generate_weekly_trend_summary(items: list[dict]) -> str:
 def write_weekly_page(items: list[dict]) -> None:
     ensure_dir(WEEKLY_DIR)
     weekly_items = [item for item in items if age_in_days(str(item.get("published_at", ""))) <= 7]
-    company_index = build_company_index(weekly_items)
     topic_index = build_topic_index(weekly_items)
     trend_summary = generate_weekly_trend_summary(weekly_items)
     extras = []
-    if company_index:
-        extras.append("<p class=\"intro\">本周高频机构：" + "、".join(html.escape(entry["name"]) for entry in list(company_index.values())[:8]) + "</p>")
     if topic_index:
         extras.append("<p class=\"intro\">本周高频技术：" + "、".join(html.escape(entry["label"]) for entry in list(topic_index.values())[:8]) + "</p>")
     if trend_summary:
@@ -2572,10 +2517,10 @@ def write_weekly_page(items: list[dict]) -> None:
     html_text = build_network_page_html(
         page_title="本周AI观察 | 无锡AI",
         canonical_url="https://wuxiai.com/weekly/",
-        description="自动生成的无锡 / 苏州 / 长三角 AI 周度观察，汇总本周重点新闻、机构和技术主题。",
+        description="自动生成的无锡 / 苏州 / 长三角 AI 周度观察，汇总本周重点新闻和技术主题。",
         heading="本周无锡AI观察",
-        intro="自动汇总最近 7 天区域 AI 生态中的重点新闻、机构与技术主题。",
-        stats=[f"本周新闻：{len(weekly_items)}", f"本周机构：{len(company_index)}", f"本周主题：{len(topic_index)}"],
+        intro="自动汇总最近 7 天区域 AI 生态中的重点新闻与技术主题。",
+        stats=[f"本周新闻：{len(weekly_items)}", f"本周主题：{len(topic_index)}"],
         news_items=weekly_items[:18],
         extra_sections=extras,
     )
@@ -2588,16 +2533,15 @@ def build_submit_page() -> str:
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>提交新闻线索 | 无锡AI</title><style>body{font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif;background:#f5f7fb;color:#1f2937;margin:0}main{max-width:760px;margin:28px auto;padding:0 16px}.card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:22px}label{display:block;margin:12px 0 6px;font-weight:600}input,textarea{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:10px;font:inherit}button{margin-top:16px;background:#1d4ed8;color:#fff;border:0;border-radius:10px;padding:10px 16px;font:inherit;cursor:pointer}.muted{color:#6b7280;font-size:14px}</style></head>
 <body><main><section class="card"><h1>提交新闻线索</h1><p class="muted">你提交的内容会进入自动抓取与评分流程；若链接和内容足够相关，系统会自动纳入发布。</p>
-<form id="submit-form"><label>Title</label><input name="title" required><label>URL</label><input name="url" required><label>Company (optional)</label><input name="company"><label>City (optional)</label><input name="city"><label>Description (optional)</label><textarea name="description" rows="5"></textarea><button type="submit">提交到线索入口</button></form></section></main>
+<form id="submit-form"><label>Title</label><input name="title" required><label>URL</label><input name="url" required><label>City (optional)</label><input name="city"><label>Description (optional)</label><textarea name="description" rows="5"></textarea><button type="submit">提交到线索入口</button></form></section></main>
 <script>
 document.getElementById('submit-form').addEventListener('submit', function (event) {
   event.preventDefault();
   const data = new FormData(event.target);
   const title = `[submit] ${data.get('title')}`;
-  const body = [
+    const body = [
     `Title: ${data.get('title') || ''}`,
     `URL: ${data.get('url') || ''}`,
-    `Company: ${data.get('company') || ''}`,
     `City: ${data.get('city') || ''}`,
     `Description: ${data.get('description') || ''}`
   ].join('\\n');
