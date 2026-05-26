@@ -67,19 +67,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/automation/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/suzhou/</loc>
+    <loc>https://wuxiai.com/topic/automation/</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -92,6 +86,12 @@
   </url>
   <url>
     <loc>https://wuxiai.com/region/yangtze-delta/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/region/suzhou/</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
