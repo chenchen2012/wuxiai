@@ -37,12 +37,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/history-page-3.html</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/topic/robotics/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>daily</changefreq>
@@ -61,19 +55,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/industrial-ai/</loc>
+    <loc>https://wuxiai.com/topic/embodied-ai/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -85,13 +73,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/suzhou/</loc>
+    <loc>https://wuxiai.com/region/wuxi/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/wuxi/</loc>
+    <loc>https://wuxiai.com/region/suzhou/</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
