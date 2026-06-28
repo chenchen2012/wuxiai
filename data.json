@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-28T23:40:42.743865+08:00",
-  "item_count": 53,
+  "updated_at": "2026-06-29T01:35:23.145441+08:00",
+  "item_count": 52,
   "items": [
     {
       "title": "无锡聚力打造“人工智能＋”标杆城市",
@@ -18,7 +18,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:人工智能",
-        "新鲜度:3天内(1.9天)",
+        "新鲜度:3天内(2.0天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能"
       ],
@@ -60,7 +60,7 @@
         "主题:机器人",
         "主题:人形机器人",
         "主题:AI",
-        "新鲜度:3天内(2.3天)",
+        "新鲜度:3天内(2.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "正文:信息较完整",
@@ -90,70 +90,6 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "IPO在即，宇树科技入局苏州，背后有何深意？ - 凤凰网财经",
-      "url": "https://finance.ifeng.com/c/8uGX65cH1bK",
-      "source": "finance.ifeng.com",
-      "published_at": "2026-06-26T10:03:17+08:00",
-      "feed": "google:苏州 具身智能",
-      "rss_description": "IPO在即，宇树科技入局苏州，背后有何深意？ 凤凰网财经",
-      "_is_new_candidate": false,
-      "domain": "finance.ifeng.com",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "7024554bf024b6e83cb1c9efc0eccf7168f35484",
-      "relevance_score": 72,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:人工智能",
-        "主题:机器人",
-        "主题:具身智能",
-        "主题:人形机器人",
-        "主题:AI",
-        "新鲜度:3天内(2.6天)",
-        "标题命中:区域:苏州",
-        "正文:信息较完整",
-        "强相关:政策",
-        "强相关:项目",
-        "强相关:合作",
-        "强相关:落地",
-        "强相关:实验室"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "人工智能",
-        "机器人",
-        "具身智能",
-        "政策"
-      ],
-      "organizations": [
-        "宇树科技股份有限公司",
-        "江苏科闻智学科技有限公司",
-        "武汉精锋微控科技有限公司",
-        "宇树具身智能产业学院",
-        "具身智能从实验室",
-        "这是江苏首家宇树具身智能产业学院"
-      ],
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "robotics",
-          "label": "机器人"
-        },
-        {
-          "slug": "embodied-ai",
-          "label": "具身智能"
-        }
-      ],
-      "network_density": 3,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
       "title": "苏州一全季酒店上新机器人打扫客房？门店回应：尚处于测试阶段，仅做辅助工作 - 紫牛新闻",
       "url": "https://wap.yzwb.net/wap/news/4989753.html",
       "source": "wap.yzwb.net",
@@ -165,15 +101,14 @@
       "trusted": true,
       "source_tier": 2,
       "fingerprint": "722ab8e055ae308a8672db43c5aea423b0e8c809",
-      "relevance_score": 35,
+      "relevance_score": 34,
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:3天内(2.7天)",
+        "新鲜度:3天内(2.8天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
-        "来源:可信媒体",
-        "正文:信息较完整"
+        "来源:可信媒体"
       ],
       "summary_confidence": "low",
       "tags": [
@@ -216,7 +151,7 @@
         "主题:算法",
         "主题:人形机器人",
         "主题:机器视觉",
-        "新鲜度:7天内(3.5天)",
+        "新鲜度:7天内(3.6天)",
         "标题命中:主题:机器人",
         "标题命中:主题:具身智能",
         "来源:可信媒体",
@@ -306,12 +241,12 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "“机器人大脑第一股”敲钟！无锡投了！ - Sina finance",
+      "title": "“机器人大脑第一股”敲钟！无锡投了！ - 新浪财经",
       "url": "https://finance.sina.com.cn/roll/2026-06-24/doc-inientty6261192.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-06-24T12:47:00+08:00",
       "feed": "google:无锡 机器人",
-      "rss_description": "“机器人大脑第一股”敲钟！无锡投了！ Sina finance",
+      "rss_description": "“机器人大脑第一股”敲钟！无锡投了！ 新浪财经",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
       "trusted": false,
@@ -362,7 +297,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:具身智能",
-        "新鲜度:7天内(4.6天)",
+        "新鲜度:7天内(4.7天)",
         "标题命中:区域:苏州",
         "标题命中:主题:具身智能",
         "来源:官方/高校"
@@ -406,7 +341,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:7天内(6.2天)",
+        "新鲜度:7天内(6.3天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "强相关:融资"
@@ -485,7 +420,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(10.1天)",
+        "新鲜度:14天内(10.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -531,7 +466,7 @@
         "区域:苏州",
         "区域:长三角",
         "主题:AI",
-        "新鲜度:14天内(11.8天)",
+        "新鲜度:14天内(11.9天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI"
       ],
@@ -572,7 +507,7 @@
         "主题:人工智能",
         "主题:智能体",
         "主题:AI",
-        "新鲜度:14天内(12.0天)",
+        "新鲜度:14天内(12.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI",
         "强相关:项目",
@@ -619,7 +554,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:AI",
-        "新鲜度:14天内(12.2天)",
+        "新鲜度:14天内(12.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:AI"
       ],
@@ -822,7 +757,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:14天内(13.5天)",
+        "新鲜度:14天内(13.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能"
       ],
@@ -866,7 +801,7 @@
         "区域:无锡",
         "主题:智能制造",
         "主题:AI",
-        "新鲜度:14天内(13.6天)",
+        "新鲜度:14天内(13.7天)",
         "标题命中:区域:无锡",
         "标题命中:主题:智能制造",
         "标题命中:主题:AI",
@@ -916,7 +851,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:偏旧(14.5天)",
+        "新鲜度:偏旧(14.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "强相关:项目",
@@ -1053,7 +988,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(15.4天)",
+        "新鲜度:偏旧(15.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "来源:可信媒体"
@@ -1097,7 +1032,7 @@
         "主题:大模型",
         "主题:算法",
         "主题:AI",
-        "新鲜度:偏旧(16.0天)",
+        "新鲜度:偏旧(16.1天)",
         "标题命中:主题:AI",
         "强相关:项目",
         "强相关:落地"
@@ -1144,7 +1079,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:算力",
-        "新鲜度:偏旧(16.3天)",
+        "新鲜度:偏旧(16.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:算力",
         "强相关:智算中心"
@@ -1187,7 +1122,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:偏旧(16.3天)",
+        "新鲜度:偏旧(16.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "标题命中:主题:具身智能"
@@ -1223,7 +1158,7 @@
       "url": "https://finance.cnr.cn/cjgs/20260612/t20260612_527658283.shtml",
       "source": "finance.cnr.cn",
       "published_at": "2026-06-12T15:00:00+08:00",
-      "feed": "google:无锡 工业AI",
+      "feed": "google:无锡 具身智能",
       "rss_description": "无锡（惠山）国产智算中心一期正式点亮，摩尔线程全栈加速具身智能规模化落地 央广财经",
       "_is_new_candidate": false,
       "domain": "finance.cnr.cn",
@@ -1313,7 +1248,7 @@
       "url": "https://finance.sina.com.cn/wm/2026-06-12/doc-iniccfxx0369031.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-06-12T15:00:00+08:00",
-      "feed": "google:无锡 工业AI",
+      "feed": "google:无锡 具身智能",
       "rss_description": "中国移动工业具身智能创新基地落地无锡 新浪财经",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
@@ -1412,7 +1347,7 @@
         "主题:具身智能",
         "主题:人形机器人",
         "主题:自动化",
-        "新鲜度:偏旧(16.9天)",
+        "新鲜度:偏旧(17.0天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能"
       ],
@@ -1466,7 +1401,7 @@
       "ranking_reasons": [
         "区域:长三角",
         "主题:机器人",
-        "新鲜度:偏旧(17.1天)",
+        "新鲜度:偏旧(17.2天)",
         "标题命中:区域:长三角",
         "标题命中:主题:机器人"
       ],
@@ -1510,7 +1445,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(17.2天)",
+        "新鲜度:偏旧(17.3天)",
         "标题命中:主题:机器人",
         "来源:可信媒体"
       ],
@@ -1745,7 +1680,7 @@
         "主题:机器人",
         "主题:具身智能",
         "主题:自动化",
-        "新鲜度:偏旧(17.4天)",
+        "新鲜度:偏旧(17.5天)",
         "标题命中:区域:长三角",
         "标题命中:主题:机器人",
         "标题命中:主题:自动化",
@@ -1802,7 +1737,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:偏旧(17.5天)",
+        "新鲜度:偏旧(17.6天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能"
       ],
@@ -1933,7 +1868,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:偏旧(18.4天)",
+        "新鲜度:偏旧(18.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1974,7 +1909,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:偏旧(19.0天)",
+        "新鲜度:偏旧(19.1天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能"
       ],
@@ -2004,7 +1939,7 @@
       "url": "https://jsnews.jschina.com.cn/kjwt/202606/t20260609_s6a27f4f4e4b0b98c2df29959.shtml",
       "source": "jsnews.jschina.com.cn",
       "published_at": "2026-06-09T15:00:00+08:00",
-      "feed": "google:无锡 人形机器人",
+      "feed": "google:无锡 具身智能",
       "rss_description": "无锡具身智能的“顶流引力” 中国江苏网",
       "_is_new_candidate": false,
       "domain": "jsnews.jschina.com.cn",
@@ -2058,7 +1993,7 @@
         "区域:无锡",
         "区域:长三角",
         "主题:AI",
-        "新鲜度:偏旧(19.5天)",
+        "新鲜度:偏旧(19.6天)",
         "标题命中:区域:无锡",
         "标题命中:区域:长三角",
         "标题命中:主题:AI",
@@ -2141,7 +2076,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:具身智能",
-        "新鲜度:偏旧(20.6天)",
+        "新鲜度:偏旧(20.7天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "强相关:产线"
@@ -2276,6 +2211,42 @@
       "entity_confidence": "rule"
     },
     {
+      "title": "从“制”高点向“智”高点 专家建言无锡“AI+制造”融合发展新路径 - 新浪财经",
+      "url": "https://finance.sina.com.cn/jjxw/2026-06-05/doc-iniakmqh2640001.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-06-05T15:00:00+08:00",
+      "feed": "google:无锡 智能制造 AI",
+      "rss_description": "从“制”高点向“智”高点 专家建言无锡“AI+制造”融合发展新路径 新浪财经",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "bf830ae5cd21112b8323d9d92c53dc19c11c61d2",
+      "relevance_score": 20,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:AI",
+        "新鲜度:偏旧(23.4天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能"
+      ],
+      "organizations": [],
+      "regions": [
+        "无锡"
+      ],
+      "topics": [],
+      "network_density": 1,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
       "title": "苏州工业园区：AI赋能医疗数智化应用新图景",
       "url": "https://finance.sina.com.cn/jjxw/2026-05-29/doc-inhzqimn0829253.shtml",
       "source": "finance.sina.com.cn",
@@ -2292,7 +2263,7 @@
         "区域:苏州",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:偏旧(30.2天)",
+        "新鲜度:偏旧(30.3天)",
         "标题命中:区域:苏州",
         "标题命中:主题:AI",
         "强相关:实验室"
@@ -2315,92 +2286,38 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "学生与机器人近距离互动 - suzhou.gov.cn",
-      "url": "https://www.suzhou.gov.cn/szsrmzf/tpxw/202605/dd648a8e1816450d97e7c52a4caea13b.shtml",
-      "source": "suzhou.gov.cn",
-      "published_at": "2026-05-26T00:46:00+08:00",
-      "feed": "google:苏州 机器人",
-      "rss_description": "学生与机器人近距离互动 suzhou.gov.cn",
-      "_is_new_candidate": true,
-      "domain": "suzhou.gov.cn",
-      "trusted": true,
-      "source_tier": 3,
-      "fingerprint": "809fd792d4d99f7f73d8b4f3eed2be12c6e6dee8",
-      "relevance_score": 28,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:机器人",
-        "新鲜度:偏旧(34.0天)",
-        "标题命中:区域:苏州",
-        "标题命中:主题:机器人",
-        "来源:可信媒体",
-        "来源:官方/高校"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "机器人"
-      ],
-      "organizations": [],
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "robotics",
-          "label": "机器人"
-        }
-      ],
-      "network_density": 2,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
-      "title": "苏州工业园区企业跃盟科技完成C轮数亿元融资 打造AI用工新范式",
-      "url": "https://finance.sina.com.cn/jjxw/2026-05-15/doc-inhxyimc9350595.shtml",
+      "title": "从卖软件到“AI数字员工”供应商：一家无锡企业的25年进化史 - 新浪财经",
+      "url": "https://finance.sina.com.cn/wm/2026-05-23/doc-inhywuve7461692.shtml",
       "source": "finance.sina.com.cn",
-      "published_at": "2026-05-15T15:33:00+08:00",
-      "feed": "bing:苏州 工业AI",
-      "rss_description": "近日，苏州工业园区科技领军人才企业——苏州跃盟信息科技股份有限公司（简称“跃盟科技”）宣布完成数亿元C轮融资。该轮融资由元禾辰坤领投，软银亚洲、卓璞基金、园丰资本跟投，企业同步启动上市筹备工作。 跃盟科技深耕AI智能体（AI Agent）领域，是 ...",
+      "published_at": "2026-05-23T15:00:00+08:00",
+      "feed": "google:无锡 智能制造 AI",
+      "rss_description": "从卖软件到“AI数字员工”供应商：一家无锡企业的25年进化史 新浪财经",
       "_is_new_candidate": true,
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
-      "fingerprint": "240778fab37a0fee87dc47800e33d585ba266d6d",
-      "relevance_score": 38,
+      "fingerprint": "31dbfb596bd56e38138a4b3db07e0f16f6014de7",
+      "relevance_score": 20,
       "ranking_reasons": [
-        "区域:苏州",
-        "主题:智能体",
+        "区域:无锡",
         "主题:AI",
-        "新鲜度:偏旧(44.3天)",
-        "标题命中:区域:苏州",
-        "标题命中:主题:AI",
-        "强相关:融资",
-        "强相关:基金"
+        "新鲜度:偏旧(36.4天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:AI"
       ],
       "summary_confidence": "low",
       "tags": [
-        "苏州",
-        "人工智能",
-        "融资"
+        "无锡",
+        "人工智能"
       ],
-      "organizations": [
-        "苏州跃盟信息科技股份有限公司"
-      ],
+      "organizations": [],
       "regions": [
-        "苏州"
+        "无锡"
       ],
-      "topics": [
-        {
-          "slug": "llm",
-          "label": "大模型"
-        }
-      ],
-      "network_density": 2,
+      "topics": [],
+      "network_density": 1,
       "region_labels": [
-        "苏州"
+        "无锡"
       ],
       "entity_confidence": "rule"
     }
@@ -2409,17 +2326,17 @@
     {
       "slug": "robotics",
       "label": "机器人",
-      "count": 25
+      "count": 23
     },
     {
       "slug": "embodied-ai",
       "label": "具身智能",
-      "count": 20
+      "count": 19
     },
     {
       "slug": "llm",
       "label": "大模型",
-      "count": 5
+      "count": 4
     },
     {
       "slug": "smart-manufacturing",
