@@ -37,9 +37,9 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/robotics/</loc>
+    <loc>https://wuxiai.com/history-page-3.html</loc>
     <lastmod>2026-07-04</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>hourly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
@@ -49,7 +49,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <loc>https://wuxiai.com/topic/robotics/</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -67,7 +73,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
+    <loc>https://wuxiai.com/topic/ai-chip/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -85,13 +91,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/wuxi/</loc>
+    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/yangtze-delta/</loc>
+    <loc>https://wuxiai.com/region/wuxi/</loc>
     <lastmod>2026-07-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
