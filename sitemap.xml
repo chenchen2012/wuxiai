@@ -49,12 +49,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/history-page-5.html</loc>
-    <lastmod>2026-07-19</lastmod>
-    <changefreq>hourly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/topic/robotics/</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
@@ -67,25 +61,25 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/llm/</loc>
-    <lastmod>2026-07-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://wuxiai.com/topic/smart-manufacturing/</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/topic/automation/</loc>
+    <loc>https://wuxiai.com/topic/llm/</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://wuxiai.com/topic/ai-chip/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/topic/automation/</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
