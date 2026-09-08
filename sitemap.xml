@@ -103,7 +103,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://wuxiai.com/region/wuxi/</loc>
+    <loc>https://wuxiai.com/topic/machine-vision/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -116,6 +116,12 @@
   </url>
   <url>
     <loc>https://wuxiai.com/region/yangtze-delta/</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/region/wuxi/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
