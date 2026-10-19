@@ -1,15 +1,138 @@
 {
-  "updated_at": "2026-10-19T12:38:33.148298+08:00",
-  "item_count": 43,
+  "updated_at": "2026-10-19T21:11:47.533896+08:00",
+  "item_count": 50,
   "items": [
+    {
+      "title": "苏州首批！5家企业入选",
+      "url": "https://finance.sina.com.cn/wm/2026-10-19/doc-inivumae0925198.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-10-19T13:22:00+08:00",
+      "feed": "bing:苏州 具身智能",
+      "rss_description": "10月20-22日上海黄浦江畔，2026可持续全球领导者大会再度来袭。诺奖、图灵奖得主现场讲述科技未来与趋势，更有“解救”焦虑、内卷时代的网红教授——麦克法兰与项飙现场对话！ 名额有限，手慢无。让我们共赴可持续之约！【点击报名】 近日，苏州市人工智能办公室正式启动首批苏州人工智能发展驱动中心建设，科沃斯、Momenta、思必驰、镁伽科技、企查查5家企业申报项目入选首批建设名单。 此次启动建设的5家 ...",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "717d976a489a01d22aedc6101450710535b4ecb5",
+      "relevance_score": 55,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:人工智能",
+        "主题:机器人",
+        "主题:具身智能",
+        "主题:智能体",
+        "主题:AI",
+        "新鲜度:24h内(0.3天)",
+        "标题命中:区域:苏州",
+        "正文:信息较完整",
+        "强相关:项目"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "人工智能",
+        "机器人",
+        "具身智能",
+        "项目"
+      ],
+      "organizations": [],
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "industrial-ai",
+          "label": "工业AI"
+        },
+        {
+          "slug": "embodied-ai",
+          "label": "具身智能"
+        },
+        {
+          "slug": "llm",
+          "label": "大模型"
+        }
+      ],
+      "network_density": 5,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "深化中荷产业合作 江苏探索机器人发展新机遇",
+      "url": "https://finance.sina.com.cn/jjxw/2026-10-19/doc-inivtiqs0866394.shtml",
+      "source": "finance.sina.com.cn",
+      "published_at": "2026-10-19T11:07:00+08:00",
+      "feed": "bing:苏州 人形机器人",
+      "rss_description": "江苏与荷兰北布拉邦省产业互补性强，合作空间广阔。据了解，荷兰在高端装备、传感器、智能物流与农业自动化等领域全球领先，北布拉邦省拥有埃因霍温智慧港，汇聚阿斯麦、飞利浦等全球领先企业，在高端制造、机器人、高科技系统与材料等领域优势明显。",
+      "_is_new_candidate": true,
+      "domain": "finance.sina.com.cn",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "df51764f8e5d53d837400a40601721846f501a36",
+      "relevance_score": 58,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "主题:算法",
+        "主题:智能制造",
+        "主题:工业机器人",
+        "主题:人形机器人",
+        "主题:自动化",
+        "新鲜度:24h内(0.4天)",
+        "标题命中:主题:机器人",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:合作"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "机器人",
+        "智能制造",
+        "自动化",
+        "政策"
+      ],
+      "organizations": [
+        "威特立创能科技集团",
+        "丰田自动化物流公司"
+      ],
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        },
+        {
+          "slug": "automation",
+          "label": "自动化"
+        }
+      ],
+      "network_density": 4,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
     {
       "title": "对话孙立宁：具身智能离真正理解环境还有多远",
       "url": "https://finance.sina.com.cn/tech/discovery/2026-10-19/doc-inivtiqv6260843.shtml",
       "source": "finance.sina.com.cn",
-      "published_at": "2026-10-18T20:50:00+08:00",
+      "published_at": "2026-10-19T10:51:00+08:00",
       "feed": "bing:苏州 具身智能",
       "rss_description": "会跑、会跳、会翻跟头的机器人，距离真正理解环境、自主决策并稳定工作，究竟还有多远？近日，苏州大学特聘教授孙立宁在接受澎湃新闻采访时明确表示，当前机器人的“小脑”本体和运动控制进步更快，部分具身产品有望在三至五年内落地，但具身“大脑”如果想要达到接近人的通用智能理想状态，是个漫长的过程。",
-      "_is_new_candidate": true,
+      "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
       "trusted": false,
       "source_tier": 1,
@@ -21,7 +144,7 @@
         "主题:具身智能",
         "主题:工业机器人",
         "主题:人形机器人",
-        "新鲜度:24h内(0.7天)",
+        "新鲜度:24h内(0.4天)",
         "标题命中:主题:具身智能",
         "正文:信息较完整",
         "强相关:落地",
@@ -64,6 +187,188 @@
       "entity_confidence": "rule"
     },
     {
+      "title": "法奥机器人完成C+及D轮融资近10亿元 美团领投",
+      "url": "https://news.qq.com/rain/a/20261019A0A5ZY00",
+      "source": "news.qq.com",
+      "published_at": "2026-10-19T03:52:00+08:00",
+      "feed": "bing:苏州 机器人",
+      "rss_description": "《科创板日报》19日讯，近日，法奥（苏州）机器人技术股份有限公司（下称“法奥机器人”）连续完成C+轮及D轮融资，累计融资规模近10亿元人民币。本轮投资由美团龙珠和美团领投，永鑫方舟、苏高新金控、苏创投、苏产投、国联民生资本、清流资本跟投。",
+      "_is_new_candidate": true,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "0b2d92febc5bff4ee6f7d11c534260b327286e19",
+      "relevance_score": 50,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "主题:具身智能",
+        "主题:工业机器人",
+        "主题:AI",
+        "新鲜度:24h内(0.7天)",
+        "标题命中:主题:机器人",
+        "正文:信息较完整",
+        "强相关:融资"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "人工智能",
+        "机器人",
+        "具身智能"
+      ],
+      "organizations": [],
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "embodied-ai",
+          "label": "具身智能"
+        }
+      ],
+      "network_density": 3,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "机器人行业周报(10.11 - 10.18) : 机器人产业提速",
+      "url": "https://news.qq.com/rain/a/20261019A09DQU00",
+      "source": "news.qq.com",
+      "published_at": "2026-10-19T03:09:00+08:00",
+      "feed": "bing:无锡 机器人",
+      "rss_description": "机器人行业日报(10.10) : 机器人商业化提速 七腾机器人发展迅速，防爆巡检机器人应用于工业领域；星动纪元动作模型夺冠；人形机器人产业化落地；景嘉微推进CH37系列量产；嘉兴五洲轴承增资扩产支持新能源汽车和人形机器人；无锡市推动智能制造转型；跨维智能国庆期间运营人形机器人商业服务小站；比亚迪获得人形机器人专利；宇树科技发行市盈率最高；中信建投保荐项目数量最高；欧盟《数据法案》影响中资企业出海模 ...",
+      "_is_new_candidate": true,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "c5504fce1a50aa1b943fd95de705e9ed314910b9",
+      "relevance_score": 64,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:机器人",
+        "主题:具身智能",
+        "主题:智能制造",
+        "主题:工业机器人",
+        "主题:人形机器人",
+        "主题:AI",
+        "新鲜度:24h内(0.8天)",
+        "标题命中:主题:机器人",
+        "正文:信息较完整",
+        "强相关:项目",
+        "强相关:落地",
+        "强相关:产线",
+        "弱相关:会展"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "人工智能",
+        "机器人",
+        "具身智能",
+        "智能制造"
+      ],
+      "organizations": [
+        "今年热门人形机器人公司"
+      ],
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "smart-manufacturing",
+          "label": "智能制造"
+        },
+        {
+          "slug": "embodied-ai",
+          "label": "具身智能"
+        },
+        {
+          "slug": "llm",
+          "label": "大模型"
+        }
+      ],
+      "network_density": 5,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "帝尔博格完成亿元级Pre-A+轮融资，重工具身智能机器人加速规模化落地",
+      "url": "https://news.qq.com/rain/a/20261019A08K3700",
+      "source": "news.qq.com",
+      "published_at": "2026-10-19T02:14:00+08:00",
+      "feed": "bing:苏州 具身智能",
+      "rss_description": "10月19日，重工业具身智能机器人企业帝尔博格（苏州）智能机器人有限公司（DareRobot）宣布完成亿元级Pre-A+轮融资，投资方包括复星锐正、清石资管、正熙资本、西高投、博众精工、苏创投等机构。本轮融资资金将主要用于重工通用具身核心技术研发、机器人产品迭代及市场拓展。帝尔博格成立于2022年，聚焦重工业场景，面向军工、钢铁、海装船舶、能源装备等领域，提供智能切割、打磨、焊接、涂装等机器人产品 ...",
+      "_is_new_candidate": true,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "2b547df74f805fc9a733b4c66a8cebe0db1d9bbf",
+      "relevance_score": 54,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "主题:具身智能",
+        "主题:自动化",
+        "主题:AI",
+        "新鲜度:24h内(0.8天)",
+        "标题命中:主题:机器人",
+        "标题命中:主题:具身智能",
+        "正文:信息较完整",
+        "强相关:融资",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "人工智能",
+        "机器人",
+        "具身智能",
+        "自动化"
+      ],
+      "organizations": [
+        "智能机器人有限公司"
+      ],
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        },
+        {
+          "slug": "embodied-ai",
+          "label": "具身智能"
+        },
+        {
+          "slug": "automation",
+          "label": "自动化"
+        },
+        {
+          "slug": "llm",
+          "label": "大模型"
+        }
+      ],
+      "network_density": 5,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
       "title": "从“AI+制造”到“机器人6S店”：在昆山看见网络强省的产业落点",
       "url": "https://news.sina.com.cn/zx/gj/2026-10-18/doc-inivrzvm6485061.shtml",
       "source": "news.sina.com.cn",
@@ -80,7 +385,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:AI",
-        "新鲜度:3天内(1.3天)",
+        "新鲜度:3天内(1.6天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "标题命中:主题:AI"
@@ -117,55 +422,6 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "北大国发院苏州公开课暨方正智谷讲堂举办共探中美科技博弈与宏观 ...",
-      "url": "https://finance.sina.com.cn/roll/2026-10-17/doc-inivnzst8226161.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-10-17T01:00:00+08:00",
-      "feed": "bing:苏州 工业AI",
-      "rss_description": "2026年10月9日，由北大国发院、方正智谷、智联招聘联合主办的\"北大国发院苏州公开课暨方正智谷讲堂\"在苏州工业园区方正智谷报告厅举行，公开课以\"中美科技博弈与宏观经济再平衡\"为主题。活动现场还举行了“北京大学国家发展研究院商学苏州教学点”揭牌仪式。 北大国发院经济学教授、副院长、南南学院副院长、企业家AI启航班主理教授黄卓，方正信息产业研究院（苏州）集团有限公司董事长闫红波代表主办方分别致辞。北 ...",
-      "_is_new_candidate": true,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "c1a6cf75e5897a0fbb68a6cdb288dae25cbdea27",
-      "relevance_score": 35,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:AI",
-        "新鲜度:3天内(2.5天)",
-        "标题命中:区域:苏州",
-        "正文:信息较完整",
-        "强相关:政策",
-        "强相关:合作",
-        "强相关:研究院",
-        "弱相关:招聘"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "人工智能",
-        "政策",
-        "合作",
-        "科研"
-      ],
-      "organizations": [
-        "徐高与苏州异格技术有限公司",
-        "江苏苏大天宫创业投资公司",
-        "北京大学国家发展研究院",
-        "方正信息产业研究院",
-        "北京大学"
-      ],
-      "regions": [
-        "苏州"
-      ],
-      "topics": [],
-      "network_density": 1,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
       "title": "液冷龙头，拟投资10亿元布局机器人业务",
       "url": "https://news.qq.com/rain/a/20261017A05OPK00",
       "source": "news.qq.com",
@@ -181,7 +437,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:3天内(2.6天)",
+        "新鲜度:3天内(2.9天)",
         "标题命中:主题:机器人",
         "强相关:项目"
       ],
@@ -224,11 +480,11 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "771a694944fa2872f984731123a8b28123f5e174",
-      "relevance_score": 39,
+      "relevance_score": 37,
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:3天内(2.7天)",
+        "新鲜度:7天内(3.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "强相关:融资"
@@ -236,10 +492,7 @@
       "summary_confidence": "low",
       "tags": [
         "苏州",
-        "机器人",
-        "具身智能",
-        "智能制造",
-        "政策"
+        "机器人"
       ],
       "organizations": [],
       "regions": [
@@ -262,19 +515,19 @@
       "url": "https://www.yangtse.com/news/shaonianhi/202610/t20261016_403135.html",
       "source": "yangtse.com",
       "published_at": "2026-10-16T16:27:00+08:00",
-      "feed": "bing:无锡 机器人",
+      "feed": "bing:无锡 人形机器人",
       "rss_description": "十月的春城校园，秋阳澄澈，创意涌动。10月13日，无锡市春城实验小学报告厅内掌声与惊叹交织，以“做中学·玩中探·创未来”为主题的第十届校园科创节启幕。学校领导、高校专家与师生代表齐聚一堂，共赴一场属于孩子们的科创嘉年华。 开幕式上，宇树科技G1人形机器人和Go2机器狗惊喜亮相。拥有29个自由度的G1人形机器人献上灵动舞蹈；憨态可掬的Go2机器狗用四肢表达快乐；沉浸式互动体验让报告厅里惊叹声此起彼伏 ...",
       "_is_new_candidate": false,
       "domain": "yangtse.com",
       "trusted": true,
       "source_tier": 2,
       "fingerprint": "94d3a94185721b54b28880407d6c01f1c58a535a",
-      "relevance_score": 41,
+      "relevance_score": 39,
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
         "主题:人形机器人",
-        "新鲜度:3天内(2.8天)",
+        "新鲜度:7天内(3.2天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -303,82 +556,29 @@
     },
     {
       "title": "一句“你好，银河！”外籍嘉宾在苏州“驯服”车载AI，讲出 ...",
-      "url": "https://news.sina.com.cn/zx/gj/2026-10-16/doc-inivksmm7018976.shtml",
-      "source": "news.sina.com.cn",
+      "url": "https://news.ifeng.com/c/8xGSQw2XDej",
+      "source": "news.ifeng.com",
       "published_at": "2026-10-16T10:56:00+08:00",
       "feed": "bing:苏州 工业AI",
-      "rss_description": "来源：扬子晚报网一句“你好，银河！”国际嘉宾在苏州“驯服”车载AI，讲出字正腔圆普通话“你好，一禾？”“你好，英贺？”“你好，银河！”10月14日，“一带一路”记者组织论坛暨“全球南方国家记者看中国”主题采风活动走进苏州工业园区思必驰国家开放创新平台展厅。来自 ...",
+      "rss_description": "“你好，一禾？”“你好，英贺？”“你好，银河！”10月14日，“一带一路”记者组织论坛暨“全球南方国家记者看中国”主题采风活动走进苏州工业园区思必驰国家开放创新平台展厅。来自埃塞俄比亚、印度、尼泊尔的国际嘉宾，沉浸式体验智能座舱、智能家居、智慧办公等AI应用。 国际嘉宾体验智能座舱 现场有趣的一幕，发生在智能座舱体验区：想要唤醒车载智能体，必须说出中文口令“你好，银河”，几位外籍嘉宾当场开启普通话 ...",
       "_is_new_candidate": false,
-      "domain": "news.sina.com.cn",
+      "domain": "news.ifeng.com",
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "8f83983c21b8fd64710423355080f0d7ed27b221",
-      "relevance_score": 42,
+      "relevance_score": 31,
       "ranking_reasons": [
         "区域:苏州",
-        "主题:人工智能",
         "主题:智能体",
         "主题:AI",
-        "新鲜度:7天内(3.1天)",
+        "新鲜度:7天内(3.4天)",
         "标题命中:区域:苏州",
-        "标题命中:主题:AI",
-        "正文:信息较完整",
-        "强相关:落地"
+        "标题命中:主题:AI"
       ],
       "summary_confidence": "low",
       "tags": [
         "苏州",
         "人工智能",
-        "落地",
-        "论坛"
-      ],
-      "organizations": [
-        "埃塞俄比亚广播公司"
-      ],
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "llm",
-          "label": "大模型"
-        }
-      ],
-      "network_density": 2,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
-      "title": "跨越山海，开放苏州有新朋！",
-      "url": "https://finance.sina.com.cn/wm/2026-10-16/doc-inivksmv8342441.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-10-16T01:01:00+08:00",
-      "feed": "bing:苏州 工业AI",
-      "rss_description": "10月20-22日上海黄浦江畔，2026可持续全球领导者大会再度来袭。诺奖、图灵奖得主现场讲述科技未来与趋势，更有“解救”焦虑、内卷时代的网红教授——麦克法兰与项飙现场对话！ 名额有限，手慢无。让我们共赴可持续之约！【点击报名】 一条航线，从太仓港驶向非洲；一批苏州制造的清洁能源公交，行驶在巴基斯坦卡拉奇市街头；一座苏州企业投资建设的东方工业园，在埃塞俄比亚扎根近20年；一场音乐会，苏州交响乐团与 ...",
-      "_is_new_candidate": true,
-      "domain": "finance.sina.com.cn",
-      "trusted": false,
-      "source_tier": 1,
-      "fingerprint": "6e16ea761c076682bab7f4fad5c70429945ae8b2",
-      "relevance_score": 36,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:机器人",
-        "主题:AI",
-        "新鲜度:7天内(3.5天)",
-        "标题命中:区域:苏州",
-        "正文:信息较完整",
-        "强相关:合作",
-        "强相关:产业园"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "人工智能",
-        "机器人",
-        "合作",
         "论坛"
       ],
       "organizations": [],
@@ -387,8 +587,8 @@
       ],
       "topics": [
         {
-          "slug": "robotics",
-          "label": "机器人"
+          "slug": "llm",
+          "label": "大模型"
         }
       ],
       "network_density": 2,
@@ -415,7 +615,7 @@
         "主题:机器人",
         "主题:人形机器人",
         "主题:AI",
-        "新鲜度:7天内(3.6天)",
+        "新鲜度:7天内(4.0天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "来源:可信媒体"
@@ -458,7 +658,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:7天内(4.2天)",
+        "新鲜度:7天内(4.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -502,7 +702,7 @@
         "区域:无锡",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:7天内(4.2天)",
+        "新鲜度:7天内(4.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能",
         "标题命中:主题:AI",
@@ -542,7 +742,7 @@
         "主题:机器人",
         "主题:具身智能",
         "主题:人形机器人",
-        "新鲜度:7天内(4.5天)",
+        "新鲜度:7天内(4.8天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能"
       ],
@@ -590,7 +790,7 @@
         "区域:无锡",
         "区域:长三角",
         "主题:人工智能",
-        "新鲜度:7天内(4.5天)",
+        "新鲜度:7天内(4.9天)",
         "标题命中:区域:无锡",
         "标题命中:主题:人工智能",
         "强相关:合作"
@@ -632,7 +832,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:工业机器人",
-        "新鲜度:7天内(4.7天)",
+        "新鲜度:7天内(5.1天)",
         "标题命中:主题:机器人",
         "强相关:融资"
       ],
@@ -659,13 +859,13 @@
     },
     {
       "title": "特斯拉人形机器人即将量产？此前被曝已在长三角审厂",
-      "url": "https://finance.sina.com.cn/jjxw/2026-10-14/doc-inivekpu1229374.shtml",
-      "source": "finance.sina.com.cn",
-      "published_at": "2026-10-14T14:35:00+08:00",
+      "url": "https://news.qq.com/rain/a/20261014A074T800",
+      "source": "news.qq.com",
+      "published_at": "2026-10-14T14:30:00+08:00",
       "feed": "bing:长三角 机器人",
-      "rss_description": "据悉，特斯拉人形机器人的正式名称为Optimus，对于外界关注的该机器人“即将进入量产周期”的信息，10月14日，《中国经营报》记者联系特斯拉相关负责人，其对此回复称，“现在没有任何官方消息可以分享”，其同时强调“以官方消息为准”。",
+      "rss_description": "备受关注的特斯拉Optimus机器人量产进度，日前被曝迎来最新进展。 公开信息显示，特斯拉机器人核心供应商新剑传动日前发布创业板上市审核问询函的回复，新剑传动方面表示，“特斯拉机器人设计方案接近定型，即将进入量产周期”，该信息此后引发市场关注。 据悉，特斯拉人形机器人的正式名称为Optimus，对于外界关注的该机器人“即将进入量产周期”的信息，10月14日，《中国经营报》记者联系特斯拉相关负责人， ...",
       "_is_new_candidate": false,
-      "domain": "finance.sina.com.cn",
+      "domain": "news.qq.com",
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "3cf0d3a2d73e9e8160da735d4dfb108ea78739f4",
@@ -674,7 +874,7 @@
         "区域:长三角",
         "主题:机器人",
         "主题:人形机器人",
-        "新鲜度:7天内(4.9天)",
+        "新鲜度:7天内(5.3天)",
         "标题命中:区域:长三角",
         "标题命中:主题:机器人",
         "标题命中:主题:人形机器人"
@@ -682,7 +882,8 @@
       "summary_confidence": "low",
       "tags": [
         "长三角",
-        "机器人"
+        "机器人",
+        "政策"
       ],
       "organizations": [],
       "regions": [
@@ -702,32 +903,34 @@
     },
     {
       "title": "戴上AI眼镜，围观机器人！国际嘉宾点赞苏州：这里的科技贴近大众",
-      "url": "https://news.qq.com/rain/a/20261014A05O1T00",
-      "source": "news.qq.com",
-      "published_at": "2026-10-14T12:28:00+08:00",
-      "feed": "bing:苏州 机器人",
-      "rss_description": "“这里有很多经验值得我们学习”“科技融入大众生活，是大势所趋”“苏州别具人文魅力”……10月13日，“一带一路”记者组织论坛暨“全球南方国家记者看中国”主题采风活动走进苏州，来自12个国家和地区的19名记者组织负责人及媒体代表参加，实地感受苏州这座中国东部地区重要的中心城市的魅力。国际嘉宾试戴AI眼镜国际嘉宾 ...",
+      "url": "https://www.yangtse.com/news/jiangsu/suzhou/202610/t20261014_402327.html",
+      "source": "yangtse.com",
+      "published_at": "2026-10-14T01:00:00+08:00",
+      "feed": "bing:苏州 工业AI",
+      "rss_description": "“我在参观途中分享了部分现场图片，很快就收到许多来自喀麦隆国内人士的问询，大家对此展现出浓厚兴趣。”10月13日下午，19名国际嘉宾走进苏州工业园区展示中心，琳琅满目的科技创新产品令喀麦隆世界科学记者联盟副主席约瑟夫·姆本·布姆印象深刻。 扬子晚报/紫牛新闻记者看到，展厅内，AI眼镜、各类智能机器人吸引了国际嘉宾的目光，不少嘉宾走上前亲手试戴、近距离观摩演示，追问技术落地、普及应用的相关问题。小小 ...",
       "_is_new_candidate": false,
-      "domain": "news.qq.com",
-      "trusted": false,
-      "source_tier": 1,
+      "domain": "yangtse.com",
+      "trusted": true,
+      "source_tier": 2,
       "fingerprint": "4c913f2467c12b9daea0a4c0f4b93ca158e7dcac",
-      "relevance_score": 36,
+      "relevance_score": 44,
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
         "主题:AI",
-        "新鲜度:7天内(5.0天)",
+        "新鲜度:7天内(5.8天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
-        "标题命中:主题:AI"
+        "标题命中:主题:AI",
+        "来源:可信媒体",
+        "强相关:落地"
       ],
       "summary_confidence": "low",
       "tags": [
         "苏州",
         "人工智能",
         "机器人",
-        "论坛"
+        "落地"
       ],
       "organizations": [],
       "regions": [
@@ -763,7 +966,7 @@
         "主题:机器人",
         "主题:智能制造",
         "主题:人形机器人",
-        "新鲜度:7天内(5.8天)",
+        "新鲜度:7天内(6.2天)",
         "标题命中:主题:机器人",
         "强相关:项目",
         "强相关:落地"
@@ -805,7 +1008,7 @@
       "url": "https://finance.sina.com.cn/roll/2026-10-13/doc-inivawnc8051404.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-10-13T14:43:00+08:00",
-      "feed": "bing:无锡人工智能",
+      "feed": "bing:无锡 具身智能",
       "rss_description": "近日，在艾伦人工智能研究所发起的MolmoSpaces全球具身智能评测中，魔法原子自研EchoPolicy-0框架夺得综合榜单全球第一，机器人操作平均成功率达75.4%。同系列另一套框架MagicBrain位列全球第四，抓取成功率高达94.4%，两项抓取相关任务拿下单项全球第一。这组成绩证明，国产机器人“大脑”正从实验室演示，一步步贴近工厂真实作业标准。 MolmoSpaces是全球具身智能领域认 ...",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
@@ -818,7 +1021,7 @@
         "主题:人工智能",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:7天内(5.9天)",
+        "新鲜度:7天内(6.3天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "强相关:工厂",
@@ -875,7 +1078,7 @@
         "区域:无锡",
         "主题:人工智能",
         "主题:AI",
-        "新鲜度:7天内(6.0天)",
+        "新鲜度:7天内(6.3天)",
         "标题命中:主题:AI"
       ],
       "summary_confidence": "low",
@@ -920,7 +1123,7 @@
         "区域:无锡",
         "主题:算力",
         "主题:AI",
-        "新鲜度:7天内(6.4天)",
+        "新鲜度:7天内(6.7天)",
         "标题命中:主题:AI",
         "强相关:项目",
         "强相关:产线"
@@ -966,13 +1169,13 @@
       "trusted": false,
       "source_tier": 1,
       "fingerprint": "37b052df871f718dcdc12c1d4b7470939e8377b2",
-      "relevance_score": 45,
+      "relevance_score": 42,
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
         "主题:智能制造",
         "主题:人形机器人",
-        "新鲜度:7天内(6.8天)",
+        "新鲜度:14天内(7.2天)",
         "标题命中:主题:机器人",
         "强相关:项目",
         "强相关:落地"
@@ -1026,7 +1229,7 @@
         "区域:长三角",
         "主题:机器人",
         "主题:AI",
-        "新鲜度:14天内(7.1天)",
+        "新鲜度:14天内(7.4天)",
         "标题命中:区域:长三角",
         "标题命中:主题:机器人",
         "标题命中:主题:AI"
@@ -1071,7 +1274,7 @@
         "主题:机器人",
         "主题:具身智能",
         "主题:人形机器人",
-        "新鲜度:14天内(8.2天)",
+        "新鲜度:14天内(8.5天)",
         "标题命中:主题:机器人",
         "标题命中:主题:人形机器人",
         "强相关:融资"
@@ -1124,7 +1327,7 @@
         "主题:人工智能",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:14天内(8.8天)",
+        "新鲜度:14天内(9.1天)",
         "标题命中:主题:具身智能",
         "强相关:融资"
       ],
@@ -1166,7 +1369,7 @@
       "url": "https://finance.sina.com.cn/roll/2026-10-10/doc-iniusxpp2263551.shtml",
       "source": "finance.sina.com.cn",
       "published_at": "2026-10-10T10:46:00+08:00",
-      "feed": "bing:长三角 机器视觉",
+      "feed": "bing:无锡 机器人",
       "rss_description": "这些积累，让研究所具备了牵头中欧论坛的底气。研究所所长吴昊在采访中表示：“中国的农业场景丰富多样，市场空间巨大，工程开发能力和产业链协同发展的能力非常强大。欧洲国家在高端农业、农业精细化和可持续环保理念上，有深厚的积淀和多年的研究。两方的优势合作在一起，能够给农业机器人的全球化发展带来巨大的推进作用。” ...",
       "_is_new_candidate": false,
       "domain": "finance.sina.com.cn",
@@ -1177,7 +1380,7 @@
       "ranking_reasons": [
         "区域:无锡",
         "主题:机器人",
-        "新鲜度:14天内(9.1天)",
+        "新鲜度:14天内(9.4天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "强相关:合作"
@@ -1222,7 +1425,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:14天内(9.2天)",
+        "新鲜度:14天内(9.5天)",
         "标题命中:区域:无锡",
         "标题命中:主题:具身智能",
         "强相关:落地"
@@ -1271,7 +1474,7 @@
         "区域:无锡",
         "区域:长三角",
         "主题:机器人",
-        "新鲜度:14天内(9.5天)",
+        "新鲜度:14天内(9.8天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人",
         "来源:可信媒体",
@@ -1321,7 +1524,7 @@
         "区域:长三角",
         "主题:具身智能",
         "主题:智能制造",
-        "新鲜度:14天内(9.6天)",
+        "新鲜度:14天内(10.0天)",
         "标题命中:区域:长三角",
         "标题命中:主题:具身智能",
         "来源:可信媒体",
@@ -1375,7 +1578,7 @@
         "区域:长三角",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:14天内(10.1天)",
+        "新鲜度:14天内(10.4天)",
         "标题命中:主题:具身智能",
         "强相关:落地",
         "强相关:实验室"
@@ -1424,7 +1627,7 @@
       "ranking_reasons": [
         "区域:苏州",
         "主题:机器人",
-        "新鲜度:14天内(10.5天)",
+        "新鲜度:14天内(10.8天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人",
         "强相关:研究院"
@@ -1474,7 +1677,7 @@
         "区域:长三角",
         "主题:人工智能",
         "主题:具身智能",
-        "新鲜度:14天内(11.0天)",
+        "新鲜度:14天内(11.3天)",
         "标题命中:主题:具身智能"
       ],
       "summary_confidence": "low",
@@ -1521,7 +1724,7 @@
         "区域:长三角",
         "主题:机器人",
         "主题:人形机器人",
-        "新鲜度:14天内(11.8天)",
+        "新鲜度:14天内(12.2天)",
         "标题命中:主题:机器人",
         "强相关:项目",
         "强相关:产线"
@@ -1572,7 +1775,7 @@
         "主题:人工智能",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:偏旧(16.5天)",
+        "新鲜度:偏旧(16.8天)",
         "标题命中:主题:人工智能",
         "强相关:实验室"
       ],
@@ -1623,7 +1826,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:智能制造",
-        "新鲜度:偏旧(16.5天)",
+        "新鲜度:偏旧(16.8天)",
         "标题命中:区域:无锡",
         "标题命中:主题:机器人"
       ],
@@ -1671,7 +1874,7 @@
         "区域:长三角",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:偏旧(16.8天)",
+        "新鲜度:偏旧(17.2天)",
         "标题命中:主题:具身智能",
         "强相关:实验室"
       ],
@@ -1721,7 +1924,7 @@
       "ranking_reasons": [
         "区域:长三角",
         "主题:具身智能",
-        "新鲜度:偏旧(17.8天)",
+        "新鲜度:偏旧(18.1天)",
         "标题命中:区域:长三角",
         "标题命中:主题:具身智能"
       ],
@@ -1766,7 +1969,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:偏旧(19.5天)",
+        "新鲜度:偏旧(19.9天)",
         "标题命中:主题:机器人",
         "标题命中:主题:具身智能"
       ],
@@ -1816,7 +2019,7 @@
         "区域:无锡",
         "主题:机器人",
         "主题:人形机器人",
-        "新鲜度:偏旧(19.7天)",
+        "新鲜度:偏旧(20.1天)",
         "标题命中:主题:机器人",
         "标题命中:主题:人形机器人"
       ],
@@ -1860,7 +2063,7 @@
         "区域:苏州",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:偏旧(19.8天)",
+        "新鲜度:偏旧(20.1天)",
         "标题命中:区域:苏州",
         "标题命中:主题:机器人"
       ],
@@ -1893,54 +2096,12 @@
       "entity_confidence": "rule"
     },
     {
-      "title": "机器人，昆山造！ - yzwb.net",
-      "url": "https://www.yzwb.net/news/jiangsu/suzhou/202609/t20260928_397768.html",
-      "source": "yzwb.net",
-      "published_at": "2026-09-28T18:30:00+08:00",
-      "feed": "google:苏州 机器人",
-      "rss_description": "机器人，昆山造！ yzwb.net",
-      "_is_new_candidate": false,
-      "domain": "yzwb.net",
-      "trusted": true,
-      "source_tier": 2,
-      "fingerprint": "ec604684e253d7a4311e5f45059cc1948ebb6ea5",
-      "relevance_score": 26,
-      "ranking_reasons": [
-        "区域:苏州",
-        "主题:机器人",
-        "新鲜度:偏旧(20.8天)",
-        "标题命中:区域:苏州",
-        "标题命中:主题:机器人",
-        "来源:可信媒体"
-      ],
-      "summary_confidence": "low",
-      "tags": [
-        "苏州",
-        "机器人"
-      ],
-      "organizations": [],
-      "regions": [
-        "苏州"
-      ],
-      "topics": [
-        {
-          "slug": "robotics",
-          "label": "机器人"
-        }
-      ],
-      "network_density": 2,
-      "region_labels": [
-        "苏州"
-      ],
-      "entity_confidence": "rule"
-    },
-    {
       "title": "特斯拉团队长三角审厂背后：Optimus机器人量产“箭在弦上”？",
       "url": "https://news.qq.com/rain/a/20260926A021H200?adChannelId=tech",
       "source": "news.qq.com",
       "published_at": "2026-09-26T04:51:00+08:00",
-      "feed": "bing:长三角 机器视觉",
-      "rss_description": "备受市场关注的特斯拉Optimus机器人，当下或已进入量产前的关键时刻。 公开信息显示，日前，特斯拉机器人相关团队此前已经在上海、杭州、宁波等长三角区域进行开启审厂工作，如有媒体报道称，特斯拉机器人团队在9月16日落地宁波，9月17日开启新一轮针对 ...",
+      "feed": "bing:长三角 机器人",
+      "rss_description": "备受市场关注的特斯拉Optimus机器人，当下或已进入量产前的关键时刻。 公开信息显示，日前，特斯拉机器人相关团队此前已经在上海、杭州、宁波等长三角区域进行开启审厂工作，如有媒体报道称，特斯拉机器人团队在9月16日落地宁波，9月17日开启新一轮针对旗下机器人业务的量产审厂。 《中国经营报》记者注意到，在特斯拉机器人团队于长三角量产审厂的背后，拓普集团（601689.SH）、均胜电子（600699.",
       "_is_new_candidate": true,
       "domain": "news.qq.com",
       "trusted": false,
@@ -1950,7 +2111,7 @@
       "ranking_reasons": [
         "区域:长三角",
         "主题:机器人",
-        "新鲜度:偏旧(23.3天)",
+        "新鲜度:偏旧(23.7天)",
         "标题命中:区域:长三角",
         "标题命中:主题:机器人",
         "强相关:落地"
@@ -1994,7 +2155,7 @@
         "区域:长三角",
         "主题:机器人",
         "主题:人形机器人",
-        "新鲜度:偏旧(25.6天)",
+        "新鲜度:偏旧(26.0天)",
         "标题命中:区域:长三角",
         "标题命中:主题:机器人",
         "标题命中:主题:人形机器人",
@@ -2005,6 +2166,95 @@
         "长三角",
         "机器人",
         "落地"
+      ],
+      "organizations": [],
+      "regions": [
+        "长三角"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "长三角"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "独家｜产业链人士：特斯拉机器人团队在长三角审厂，多家企业已获 ...",
+      "url": "https://www.thepaper.cn/newsDetail_forward_34113571",
+      "source": "thepaper.cn",
+      "published_at": "2026-09-21T10:54:00+08:00",
+      "feed": "bing:长三角 人形机器人",
+      "rss_description": "特斯拉机器人团队落地宁波审厂一事受到资本市场广泛关注。 9月21日，澎湃新闻记者从产业链人士处获悉，特斯拉机器人团队已经于上周在拓普集团（601689）、三花智控（002050）、均胜电子（600699）等供应链企业开启审厂工作。上述企业主要供给关节模组、执行 ...",
+      "_is_new_candidate": true,
+      "domain": "thepaper.cn",
+      "trusted": true,
+      "source_tier": 2,
+      "fingerprint": "253d5e7dbb3482acd3de1c33a2369ac6da566239",
+      "relevance_score": 25,
+      "ranking_reasons": [
+        "区域:长三角",
+        "主题:机器人",
+        "新鲜度:偏旧(28.4天)",
+        "标题命中:区域:长三角",
+        "标题命中:主题:机器人",
+        "来源:可信媒体",
+        "强相关:落地"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "长三角",
+        "机器人",
+        "落地"
+      ],
+      "organizations": [
+        "特斯拉机器人团队已经于上周在拓普集团"
+      ],
+      "regions": [
+        "长三角"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "长三角"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "为什么全球大部分人形机器人来自长三角？",
+      "url": "https://news.qq.com/rain/a/20260910A060ZJ00",
+      "source": "news.qq.com",
+      "published_at": "2026-09-10T13:02:00+08:00",
+      "feed": "bing:长三角 人形机器人",
+      "rss_description": "8月26日晚，北京国家速滑馆，第二届世界人形机器人运动会百米决赛，天工Ultra率先冲过终点。 一年前，也是在这里，首届比赛的百米冠军成绩还是21秒50。短短一年，人形机器人百米成绩便进入9秒以内。 此前，宇树旗下的人形机器人“超人”原地跳高2米，超过 ...",
+      "_is_new_candidate": true,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "513039f73c07db4b9e0a69ff5d7841e3155a63fc",
+      "relevance_score": 27,
+      "ranking_reasons": [
+        "区域:长三角",
+        "主题:机器人",
+        "主题:人形机器人",
+        "新鲜度:偏旧(39.3天)",
+        "标题命中:区域:长三角",
+        "标题命中:主题:机器人",
+        "标题命中:主题:人形机器人"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "长三角",
+        "机器人"
       ],
       "organizations": [],
       "regions": [
@@ -2040,7 +2290,7 @@
         "主题:人工智能",
         "主题:机器人",
         "主题:具身智能",
-        "新鲜度:偏旧(39.0天)",
+        "新鲜度:偏旧(39.4天)",
         "标题命中:区域:长三角",
         "标题命中:主题:人工智能",
         "标题命中:主题:机器人"
@@ -2073,28 +2323,168 @@
         "长三角"
       ],
       "entity_confidence": "rule"
+    },
+    {
+      "title": "港股“全场景商用服务机器人第一股”！无锡高新区上市版图再扩容",
+      "url": "https://js.ifeng.com/c/8wHWMAh1PAH",
+      "source": "js.ifeng.com",
+      "published_at": "2026-09-09T19:22:00+08:00",
+      "feed": "bing:无锡 机器视觉",
+      "rss_description": "9月9日，来自无锡高新区的优地机器人（无锡）股份有限公司在香港交易所主板挂牌上市（股票简称：优地机器人，股票代码：03231.HK），成功摘下港股“全场景商用服务机器人第一股”头衔，成为无锡高新区今年第4家上市公司，年内新增上市总数位居全市第一 ...",
+      "_is_new_candidate": true,
+      "domain": "js.ifeng.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "9e8c92e743ad5b4571f72abaaf0ba3b79e8f950d",
+      "relevance_score": 24,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:机器人",
+        "新鲜度:偏旧(40.1天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:机器人"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "机器人"
+      ],
+      "organizations": [
+        "成为无锡高新区今年第4家上市公司",
+        "无锡高新区"
+      ],
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "150亿，无锡收获一个机器人IPO",
+      "url": "https://news.qq.com/rain/a/20260909A05ZTF00",
+      "source": "news.qq.com",
+      "published_at": "2026-09-09T12:00:00+08:00",
+      "feed": "bing:无锡 机器视觉",
+      "rss_description": "又有一家机器人公司，IPO了。 9月9日，来自江苏无锡的优地机器人（03231.HK）在港交所挂牌上市。上市首日开盘价高开142.21%报 ...",
+      "_is_new_candidate": true,
+      "domain": "news.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "58dba78aad4699cf73768a13ad2dd51c2f762a3a",
+      "relevance_score": 24,
+      "ranking_reasons": [
+        "区域:无锡",
+        "主题:机器人",
+        "新鲜度:偏旧(40.4天)",
+        "标题命中:区域:无锡",
+        "标题命中:主题:机器人"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "无锡",
+        "机器人"
+      ],
+      "organizations": [
+        "又有一家机器人公司"
+      ],
+      "regions": [
+        "无锡"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "无锡"
+      ],
+      "entity_confidence": "rule"
+    },
+    {
+      "title": "苏州协作机器人公司，启动IPO",
+      "url": "https://view.inews.qq.com/a/20260905A04WFT00",
+      "source": "view.inews.qq.com",
+      "published_at": "2026-09-05T11:53:00+08:00",
+      "feed": "bing:苏州 机器人",
+      "rss_description": "机器人前瞻9月5日报道，据证监会官网信息，昨日，法奥（苏州）机器人技术股份有限公司（以下简称“法奥机器人”）在江苏证监局完成辅导备案登记，辅导机构为国泰海通。 辅导备案报告显示，法奥机器人董事长姚庭持股比例为24.74%，苏州酷珞博企业管理 ...",
+      "_is_new_candidate": true,
+      "domain": "view.inews.qq.com",
+      "trusted": false,
+      "source_tier": 1,
+      "fingerprint": "bb01f59da117333adc5f257e086389096ea5f7ad",
+      "relevance_score": 24,
+      "ranking_reasons": [
+        "区域:苏州",
+        "主题:机器人",
+        "新鲜度:偏旧(44.4天)",
+        "标题命中:区域:苏州",
+        "标题命中:主题:机器人"
+      ],
+      "summary_confidence": "low",
+      "tags": [
+        "苏州",
+        "机器人"
+      ],
+      "organizations": [
+        "苏州协作机器人公司"
+      ],
+      "regions": [
+        "苏州"
+      ],
+      "topics": [
+        {
+          "slug": "robotics",
+          "label": "机器人"
+        }
+      ],
+      "network_density": 2,
+      "region_labels": [
+        "苏州"
+      ],
+      "entity_confidence": "rule"
     }
   ],
   "topics": [
     {
       "slug": "robotics",
       "label": "机器人",
-      "count": 34
+      "count": 42
     },
     {
       "slug": "embodied-ai",
       "label": "具身智能",
-      "count": 15
+      "count": 19
     },
     {
       "slug": "smart-manufacturing",
       "label": "智能制造",
-      "count": 9
+      "count": 11
     },
     {
       "slug": "llm",
       "label": "大模型",
-      "count": 3
+      "count": 6
+    },
+    {
+      "slug": "automation",
+      "label": "自动化",
+      "count": 2
+    },
+    {
+      "slug": "industrial-ai",
+      "label": "工业AI",
+      "count": 1
     },
     {
       "slug": "ai-chip",
@@ -2106,7 +2496,7 @@
     {
       "slug": "suzhou",
       "label": "苏州",
-      "topic_count": 3
+      "topic_count": 6
     },
     {
       "slug": "wuxi",
