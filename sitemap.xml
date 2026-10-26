@@ -79,6 +79,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://wuxiai.com/topic/machine-vision/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://wuxiai.com/topic/automation/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://wuxiai.com/region/wuxi/</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>daily</changefreq>
